@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 635 630" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g id="path2182" transform="matrix(0.937286,0.348561,-0.348561,0.937286,128.526,-96.5581)">
+        <path d="M493.752,517.933L487.179,570.245L435.854,554.369L416.203,603.437L370.522,575.561L339.026,618.302L301.86,580.177L260.499,613.906L234.183,567.928L185.555,590.525L171.742,539.583L118.904,549.628L118.463,496.923L64.733,493.785L77.691,442.629L26.447,426.505L51.99,380.112L6.45,352.015L42.973,313.3L6,274.996L51.208,246.391L25.125,200.287L76.178,183.59L62.622,132.583L116.312,128.842L116.137,76.136L169.089,85.588L182.305,34.495L231.194,56.545L256.971,10.276L298.724,43.538L335.442,5L367.435,47.385L412.787,18.999L433.011,67.843L484.147,51.393L491.331,103.628L545.038,100.148L538.73,152.491L591.634,162.198L572.231,211.361L621.007,233.647L589.727,276.539L631.312,310.003L590.121,343.931L621.901,386.47L573.387,409.301L593.364,458.243L540.577,468.543L547.497,520.812L493.752,517.933L493.752,517.933Z" style="fill:rgb(248,197,55);fill-rule:nonzero;stroke-width:7.89px;stroke:rgb(248,197,55);"/>
+    </g>
+    <g transform="matrix(0.474956,0.170809,-0.318162,0.884689,262.981,-109.157)">
+        <text x="144.356px" y="284.445px" style="font-family:'Arial-BoldMT';font-size:96px;fill:white;">Now Only</text>
+    </g>
+    <g transform="matrix(1.5638,0.581551,-1.04905,2.82092,188.607,-884.216)">
+        <text x="195.694px" y="389.397px" style="font-family:'Arial-BoldMT';font-size:72px;fill:white;">$1999</text>
+    </g>
+    <g transform="matrix(1.7772,0.660911,-0.660911,1.7772,-61.1546,-498.583)">
+        <text x="402.21px" y="326.873px" style="font-family:'Arial-BoldMT';font-size:36px;fill:white;">.99</text>
+    </g>
+</svg>

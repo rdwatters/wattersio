@@ -1,0 +1,141 @@
+//
+// Colors
+// --------------------------------------------------
+
+$gray-darker:           #222222; // #222
+$gray-dark:             lighten(#000, 20%) !default;   // #333
+$gray:                  lighten(#000, 33.5%) !default; // #555
+$gray-light:            lighten(#000, 46.7%) !default; // #777
+$gray-lighter:          lighten(#000, 93.5%) !default; // #eee
+$nav-bg-color:          $gray-darker;
+
+$white:                 #fff;
+$black:                 #222;
+
+$brand-primary:         darken(red, 20%) !default;
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+$brand: $brand-primary;
+$button-bg-color: $brand-primary;
+
+$body-bg:               #fff !default;
+$base-font-color:       #333333;
+$body-background-color: #ffffff;
+
+$link-color:            $brand-primary;
+$link-hover-color:      darken($link-color, 15%) !default;
+
+$metabar-top-bg:				#eee !default;
+
+$hero-gradient:         $gray-dark;
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+$chap: 'chaparralpro','Chaparral Pro',georgia,serif;
+$font-one: 'proximanova';
+$use-font-two: true;
+$font-two: 'adelle';
+//$helvetica from bourbon "font stack"
+$base-font-family: $font-one,$helvetica;
+$base-font-weight:200;
+//$georgia from bourbon "font stack"
+$heading-font-family: $font-two,$georgia;
+$heading-font-weight: 100;
+$code-font-family: 'courierprime','Courier Prime', courier,monospace;
+$code-block-base-font-color: white;
+$code-block-background-color: $base-font-color;
+
+$frontpage-body-bg: darken(#f2f2f2,15%);
+
+$M:668px;
+// Desktop
+$L:1025px;
+$LL: 1100px; //rarely if ever used
+// XL Screens
+$XL:1250px;
+$content-max-width:680px;
+$content-half-width:$content-max-width/2;
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+$grid-columns:              12 !default;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         30px !default;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     $screen-sm-min !default;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet:             ((720px + $grid-gutter-width)) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            ((940px + $grid-gutter-width)) !default;
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      ((1140px + $grid-gutter-width)) !default;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
+
+
+//TABLE OF CONTENTS
+$share-and-toc-border-color:none;
+$share-and-toc-background-color:$white;
+$toc-border-color-desktop-plus:1px solid lighten($base-font-color,65%);
+$toc-header-background-color:darken($body-background-color,5%);
+$toc-toggle-button-color: #000000;
+$toc-toggle-button-color-open: #000000;
+$toc-toggle-button-border-radius:3px;
+
+$button-border-width: 2px;
+
+//TRANSITIONS
+
+$transition: all .3s ease-in-out;

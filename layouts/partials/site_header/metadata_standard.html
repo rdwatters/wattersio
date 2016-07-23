@@ -1,0 +1,21 @@
+<!-- Standard Metadata -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{{with .Params.no_google}}
+<meta name="robots" content="noindex">
+{{ end }}
+{{if not .IsHome }}
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+{{ else }}
+<title>{{ .Site.Title }} | Home </title>
+{{ end }}
+<!-- Allows removal of iOS chrome when users save on home screen -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- Set the language for Google Webmaster tools -->
+<link rel="alternate" href="{{.Site.BaseURL}}" hreflang="en-us" />
+{{$sectionTitle := .Title }}
+<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.SiteDescription }}{{ else if .IsPage }}{{ .Description }}{{ else if .IsNode }}{{ index .Site.Data.sectioninfo .Title }}{{ end }}">
+<!-- Responsive meta tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Generator w/Version Number. Givin' some love to Hugo! -->
+{{.Hugo.Generator}}

@@ -1,0 +1,27 @@
+<nav role="navigation" class="sidebar sidebar--right">
+  <a href="{{.Site.BaseURL}}" class="textLogo textLogo--white textLogo--sidebar">{{ .Site.Title }}</a>
+  {{$thisTitle := .Title }}
+  {{ if ne "About" $thisTitle }}
+  <a href="/about" class="about-page">About</a>
+  {{ end }}
+  <ul class="sidebar-recentPosts">
+    {{ range where .Site.Pages "Section" "posts" }}
+      {{ if ne .Title $thisTitle }}
+      <li>
+        <a href="{{ .Permalink }}" class="site-nav sidebar-link">
+        {{ if .Params.image }}
+          <div class="sidebar-recentPosts-image-wrapper">
+            <img src="/assets/images/_thumbnail/{{ .Params.image }}-thumb.jpg" alt="">
+          </div>
+        {{ end }}
+        <h3 class="side-title">{{ .Title }}</h3>
+        <div class="side-date">{{ if .Params.modified }}<strong class="updated">UPDATED:</strong>{{ end }}<time class="publish-date">{{ .Date.Format "January 2, 2006" }}</time></div>
+        </a>
+      </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</nav>
+<div class="sidebar-toggle-wrapper">
+  <div class="sidebar-toggle"></div>
+</div>

@@ -1,0 +1,17 @@
+{{ partial "site_header.html" . }}
+<div class="container container--content">
+	<article>
+		<header>
+			<h1>All {{.Title}}</h1>
+		</header>
+		<ul>
+	    {{ $data := .Data }}
+	    {{ range $key,$value := .Data.Terms.Alphabetical }}
+	    <li class="site-tag">
+			<a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ replace $value.Name "-" " " | upper}} ({{ $value.Count }})</a>
+			</li>
+	    {{ end }}
+	  </ul>
+	</article>
+</div>
+{{ partial "site_footer.html" . }}

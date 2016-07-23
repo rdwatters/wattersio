@@ -1,0 +1,26 @@
+{{ partial "site_header.html" . }}
+<!-- STARTER LIST PAGE for tags taxonomy. -->
+<div class="container container--content">
+    <div class="list-page">
+        <header>
+            <h1 class="taxonomy"><a href="/{{.Data.Plural}}" title="See a list of {{.Data.Plural}} on {{.Site.Title}}">{{.Data.Singular}}</a>: {{ .Title }}</h1>
+        </header>
+        <ul class="contents-list">
+            {{ range sort .Data.Pages "Date" "desc" }}
+            <li>
+                <a href="{{.Permalink}}" class="content-link">
+                    <div class="list-time">
+                        {{partial "publish_date.html" . }}
+                    </div>
+                    <div class="content-list-image grayscale" style="background-image:url(/assets/images/_thumbnail/{{.Params.image | default "site-logo"}}-thumb.jpg);">
+                    </div>
+                <section class="content-info">
+                        <h2 class="list-title">{{ .Title }}</h2>
+		        				<p class="list-description">{{ .Description }}</p>
+		        </section>
+	        </a></li>
+	    {{ end }}
+	   </ul>
+    </div>
+</div>
+{{ partial "site_footer.html" . }}

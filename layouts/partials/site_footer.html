@@ -1,0 +1,23 @@
+</div>
+</main>
+{{ if .IsPage }}
+{{ partial "social_share" . }}
+{{ partial "toc.html" . }}
+{{ end}}
+<footer class="section--footer site-footer">
+  <div class="container container--content">
+    <div class="built-with">
+      Built with <span class="heart">&hearts;</span> by <a href="/about/">{{.Site.Params.SiteAuthor}}</a>
+    </div>
+    {{ partial "site_footer/site_footer_social.html" .}}
+    <div>
+      © {{ .Site.LastChange.Format "2006"}} {{ .Site.Params.CopyrightLine }}
+    </div>
+  </div>
+</footer>
+
+  {{ partial "site_footer/site_scripts.html" . }}
+  {{ partial "site_footer/google_analytics.html" . }}
+</body>
+</html>
+

@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /json/
+Disallow: /assets/css
+Disallow: /assets/js
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /resume
+Disallow: /resume/
+Disallow: /docsample/
+Disallow: /migrationsample/
+Disallow: /presentationsample1/
+Disallow: /presentationsample2/
+Disallow: /presentationsample3/
+Disallow: /rise
+Disallow: /rise/

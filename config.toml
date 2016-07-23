@@ -1,0 +1,82 @@
+# Only one archetype (posts) is included in Hugo Starter
+archetypedir = "archetypes"
+baseurl = ""
+buildDrafts = true
+buildFuture = false
+canonifyurls = true
+config = "config.toml"
+contentdir = "content"
+disableLiveReload= false
+disableRSS = false
+disableSitemap = false
+ignoreFiles = []
+languageCode = "en-us"
+layoutDir = "layouts"
+log = false
+metaDataFormat = "yaml"
+publishdir = "public"
+pygmentsUseClasses = true
+relativeURLs = true
+source = ""
+title = "ryanwatters.io"
+uglyURLs = false
+verbose = true
+verboseLog = false
+watch = true
+
+[permalinks]
+  # The temp folder is created for one-off pages (eg, marketing and design-heavy pages that run outside other site templates). Keep in mind that all .md pages under temp still require title and date in the YAML/front matter
+  posts = "/:title/"
+  singletons = "/:title/"
+
+[params]
+	SiteAuthor = "Ryan Watters"
+  SiteTitle = "ryanwatters.io"
+  TwitterHandle = "ryandwatters"
+  #######BEGIN SOCIAL#######
+  # For each social account, use the full URL that leads to the homepage of your account/profile
+	GitHub = "https://github.com"
+  Twitter = "https://twitter.com/"
+  #Include ID for Facebook App
+  Facebook = "Ryan-Watters-810571539011577/"
+  YouTube = "https://youtube.com"
+  GooglePlus = "https://plus.google.com/"
+  # For LinkedIn, you'll need to make sure you are using the URL for visitors, rather than the URL once you're signed into your account.
+  LinkedIn = "https://linkedin.com"
+  Instagram = "https://www.instagram.com"
+  Tumblr = "https://www.tumblr.com/"
+  Pinterest = "https://pinterest.com/"
+  IncludeRSS = true
+  # Add your Google Analytics ID here (ie, UA-XXXXXXXX-X). See layouts/partials/google_analytics.html. Dev environment (ie, localhost) is automatically disabled.
+  GoogleAnalyticsTrackingId = ""
+  #######END SOCIAL#######
+  CopyrightLine = "Ryan Watters"
+  SiteDescription = "The official site of Ryan Watters"
+  UseCRP = false
+  # Include jQuery 3.0 from assets/js
+  IncludeJQ = true
+  # Disqus two conditions (here and in page)
+  UseDisqus = true
+  disqusShortname = ""
+  SitePublishDate = "2016-01-01"
+  SiteTagline = "Content Strategist, Storyteller, Frontend Developer, Unabashed Nerd"
+  DefaultSocialImage = ""
+  # Setting this to true will include Swiftype Metadata in <head> and the default single.html <article> in layouts/_default
+  Swiftype = false
+  UpdatedText = "Updated:"
+
+[blackfriday]
+	plainIDAnchors = true
+	hrefTargetBlank = true
+  angledQuotes = false
+  latexDashes = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+
+
+
+
+

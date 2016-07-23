@@ -1,0 +1,16 @@
+<ul class="socialAccountList">
+    <li>
+        <a href="//twitter.com/@{{ .Site.Params.TwitterHandle }}" class="socialAccount shareButton--twitter" target="_blank"></a>
+    </li>
+    <li>
+        <a href="//facebook.com/{{ .Site.Params.Facebook }}" class="socialAccount shareButton--facebook" target="_blank"></a>
+    </li>
+    <li>
+        <a href="//www.linkedin.com/in/{{ .Site.Params.LinkedIn }}" class="socialAccount shareButton--linkedin" target="_blank"></a>
+    </li>
+    {{if .Site.Params.IncludeRSS }}
+    <li>
+        <a href="/index.xml" target="_blank" class="socialAccount shareButton--rss"></a>
+    </li>
+    {{end}}
+</ul>

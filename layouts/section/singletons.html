@@ -1,0 +1,10 @@
+[
+{{$sitePageLength := add (len .Site.Pages) -1}}{{ range $index, $page := .Site.Pages}}{{ if and (gt $index 0) (lt $index $sitePageLength) }},
+		{{ end }}{{ if not $page.Params.removefromsearch }}{"url": "{{ $page.Permalink }}",
+		"title": "{{ $page.Title }}",
+		"subtitle": "{{ $page.Params.subtitle | default "" }}",
+		"tags": [{{ range $tindex, $tag := $page.Params.tags }}{{ if $tindex }}, {{ end }}"{{ $tag }}"{{ end }}],
+		"description": "{{.Description}}",
+		"content": {{$page.Plain | jsonify}}}
+		{{ end }}{{ end }}
+]

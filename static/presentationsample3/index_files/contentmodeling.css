@@ -1,0 +1,626 @@
+@font-face {
+    font-family: "proximanova";
+    src: url("/assets/css/fonts/proximanova/proximanova-regular-webfont.eot");
+    src: url("/assets/css/fonts/proximanova/proximanova-regular-webfont.eot%3f") format("embedded-opentype"), url("/assets/css/fonts/proximanova/proximanova-regular-webfont.woff") format("woff"), url("/assets/css/fonts/proximanova/proximanova-regular-webfont.ttf") format("truetype"), url("/assets/css/fonts/proximanova/proximanova-regular-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "proximanova";
+    src: url("/assets/css/fonts/proximanova/proximanova-regular-italic-webfont.eot");
+    src: url("/assets/css/fonts/proximanova/proximanova-regular-italic-webfont.eot%3f") format("embedded-opentype"), url("/assets/css/fonts/proximanova/proximanova-regular-italic-webfont.woff") format("woff"), url("/assets/css/fonts/proximanova/proximanova-regular-italic-webfont.ttf") format("truetype"), url("/assets/css/fonts/proximanova/proximanova-regular-italic-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "proximanova";
+    src: url("/assets/css/fonts/proximanova/proximanova-semibold-webfont.eot");
+    src: url("/assets/css/fonts/proximanova/proximanova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/css/fonts/proximanova/proximanova-semibold-webfont.woff") format("woff"), url("/assets/css/fonts/proximanova/proximanova-semibold-webfont.ttf") format("truetype"), url("/assets/css/fonts/proximanova/proximanova-semibold-webfont.svg") format("svg");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "proximanova";
+    src: url("/assets/css/fonts/proximanova/proximanova-bold-webfont.eot");
+    src: url("/assets/css/fonts/proximanova/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/css/fonts/proximanova/proximanova-bold-webfont.woff") format("woff"), url("/assets/css/fonts/proximanova/proximanova-bold-webfont.ttf") format("truetype"), url("/assets/css/fonts/proximanova/proximanova-bold-webfont.svg") format("svg");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "proximanova";
+    src: url("/assets/css/fonts/proximanova/proximanova-bold-italic-webfont.eot");
+    src: url("/assets/css/fonts/proximanova/proximanova-bold-italic-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/css/fonts/proximanova/proximanova-bold-italic-webfont.woff") format("woff"), url("/assets/css/fonts/proximanova/proximanova-bold-italic-webfont.ttf") format("truetype"), url("/assets/css/fonts/proximanova/proximanova-bold-italic-webfont.svg") format("svg");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "proximanova";
+    src: url("/assets/css/fonts/proximanova/proximanova-extrabold-webfont.eot");
+    src: url("/assets/css/fonts/proximanova/proximanova-extrabold-webfont.eot%3f") format("embedded-opentype"), url("/assets/css/fonts/proximanova/proximanova-extrabold-webfont.woff") format("woff"), url("/assets/css/fonts/proximanova/proximanova-extrabold-webfont.ttf") format("truetype"), url("/assets/css/fonts/proximanova/proximanova-extrabold-webfont.svg") format("svg");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "proximanova";
+    src: url("/assets/css/fonts/proximanova/proximanova-extrabold-italic-webfont.eot");
+    src: url("/assets/css/fonts/proximanova/proximanova-extrabold-italic-webfont.eot%3f") format("embedded-opentype"), url("/assets/css/fonts/proximanova/proximanova-extrabold-italic-webfont.woff") format("woff"), url("/assets/css/fonts/proximanova/proximanova-extrabold-italic-webfont.ttf") format("truetype"), url("/assets/css/fonts/proximanova/proximanova-extrabold-italic-webfont.svg") format("svg");
+    font-weight: 900;
+    font-style: italic
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+div.site-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    max-width: 60px;
+    max-height: 60px;
+    z-index:99999;
+}
+
+div.site-logo svg#cap-logo {
+    fill: white;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.0;
+    }
+}
+
+p.fragment.left {
+    text-align: left;
+    margin-left: 5em;
+}
+
+p.left {
+    text-align: left;
+    margin-left: 5em !important;
+}
+
+p > code.inline,
+p > code.red {
+    color: #b21e28;
+}
+
+code.inline {
+    color: #b21e28;
+}
+
+strong.red,
+em.red {
+    color: #b21e28;
+}
+
+section.has-light-background,
+section.has-light-background h1,
+section.has-light-background h2,
+section.has-light-background h3,
+section.has-light-background h4,
+section.has-light-background h5,
+section.has-light-background h6 {
+    color: #222;
+}
+
+h1.huge.blink {
+    font-size: 6em;
+    color: #b21e28;
+}
+
+body {
+    background: #009abf;
+    background-color: #009abf;
+}
+
+.reveal {
+    font-family: 'Proxima nova', 'proximanova', 'helvetic neue', Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: normal;
+    color: #fff;
+}
+
+::selection {
+    color: #fff;
+    background: #fcc367;
+    text-shadow: none;
+}
+
+.reveal .slides > section,
+.reveal .slides > section > section {
+    line-height: 1.3;
+    font-weight: inherit;
+}
+
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    margin: 0 0 20px 0;
+    color: #fff;
+    font-family: "akkurat", Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-transform: none;
+    text-shadow: none;
+    word-wrap: break-word;
+}
+
+.reveal h1 {
+    font-size: 2.5em;
+}
+
+.reveal h2 {
+    font-size: 1.6em;
+}
+
+.reveal h3 {
+    font-size: 1.3em;
+}
+
+.reveal h4 {
+    font-size: 1em;
+}
+
+.reveal h1 {
+    text-shadow: none;
+}
+
+
+/*********************************************
+ * OTHER
+ *********************************************/
+
+.reveal p {
+    margin: 20px 0;
+    line-height: 1.3;
+}
+
+
+/* Ensure certain elements are never larger than the slide itself */
+
+.reveal img,
+.reveal video,
+.reveal iframe {
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.reveal strong,
+.reveal b {
+    font-weight: bold;
+}
+
+.reveal em {
+    font-style: italic;
+}
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0 0 0 1em;
+}
+
+.reveal ol {
+    list-style-type: decimal;
+}
+
+.reveal ul {
+    list-style-type: disc;
+}
+
+.reveal ul ul {
+    list-style-type: square;
+}
+
+.reveal ul ul ul {
+    list-style-type: circle;
+}
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+    display: block;
+    margin-left: 40px;
+}
+
+.reveal dt {
+    font-weight: bold;
+}
+
+.reveal dd {
+    margin-left: 40px;
+}
+
+.reveal q,
+.reveal blockquote {
+    quotes: none;
+}
+
+.reveal blockquote {
+    display: block;
+    position: relative;
+    width: 70%;
+    margin: 20px auto;
+    padding: 5px;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+    display: inline-block;
+}
+
+.reveal q {
+    font-style: italic;
+}
+
+.reveal pre {
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    text-align: left;
+    font-size: 0.55em;
+    font-family: monospace;
+    line-height: 1.2em;
+    word-wrap: break-word;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+.reveal code {
+    font-family: monospace;
+}
+
+.reveal pre code {
+    display: block;
+    padding: 5px;
+    overflow: auto;
+    max-height: 400px;
+    word-wrap: normal;
+}
+
+.reveal table {
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.reveal table th {
+    font-weight: bold;
+}
+
+.reveal table th,
+.reveal table td {
+    text-align: left;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    border-bottom: 1px solid;
+}
+
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+    text-align: center;
+}
+
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+    text-align: right;
+}
+
+.reveal table tr:last-child td {
+    border-bottom: none;
+}
+
+.reveal sup {
+    vertical-align: super;
+}
+
+.reveal sub {
+    vertical-align: sub;
+}
+
+.reveal small {
+    display: inline-block;
+    font-size: 0.6em;
+    line-height: 1.2em;
+    vertical-align: top;
+}
+
+.reveal small * {
+    vertical-align: top;
+}
+
+
+/*********************************************
+ * LINKS
+ *********************************************/
+
+.reveal a {
+    color: #de8b05;
+    text-decoration: none;
+    -webkit-transition: color .15s ease;
+    -moz-transition: color .15s ease;
+    transition: color .15s ease;
+}
+
+.reveal a:hover {
+    color: #faaf35;
+    text-shadow: none;
+    border: none;
+}
+
+.reveal .roll span:after {
+    color: #fff;
+    background: #935c03;
+}
+
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+
+.reveal section img {
+    margin: 15px 0px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.reveal section img.plain {
+    border: 0;
+    box-shadow: none;
+}
+
+.reveal a img {
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    transition: all .15s linear;
+}
+
+.reveal a:hover img {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #de8b05;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+    border-right-color: white;
+}
+
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+    border-left-color: white;
+}
+
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+    border-bottom-color: white;
+}
+
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+    border-top-color: white;
+}
+
+.reveal .controls .navigate-left.enabled:hover {
+    border-right-color: #faaf35;
+}
+
+.reveal .controls .navigate-right.enabled:hover {
+    border-left-color: #faaf35;
+}
+
+.reveal .controls .navigate-up.enabled:hover {
+    border-bottom-color: #faaf35;
+}
+
+.reveal .controls .navigate-down.enabled:hover {
+    border-top-color: #faaf35;
+}
+
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+
+.reveal .progress {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.reveal .progress span {
+    background: #de8b05;
+    -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+    -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+    transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: black;
+    color: #fff;
+    -webkit-text-size-adjust: none;
+}
+
+.hljs-keyword,
+.hljs-tag,
+.css .hljs-class,
+.css .hljs-id,
+.lisp .hljs-title,
+.nginx .hljs-title,
+.hljs-request,
+.hljs-status,
+.clojure .hljs-attribute {
+    color: #e3ceab;
+}
+
+.django .hljs-template_tag,
+.django .hljs-variable,
+.django .hljs-filter .hljs-argument {
+    color: #dcdcdc;
+}
+
+.hljs-number,
+.hljs-date {
+    color: #8cd0d3;
+}
+
+.dos .hljs-envvar,
+.dos .hljs-stream,
+.hljs-variable,
+.apache .hljs-sqbracket,
+.hljs-name {
+    color: #efdcbc;
+}
+
+.dos .hljs-flow,
+.diff .hljs-change,
+.python .exception,
+.python .hljs-built_in,
+.hljs-literal,
+.tex .hljs-special {
+    color: #efefaf;
+}
+
+.diff .hljs-chunk,
+.hljs-subst {
+    color: #8f8f8f;
+}
+
+.dos .hljs-keyword,
+.hljs-decorator,
+.hljs-title,
+.hljs-type,
+.diff .hljs-header,
+.ruby .hljs-class .hljs-parent,
+.apache .hljs-tag,
+.nginx .hljs-built_in,
+.tex .hljs-command,
+.hljs-prompt {
+    color: #efef8f;
+}
+
+.dos .hljs-winutils,
+.ruby .hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.ruby .hljs-string {
+    color: #dca3a3;
+}
+
+.diff .hljs-deletion,
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-built_in,
+.smalltalk .hljs-class,
+.smalltalk .hljs-localvars,
+.smalltalk .hljs-array,
+.css .hljs-rule .hljs-value,
+.hljs-attr_selector,
+.hljs-pseudo,
+.apache .hljs-cbracket,
+.tex .hljs-formula,
+.coffeescript .hljs-attribute {
+    color: #cc9393;
+}
+
+.hljs-shebang,
+.diff .hljs-addition,
+.hljs-comment,
+.hljs-annotation,
+.hljs-pi,
+.hljs-doctype {
+    color: #45a142;
+}
+
+.coffeescript .javascript,
+.javascript .xml,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata {
+    opacity: 0.5;
+}
+
+.hljs.http span.hljs-attribute,
+.hljs.less span.hljs-attribute {
+    color: #b21e28;
+}
+
+.hljs.http span.hljs-string,
+.hljs.less span.hljs-string {
+    color: #fff;
+}
+
+div#back-to-resume {
+    z-index: 9999;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    display: block;
+    color: white;
+    font-weight: bold;
+}
+
+a#resume-link,
+a.resume-link {
+    transition: all .3s ease-in-out;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Proxima Nova', 'helvetica neue', helvetic, arial, sans-serif;
+    text-decoration: none;
+    padding: .25em;
+    border: 1px solid white;
+    cursor: pointer!important;
+}
+
+a#resume-link:hover {
+    background-color: white;
+    color: #009ABF;
+    cursor: pointer!important;
+}
+
+p,
+span,
+ol,
+ul,
+li {
+    font-family: 'Proxima Nova', 'proximanova', 'helvetica neue', helvetic, arial, sans-serif;
+}
+
+small > a {
+    font-weight: bold!important;
+}

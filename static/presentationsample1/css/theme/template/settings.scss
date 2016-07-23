@@ -1,0 +1,82 @@
+//Primary
+$cap-blue: rgb(0, 154, 191); //#009bbf
+$cap-gray: rgb(195, 198, 200); //#c3c7ca
+$cap-red: rgb(178, 30, 40); //#b41f28
+$cap-black: rgb(0, 0, 0); //#000000
+$cap-white: #ffffff;
+//Secondary
+$cap-orange: rgb(222, 139, 5); //#de8d28
+$cap-green: rgb(69, 161, 66); //#44a448
+$cap-purple: rgb(89, 44, 130); //#592c82
+
+// Background of the presentation
+$backgroundColor: #2b2b2b;
+
+// Primary/body text
+$mainFont: 'Lato', sans-serif;
+$mainFontSize: 36px;
+$mainColor: #eee;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'League Gothic', Impact, sans-serif;
+
+$headingColor: #eee;
+
+$h1Color:$mainColor;
+$h2Color:$mainColor;
+$h3Color:$mainColor;
+$h4Color:$mainColor;
+$h5Color:$mainColor;
+$h6Color:$mainColor;
+
+$paragraphColor:$mainColor;
+$blinkingTextColor:red;
+
+$h1FontWeight:400;
+$h2FontWeight:400;
+$h3FontWeight:400;
+$h4FontWeight:400;
+$h5FontWeight:400;
+$h6FontWeight:400;
+
+$h1HeadingTransform:none;
+$h2HeadingTransform:none;
+$h3HeadingTransform:none;
+$h4HeadingTransform:none;
+$h5HeadingTransform:none;
+$h6HeadingTransform:none;
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingTextShadow: none;
+$headingFontWeight: normal;
+$heading1TextShadow: $headingTextShadow;
+$listFontColor: inherit;
+$dateAndTimeColor: orange;
+$bodyFontWeight:200;
+$h1BorderWidth:4px;
+$h1BorderColor: white;
+$cap-logo-fill-color:$cap-blue;
+
+$heading1Size: 3.77em;
+$heading2Size: 2.11em;
+$heading3Size: 1.55em;
+$heading4Size: 1.00em;
+
+// Links and actions
+$linkColor: $cap-red;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #FF5E99;
+$selectionColor: #fff;
+
+// Generates the presentation background, can be overridden
+// to return a background image or gradient
+@mixin bodyBackground() {
+	background: $backgroundColor;
+}

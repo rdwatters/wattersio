@@ -1,0 +1,375 @@
+code,
+pre,
+.hljs,
+.code-copy {
+    font-family: $code-font-family;
+    width:100%;
+    min-width:100%;
+    position:relative;
+}
+code.hljs {
+    display:block;
+    width:100%;
+    min-width:100%;
+}
+
+.code-copy {
+    display: block;
+    width: 100%;
+    @include MQ(XL) {
+        width: calc(100% + 60px);
+        margin-left: -30px;
+        overflow-x: visible;
+    }
+    padding-left:15px;
+    color:$code-block-base-font-color;
+    background-color:$code-block-background-color;
+    pre {
+        position: relative;
+        margin-bottom: 1em;
+        padding: .5em;
+        code {
+            font-size:16px;
+            margin-bottom:1.5em;
+            @include MQ(M) {
+                font-size: .8em;
+            }
+            @include MQ(L){
+                font-size: .8em;
+            }
+        }
+        @include MQ(M){
+            // white-space: pre-wrap;
+        }
+    }
+    .filepath {
+        width:auto;
+        float:right;
+        clear:both;
+        font-size: 14px;
+        text-align: right;
+        background-color:#666666;
+        margin-bottom: 0px;
+        padding: .25em .5em;
+        + pre {
+            padding-top: 2em;
+            @include MQ(M){
+                padding-top:1em;
+            }
+            padding-bottom: .5em;
+        }
+    }
+}
+
+button.copy-button {
+    display: none;
+    @include MQ(M) {
+        display: block;
+    }
+    transition: all .3s ease-in-out;
+    position: absolute;
+    right:.5em;
+    bottom: .5em;
+    height: 42px;
+    background-color: transparent;
+    border: 1px solid $white;
+    outline: none;
+    border-radius: 3px;
+    padding: 2px;
+    padding-bottom:1em;
+    img.clippy {
+        width: 24px;
+        height: 24px;
+        padding: {
+            top: 2px;
+            bottom: 2px;
+            left:2px;
+        }
+        margin:0px;
+    }
+    span.copy-span {
+        color:$white;
+        margin-top:-.25em;
+        padding-top:0px;
+        padding-bottom:0em;
+        font-family:$heading-font-family;
+        font-weight:bold;
+        font-size:.5em;
+        display:block;
+        margin-left:.25em;
+        margin-right:.25em;
+        clear:both;
+        margin-bottom:4px;
+    }
+}
+
+// Modified from https://github.com/isagalaev/highlight.js/blob/master/src/styles/monokai-sublime.css
+//These styles rely on highlight.js, which is a script located at assets/js/modules/style-syntax-highlighting-highlightjs.js
+.hljs {
+    display: block;
+    overflow-x: auto;
+    font-weight: 400;
+    color: #66d9ef;
+}
+
+.hljs,
+.hljs-tag,
+.hljs-subst {
+    color: $white;
+}
+
+.hljs-strong,
+.hljs-emphasis {
+    color: $brand-primary;
+}
+
+.hljs-bullet,
+.hljs-quote,
+.hljs-number,
+.hljs-regexp,
+.hljs-literal,
+.hljs-link {
+    color: red;
+}
+
+.hljs-code,
+.hljs-title,
+.hljs-section,
+.hljs-selector-class {
+    color: #A6E22E;
+}
+
+.hljs-strong {
+    font-weight: bold;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-name {
+    color: #F92672;
+}
+
+.hljs-attr {
+    color: #66d9ef;
+}
+
+// .hljs-function > .hljs-keyword{
+//     color: #66d9ef;
+// }
+.hljs-symbol,
+.hljs-attribute {
+    color: #66d9ef;
+}
+
+.hljs-params,
+.hljs-class .hljs-title {
+    color: #FD971F;
+    font-weight:italic;
+}
+
+.hljs-type,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-variable {
+    color: #66d9ef;
+}
+
+.hljs-string {
+    color: $white;
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+    color: red;
+}
+
+.language-javascript.hljs {
+    color: #66d9ef;
+}
+
+.tooltipped {
+    position: relative;
+    background-color:$base-font-color;
+}
+
+.tooltipped:after {
+    position: absolute;
+    z-index: 1000000;
+    display: none;
+    padding: 5px 8px;
+    font: normal normal 14px/1.5 $heading-font-family, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    color: $white;
+    text-align: center;
+    text-transform:uppercase;
+    text-decoration: none;
+    text-shadow: none;
+    letter-spacing: normal;
+    word-wrap: break-word;
+    white-space: pre;
+    pointer-events: none;
+    content: attr(aria-label);
+    // background: rgba(0, 0, 0, 0.8);
+    background-color:$base-font-color;
+    border-radius: 0px;
+    -webkit-font-smoothing: subpixel-antialiased
+}
+
+.tooltipped:before {
+    position: absolute;
+    z-index: 1000001;
+    display: none;
+    width: 0;
+    height: 0;
+    color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    content: "";
+    border: 5px solid transparent
+}
+
+.tooltipped:hover:before,
+.tooltipped:hover:after,
+.tooltipped:active:before,
+.tooltipped:active:after,
+.tooltipped:focus:before,
+.tooltipped:focus:after {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.tooltipped-multiline:hover:after,
+.tooltipped-multiline:active:after,
+.tooltipped-multiline:focus:after {
+    display: table-cell;
+}
+
+.tooltipped-s:after,
+.tooltipped-se:after,
+.tooltipped-sw:after {
+    top: 100%;
+    right: 50%;
+    margin-top: 5px
+}
+
+.tooltipped-s:before,
+.tooltipped-se:before,
+.tooltipped-sw:before {
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    margin-right: -5px;
+    border-bottom-color: rgba(0, 0, 0, 0.8)
+}
+
+.tooltipped-se:after {
+    right: auto;
+    left: 50%;
+    margin-left: -15px
+}
+
+.tooltipped-sw:after {
+    margin-right: -15px
+}
+
+.tooltipped-n:after,
+.tooltipped-ne:after,
+.tooltipped-nw:after {
+    right: 50%;
+    bottom: 100%;
+    margin-bottom: 5px
+}
+
+.tooltipped-n:before,
+.tooltipped-ne:before,
+.tooltipped-nw:before {
+    top: -5px;
+    right: 50%;
+    bottom: auto;
+    margin-right: -5px;
+    border-top-color: rgba(0, 0, 0, 0.8)
+}
+
+.tooltipped-ne:after {
+    right: auto;
+    left: 50%;
+    margin-left: -15px
+}
+
+.tooltipped-nw:after {
+    margin-right: -15px
+}
+
+.tooltipped-s:after,
+.tooltipped-n:after {
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%)
+}
+
+.tooltipped-w:after {
+    right: 100%;
+    bottom: 50%;
+    margin-right: 5px;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%)
+}
+
+.tooltipped-w:before {
+    top: 50%;
+    bottom: 50%;
+    left: -5px;
+    margin-top: -5px;
+    border-left-color: rgba(0, 0, 0, 0.8)
+}
+
+.tooltipped-e:after {
+    bottom: 50%;
+    left: 100%;
+    margin-left: 5px;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%)
+}
+
+.tooltipped-e:before {
+    top: 50%;
+    right: -5px;
+    bottom: 50%;
+    margin-top: -5px;
+    border-right-color: rgba(0, 0, 0, 0.8)
+}
+
+.tooltipped-multiline:after {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: 250px;
+    word-break: break-word;
+    word-wrap: normal;
+    white-space: pre-line;
+    border-collapse: separate
+}
+
+.tooltipped-multiline.tooltipped-s:after,
+.tooltipped-multiline.tooltipped-n:after {
+    right: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.tooltipped-multiline.tooltipped-w:after,
+.tooltipped-multiline.tooltipped-e:after {
+    right: 100%
+}

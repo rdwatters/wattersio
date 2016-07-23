@@ -1,0 +1,38 @@
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "{{if eq .Section "tutorials"}}TechArticle{{else}}BlogPosting{{end}}",
+  "articleSection": "{{.Section | title}}",
+  "headline": "{{.Title}}",
+  "name": "{{.Title}}",
+  "url": "{{.Permalink}}",
+  "mainEntityOfPage": "{{.Permalink}}",
+  "datePublished": {{.PublishDate.Format "2006-01-02"}},
+  "dateModified": {{.Lastmod.Format "2006-01-02"}},
+  "wordCount":{{.WordCount}},
+  "image":{
+  	"@type":"ImageObject",
+  	"url":"{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.DefaultSocialImage }}",
+  	"height": 630,
+  	"width": 1200
+	},
+  "author":{
+  	"@type":"person",
+  	"name":"{{.Site.Params.SiteAuthor}}"
+  },
+  "publisher":{
+  	"@type":"Organization",
+  	"name":"{{.Site.Params.SiteAuthor}}",
+  	"founder":{
+  		"@type":"person",
+  		"name":"{{.Site.Params.SiteAuthor}}"
+  	},
+  	"logo":{
+  	"@type":"ImageObject",
+  	"url":"{{.Site.BaseURL}}assets/images/ryanwattersio-social.jpg"
+  	}
+  }
+}
+</script>
+{{ end }}

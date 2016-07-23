@@ -1,0 +1,171 @@
+//
+// Hero area
+// --------------------------------------------------
+.section--first {
+    width: 100%;
+    top: 0;
+    position: relative;
+    color: $black;
+}
+
+.section--frontpage,
+.section--frontpage ~ .post-featuredImage {
+    height: 10 * $leading;
+    @include MQ(L) {
+        height: 12 * $leading;
+    }
+}
+
+.section--about,
+.section-backgroundImage,
+.section--about ~ .post-featuredImage {
+    height: 24 * $leading;
+    @media (max-width: $screen-xs-max) {
+        height: 20 * $leading;
+    }
+}
+
+// Inspired by SQUARESPACE
+.section-backgroundImage {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: #333;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    top: 0;
+    z-index: $zIndex-neg2--carousel-backgroundImg;
+    overflow: hidden;
+    @include MQ(M) {
+        &.fixed {
+            position: fixed;
+        }
+    }
+    .post-featuredImage {
+        min-width: 100%;
+        min-height: 19 * $leading;
+        min-width: 100vw;
+        height: auto;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 1;
+        transition-property: opacity, left, top, width;
+        transition-duration: 1s, .1s, .1s, .1s;
+        transition-timing-function: cubic-bezier(.33, 0, .2, 1);
+        transition-delay: 0;
+    }
+}
+
+.section-backgroundImage--previousPage img {
+    position: relative;
+}
+
+.section-gradient {
+    &:before,
+    &:after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: $zIndex-neg1--section-gradient;
+        opacity: 0.6;
+    }
+    &:before {
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba($hero-gradient, .8)), color-stop(100%, rgba($hero-gradient, 0)));
+        background: -webkit-linear-gradient(top, rgba($hero-gradient, .8), rgba($hero-gradient, 0) 100%);
+        background: linear-gradient(to bottom, rgba($hero-gradient, .8), rgba($hero-gradient, 0) 100%);
+    }
+    &:after {
+        background: rgba($hero-gradient, .6);
+    }
+}
+
+.section-gradient--darker {
+    &:before,
+    &:after {
+        opacity: 1;
+    }
+}
+
+.section-gradient--lighter {
+    &:before,
+    &:after {
+        opacity: 0.4;
+    }
+}
+
+.section-title {
+    z-index: $zIndex-1--section-title;
+    text-align: center;
+}
+
+.section-title h2,
+.section-title h4 {
+    margin-top: 0;
+}
+
+.section-title h2 {
+    @media (max-width: $screen-xs-max) {
+        font-size: $font-L;
+        line-height: 1.5;
+    }
+}
+
+
+.postMeta-wrapper--frontpage {
+    z-index: $zIndex-5--tagline-frontpage;
+    max-width:100%;
+    .postMeta-tagline {
+        display: block;
+        text-align: center;
+        font-weight: 300;
+        letter-spacing: 0.04rem;
+        color: $gray-light;
+        text-transform: none;
+        margin-top: 1.5em;
+        @include MQ(L) {
+            margin-top: 0em;
+        }
+    }
+}
+
+.postMeta {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    max-width:$content-max-width;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.postMeta li {
+    margin: 0;
+    padding: 0 0 0 6px;
+    font-family: $title-secondary-font;
+    font-weight: 700;
+    font-size: $font-XS;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @media (max-width: $screen-xs-max) {
+        font-size: $font-XXS;
+    }
+}
+
+span.dot:after {
+    content: '';
+    display: inline-block;
+    width: .25em;
+    height: .25em;
+    overflow: hidden;
+    margin-left: 4px;
+    border-radius: 100%;
+    margin-bottom: .25em;
+    background-color: white;
+}

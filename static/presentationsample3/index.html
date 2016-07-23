@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" data-ember-extension="1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Content Modeling for the Web</title>
+    <meta name="robots" content="noindex">
+    <meta name="description" content="Content modeling presentation created by Ryan Watters.">
+    <meta name="author" content="Ryan D Watters">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="./index_files/reveal.css">
+    <link rel="stylesheet" href="./index_files/contentmodeling.css" id="theme">
+</head>
+
+<body cz-shortcut-listen="true" style="transition: -webkit-transform 0.8s ease;">
+
+    <div class="site-logo">
+    <a href="/resume" title="Back to Ryan's Resume">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="cap-logo" x="0px" y="0px" viewBox="0 0 42 64.14" enable-background="new 0 0 42 64.14" xml:space="preserve">
+            <path d="M16.831,2.592c0-0.806,0.651-1.46,1.461-1.46c0.803,0,1.458,0.654,1.458,1.46c0,0.808-0.654,1.461-1.458,1.461  C17.481,4.053,16.831,3.399,16.831,2.592z"></path>
+            <path d="M12.16,2.593c0-0.483,0.394-0.874,0.876-0.874c0.487,0,0.876,0.391,0.876,0.874s-0.389,0.875-0.876,0.875  C12.553,3.468,12.16,3.076,12.16,2.593z"></path>
+            <circle cx="28.8" cy="2.592" r="1.461"></circle>
+            <path d="M21.503,2.592c0-1.128,0.916-2.043,2.043-2.043c1.123,0,2.041,0.915,2.041,2.043s-0.918,2.045-2.041,2.045  C22.419,4.637,21.503,3.72,21.503,2.592z"></path>
+            <path d="M6.32,7.877c0-0.809,0.659-1.463,1.46-1.463c0.805,0,1.461,0.654,1.461,1.463c0,0.804-0.656,1.455-1.461,1.455  C6.979,9.332,6.32,8.681,6.32,7.877z"></path>
+            <path d="M27.339,7.877c0-0.809,0.654-1.463,1.459-1.463c0.809,0,1.463,0.654,1.463,1.463c0,0.804-0.654,1.455-1.463,1.455  C27.993,9.332,27.339,8.681,27.339,7.877z"></path>
+            <path d="M33.175,7.877c0-0.48,0.395-0.879,0.875-0.879c0.486,0,0.879,0.398,0.879,0.879c0,0.483-0.393,0.873-0.879,0.873  C33.569,8.75,33.175,8.36,33.175,7.877z"></path>
+            <path d="M22.085,7.877c0-0.781,0.656-1.415,1.461-1.415c0.801,0,1.459,0.634,1.459,1.415c0,0.779-0.658,1.407-1.459,1.407  C22.741,9.284,22.085,8.656,22.085,7.877z"></path>
+            <path d="M16.831,7.877c0-0.809,0.651-1.463,1.461-1.463c0.804,0,1.458,0.654,1.458,1.463c0,0.804-0.654,1.455-1.458,1.455  C17.482,9.332,16.831,8.681,16.831,7.877z"></path>
+            <path d="M10.993,7.877c0-1.132,0.917-2.047,2.043-2.047c1.132,0,2.044,0.915,2.044,2.047c0,1.124-0.912,2.042-2.044,2.042  C11.91,9.919,10.993,9.001,10.993,7.877z"></path>
+            <path d="M11.575,28.729c0-0.81,0.654-1.459,1.458-1.459c0.811,0,1.461,0.649,1.461,1.459c0,0.807-0.651,1.461-1.461,1.461  C12.229,30.189,11.575,29.535,11.575,28.729z"></path>
+            <path d="M27.925,28.729c0-0.485,0.391-0.877,0.871-0.877c0.488,0,0.879,0.392,0.879,0.877c0,0.487-0.391,0.875-0.879,0.875  C28.315,29.604,27.925,29.216,27.925,28.729z"></path>
+            <path d="M32.591,28.729c0-0.81,0.654-1.459,1.459-1.459s1.461,0.649,1.461,1.459c0,0.807-0.656,1.461-1.461,1.461  S32.591,29.535,32.591,28.729z"></path>
+            <path d="M6.32,28.729c0-0.81,0.659-1.459,1.46-1.459c0.805,0,1.461,0.649,1.461,1.459c0,0.807-0.656,1.461-1.461,1.461  C6.979,30.189,6.32,29.535,6.32,28.729z"></path>
+            <path d="M37.849,28.729c0-0.81,0.648-1.459,1.459-1.459c0.805,0,1.457,0.649,1.457,1.459c0,0.807-0.652,1.461-1.457,1.461  C38.497,30.189,37.849,29.535,37.849,28.729z"></path>
+            <path d="M1.07,28.729c0-0.81,0.649-1.459,1.454-1.459c0.808,0,1.46,0.649,1.46,1.459c0,0.807-0.652,1.461-1.46,1.461  C1.72,30.189,1.07,29.535,1.07,28.729z"></path>
+            <path d="M16.831,28.729c0-0.81,0.651-1.459,1.461-1.459c0.804,0,1.458,0.649,1.458,1.459c0,0.807-0.654,1.461-1.458,1.461  C17.482,30.189,16.831,29.535,16.831,28.729z"></path>
+            <path d="M22.085,28.729c0-0.81,0.656-1.459,1.461-1.459c0.801,0,1.459,0.649,1.459,1.459c0,0.807-0.658,1.461-1.459,1.461  C22.741,30.189,22.085,29.535,22.085,28.729z"></path>
+            <path d="M17.415,33.98c0-0.487,0.39-0.877,0.877-0.877c0.481,0,0.874,0.39,0.874,0.877c0,0.488-0.393,0.875-0.874,0.875  C17.805,34.855,17.415,34.469,17.415,33.98z"></path>
+            <path d="M22.085,33.985c0-0.811,0.656-1.465,1.461-1.465c0.801,0,1.459,0.654,1.459,1.465c0,0.804-0.658,1.453-1.459,1.453  C22.741,35.438,22.085,34.789,22.085,33.985z"></path>
+            <path d="M10.993,33.978c0-1.127,0.916-2.042,2.042-2.042c1.129,0,2.045,0.915,2.045,2.042c0,1.13-0.917,2.048-2.045,2.048  C11.908,36.025,10.993,35.107,10.993,33.978z"></path>
+            <path d="M27.339,33.985c0-0.811,0.654-1.465,1.459-1.465c0.809,0,1.463,0.654,1.463,1.465c0,0.804-0.654,1.453-1.463,1.453  C27.993,35.438,27.339,34.789,27.339,33.985z"></path>
+            <path d="M32.591,33.985c0-0.811,0.654-1.465,1.459-1.465s1.463,0.654,1.463,1.465c0,0.804-0.658,1.453-1.463,1.453  S32.591,34.789,32.591,33.985z"></path>
+            <path d="M6.32,33.985c0-0.81,0.659-1.465,1.46-1.465c0.805,0,1.461,0.655,1.461,1.465c0,0.807-0.656,1.453-1.461,1.453  C6.979,35.438,6.32,34.792,6.32,33.985z"></path>
+            <path d="M6.32,13.048c0-0.809,0.659-1.464,1.46-1.464c0.805,0,1.461,0.655,1.461,1.464c0,0.803-0.656,1.456-1.461,1.456  C6.979,14.504,6.32,13.851,6.32,13.048z"></path>
+            <path d="M16.831,13.048c0-0.809,0.651-1.464,1.461-1.464c0.804,0,1.458,0.655,1.458,1.464c0,0.803-0.654,1.456-1.458,1.456  C17.482,14.504,16.831,13.851,16.831,13.048z"></path>
+            <path d="M11.575,13.048c0-0.809,0.654-1.464,1.458-1.464c0.811,0,1.461,0.655,1.461,1.464c0,0.803-0.651,1.456-1.461,1.456  C12.229,14.504,11.575,13.851,11.575,13.048z"></path>
+            <path d="M27.339,13.048c0-0.809,0.654-1.464,1.459-1.464c0.809,0,1.463,0.655,1.463,1.464c0,0.803-0.654,1.456-1.463,1.456  C27.993,14.504,27.339,13.851,27.339,13.048z"></path>
+            <path d="M37.847,13.048c0-0.809,0.65-1.464,1.463-1.464c0.801,0,1.455,0.655,1.455,1.464c0,0.803-0.654,1.456-1.455,1.456  C38.497,14.504,37.847,13.851,37.847,13.048z"></path>
+            <path d="M1.07,13.048c0-0.809,0.649-1.464,1.454-1.464c0.808,0,1.46,0.655,1.46,1.464c0,0.803-0.652,1.456-1.46,1.456  C1.72,14.504,1.07,13.851,1.07,13.048z"></path>
+            <path d="M22.669,13.048c0-0.49,0.393-0.879,0.877-0.879c0.48,0,0.873,0.389,0.873,0.879c0,0.479-0.393,0.874-0.873,0.874  C23.062,13.922,22.669,13.527,22.669,13.048z"></path>
+            <path d="M32.591,13.048c0-0.809,0.654-1.464,1.459-1.464s1.463,0.655,1.463,1.464c0,0.803-0.658,1.456-1.463,1.456  S32.591,13.851,32.591,13.048z"></path>
+            <path d="M1.65,18.236c0-0.488,0.393-0.883,0.879-0.883c0.481,0,0.875,0.395,0.875,0.883c0,0.479-0.394,0.869-0.875,0.869  C2.043,19.105,1.65,18.715,1.65,18.236z"></path>
+            <path d="M12.16,18.232c0-0.488,0.389-0.879,0.874-0.879c0.484,0,0.878,0.391,0.878,0.879c0,0.478-0.395,0.873-0.878,0.873  C12.549,19.105,12.16,18.71,12.16,18.232z"></path>
+            <path d="M22.085,18.235c0-0.812,0.656-1.467,1.461-1.467c0.801,0,1.459,0.655,1.459,1.467c0,0.801-0.658,1.455-1.459,1.455  C22.741,19.69,22.085,19.036,22.085,18.235z"></path>
+            <path d="M32.591,18.235c0-0.812,0.654-1.467,1.459-1.467s1.463,0.655,1.463,1.467c0,0.801-0.658,1.455-1.463,1.455  S32.591,19.036,32.591,18.235z"></path>
+            <path d="M27.339,18.235c0-0.812,0.654-1.467,1.459-1.467c0.809,0,1.463,0.655,1.463,1.467c0,0.801-0.654,1.455-1.463,1.455  C27.993,19.69,27.339,19.036,27.339,18.235z"></path>
+            <path d="M6.32,18.235c0-0.812,0.659-1.467,1.46-1.467c0.805,0,1.461,0.655,1.461,1.467c0,0.801-0.656,1.455-1.461,1.455  C6.979,19.69,6.32,19.036,6.32,18.235z"></path>
+            <path d="M16.246,18.23c0-1.134,0.917-2.045,2.046-2.045c1.127,0,2.041,0.911,2.041,2.045c0,1.129-0.914,2.042-2.041,2.042  C17.163,20.272,16.246,19.359,16.246,18.23z"></path>
+            <path d="M37.265,18.23c0-1.132,0.91-2.045,2.043-2.045c1.125,0,2.041,0.913,2.041,2.045c0,1.121-0.916,2.042-2.041,2.042  C38.175,20.272,37.265,19.352,37.265,18.23z"></path>
+            <path d="M6.32,23.48c0-0.804,0.659-1.458,1.46-1.458c0.805,0,1.461,0.654,1.461,1.458s-0.656,1.461-1.461,1.461  C6.979,24.941,6.32,24.284,6.32,23.48z"></path>
+            <path d="M16.831,23.48c0-0.804,0.651-1.458,1.461-1.458c0.804,0,1.458,0.654,1.458,1.458s-0.654,1.461-1.458,1.461  C17.482,24.941,16.831,24.284,16.831,23.48z"></path>
+            <circle cx="28.8" cy="23.48" r="1.461"></circle>
+            <path d="M37.847,23.48c0-0.804,0.65-1.458,1.463-1.458c0.801,0,1.455,0.654,1.455,1.458s-0.654,1.461-1.455,1.461  C38.497,24.941,37.847,24.284,37.847,23.48z"></path>
+            <path d="M21.503,23.48c0-1.134,0.912-2.044,2.043-2.044c1.129,0,2.041,0.91,2.041,2.044c0,1.128-0.912,2.042-2.041,2.042  C22.415,25.522,21.503,24.608,21.503,23.48z"></path>
+            <circle cx="2.527" cy="23.48" r="2.044"></circle>
+            <path d="M11.575,23.48c0-0.804,0.654-1.458,1.458-1.458c0.811,0,1.461,0.654,1.461,1.458s-0.651,1.461-1.461,1.461  C12.229,24.941,11.575,24.284,11.575,23.48z"></path>
+            <circle cx="34.052" cy="23.48" r="1.461"></circle>
+            <path d="M11.575,39.23c0-0.805,0.654-1.46,1.458-1.46c0.811,0,1.461,0.655,1.461,1.46c0,0.803-0.651,1.459-1.461,1.459  C12.229,40.689,11.575,40.033,11.575,39.23z"></path>
+            <path d="M22.669,39.23c0-0.482,0.393-0.878,0.877-0.878c0.48,0,0.873,0.396,0.873,0.878s-0.393,0.875-0.873,0.875  C23.062,40.105,22.669,39.713,22.669,39.23z"></path>
+            <path d="M16.246,39.227c0-1.126,0.915-2.039,2.047-2.039c1.126,0,2.04,0.913,2.04,2.039c0,1.127-0.914,2.048-2.04,2.048  C17.161,41.274,16.246,40.354,16.246,39.227z"></path>
+            <path d="M27.339,39.23c0-0.805,0.654-1.46,1.459-1.46c0.809,0,1.463,0.655,1.463,1.46c0,0.803-0.654,1.459-1.463,1.459  C27.993,40.689,27.339,40.033,27.339,39.23z"></path>
+            <g>
+                <path d="M8.039,63.59c1.917,0,3.64-0.688,4.98-1.988c0.104-0.102,0.167-0.266,0.158-0.418c-0.007-0.12-0.059-0.224-0.138-0.285   l-0.619-0.55c-0.185-0.125-0.402-0.104-0.611,0.061c-1.12,0.846-2.108,1.489-3.79,1.489c-3.044,0-5.522-2.547-5.522-5.681   c0-3.147,2.478-5.706,5.522-5.706c1.298,0,2.712,0.556,3.779,1.483c0.26,0.26,0.497,0.249,0.679,0.021l0.543-0.546   c0.093-0.094,0.145-0.214,0.145-0.343c0-0.139-0.059-0.272-0.169-0.381c-1.547-1.317-3.074-1.906-4.956-1.906   c-4.078,0-7.396,3.319-7.396,7.398C0.644,60.294,3.961,63.59,8.039,63.59z"></path>
+                <path d="M36.558,49.239h-4.459c-0.273,0-0.492,0.221-0.492,0.491v13.365c0,0.271,0.219,0.494,0.492,0.494h0.766   c0.264,0,0.494-0.233,0.494-0.494v-4.635h3.221c2.541,0,4.609-2.086,4.609-4.649C41.188,51.292,39.112,49.239,36.558,49.239z    M39.415,53.77c0,1.644-1.326,2.979-2.957,2.979h-3.1v-5.76h3.1C38.089,50.989,39.415,52.238,39.415,53.77z"></path>
+                <path d="M22.667,49.319c-0.09-0.186-0.244-0.284-0.441-0.284h-0.199c-0.199,0-0.348,0.096-0.444,0.287L15.445,62.91   c-0.073,0.159-0.066,0.328,0.019,0.464c0.088,0.136,0.241,0.216,0.423,0.216h0.809c0.226,0,0.389-0.154,0.441-0.289l1.445-3.264   h7.026l1.461,3.261c0.059,0.14,0.221,0.292,0.445,0.292h0.807c0.184,0,0.338-0.08,0.426-0.216c0.084-0.136,0.092-0.305,0.018-0.463   L22.667,49.319z M24.968,58.566h-5.726l2.853-6.404h0.021c0.48,1.073,0.957,2.15,1.438,3.227   C24.022,56.448,24.493,57.51,24.968,58.566z"></path>
+            </g>
+        </svg>
+        </a>
+    </div>
+    <div id="back-to-resume">
+        <a href="/resume" class="resume-link" id="resume-link">&larr; BACK TO RYAN'S RESUME</a>
+    </div>
+    <div class="reveal convex center" role="application" data-transition-speed="default" data-background-transition="fade">
+        <div class="slides" style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.938571);">
+            <section class="past" style="top: 162px; display: block;" data-index-h="0" hidden="" aria-hidden="true">
+                <h1 class="presentation-titlescreen">Content Modeling and Typing</h1>
+                <small>Ryan Watters / Digital Content Manager / <a href="mailto:rywatte@cap.org" style="font-weight:bold;">rywatte@cap.org</a></small>
+            </section>
+            <section class="stack present" style="top: 0px; display: block;" data-index-h="1" data-previous-indexv="6">
+                <section data-index-h="1" data-index-v="0" style="top: 68px; display: none;" class="past" hidden="" aria-hidden="true">
+                    <h1>What is Content Modeling?</h1>
+                    <p class="fragment visible" data-fragment-index="0">A content model shows you all the content types and content relationships contained in a given project (eg, a website).</p>
+                    <p class="fragment visible" data-fragment-index="1"><em>I can tell you're intrigued...</em>
+                </p></section>
+                <section class="past" data-index-h="1" data-index-v="1" style="top: 82.5px; display: none;" hidden="" aria-hidden="true">
+                    <p>Content modeling is <em>multifaceted</em> and can be very complex.</p>
+                    <p>But for this high-level overview, I've broken it into 4 basic categories:</p>
+                    <ul>
+                        <ol class="fragment visible" data-fragment-index="0">1. Content Types</ol>
+                        <ol class="fragment visible" data-fragment-index="1">2. Relationships</ol>
+                        <ol class="fragment visible" data-fragment-index="2">3. Metadata and Schema</ol>
+                        <ol class="fragment visible" data-fragment-index="3">4. Templating</ol>
+                    </ul>
+                </section>
+                <section data-background="//i.giphy.com/7jqen04qytG1y.gif" class="past" data-background-image="//i.giphy.com/7jqen04qytG1y.gif" data-index-h="1" data-index-v="2" style="top: 310px; display: none;" hidden="" aria-hidden="true"></section>
+                <section class="past" data-index-h="1" data-index-v="3" style="top: 59.5px; display: none;" hidden="" aria-hidden="true">
+                    <p>Fascinating, Ryan, but what does this all mean?</p>
+                    <p class="fragment visible" data-fragment-index="0">Good question, Ken. I could answer, but instead let's start with a...</p>
+                    <h1 class="fragment huge blink visible" data-fragment-index="1">QUIZ!!!</h1>
+                </section>
+                <section data-background="//i.giphy.com/90F8aUepslB84.gif" class="past" data-background-image="//i.giphy.com/90F8aUepslB84.gif" data-index-h="1" data-index-v="4" style="top: 310px; display: none;" hidden="" aria-hidden="true">
+                </section>
+                <section class="past" data-index-h="1" data-index-v="5" style="top: 264px; display: block;" hidden="" aria-hidden="true">
+                    <h2>Okay, so maybe more like...</h2>
+                </section>
+                <section data-background="//i.giphy.com/vKLvW1fkBUDBu.gif" class="past" data-background-image="//i.giphy.com/vKLvW1fkBUDBu.gif" data-index-h="1" data-index-v="6" style="top: 310px; display: block;" hidden="" aria-hidden="true"></section>
+                <section class="present" data-index-h="1" data-index-v="7" style="top: 0px; display: block;">
+                    <h2>Q1. What do you see in the this photograph?</h2>
+                    <img src="./index_files/my-drivers-license.jpg" width="70%" alt="">
+                </section>
+                <section class="future" data-index-h="1" data-index-v="8" style="top: 101.5px; display: block;" hidden="" aria-hidden="true">
+                    <h2>Please pick all that apply...</h2>
+                    <p class="fragment left" data-fragment-index="0">A. Ryan's IL driver's license</p>
+                    <p class="fragment left" data-fragment-index="1">B. A boyishly handsome content manager</p>
+                    <p class="fragment left" data-fragment-index="2">C. Proof that Ryan lies to State Farm for cheaper insurance</p>
+                    <p class="fragment left" data-fragment-index="3">D. A content type</p>
+                </section>
+                <section class="future" data-index-h="1" data-index-v="9" style="top: 0px; display: block;" hidden="" aria-hidden="true">
+                    <h1 class="huge blink">All of the Above!</h1>
+                    <small class="fragment" data-fragment-index="0"><strong class="red">NOTE:</strong> Blinking text is bad for accessibility and hasn't been considered good web design since 1997.</small>
+                </section>
+                <section class="future" data-index-h="1" data-index-v="10" style="top: 205px; display: none;" hidden="" aria-hidden="true">
+                    <h2>So that was an easy one.*</h2>
+                    <p class="fragment" data-fragment-index="0">But now for a more difficult question.</p>
+                    <small>* Especially <strong class="red">response B</strong>. D'uh.</small>
+                </section>
+                <section class="future" data-index-h="1" data-index-v="11" style="top: 121px; display: none;" hidden="" aria-hidden="true">
+                    <h2>Q2. To a computer, which of the following is fundamentally identical to the photo you just saw?</h2>
+                    <p class="fragment" data-fragment-index="0"><strong class="red">EXTRA CREDIT:</strong> Name the format or language.</p>
+                </section>
+                <section class="future" data-index-h="1" data-index-v="12" style="top: 139px; display: none;" hidden="" aria-hidden="true">
+                    <h2>A.</h2>
+                    <pre><code class="hljs haml">
+              	---
+              	name_first: Ryan
+              	name_last: Watters
+              	name_mi: D
+              	address_street: 123 Anywhere Drive
+              	address_city: Chicago
+              	address_zip: 60622
+              	---
+                </code></pre>
+                </section>
+                <section class="future" data-index-h="1" data-index-v="13" style="top: 126.5px; display: none;" hidden="" aria-hidden="true">
+                    <h2>B.</h2>
+                    <pre><code class="hljs json">
+               [{
+               "name_first":"Ryan",
+               "name_last":"Watters",
+               "name_mi": "D",
+               "address_street":"123 Anywhere Drive",
+               "address_city":"Chicago",
+               "address_zip":"60622"
+               }]
+               </code></pre>
+                </section>
+                <section class="future" data-index-h="1" data-index-v="14" style="top: 126.5px; display: none;" hidden="" aria-hidden="true">
+                    <h2>C.</h2>
+            <pre><code class="hljs">
+   		+++
+   		name_first = "Ryan"
+   		name_last = "Watters"
+   		name_mi = "D"
+                address_street = "123 Anywhere Drive"
+                address_city = "Chicago"
+                address_zip = "60622"
+                +++
+       	    </code></pre>
+                </section>
+                <section class="future" data-index-h="1" data-index-v="15" style="top: 151px; display: none;" hidden="" aria-hidden="true">
+                    <h2>D.</h2>
+                    <pre><code class="hljs javascript">
+		  $('#name_first').val() + \n
+		+ $('#name_last').val() + \n
+		+ $('#name_mi').val() + \n
+		+ $('#address_street').val() + \n
+		+ $('#address_city').val() + \n
+		+ $('#adress_zip').val();
+   	</code></pre>
+                </section>
+                <section class="future" data-index-h="1" data-index-v="16" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                    <h3>And the answer is...</h3>
+                    <h1 class="fragment huge blink" data-fragment-index="0">All of the Above!</h1>
+                </section>
+                <section class="future" data-index-h="1" data-index-v="17" style="top: 99.5px; display: none;" hidden="" aria-hidden="true">
+                    <h2>Here's the extra credit...</h2>
+                    <p class="left">A. <code>YAML</code></p>
+                    <p class="left">B. <code>JSON</code></p>
+                    <p class="left">C. <code>TOML</code></p>
+                    <p class="left">D. <code>jQuery*</code></p>
+                    <small class="fragment" data-fragment-index="0">* Okay, so jQuery is a JavaScript libary and not a data format, but it illustrates the point.</small>
+                </section>
+                <section class="future" data-index-h="1" data-index-v="18" style="top: 170px; display: none;" hidden="" aria-hidden="true">
+                    <h2>So what does this all mean?</h2>
+                    <p>It means the driver's license is representative of a <em>content type</em>.</p>
+                    <p>In this case, the content type might be called a <code class="inline">driver</code>.</p>
+                </section>
+                <section class="future" data-index-h="1" data-index-v="19" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                    <p>But we dont' work at the DMV</p>
+                    <img class="fragment" src="./index_files/dmv.png" width="70%" alt="" data-fragment-index="0">
+                    <p class="fragment" data-fragment-index="1">So let's talk about other types of content as well.</p>
+                </section>
+                <section class="future" data-index-h="1" data-index-v="20" style="top: 229.5px; display: none;" hidden="" aria-hidden="true">
+                    <h2>But before we do...</h2>
+                    <p class="fragment" data-fragment-index="0">No talk about the Internet would be complete without</p>
+                </section>
+                <section class="future" data-index-h="1" data-index-v="21" style="top: 26.5px; display: none;" hidden="" aria-hidden="true">
+                    <h1 class="huge blink">
+                        CAT VIDEOS!
+                    </h1>
+                </section>
+                <section class="future" data-index-h="1" data-index-v="22" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                    <iframe class="stretch" width="560" height="315" src="https://www.youtube.com/embed/UoUEQYjYgf4" frameborder="0" allowfullscreen></iframe>
+                </section>
+                <section class="future" data-index-h="1" data-index-v="23" style="top: 265.5px; display: none;" aria-hidden="true" hidden="">
+                    <p>That was for Kristin.</p>
+                </section>
+            </section>
+            <section class="stack future" style="top: 0px; display: block;" data-index-h="2" data-previous-indexv="0" hidden="" aria-hidden="true">
+                <section data-index-h="2" data-index-v="0" style="top: 80.5px; display: block;" class="past" aria-hidden="true" hidden="">
+                    <h1>1. Content Types</h1>
+                    <img src="./index_files/content-types.jpg" alt="">
+                </section>
+                <section class="past" aria-hidden="true" data-index-h="2" data-index-v="1" style="top: 156px; display: block;" hidden="">
+                		<h2>What is a content type?</h2>
+                		<p class="fragment" data-fragment-index="0">A <em>content type</em> is a reusable collection of metadata for a category of items (ie, contained instances of structured content).</p>
+                		<small class="fragment" data-fragment-index="1"><strong class="red">NOTE: </strong> <em>Content type</em> is not the same as <em>filetype.</em> The latter is based on <a href="https://en.wikipedia.org/wiki/Filename_extension" target="_blank">filename extension.</a></small>
+                </section>
+                <section class="past" data-index-h="2" data-index-v="2" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                    <h2>Creating a Content Type</h2>
+                    <p class="fragment" data-fragment-index="0">Let's look at one line from the first example from the quiz.</p>
+                    <pre class="fragment" data-fragment-index="1"><code class="hljs http">
+	            	name_first: Ryan
+	            	</code></pre>
+                </section>
+                <section class="past" data-index-h="2" data-index-v="3" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                    <p><code class="inline">name_first</code> is often called a <em>key</em>, <em>property</em>, <em>name</em>, <em>field</em>, or <em>attribute</em>.</p>
+                    <p><code class="inline">Ryan</code> is a <em>value</em> or <em>term</em>.</p>
+                    <p class="fragment" data-fragment-index="0">Both of these key-values (property-terms) can be considered <em>metadata</em> about the driver; ie, me.</p>
+                </section>
+                <section class="past" data-index-h="2" data-index-v="4" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                    <h4>Yes, me.</h4>
+                    <img class="fragment" src="./index_files/me-child.jpg" width="30%" alt="" data-fragment-index="0">
+                    <pre class="fragment" data-fragment-index="1"><code class="hljs http">
+    			name_first: Ryan
+    			childhood: humiliating
+        		</code></pre>
+                </section>
+                <section class="past" data-index-h="2" data-index-v="5" style="top: 103.5px; display: none;" hidden="" aria-hidden="true">
+                    <h3>So what content types would we find on CAP.org?</h3>
+                    <p class="fragment" data-fragment-index="0">Author</p>
+                    <p class="fragment" data-fragment-index="1">Article</p>
+                    <p class="fragment" data-fragment-index="2">Program</p>
+                    <p class="fragment" data-fragment-index="3">???</p>
+                </section>
+                <section class="past" data-index-h="2" data-index-v="6" style="top: 100px; display: none;" hidden="" aria-hidden="true">
+                    <h2>Let's make a content type</h2>
+                    <p class="fragment" data-fragment-index="0"><code class="inline">person</code></p>
+                    <p class="fragment" data-fragment-index="1">What two keys or properties can you think of that apply to every "person?"</p>
+                    <p class="fragment" data-fragment-index="2"><code class="inline">first name</code></p>
+                    <p class="fragment" data-fragment-index="3"><code class="inline">last name</code></p>
+                </section>
+                <section class="" data-index-h="2" data-index-v="7" style="top: 66px; display: none;" aria-hidden="true">
+                    <h3>Now we know we have "people" as part of our content. What about authors?</h3>
+                    <p class="fragment" data-fragment-index="0">What keys would our <code class="inline">author</code> content type have?</p>
+                    <p class="fragment" data-fragment-index="1"><code class="inline">first name</code></p>
+                    <p class="fragment" data-fragment-index="2"><code class="inline">last name</code></p>
+                    <p class="fragment" data-fragment-index="3"><code class="inline">credentials</code></p>
+                    <p class="fragment" data-fragment-index="4"><code class="inline">institution</code></p>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="2" data-index-v="8" style="top: 121px; display: none;" hidden="">
+                    <h3>So now we have two content types:</h3>
+            <pre><code class="hljs less">
+  			//Person
+  			name_first: Jon
+  			name_last: Doe
+
+  			//Author
+  			name_first: Noam
+  			name_last: Chomsky
+  			credentials: [PhD,MS]
+  			institution: MIT
+    		</code></pre>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="2" data-index-v="9" style="top: 74.5px; display: none;" hidden="">
+                    <h3>But what if our site also has staff who <em>own</em> content, and we want this ownership to be an intrinsic part of the content?</h3>
+            <pre class="fragment" data-fragment-index="0"><code class="hljs http">
+		name_first: Ryan
+		name_last: Watters
+		position: Content Manager
+		team: Digital
+		ownership_section: Membership
+		immediate_supervisor: Monique
+		years_with_cap: .3
+		currently_employed: true?
+    		</code></pre>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="2" data-index-v="10" style="top: 0px; display: none;" hidden="">
+                    <h3>This is getting trickier.</h3>
+                    <p>Please don't be frustrated.</p>
+                </section>
+                <section data-background="//i.giphy.com/SibEVB12xGZs4.gif" class="future" aria-hidden="true" data-background-image="//i.giphy.com/SibEVB12xGZs4.gif" data-index-h="2" data-index-v="11" style="top: 0px; display: none;" hidden=""></section>
+                <section class="future" aria-hidden="true" data-index-h="2" data-index-v="12" style="top: 0px; display: none;" hidden="">
+                    <p>That was for Monique.</p>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="2" data-index-v="13" style="top: 0px; display: none;" hidden="">
+                    <h4>Back to content typing...</h4>
+                    <h3 class="fragment" data-fragment-index="0">With our three types, redundancies are becoming apparent.</h3>
+                    <p class="fragment" data-fragment-index="1">Everything has <code class="inline">name_first</code> and <code class="inline">name_last</code>.</p>
+                    <p class="fragment" data-fragment-index="2">Is there a <em class="red">better</em> way?</p>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="2" data-index-v="14" style="top: 0px; display: none;" hidden="">
+                    <h2>We could consolidate them into a single "Person" content type.</h2>
+                    <pre class="fragment" data-fragment-index="0"><code class="hljs less">
+            		name_first:
+            		name_last:
+            		position:
+            		team:
+            		ownership_section:
+            		immediate_supervisor:
+            		years_with_cap:
+            		currently_employed:
+            		credentials:
+            		institution:
+            		</code></pre>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="2" data-index-v="15" style="top: 0px; display: none;" hidden="">
+                    <h2>But what about our simpler use cases?</h2>
+                    <pre><code class="hljs http">
+            		name_first: Jon
+            		name_last: Doe
+            		position: ?
+            		team: ?
+            		ownership_section: ?
+            		immediate_supervisor: ?
+            		years_with_cap: ?
+            		currently_employed: ?
+            		institution: ?
+            		credentials: ?
+            		</code></pre>
+                    <p class="fragment" data-fragment-index="0">Ugh. All that extra data baggage. What if we want to target only our authors?</p>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="2" data-index-v="16" style="top: 0px; display: none;" hidden="">
+                    <h3>What if we could <em>extend</em> or <em class="red">inherit</em> content types instead?</h3>
+                    <pre><code class="hljs less">
+            		//Person (base)
+            		name_first:
+            		name_last:
+
+            		//Staff (inherits from Person)
+            		position:
+            		team:
+            		ownership_section:
+            		immediate_supervisor:
+            		years_with_cap:
+            		currently_employed:
+
+            		//Author (inherits from Person)
+            		credentials:
+            		institution:
+            		</code></pre>
+                    <small><strong class="red">Note:</strong> We would still need the two basic keys, but the ability to extend these properties will help with scaling and templating.</small>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="2" data-index-v="17" style="top: 330px; display: none;" hidden="">
+                    <h3>Now I'm going to make it even <em class="red">more</em> complicated.</h3>
+                </section>
+                <section data-background="//i.giphy.com/26tnnpcYVRNJGlHy0.gif" class="future" aria-hidden="true" data-background-image="//i.giphy.com/26tnnpcYVRNJGlHy0.gif" data-index-h="2" data-index-v="18" style="top: 330px; display: none;" hidden=""></section>
+                <section class="future" aria-hidden="true" data-index-h="2" data-index-v="19" style="top: 330px; display: none;" hidden="">
+                    <h3>So here's a video of the world's <em class="red">fastest</em> breakdancer.</h3>
+                    <iframe class="stretch" width="560" height="315" src="https://www.youtube.com/embed/0LPftKZSOM8" frameborder="0" allowfullscreen></iframe>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="2" data-index-v="20" style="top: 330px; display: none;" hidden="">
+                    <h2>The Internet is a <em class="red">weird</em> place.</h2>
+                </section>
+            </section>
+            <section class="stack future" style="top: 0px; display: block;" data-index-h="3" data-previous-indexv="0" hidden="" aria-hidden="true">
+                <section data-index-h="3" data-index-v="0" style="top: 93px; display: block;" class="past" aria-hidden="true" hidden="">
+                    <h1>2. Relationships</h1>
+                    <img class="fragment" src="./index_files/relationships.jpg" width="70%" alt="" data-fragment-index="0">
+                </section>
+                <section class="past" aria-hidden="true" data-index-h="3" data-index-v="1" style="top: 0px; display: none;" hidden="">
+                    <h2>Let's look at one of the keys from our <code class="inline">staff</code> content type again.</h2>
+                    <pre><code class="hljs http">
+        	immediate_supervisor: Monique Smith
+        		</code></pre>
+                </section>
+                <section class="past" data-index-h="3" data-index-v="2" style="top: 0px; display: none;" aria-hidden="true" hidden="">
+                    <h3>We might notice that this value shows up in multiple instances of the staff content type.</h3>
+                    <p class="fragment" data-fragment-index="0">Monique has <em>multiple</em> direct reports.</p>
+                    <p class="fragment" data-fragment-index="1">In this case, the <code class="red">immediate_supervisor</code> key represents a <em>one-to-many relationship</em> in our CMS. This means that the value for <code class="inline">immediate_supervisor</code> is then linked to another <code class="inline">staff</code> content type, who is linked to other <code class="red">staff</code>, which content type inherits from <code class="inline">person</code>.</p>
+                </section>
+                <section data-background="//i.giphy.com/l2JJwnj5lnUPfMlFK.gif" class="past" aria-hidden="true" data-background-image="//i.giphy.com/l2JJwnj5lnUPfMlFK.gif" data-index-h="3" data-index-v="3" style="top: 0px; display: none;" hidden="">
+                </section>
+                <section class="past" aria-hidden="true" data-index-h="3" data-index-v="4" style="top: 0px; display: none;" hidden="">
+                    <h3>Stay with me.</h3>
+                    <p class="fragment" data-fragment-index="0">This will make more sense when we get to templating.</p>
+                </section>
+                <section class="past" aria-hidden="true" data-index-h="3" data-index-v="5" style="top: 138px; display: none;" hidden="">
+                    <h3>Can you think of any <em>one-to-many</em> relationships on CAP.org?</h3>
+                    <small class="fragment" data-fragment-index="0">Hard, right?</small>
+                    <h3 class="fragment" data-fragment-index="1">One-to-one?</h3>
+                    <h3 class="fragment" data-fragment-index="2">Many-to-many?</h3>
+                </section>
+                <section class="past" aria-hidden="true" data-index-h="3" data-index-v="6" style="top: 88.5px; display: none;" hidden="">
+                    <h3>So, let's look at an easier example.</h3>
+                    <img src="./index_files/music.png" alt="">
+                </section>
+                <section class="" data-index-h="3" data-index-v="7" style="top: 216.5px; display: none;" aria-hidden="true">
+                    <p>So what <em>language</em> do we use to <em>define</em> these relationships? Computers are much faster at iterative processes than we will ever be.</p>
+                </section>
+            </section>
+            <section class="stack future" style="top: 0px; display: none;" data-index-h="4" data-previous-indexv="0" hidden="" aria-hidden="true">
+                <section data-index-h="4" data-index-v="0" style="top: 0px; display: none;" class="past" aria-hidden="true" hidden="">
+                    <h1>3.Metadata and Schema</h1>
+                    <img class="fragment" src="./index_files/metadata.jpg" width="60%" alt="" data-fragment-index="0">
+                </section>
+                <section class="past" aria-hidden="true" data-index-h="4" data-index-v="1" style="top: 0px; display: none;" hidden="">
+                    <h3>So far, our <code class="inline">person</code>-based content types are fine, but what about other content types that require more key-value pairs?</h3>
+                    <p class="fragment" data-fragment-index="0">Let's look at an <code class="inline">article</code> content type.</p>
+                </section>
+                <section class="past" data-index-h="4" data-index-v="2" style="top: 0px; display: none;" aria-hidden="true" hidden="">
+                    <h3><code class="inline">article</code> Content Type</h3>
+                    <pre><code class="hljs http">
+                	title: Long-Form Article for Cap.org
+                	date: 2016-03-23
+                	authors: [Ryan Watters, Nathan Jones]
+                	categories: [publishing]
+                	keywords: [web publishing, html, content-first]
+                	description: This is a description of the article...
+                        ...whole bunch of other stuff
+                    </code></pre>
+                </section>
+                <section class="past" aria-hidden="true" data-index-h="4" data-index-v="3" style="top: 0px; display: none;" hidden="">
+                    <p><code class="inline">title</code> and <code class="inline">description</code> will be free-form by default, but what about <code class="inline">categories</code> and <code class="inline">keywords</code>?</p>
+                    <p class="fragment" data-fragment-index="0"><strong class="red">Eg </strong> What if our editor or writer creates another article and attributes "markup" instead of "html" as a keyword and puts "Ryan Waters" as the first author in the CMS?</p>
+                    <p class="fragment" data-fragment-index="1">Now we have two related pieces of content with no defined relationship.</p>
+                    <p class="fragment" data-fragment-index="2">But <strong class="red">why</strong> is this a problem?</p>
+                </section>
+                <section class="past" aria-hidden="true" data-index-h="4" data-index-v="4" style="top: 0px; display: none;" hidden="">
+                    <h3>Computers are dumb.</h3>
+                    <img class="stretch" src="./index_files/itypewriter.gif" width="100%" height="100%" alt="" style="height: 700px; width: 933.333px;">
+                    <p class="fragment" data-fragment-index="0">They need to be told <em>exactly</em> what to do...</p>
+                    <p class="fragment" data-fragment-index="1">...including how to manage inconsistencies.</p>
+                    <p class="fragment" data-fragment-index="2">So how do we <em class="red">control</em> the values being attributed to blocks of structured content?</p>
+                </section>
+                <section class="past" aria-hidden="true" data-index-h="4" data-index-v="5" style="top: 187px; display: none;" hidden="">
+                    <h3>Enter <em>Controlled Vocabularies*</em></h3>
+                    <p class="fragment" data-fragment-index="0"><strong class="red">* Note: </strong> You may often hear the word <em>taxonomy</em>, which may be correct depending on context, but <em>taxonomy</em> is a more general reference to the process of classification.</p>
+                </section>
+                <section class="past" aria-hidden="true" data-index-h="4" data-index-v="6" style="top: 47px; display: none;" hidden="">
+                    <p>Controlled vocabularies allow us to define a well-delimited range of acceptable values.</p>
+                    <p><em>Well-delimited</em> does not mean <em>large</em>.</p>
+                    <p>A controlled vocabulary could be a handufl of words; <strong class="red">eg—</strong></p>
+                    <pre class="fragment" data-fragment-index="0"><code class="hljs haml">
+                    toppings:
+                        lettuce
+                        tomato
+                        onion
+                        pickle
+                        relish
+                        celery salt
+                    </code></pre>
+
+                </section>
+                <section class="" data-index-h="4" data-index-v="7" style="top: 0px; display: none;" aria-hidden="true">
+                    <p>But sometimes your content is more complex. Robust systems of classifications allow for both synonyms and nesting.</p>
+                    <h3 class="fragment" data-fragment-index="0">What is nested metadata?</h3>
+                    <p class="fragment" data-fragment-index="1">Think of the following in an <code class="inline">article</code>:</p>
+                    <p class="fragment" data-fragment-index="2"><code class="inline">audience: doctor</code></p>
+                    <pre class="fragment" data-fragment-index="3"><code class="hljs nginx">
+                        doctor
+                            - pathologist
+                            - pediatrician
+                                + pediatric_nephrologist
+                                + pediatric_hematologist
+                            - neurologist
+                    </code></pre>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="4" data-index-v="8" style="top: 182px; display: none;" hidden="">
+                    <h3>So how do you come up with your own controlled vocabulary?</h3>
+                    <p class="fragment" data-fragment-index="0">Luckily, you don't have to. Instead, you can rely on the hard work of tens of thousands of open-source contributors.</p>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="4" data-index-v="9" style="top: 55px; display: none;" hidden="">
+                    <h3>Enter <em>Metadata Standards</em></h3>
+                    <p class="fragment" data-fragment-index="0">Metadata standards are collections of content rules (how content is formulated), representational rules (eg, capitalization), and allowed element values (eg, our controlled vocabulary).</p>
+                    <p class="fragment" data-fragment-index="1">Here are some examples...</p>
+                    <ul>
+                    <li class="fragment" data-fragment-index="2">DCMI (content, Google)</li>
+                    <li class="fragment" data-fragment-index="3">IPTC (photography, media topics)</li>
+                    <li class="fragment" data-fragment-index="4">RDF, schema.org (web)</li>
+                    </ul>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="4" data-index-v="10" style="top: 0px; display: none;" hidden="">
+                    <h2>Okay, so what does all this mean?</h2>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="4" data-index-v="11" style="top: 0px; display: none;" hidden="">
+                    <p>You want to publish a medical journal.</p>
+                    <p class="fragment" data-fragment-index="0">But few doctors agree on the exact same terms for diseases or medical practices.</p>
+                    <p class="fragment" data-fragment-index="1">This is why <a href="https://www.nlm.nih.gov/pubs/factsheets/mesh.html">MeSH</a> (a controlled vocabulary from the NIH) was developed. With over 125,000 headings and several hierarchical levels, MeSH allows <em>computers</em> to understand what is readily apparent to <em>human</em> physicians.</p>
+                    <p class="fragment" data-fragment-index="2">It establishs a common understanding (ie, the <em>semantics</em>) of a value in our key-value relationships.</p>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="4" data-index-v="12" style="top: 0px; display: none;" hidden="">
+                    <h2>Semantics?</h2>
+                    <p class="fragment" data-fragment-index="0">Semantics is the study of <em>how</em> a word means.*</p>
+                    <p class="fragment" data-fragment-index="1">For example, a computer doesn't know what a <em>concussion</em> is, but we can teach a computer that a <em>concussion</em> is related to <em>traumatic brain injury</em>, which is related to <em>chronic traumatic encephalitis</em>, etc.</p>
+                    <small class="fragment" data-fragment-index="2"><strong class="red">* Note: </strong>The study of <em>what </em>a word means is <em>etymology</em></small>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="4" data-index-v="13" style="top: 0px; display: none;" hidden="">
+                    <h2>This is really boring, Ryan.</h2>
+                    <p class="fragment" data-fragment-index="0">You're right. Let's get to templating. Hopefully this will make more sense.</p>
+                </section>
+            </section>
+            <section class="stack future" style="top: 0px; display: none;" data-index-h="5" data-previous-indexv="0" hidden="" aria-hidden="true">
+                <section data-index-h="5" data-index-v="0" style="top: 0px; display: none;" class="past" hidden="" aria-hidden="true">
+                    <h1>4. Templating</h1>
+                    <img src="./index_files/templating.jpg" width="100%" alt="">
+                </section>
+                <section class="past" data-index-h="5" data-index-v="1" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+                    <h2>Why use templates?</h2>
+                    <ul>
+                        <li class="fragment" data-fragment-index="0">Consistency for users</li>
+                        <li class="fragment" data-fragment-index="1">Computers are faster at repetition than we are</li>
+                        <li class="fragment" data-fragment-index="2">Improve SEO</li>
+                        <li class="fragment" data-fragment-index="3">Keep yourself from going insane</li>
+                    </ul>
+                </section>
+                <section class="past" data-index-h="5" data-index-v="2" style="top: 0px; display: none;" aria-hidden="true" hidden="">
+                    <h2>Let's take another look at our <code class="inline">article</code></h2>
+            <pre><code class="hljs http">
+                title: My Page
+                title_seo: Better SEO title
+                subtitle: My Subtitle
+                authors: [Jon Doe, Jane Doe]
+                tags: [tag1,tag2,tag3]
+                description: This is a short description of my page.
+                publishdate: 2016-03-23
+                body_copy: Here is all my body copy...
+            </code></pre>
+                </section>
+                <section class="past" aria-hidden="true" data-index-h="5" data-index-v="3" style="top: 0px; display: none;" hidden="">
+                    <h3>Old School</h3>
+                    <p>If you wanted to hand code a site (this is the way most sites were originally created), you could probably get away with the following...</p>
+            <pre class="fragment" data-fragment-index="0"><code class="hljs html">
+            <h1>My Page</h1>
+            <div class="subtitle">My Subtitle</div>
+            <div class="authors">Jon Doe, Jane Doe</div>
+            <div class="publish-date">March 23, 2016</div>
+            <ul class="tags">
+                <li><a href="/tags/tag1">tag1</a></li>
+                <li><a href="/tags/tag2">tag2</a></li>
+                <li><a href="/tags/tag3">tag3</a></li>
+            </ul>
+            <p>Here is all my body copy.</p>
+            </code></pre>
+                </section>
+                <section class="past" aria-hidden="true" data-index-h="5" data-index-v="4" style="top: 0px; display: none;" hidden="">
+                <h3>But what if you need to create 600 pages? How about 600,000?</h3>
+                <p class="fragment" data-fragment-index="0">Enter <em>templating...</em></p>
+        <pre class="fragment" data-fragment-index="1"><code class="hljs html xml">
+  <h1>{{page.title}}</h1>
+  {{if page.subtitle}}
+  <div class="subtitle">{{page.subtitle}}</div>
+  {{end}}
+  <div class="authors">{{ for author in page.authors }}{{author}}{{if not last author }},{{ endif }}{{ endfor }}</div>
+    <div class="publish-date">{{page.publishdate.format "January 2, 2006"}}</div>
+    <ul class="tags">
+        {{for tag in page.tags}}
+        <li><a href="/tags/{{tag | urlize}}">{{ tag }}</a></li>
+        {{ endfor }}
+    </ul>
+    {{page.content}}
+        </pre></code>
+                </section>
+                <section class="past" aria-hidden="true" data-index-h="5" data-index-v="5" style="top: 0px; display: none;" hidden="">
+                <h3>Further, what if you want to free yourself of the <em>a-page-is-a-page</em> approach to managing content?</h3>
+            <pre><code class="hljs html xml">
+            <!--THIS IS PSEUDO-CODE BUT ILLUSTRATES THE POINT-->
+            <ul class="related-articles">
+            {{ go through each "article" in the whole site }}
+                {{ if first tag in article
+                elsewhere on the site matches the
+                first tag of this article,
+                do the following for the first three "article"
+                ordered by most recent first }}
+                <li>{{add related article stuff here}}</li>
+            {{ end }}
+            </ul>
+            <!-- Now you have related articles by tag -->
+        </code></pre>
+                </section>
+            <section class="past" aria-hidden="true" data-index-h="5" data-index-v="6" style="top: 111px; display: none;" hidden="">
+                <h3>But metadata in the head of your HTML?</h3>
+                <p class="fragment" data-fragment-index="0">YES.</p>
+<pre class="fragment"><code>
+<title>{{.page.title | .Site.title }}</title>
+<meta name="author" content="{{page.author[0]|default .Site.author}}">
+<meta name="description" content="{{page.description}}">
+<meta name="keywords" content="{{for tag in page.tags }}{{tag}}{{if not last tag}}, {{endif}}{{endfor}}">
+
+</code></pre>
+                </section>
+                <section class="" data-index-h="5" data-index-v="7" style="top: 165px; display: none;" aria-hidden="true">
+                    <h3>Metadata standards for SEO?</h3>
+    <pre><code class="hlsjs html hljs xml">
+    <!-- This examples uses Dublin Core Metadata (DCMI)-->
+    <meta name="DC.date" content="{{page.publishdate}}">
+    <meta name="DC.description" content="{{page.description}}">
+    </code></pre>
+                </section>
+                <section class="future" aria-hidden="true" data-index-h="5" data-index-v="8" style="top: 148px; display: none;" hidden="">
+                    <h3>What about Social Media?</h3>
+                    <p class="fragment" data-fragment-index="0">Yes</p>
+    <pre class="fragment" data-fragment-index="1"><code class="hljs html xml">
+    <!-- Open Graph Protocol (OGP) used by Facebook and others-->
+    <meta name="og:title" content="{{.Title}}">
+    <meta name="og:site_owner" content="College of American Pathologists">
+    </code></pre>
+                </section>
+
+            </section>
+            <section class="stack future" style="top: 0px; display: none;" data-index-h="6" data-previous-indexv="0" hidden="" aria-hidden="true">
+            	<section data-index-h="6" data-index-v="0" style="top: 0px; display: none;" hidden="" aria-hidden="true" class="past">
+            		<h1>Benefits</h1>
+            	</section>
+            	<section class="past" aria-hidden="true" data-index-h="6" data-index-v="1" style="top: 0px; display: none;" hidden="">
+            		<p>Ultimately, content modeling benefits our end users, but if done well, it can improve every facet of your website.</p>
+            	</section>
+            	<section class="past" aria-hidden="true" data-index-h="6" data-index-v="2" style="top: 0px; display: none;" hidden="">
+            		<h2>Search</h2>
+            		<p class="fragment" data-fragment-index="0">Both external SEO and site search.</p>
+                    <p class="fragment" data-fragment-index="1">We already went over external SEO, but what about <em>facets</em> in your site search? Couldn't a key like <code class="inline">discipline</code> be part of a content type?</p>
+            	</section>
+            	<section class="past" aria-hidden="true" data-index-h="6" data-index-v="3" style="top: 180.5px; display: none;" hidden="">
+                    <h2>Management</h2>
+                    <p class="fragment" data-fragment-index="0">Having structured metadata, content models, and relationships in your CMS will allow you to make changes once and have them dispersed across multiple channels.</p>
+            	</section>
+            	<section class="past" aria-hidden="true" data-index-h="6" data-index-v="4" style="top: 180.5px; display: none;" hidden="">
+            		<h2>Customized Content</h2>
+                    <p class="fragment" data-fragment-index="0">Without content models and metadata, you can't provide a pathologist in Arizona information specific to their location and practice.</p>
+            	</section>
+            	<section class="" data-index-h="6" data-index-v="5" style="top: 146px; display: none;" aria-hidden="true">
+            		<h2>Exportability</h2>
+                    <p class="fragment" data-fragment-index="0">Unlike with humans, a high level of structure means a high level of <em>freedom</em> for computers.</p>
+                    <p class="fragment" data-fragment-index="1">Structured data is <em>always</em> easier to export to other systems.</p>
+            	</section>
+            </section>
+            <section class="future" style="top: 243.5px; display: none;" data-index-h="7" hidden="" aria-hidden="true">
+                    <h1 class="huge">The end.</h1>
+                    <p>THANKS!!!</p>
+                </section>
+        </div>
+        <script src="./index_files/head.min.js"></script>
+        <script src="./index_files/reveal.js"></script>
+        <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'index_files/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'index_files/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'index_files/highlight.js',
+                async: false,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'index_files/zoom.js',
+                async: true
+            }, {
+                src: 'index_files/notes.js',
+                async: true
+            }]
+        });
+        </script><div class="progress" style="display: block;"><span style="width: 113.157px;"></span></div><aside class="controls" style="display: block;"><button class="navigate-left enabled" aria-label="previous slide"></button><button class="navigate-right enabled" aria-label="next slide"></button><button class="navigate-up enabled" aria-label="above slide"></button><button class="navigate-down enabled" aria-label="below slide"></button></aside></body></html>

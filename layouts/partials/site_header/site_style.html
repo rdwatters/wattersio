@@ -1,0 +1,8 @@
+<!-- CRITICAL RENDER PATH -->
+{{if .Site.Params.UseCRP }}
+<style>
+{{ print (partial "site_header/style-embed.html" .) | safeCSS }}
+</style>
+{{ else }}
+<link rel="stylesheet" href="{{.Site.BaseURL}}/assets/css/style.min.css">
+{{ end }}
