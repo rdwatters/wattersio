@@ -4,7 +4,7 @@ searchInput.addEventListener('keyup', lunrSearch, true);
 window.index = lunr(function() {
     this.field('id');
     this.field('url');
-    this.field('title', { boost: 50 });
+    this.field('title', { boost: 100 });
     this.field('subtitle');
     this.field('description');
     this.field('tags', { boost: 30 });
@@ -15,7 +15,6 @@ var searchReq = new XMLHttpRequest();
 searchReq.open('GET', indexLoc, true);
 searchReq.onload = function() {
     if (this.status >= 200 && this.status < 400) {
-        console.log("Got the site index!");
         searchData = JSON.parse(this.response);
         searchData.forEach(function(obj, index) {
             obj['id'] = index;

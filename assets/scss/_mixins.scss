@@ -3,45 +3,50 @@
 // --------------------------------------------------
 //
 // Credit: Bootstrap 3
-
 // Utilities
 @import "mixins/responsive-visibility";
 @import "mixins/vendor-prefixes";
-
 // Layout
 @import "mixins/clearfix";
 @import "mixins/grid-framework";
 @import "mixins/grid";
-
 @mixin center {
-	display:block;
-	margin-right:auto;
-	margin-left:auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @mixin padtb ($em) {
-	padding-top: $em;
-	padding-bottom: $em;
+  padding-top: $em;
+  padding-bottom: $em;
 }
 
 @mixin buttonpad ($em) {
-	padding: $em #{$em / 1.1};
+  padding: $em #{$em / 1.1};
 }
 
-@mixin hoverbutton ($color,$bg) {
-	transition: $transition;
-	color:$color;
-	background-color:$bg;
-	border: $button-border-width solid $color;
-	&:hover {
-		transition: $transition;
-		color:$bg;
-		background-color:$color;
-	}
+@mixin hoverbutton ($color, $bg) {
+  transition: $transition;
+  color: $color;
+  background-color: $bg;
+  border: $button-border-width solid $color;
+  &:hover {
+    transition: $transition;
+    color: $bg;
+    background-color: $color;
+  }
 }
 
-@mixin button ($color,$bg,$width) {
-	color:$color;
-	background-color: $bg;
-	border: $width solid $color;
+@mixin button ($color, $bg, $width) {
+  color: $color;
+  background-color: $bg;
+  border: $width solid $color;
+}
+
+@mixin card {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+  &:hover {
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 10px 1px rgba(0, 0, 0, .2);
+  }
 }

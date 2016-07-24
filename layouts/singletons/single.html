@@ -3,28 +3,11 @@
 <article class="postWrapper">
   <section class="section--first u-table">
     {{ with .Params.image }}
-    <div class="postHero {{.Title | urlize }}" style="background-image:url('/assets/images/{{ . }}.jpg');">
+    <div class="postHero" style="background-image:url('/assets/images/{{ . }}.jpg');">
     {{ else }}
-    <div class="postHero solid {{.Title | urlize }}">
+    <div class="postHero solid singleton">
     {{ end }}
       <div class="postMeta-wrapper">
-        {{ if ne .Section "singletons" }}
-        <ul class="postMeta">
-          <li class="postMeta-datetime">
-            <time datetime="{{ .Date }}">
-            {{ if .Params.modified }}<strong class="updated">UPDATED:</strong> {{end}}{{ .Date.Format "January 2, 2006" }}
-            </time>
-          </li>
-          {{ end }}
-          {{ with .Params.categories }}
-          <span class="dot"></span>
-          <li>
-          <a href="/categories/{{ . | urlize}}" class="category-tag">
-            {{ . }}
-          </a>
-          </li>
-        </ul>
-        {{ end }}
         <h1 class="page-title">{{ if eq .Title "Resume"}}R&eacute;sum&eacute;{{else}}{{ .Title }}{{end}}</h1>
         <div class="hr">
           <hr>

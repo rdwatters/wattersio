@@ -1,0 +1,405 @@
+@import url(../../lib/font/proximanova/proximanova.css);
+section.has-light-background,
+section.has-light-background h1,
+section.has-light-background h2,
+section.has-light-background h3,
+section.has-light-background h4,
+section.has-light-background h5,
+section.has-light-background h6 {
+  color: #222; }
+
+div.slides section {
+  background-color: rgba(255, 255, 255, 0.4); }
+
+div.slide section.nobg {
+  background-color: rgba(255, 255, 255, 0); }
+
+div.cap-logo {
+  position: fixed;
+  min-height: 100%;
+  min-width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url(https://dl.dropboxusercontent.com/s/i2q37qtpjd6wvok/cap-logo-light-opacity.svg?dl=0);
+  background-size: cover; }
+
+a.logo-homelink {
+  width: 4vw;
+  min-width: 30px;
+  min-height: 40px;
+  height: 10vh;
+  display: block;
+  max-height: 200px;
+  max-width: 200px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 99999999;
+  cursor: pointer; }
+
+span.subtitle {
+  border: 2px solid black;
+  padding: .25em .75em; }
+
+.blinking {
+  animation: blinker 1400ms linear infinite;
+  color: #b21e28; }
+
+@keyframes blinker {
+  50% {
+    opacity: 0.0; } }
+
+.reveal section a {
+  color: #b21e28; }
+
+.reveal section time {
+  border: 2px solid #ffffff;
+  padding: .25em; }
+
+.reveal section small.emphasis, .reveal section div.emphasis, .reveal section li.emphasis, .reveal section p.emphasis, .reveal section h2.emphasis {
+  color: #b21e28;
+  font-weight: bold; }
+
+.reveal section small.emphasis {
+  margin-top: 1.5em;
+  font-size: .8em;
+  width: 100%;
+  display: block;
+  clear: both; }
+
+small {
+  display: block;
+  width: 100%;
+  clear: both; }
+
+.important {
+  color: #b21e28; }
+
+.reveal section .positive {
+  color: #009abf; }
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: #ffffff;
+  background-color: #ffffff; }
+
+.reveal {
+  font-family: "Proxima Nova", Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  color: black; }
+
+::selection {
+  color: #fff;
+  background: #e66a72;
+  text-shadow: none; }
+
+.reveal .slides > section,
+.reveal .slides > section > section {
+  line-height: 1.3;
+  font-weight: inherit; }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  font-family: "Proxima Nova", Helvetica, sans-serif;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  text-shadow: none;
+  word-wrap: break-word; }
+
+.reveal h1 {
+  color: black;
+  text-transform: none;
+  font-weight: 800;
+  border-bottom: 4px solid black; }
+
+.reveal h2 {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.reveal h3 {
+  color: black;
+  text-transform: none;
+  font-weight: 400; }
+
+.reveal h4 {
+  color: black;
+  text-transform: none;
+  font-weight: 400; }
+
+.reveal h5 {
+  color: black;
+  text-transform: none;
+  font-weight: 400; }
+
+.reveal h6 {
+  color: black;
+  text-transform: none;
+  font-weight: 400; }
+
+.reveal h1 {
+  font-size: 2em; }
+
+.reveal h2 {
+  font-size: 1.6em; }
+
+.reveal h3 {
+  font-size: 1.3em; }
+
+.reveal h4 {
+  font-size: 1em; }
+
+.reveal h1 {
+  text-shadow: none; }
+
+/*********************************************
+ * OTHER
+ *********************************************/
+.reveal {
+  font-weight: 400; }
+
+.reveal p {
+  margin: 20px 0;
+  line-height: 1.3;
+  color: black; }
+
+/* Ensure certain elements are never larger than the slide itself */
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 95%; }
+
+.reveal strong,
+.reveal b {
+  font-weight: bold; }
+
+.reveal em {
+  font-style: italic; }
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em;
+  color: black; }
+
+.reveal ol {
+  list-style-type: decimal; }
+
+.reveal ul {
+  list-style-type: disc; }
+
+.reveal ul ul {
+  list-style-type: square; }
+
+.reveal ul ul ul {
+  list-style-type: circle; }
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px; }
+
+.reveal dt {
+  font-weight: bold; }
+
+.reveal dd {
+  margin-left: 40px; }
+
+.reveal q,
+.reveal blockquote {
+  quotes: none; }
+
+.reveal time {
+  color: black; }
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block; }
+
+.reveal q {
+  font-style: italic; }
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
+
+.reveal code {
+  font-family: monospace; }
+
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal; }
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.reveal table th {
+  font-weight: bold; }
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid; }
+
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+  text-align: center; }
+
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+  text-align: right; }
+
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
+  border-bottom: none; }
+
+.reveal sup {
+  vertical-align: super; }
+
+.reveal sub {
+  vertical-align: sub; }
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top; }
+
+.reveal small * {
+  vertical-align: top; }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal section a {
+  color: #b21e28;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  transition: color .15s ease; }
+
+.reveal a:hover {
+  color: #de3e49;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #711319; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+
+.reveal section img.plain {
+  border: 0;
+  box-shadow: none; }
+
+.reveal a img {
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  transition: all .15s linear; }
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #b21e28;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+  border-right-color: #b21e28; }
+
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+  border-left-color: #b21e28; }
+
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+  border-bottom-color: #b21e28; }
+
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+  border-top-color: #b21e28; }
+
+.reveal .controls .navigate-left.enabled:hover {
+  border-right-color: #de3e49; }
+
+.reveal .controls .navigate-right.enabled:hover {
+  border-left-color: #de3e49; }
+
+.reveal .controls .navigate-up.enabled:hover {
+  border-bottom-color: #de3e49; }
+
+.reveal .controls .navigate-down.enabled:hover {
+  border-top-color: #de3e49; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: #b21e28;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+.reveal section ul.quiz li {
+  list-style: none; }
+
+.reveal section h1.answer {
+  border: none;
+  font-size: 4em;
+  border: 5px solid #b21e28;
+  padding: 1em;
+  color: #b21e28; }

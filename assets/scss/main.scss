@@ -218,7 +218,12 @@ time.publish-date {
   z-index:99;
 }
 
-h2.list-title {
+h2.archive-year {
+  border-bottom:1px solid $base-font-color;
+  width:50%;
+}
+
+h2.list-title,h3.list-title-archive {
   font-size: 1.3em;
   margin-top: .5em;
 }
@@ -279,4 +284,34 @@ strong.updated {
   @include buttonpad(.3em);
   margin-right:.2em;
   text-align:center;
+}
+
+.all-posts-wrapper {
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
+  width:90%;
+  max-width:1200px;
+}
+
+#home {
+  background-color: #ccc;
+}
+
+.all-posts {
+  display:block;
+  clear:both;
+  float:right;
+  color:white;
+  font-family: $base-font-family;
+  text-decoration:none;
+  text-align:right;
+  &.homepage {
+    @include card;
+    color:$base-font-color;
+    margin-bottom:1.5em;
+    padding:.5em;
+    margin-right:.5em;
+    background-color: #ffffff;
+  }
 }

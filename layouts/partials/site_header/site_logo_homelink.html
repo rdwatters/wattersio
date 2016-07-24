@@ -1,1 +1,1 @@
-<a href="/" title="Go Home" class="site-logo {{ if .IsHome }}home{{end}}">{{ .Site.Title }}</a>
+<a href="/" title="Go Home" class="site-logo {{ if or .IsHome .IsNode }}light-bg{{end}}">{{ .Site.Title }}</a>

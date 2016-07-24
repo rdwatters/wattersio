@@ -1,6 +1,6 @@
 ---
-layout: post
 title:  "Test Article Page"
+publishdate: 2016-03-01
 date: 2016-03-01
 modified: false
 ori_date:
@@ -8,6 +8,7 @@ description:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Digniss
 categories: history
 tags:  [fall, halloween, pumpkins,chicago]
 image: pumpkins
+removefromsearch:
 ---
 
 ## First Heading

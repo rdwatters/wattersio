@@ -15,5 +15,5 @@ cd ~/Desktop/GitHub/rdwatters.github.io
 echo "Deployment: $TODAY" >> deploy.txt
 # Push changes to GH Pages Repo
 git add .
-git commit -m "$1"
+git commit -m "${1:-No commit message added for blog deploy}"
 git push

@@ -1,14 +1,11 @@
 <!-- Standard Metadata -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-{{with .Params.no_google}}
+{{if .Params.removefromsearch}}
 <meta name="robots" content="noindex">
 {{ end }}
-{{if not .IsHome }}
-<title>{{ .Title }} | {{ .Site.Title }}</title>
-{{ else }}
-<title>{{ .Site.Title }} | Home </title>
-{{ end }}
+
+<title>{{if not .IsHome }}{{ .Title }} | {{end}}{{ .Site.Title }}</title>
 <!-- Allows removal of iOS chrome when users save on home screen -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <!-- Set the language for Google Webmaster tools -->

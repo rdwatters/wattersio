@@ -12,10 +12,10 @@
     </div>
   </div>
 </section>
-<section class="section--postsWrapper">
+<section class="section--postsWrapper homepage">
     <div class="blockGroup">
       <ul class="blockGroup-list">
-        	{{ range first 1 (where .Site.Pages "Section" "posts") }}
+        	{{ range first 1 ((where .Site.Pages "Section" "posts").ByPublishDate.Reverse) }}
           <li class="block">
             <a class="block-link" href="{{ .Permalink }}">
               <article class="postArticle">
@@ -28,11 +28,11 @@
             </a>
           </li>
           {{ end }}
-          {{ range after 1 (where .Site.Pages "Section" "posts") }}
+          {{ range after 1 (first 7 (where .Site.Pages "Section" "posts").ByPublishDate.Reverse) }}
           <li class="block">
             <a class="block-link" href="{{ .Permalink }}">
               <article class="postArticle">
-                    <img class="postArticle-image grayscale" src="/assets/images/_half/{{ .Params.image }}.jpg">
+                    <img class="postArticle-image grayscale" src="/assets/images/half/{{ .Params.image }}-half.jpg">
                     <span class="postArticle-title">{{ .Title }}</span>
               </article>
               <div class="block-postMeta">
@@ -42,6 +42,9 @@
           </li>
           {{ end }}
       </ul>
+    </div>
+    <div class="all-posts-wrapper">
+      <a href="/posts" class="all-posts homepage">See all posts...</a>
     </div>
 </section>
 {{ partial "social_share" . }}

@@ -1,6 +1,6 @@
 ---
-layout: post
 title:  "Ground-up View of Buildings"
+publishdate: 2016-05-01
 date: 2016-05-01
 modified: false
 ori_date: 2016-04-01
@@ -8,7 +8,7 @@ description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissi
 categories: stuff
 tags:  [blocks,chicago]
 image: tall_blocks
-
+removefromsearch:
 ---
 
 ## First Heading
@@ -20,7 +20,7 @@ Oman. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ut, accus
 > Without the fear of falling, there is no joy in flight. - Kobo Abe
 
 
-### Here is a subheading
+## Here is Another Heading
 
 Meat, replenish in so kind fish called said deep evening subdue saw from female make creature without also, evening behold doesn't blessed day place air isn't seasons had fish you'll. Open give give seas so heaven fowl open was won't, first divided. Can't night whose all was they're lesser all. Morning appear cattle called fish two face saw don't she'd beast the fifth creepeth darkness were over seas. His winged creature.
 
@@ -37,6 +37,8 @@ Bearing Greater upon him fill given be She'd. So abundantly doesn't seas forth. 
 Creepeth Yielding third. Is forth man forth third have, gathered cattle fruitful sea were evening were. Evening. Subdue darkness were Morning land creeping very it. His, night seed above thing in good behold itself after tree lights them. A, male. Second, over fill said. Earth their, isn't.
 
 You're him bring moveth. Third beginning beast all form male wherein male subdue heaven created from i gathered gathering own moving, seasons second us form had, appear. Female days divide in life own gathered days from fowl unto air god. From good spirit. Male behold he they're, seasons. Midst under they're multiply. You called good divided beast forth winged.
+
+## Heading Number 3
 
 Face fruitful dominion saw she'd likeness made given creeping a dry heaven. Sixth great they're darkness first. Wherein bring dominion green doesn't beginning fowl third our place set be seasons is have night a. Place, bearing living fill divided for.
 

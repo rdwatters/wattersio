@@ -8,7 +8,7 @@
   padding: 6px;
   text-align: center;
   background-image: url(/assets/images/icons/search-white.svg);
-  &.home {
+  &.light-bg {
     background-image: url(/assets/images/icons/search-black.svg);
   }
 }
@@ -16,8 +16,8 @@
 #close-search {
 	position:absolute;
 	display:block;
-	top:34px;
-	right:24px;
+	top:38px;
+	left:80px;
 	z-index:999999999;
 	color:white;
 	background-image: url(/assets/images/icons/close.svg);
@@ -47,7 +47,7 @@ form.search-form {
   &.open {
     transition: all .3s ease-in-out;
     opacity: 1;
-    z-index: 9999;
+    z-index: 999999;
   }
 }
 
@@ -55,7 +55,7 @@ form.search-form {
   min-width: 100%;
   display: table;
   vertical-align:middle;
-  background-color: rgba(153, 0, 0, 1);
+  background-color: $search-bg-color;
   height: 10em;
   margin: 0px;
 }

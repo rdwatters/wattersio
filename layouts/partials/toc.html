@@ -1,3 +1,4 @@
+{{if .IsPage }}
 {{if gt .WordCount 225 }}
 <aside class="toc" id="toc">
     <div class="toc-wrapper">
@@ -12,4 +13,5 @@
     </div>
 </aside>
 <a href="#" id="toggle-toc"><span class="ellipsis">...</span></a>
+{{end}}
 {{end}}

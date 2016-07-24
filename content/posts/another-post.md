@@ -1,15 +1,16 @@
 ---
-layout: post
 title: Another Post
 subtitle: This is the newest subtitle
-date: 2016-06-01
+publishdate: 2015-03-01
+date: 2015-03-01
 modified: true
 ori_date: 2016-01-25
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam culpa error accusamus ratione officiis."
 categories: history
 authors: Ryan Watters
-tags: [testing,nonsense,chicago]
+tags: [testing,chicago]
 image: chicago_bw
+removefromsearch:
 ---
 
 ## Article Heading in Body Copy

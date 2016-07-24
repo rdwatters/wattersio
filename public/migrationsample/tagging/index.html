@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="author" content="Ryan D Watters">
+  <meta name="googlebot" content="noindex">
+  <meta name="slurp" content="noindex">
+  <meta name="msnbot" content="noindex">
+  <meta name="robots" content="noindex" />
+  <link rel="apple-touch-icon" href="../images/touch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../images/touch-icon-ipad.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../images/touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../images/touch-icon-ipad-retina.png">
+  <link rel="icon" href="../images/favicon-16.png" sizes="16x16">
+  <link rel="icon" href="../images/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="../images/favicon-48.png" sizes="48x48">
+  <link rel="icon" href="../images/favicon-64.png" sizes="64x64">
+  <link rel="icon" href="../images/favicon-128.png" sizes="128x128">
+  <title>Tagging Content in AAP.org</title>
+  <script type="text/javascript" src="//use.typekit.net/gjm2hce.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/migrations.min.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/page.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/homepage.css">
+  <script src="../javascript/jquery-2.1.1.min.js"></script>
+  <script src="../javascript/waypoints.js"></script>
+  <script src="../javascript/semantic.min.js"></script>
+  <script src="../javascript/menu.js"></script>
+  <script src="../javascript/homepage.js"></script>
+  <script src="../javascript/jquery.arbitrary-anchor.js"></script>
+  <script src="../javascript/list.js"></script>
+  <script src="../javascript/list.fuzzysearch.js"></script>
+  <style>
+.list {
+  font-family:sans-serif;
+  margin:0;
+  padding:20px 0 0;
+}
+.list > li {
+  display:block;
+  background-color: #eee;
+  padding:10px;
+  box-shadow: inset 0 1px 0 #fff;
+}
+
+.avatar {
+  max-width: 150px;
+}
+img {
+  max-width: 100%;
+}
+h3 {
+  font-size: 16px;
+  margin:0 0 0.3rem;
+  font-weight: normal;
+  font-weight:bold;
+}
+p {
+  margin:0;
+}
+
+input {
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}
+input:focus {
+  outline:none;
+  border-color:#aaa;
+}
+.sort {
+  padding:8px 30px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration: none;
+  background-color: #01589b;
+  height:30px;
+}
+.sort:hover {
+  text-decoration: none;
+  background-color:#1b8aba;
+}
+.sort:focus {
+  outline:none;
+}
+.sort:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:13px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+</style>
+</head>
+    <body id="example" class="append-link">
+      <div class="fixed inverted transparent pointing ui menu">
+        <div class="container">
+        <div class="header item"><a href="/resume"><i class="home icon"></i>Back to Ryan's Resume</a></div>
+        <div class="right menu">
+          <div class="ui top right pointing mobile dropdown link item">
+            Menu
+            <i class="dropdown icon"></i>
+            <div class="menu inverted blue newmenuhover">
+              <a class="item" href="../process1/index.html">Migration Part 1</a>
+              <a class="item" href="../process2/index.html">Migration Part 2</a>
+              <a class="item" href="../process3/index.html">Migration Part 3</a>
+              <a class="item" href="../process4/index.html">Migration Part 4</a>
+              <a class="item" href="../writing101/index.html">Writing for the Web</a>
+              <a class="item" href="../createpage/index.html">Creating Web Pages</a>
+              <a class="item" href="../frontmattergenerator/index.html">Front Matter Generator</a>
+              <a class="item" href="../naming/index.html">Naming Conventions</a>
+              <a class="item" href="../pdfs/index.html">PDFs</a>
+              <a class="item" href="../multimedia/index.html">Image/Video</a>
+              <a class="item" href="../tagging/index.html">Tagging/Metadata</a>
+              <a class="item" href="../submitnew/index.html">Submitting New Content</a>
+            </div>
+          </div>
+          <div class="ui dropdown link item blue">
+            <i class="exchange icon"></i><strong class="blue">Migrations</strong>
+            <i class="dropdown icon"></i>
+            <div class="menu inverted blue newmenuhover">
+              <a class="white hover item" href="../process1/index.html"><i class="exchange icon"></i>Migration Part 1</a>
+              <a class="hover item" href="../process2/index.html"><i class="exchange icon"></i>Migration Part 2</a>
+              <a class="hover item" href="../process3/index.html"><i class="exchange icon"></i>Migration Part 3</a>
+              <a class="hover item" href="../process4/index.html"><i class="exchange icon"></i>Migration Part 4</a>
+              <a class="hover item" href="../writing101/index.html"><i class="pencil icon"></i>Writing for the Web</a>
+              <a class="hover item" href="../createpage/index.html"><i class="globe icon"></i>Creating Web Pages</a>
+              <a class="hover item" href="../frontmattergenerator/index.html"><i class="wrench icon"></i>Front Matter Generator</a>
+            </div>
+          </div>
+          <div class="ui dropdown link item">
+            <i class="grid layout icon"></i>New Standards
+            <i class="dropdown icon"></i>
+            <div class="menu inverted blue newmenuhover">
+              <a class="hover item" href="../naming/index.html"><i class="certificate icon"></i>Naming Conventions</a>
+              <a class="hover item" href="../pdfs/index.html"><i class="text file outline icon"></i>PDFs</a>
+              <a class="hover item" href="../multimedia/index.html"><i class="photo icon"></i>Image/Video</a>
+              <a class="hover item" href="../tagging/index.html"><i class="tags icon"></i>Tagging/Metadata</a>
+              <a class="hover item" href="../submitnew/index.html"><i class="add sign icon"></i>Submitting New Content</a>
+            </div>
+          </div>
+          <a href="../faqs/index.html" class="item"><i class="question icon"></i>FAQs</a>
+        </div>
+        </div>
+      </div>
+      <div class="segment">
+        <div class="container">
+          <div class="introduction">
+
+            <h1 class="ui dividing header">
+              Tagging Content in AAP.org
+            </h1>
+            <p>All content housed in the AAP.org CMS must be tagged according to the new tagging structure.</p>
+          </div>
+        </div>
+      </div>
+      <div class="main container">
+<div class="sticky-wrapper">
+    <div class="peek">
+        <div class="ui vertical pointing secondary menu">
+          <a class="item newmenu2" href="#.nav1">Introduction</a><br>
+          <a class="item newmenu2" href="#.nav2">Tag Search</a><br>
+        </div>
+    </div>
+</div>
+
+
+<p><a class="nav1"></a></p>
+
+<h2>Introduction</h2>
+
+<p>It is <em>extremely important</em> that content owners tag all new pages and documents in the site collection.</p>
+
+<p>There are 70+ metadata points (ie, groups of tags) available in AAP.org's CMS. To save time, Editorial has pared down the required metadata to the following fields:</p>
+
+<ul>
+<li><strong>Title</strong>. <em>Title</em> and <em>filename</em> are different. You can see the a filename when looking at a file on your desktop (e.g "mydocument.pdf"). A document <em>title</em> is at the top of an <em>open</em> page or document. Titles are the first piece of information to show up in search. Even images need a title. Files should be named according to the new <a href="../naming/index.html">naming conventions.</a></li>
+<li><strong>Subtitle</strong>. Subtitles are option for web pages and unnecessary for PDFs. However, you may want to consider a subtitle when <a href="../pdfs/index.html#.nav1">adding metadata directly to your PDFs with Acrobat or Microsoft Word</a>.</li>
+<li><strong>Topic</strong>. Topic is the overarching content theme. "Pediatrics Review and Education Program" is not a topic, per se, but could be an appropriate keyword.</li>
+<li><strong>Audience</strong>. Your audience is your ideal reader.</li>
+<li><strong>Managed Keyword</strong>. The current keyword site column in AAP.org already has approximately 550 managed keywords. Limit each article, web page, or document to 2 to 3 keywords in order of most to least relevant.</li>
+<li><strong>Location</strong>. Location is not a required field, but you should consider adding this tag to all of your content.</li>
+</ul>
+
+
+<p><a class="nav2"></a></p>
+
+<h2>Tag Search</h2>
+
+<p>Tag Search was developed by Editorial to help you dynamically sift through the 1,0000+ managed tags/keywords on AAP.org. If you would like to suggest an additional tag for the AAP.org CMS, contact <a href="mailto:rwatters@aap.org?subject=Suggested Addition to AAP.org Managed Metadata">Ryan Watters</a>.</p>
+
+<p><a class="nav2"></a>
+<br></p>
+
+<div id="tagging">
+        <div class="ui icon input">
+            <input class="search" placeholder="Search Tags..." />
+            <i class="search icon"></i>
+        </div>
+        <button class="sort" data-sort="tag">
+            Sort by Tag
+        </button>
+        <button class="sort" data-sort="tagcategory">
+            Sort by Tag Category
+        </button>
+<ul class="list">
+<li><h3 class="tag">Academic Generalist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Adolescent Medicine Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Allergy and Immunology Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Cardiology Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Child Abuse Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Child-Adolescent Psychiatry</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Critical Care Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Dermatology Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Developmental-Behavioral Pediatrics Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Donor</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Emergency Medicine Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Endocrinology Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Gastroenterology Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">General Pediatrician</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Health Advocate</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Hematology-Oncology Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Hospice and Palliative Medicine</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Hospitalist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Infectious Diseases Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">International</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Media</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Librarian</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Medical Student</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Medical Toxicology</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Neonatology Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Nephrology Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Neurodevelopmental Disabilities</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Neurology Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">New Practicing Physician (Young Ped)</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Nurse</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Nurse Practitioner</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Parent</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Practicing Physician</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Primary Care Physician</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Pulmonology Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Researcher</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Resident</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Rheumatology Subspecialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Sleep Medicine</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Sports Medicine</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Surgical Specialist</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Transplant Hepatology</h3><p class="tagcategory">Audience</p></li>
+<li><h3 class="tag">Alabama</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Alaska</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Arizona</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Arkansas</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">California</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Canada</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Colorado</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Connecticut</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Delaware</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">District of Columbia</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Florida</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Georgia</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Hawaii</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Idaho</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Illinois</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Indiana</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">International</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Iowa</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Kansas</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Kentucky</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Louisiana</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Maine</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Maryland</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Massachusetts</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Michigan</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Minnesota</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Mississippi</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Missouri</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Montana</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Nebraska</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Nevada</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">New Hampshire</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">New Jersey</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">New Mexico</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">New York</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">North Carolina</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">North Dakota</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Ohio</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Oklahoma</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Oregon</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Pennsylvania</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Puerto Rico</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Rhode Island</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">South Carolina</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">South Dakota</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Tennessee</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Texas</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">United States</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Utah</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Vermont</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Virginia</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Washington</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">West Virginia</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Wisconsin</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">Wyoming</h3><p class="tagcategory">Location</p></li>
+<li><h3 class="tag">AAFP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">AAP Policy Statement</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">AAP President</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">AAPD</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">AAPHOSPMED</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">AAPOS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">AAR</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ABC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Abdominal</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Abstinence</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ABT</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Abuse</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ACA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ACE</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Affordable Care Act</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ACBOCCSA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Accident</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Acellular Pertussis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Acetaminophen / Tylenol</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ACGME</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ACIP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ACMG</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Acne</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ACOG</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ACP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Acupuncture</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ADA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Adacel</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Addiction</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Adenoid</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Adenovirus</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Aerobic</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">AETNA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">AFIX</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Alcohol</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">AMA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Amblyopia</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Ambulatory</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Amenorrhea</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">AMFK</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Aminopenicillin</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Anabolic</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Anaphylactic</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Anaphylaxis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Androgenic</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Anemia</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Anesthesia</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Aneurysm</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Angular Cheilitis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Ankyloglossia</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Annual Leadership Forum (ALF)</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Annual Report</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Anorexia</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Anthrax</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Antibiotic</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Antibiotics for Newborns</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Antibiotics for Patients with Kidney Failure</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Antibiotics for Premature Infants</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Antibiotics for Renal Failure</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Antidepressant</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Antifungals</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Antimicrobial Prophylaxis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Antipseudomonal Beta-Lactams</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Antipyretics</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Antivirals</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Anxiety</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">AOM</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">AOSSM</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">APA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">APDD</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Apgar</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">APLS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Apnea</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Appendicitis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">APPSPGHAN</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">APQ</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Arrhythmia</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Art Contest</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Arthritis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Asbestos</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ASD</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ASHA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ASMA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Asperger Syndrome</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Asphyxia</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ASPR</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ASPU</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ASTM</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Atherosclerosis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Asthma</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Atopic Dermatitis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Avian Influenza</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Avulsion Fracture</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Awards</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Bacterial Vaginosis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Bariatric Surgery</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">BC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">BCBSA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Becker Muscular Dystrophy</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Bedwetting</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Best Pharmaceuticals for Children Act</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Beta Thalassemia</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Bifida</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Bilirubin</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">BIO</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Bioethics</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Birth Control</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Birth Defects</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Bloodborne Pathogens</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">BMI</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Body Mass Index</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Bohns Nodules</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Boostrix</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">BPA Exposure</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">BPCA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">BPD</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">BPPOP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Bradycardia</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Brazelton</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Breastfeeding</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Bright Futures</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Broncheosophagology</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Bronchio Pulmonary Dysplasia</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Bronchiolitis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Bruxism</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Bulimia</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CA-MRSA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Cannabis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CAP Scale</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CAQI</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Car Seat</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Carbapenem</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Carbon Monoxide</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Career Goals</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CATCH</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Catheter</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CBC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CBPP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CCAP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CCF</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CCI</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CDC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Cercarial Dermatitis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Cerebral Palsy</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Cervarix</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Cervial Stenosis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Cervix</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CF</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CFCC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CHGME</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CHIC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Chickenpox</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Chieari Malformation</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Child Labor</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CHIP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Chlamydia</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CHMP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Chorioamnionitis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CHSA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CHSA-C</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CIC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CIGNA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Circumcision</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CISP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Citizenship</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CKIP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Cleft Palate</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CLIA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Clinical Information Technology</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CME</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CMH</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CMS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COCHF</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COCIT</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COCM</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COCP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Coding</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Coffin-Siris Syndrome</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COFN</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COHA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COHAS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COID</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Colic</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Community Advocacy</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Community Pediatrics</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Conach</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Concussion</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Condom</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Confidentiality</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Consent to Treatment</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Congenital</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Continuing Medical Education</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Constipation</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Consumer-driven Health Care</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Contagious</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Contraception</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Contraindications</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Convulsion</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COPA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COPACFH</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COPAM</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COPC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COPR</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COPW</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COQIPS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Cord Blood</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Cord Blood Banking</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CORNET</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Corporal Punishment</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Corporate Sponsor</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CORS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Corticosteroid</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Cortisone</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COSGA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COSH</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COSMF</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COSMF</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">COTPER</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CPAP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CPET SIG</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CPOE</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CPR</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CPS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CPSC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CPSIA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CPT</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CPTI</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CQ</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Craniofacial Abnormalities</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Critical Care</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Cross-cultural Care</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Crossbite</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">CSHCN</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Cystic Fibrosis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Cytokine</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">D-PIP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">DBPEDS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">DCF</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">DDH</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">DEA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Debt</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Deer Ticks</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Dehydration</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Demographics</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Dental</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Dermatology</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Determining Antibiotic Dosage</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Determining Antibiotic Doses</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Determining Body Surface Area</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Determining Doses</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Developmental Milestones</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">DHAT</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Diarrhea</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Diastolic</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Dietary Supplements</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Diphtheria</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Dipstick test</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Direct to Consumer Advertising</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Disabilities</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Discounts</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">DKA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">DNA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">DOCBI</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Down Syndrome</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">DPAC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Drug-affected Newborns</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">DTAP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Duchenne Muscular Dystrophy</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Duodenal Rupture</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Early Education</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Early Periodic Screening Diagnosis and Treatment</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ECC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ECG</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Echinacea</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ECMO</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Economy</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Eczema</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Education</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Education K-12</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">EECC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">EEG</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">EHB</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">EHR</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">EKG</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Elections</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Electrocardiogram</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Electroencephalogram</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Electronic Medical Records</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Electrophysiology</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Elizabeth Glaser Pediatric AIDS Foundation</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Emergency Medicine</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">EMR</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">EMS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">EMSC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Encopresis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Endocrinology</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Endometriosis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Enhanced Communication Techniques (ECTs)</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">EPDS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Epicondyle</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Epigenetics</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Epilepsy</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Epinephrine</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Epipen</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">EPSDT</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Epsteins Pearls</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Epulis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">EQIPP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Esident modules</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ESL</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ESP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Ethics</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Etiology</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Etopic Eruption</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">FAAP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Fact Sheet</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">FAE</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">FAI</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">FAMRI</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">FAQ</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Fatigue</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">FCC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">FCF</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">FDA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Fetal Alcohol Syndrome</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">DT</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Fever</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">FGC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Fibromyalgia Syndrome</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Fibrosis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Fitness</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">FMAP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Food and Drug Administration</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Food Insecurity</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">FOPO</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Foster Care</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">FPS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Frostbite</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Galactosemia</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">GAO</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Gardisil</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Gastroesophageal Reflux</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Gay</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">GBS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Genetics Screening</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Genetics</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Gingivitis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">GLBT Youth</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Global Health Training</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Globulin</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Glomerulonephritis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Glucosamine</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Gonorrhea</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Graduate Education</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Grant Applications</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Grant Funds</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Grants</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Guidelines</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Gun Control</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">H1N1</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Haemophilus Influenza Type B</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Hayfever</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HBB</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HCFA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HCPCS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HDHP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Health Reform</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Health Reform Implementation</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Healthy Active Living for Families (HALF)</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Hearing</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Heatstroke</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Helping Babies Breathe</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Hematuria</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Hemoglobin</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Hepatitis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Hepatology</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Herpangina</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Herpes</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HFCA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HHS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HIB</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HIE</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HIFA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HIPAA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HIT Structure</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HITPC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HIV / AIDS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HMO</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Holiday Safety</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Holistic medicine</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Homelessness</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Homeopathy</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HPTS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HPV</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HRSA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HTPC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">HTPCP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Human Subject Issues</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Hunger</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Hutchinson teeth</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Hydrocephalus</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Hyperbilirubinema</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Hypertension</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Ibuprofen</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ICatch</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ICCS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ICD Codes</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ICHIA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">IDSA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">IEP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">IHI</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">IHS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">IIS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">IKARIA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">ILCOR</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">IMB</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Immigration</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Immunization</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Infections in Neonates</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Influenza</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Initiatives</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Insect bite</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Insulin</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Internship</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Interview</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">IOM</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">IPECAC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">IPV</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">IQ</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">IRB</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">IRR</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">IRS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">JCCHD</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Job Search</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">JRA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Juvenile Justice</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Katayama Fever</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Katrina</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Kawasaki Syndrome</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Kidnapping</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Language Services</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Legislative History</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Lesbian</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Limited English Proficiency</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Lipid Screening</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Lock Jaw</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">LRP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">LRPM</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">MACP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Maintenance of Certification</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Male Circumcision</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Measles</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Medicaid</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Medicaid Reimbursement</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Medical Home for Children Exposed to Violence</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Medical Informatics</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Medicare</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Membership</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Member Benefits</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Member Services</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Meningitis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Menstruation</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Metabolic Screening</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">MOC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">MRSA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">NCSL</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Neonatal Resuscitation Program</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Neonates</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">NRP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Newborn Hearing Screening</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Nutrition</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Obesity</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Office Operations</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Oral Cephalosporins</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Outpatient Procedures</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Pain</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Palivizumab / Synagis</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Parasitic Infections</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Parenteral Cephalosporins</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Parenting</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">PAS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Payment</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Pedialink</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Pediatric Clinical Research Networks</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Pediatric Medical Device Safety and Improvement Act</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Pediatric Review Committee</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Pediatric Workforce</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Pediatrics Review and Education Program</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Penicillinase Resistant Penicillins</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">PeRC</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Periodical Advertisement Policy</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Periodicity Schedule</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Pharmacodynamics</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Photo Release Form</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Physician Wellness</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">PMDSIA</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">PMO</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">PO Step Down Therapy</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Poisoning</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Poverty</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Practice Characteristics</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Practice Improvement Networks (PIN)</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Practice-Based Research Networks</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Prescribing Antibiotics</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Prescribing Antifungals</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Prescribing Antivirals</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Prescribing for Obese Children</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Prescribing in Obesity</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">PREP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Prevention</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Primary Education</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Privacy</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Product Safety</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">PROS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Protocol</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Quality Improvement (QI)</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Quality Improvement Innovation Network (QuIIN)</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Red Book</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Referrals</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Regulatory History</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Residency Training</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Resident  </h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Resolution</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Retail Based Clinics</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Retirement</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Risk Management</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">RTF</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Rural</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">SCHIP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">School Safety</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Scope of Practice</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Screen Time</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Seminar</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Sexual Abuse</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">SIDS</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Sleep</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Smartbriefs</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Social Media</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Social Networking</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">SODBP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Software</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">SOIPP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">SOMSRFT</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">SOPDOH</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">SOYP</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Spanish Proficiency</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Staffing</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Staphylococcus</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Step Down Therapy</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Stress Management</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Study</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Sudden Infant Death Syndrome</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Suicide Prevention</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Survey Response Rates</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Tanning Bed Use</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">TBI</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Teenagers</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Telemedicine</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Television</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Terrorism</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Texting</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Time Management</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Toilet Training</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Toolkit</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Top Ten</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Tort Reform</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Traumatic Brain Injury</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Treating Parasites</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Twins</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Underinsured</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Underserved</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Underserved Communities</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Universal Health Insurance / Single Payer</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Value in Inpatient Pediatrics (VIP)</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Vision</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Weight</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Whooping Cough</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Workforce</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Working Mothers</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">Workshop</h3><p class="tagcategory">Managed Keyword</p></li>
+<li><h3 class="tag">AAP</h3><p>Topic</p></li>
+<li><h3 class="tag">Access to Care</h3><p>Topic</p></li>
+<li><h3 class="tag">ADHD</h3><p>Topic</p></li>
+<li><h3 class="tag">Adolescent Health</h3><p>Topic</p></li>
+<li><h3 class="tag">Adoption</h3><p>Topic</p></li>
+<li><h3 class="tag">Antivirals</h3><p>Topic</p></li>
+<li><h3 class="tag">Arthritis</h3><p>Topic</p></li>
+<li><h3 class="tag">Asthma and Allergies</h3><p>Topic</p></li>
+<li><h3 class="tag">Autism</h3><p>Topic</p></li>
+<li><h3 class="tag">Behavioral/Mental Health</h3><p>Topic</p></li>
+<li><h3 class="tag">Billing and Coding</h3><p>Topic</p></li>
+<li><h3 class="tag">Breastfeeding</h3><p>Topic</p></li>
+<li><h3 class="tag">Periodicity Schedule</h3><p>Topic</p></li>
+<li><h3 class="tag">Calcium and Bone Health</h3><p>Topic</p></li>
+<li><h3 class="tag">Cancer</h3><p>Topic</p></li>
+<li><h3 class="tag">Car Safety Seats</h3><p>Topic</p></li>
+<li><h3 class="tag">Carbapenem</h3><p>Topic</p></li>
+<li><h3 class="tag">Cardiovascular Health</h3><p>Topic</p></li>
+<li><h3 class="tag">Career</h3><p>Topic</p></li>
+<li><h3 class="tag">Child Abuse and Neglect</h3><p>Topic</p></li>
+<li><h3 class="tag">Child Care</h3><p>Topic</p></li>
+<li><h3 class="tag">Children w/ Special Health Care Needs</h3><p>Topic</p></li>
+<li><h3 class="tag">Common Childhood Illnesses</h3><p>Topic</p></li>
+<li><h3 class="tag">Community Child Health Activities</h3><p>Topic</p></li>
+<li><h3 class="tag">Community Health</h3><p>Topic</p></li>
+<li><h3 class="tag">Complementary Medicine</h3><p>Topic</p></li>
+<li><h3 class="tag">Cultural Competency</h3><p>Topic</p></li>
+<li><h3 class="tag">Death and Dying</h3><p>Topic</p></li>
+<li><h3 class="tag">Depression and Suicide</h3><p>Topic</p></li>
+<li><h3 class="tag">Developmental Delays</h3><p>Topic</p></li>
+<li><h3 class="tag">Diabetes</h3><p>Topic</p></li>
+<li><h3 class="tag">Disasters</h3><p>Topic</p></li>
+<li><h3 class="tag">Disposition Document</h3><p>Topic</p></li>
+<li><h3 class="tag">Divorce and Step-parenting</h3><p>Topic</p></li>
+<li><h3 class="tag">Ear Infections</h3><p>Topic</p></li>
+<li><h3 class="tag">Early Brain and Child Development</h3><p>Topic</p></li>
+<li><h3 class="tag">Early Child Care</h3><p>Topic</p></li>
+<li><h3 class="tag">Early Identification/Developmental Screening</h3><p>Topic</p></li>
+<li><h3 class="tag">Education</h3><p>Topic</p></li>
+<li><h3 class="tag">Education Patient</h3><p>Topic</p></li>
+<li><h3 class="tag">Education CME</h3><p>Topic</p></li>
+<li><h3 class="tag">Emergency Care</h3><p>Topic</p></li>
+<li><h3 class="tag">Environmental Health</h3><p>Topic</p></li>
+<li><h3 class="tag">Fever</h3><p>Topic</p></li>
+<li><h3 class="tag">Food Safety</h3><p>Topic</p></li>
+<li><h3 class="tag">Foster Care</h3><p>Topic</p></li>
+<li><h3 class="tag">Gastroenterology and Hepatology</h3><p>Topic</p></li>
+<li><h3 class="tag">Genetics and Birth Defects</h3><p>Topic</p></li>
+<li><h3 class="tag">Graduate Medical Education</h3><p>Topic</p></li>
+<li><h3 class="tag">Health Care Disparities / Health Equity</h3><p>Topic</p></li>
+<li><h3 class="tag">Health Information Technology (HIT)</h3><p>Topic</p></li>
+<li><h3 class="tag">Health Insurance</h3><p>Topic</p></li>
+<li><h3 class="tag">Health Promotion</h3><p>Topic</p></li>
+<li><h3 class="tag">Health Reform</h3><p>Topic</p></li>
+<li><h3 class="tag">Home Health Care</h3><p>Topic</p></li>
+<li><h3 class="tag">Hospital Care</h3><p>Topic</p></li>
+<li><h3 class="tag">Hunger</h3><p>Topic</p></li>
+<li><h3 class="tag">Immunizations/Vaccines</h3><p>Topic</p></li>
+<li><h3 class="tag">Institutional Licensing</h3><p>Topic</p></li>
+<li><h3 class="tag">Infectious Diseases</h3><p>Topic</p></li>
+<li><h3 class="tag">Injury Prevention</h3><p>Topic</p></li>
+<li><h3 class="tag">Internet and Media Use</h3><p>Topic</p></li>
+<li><h3 class="tag">Learning Disabilities</h3><p>Topic</p></li>
+<li><h3 class="tag">Legislation Federal</h3><p>Topic</p></li>
+<li><h3 class="tag">Legislation State</h3><p>Topic</p></li>
+<li><h3 class="tag">Literacy</h3><p>Topic</p></li>
+<li><h3 class="tag">Maintenance of Certification (MOC)</h3><p>Topic</p></li>
+<li><h3 class="tag">Medicaid</h3><p>Topic</p></li>
+<li><h3 class="tag">Medical Devices</h3><p>Topic</p></li>
+<li><h3 class="tag">Medical Home</h3><p>Topic</p></li>
+<li><h3 class="tag">Medical Liability and Risk Management</h3><p>Topic</p></li>
+<li><h3 class="tag">Medications</h3><p>Topic</p></li>
+<li><h3 class="tag">Membership</h3><p>Topic</p></li>
+<li><h3 class="tag">Native American Health</h3><p>Topic</p></li>
+<li><h3 class="tag">NCE</h3><p>Topic</p></li>
+<li><h3 class="tag">Neonatal Care</h3><p>Topic</p></li>
+<li><h3 class="tag">Newborn Screening</h3><p>Topic</p></li>
+<li><h3 class="tag">Nutrition</h3><p>Topic</p></li>
+<li><h3 class="tag">Oral Health</h3><p>Topic</p></li>
+<li><h3 class="tag">Overweight and Obesity</h3><p>Topic</p></li>
+<li><h3 class="tag">Palliative Care</h3><p>Topic</p></li>
+<li><h3 class="tag">Parenting</h3><p>Topic</p></li>
+<li><h3 class="tag">Physical Activity</h3><p>Topic</p></li>
+<li><h3 class="tag">PIN</h3><p>Topic</p></li>
+<li><h3 class="tag">Poisoning</h3><p>Topic</p></li>
+<li><h3 class="tag">Poverty</h3><p>Topic</p></li>
+<li><h3 class="tag">Practice Administration</h3><p>Topic</p></li>
+<li><h3 class="tag">Practice Management</h3><p>Topic</p></li>
+<li><h3 class="tag">Practice Mergers</h3><p>Topic</p></li>
+<li><h3 class="tag">Private Payer Advocacy</h3><p>Topic</p></li>
+<li><h3 class="tag">Professional Recognition</h3><p>Topic</p></li>
+<li><h3 class="tag">Quality of Care</h3><p>Topic</p></li>
+<li><h3 class="tag">QuIIN</h3><p>Topic</p></li>
+<li><h3 class="tag">Reproductive Health</h3><p>Topic</p></li>
+<li><h3 class="tag">Resolution</h3><p>Topic</p></li>
+<li><h3 class="tag">Respiratory Problems</h3><p>Topic</p></li>
+<li><h3 class="tag">Retail-Based Clinics</h3><p>Topic</p></li>
+<li><h3 class="tag">Safety/First Aid</h3><p>Topic</p></li>
+<li><h3 class="tag">School Health</h3><p>Topic</p></li>
+<li><h3 class="tag">Secondhand Smoke</h3><p>Topic</p></li>
+<li><h3 class="tag">Sexuality</h3><p>Topic</p></li>
+<li><h3 class="tag">Skin Health</h3><p>Topic</p></li>
+<li><h3 class="tag">Sleep</h3><p>Topic</p></li>
+<li><h3 class="tag">Sports Participation</h3><p>Topic</p></li>
+<li><h3 class="tag">Step Down Therapy</h3><p>Topic</p></li>
+<li><h3 class="tag">Subspecialists</h3><p>Topic</p></li>
+<li><h3 class="tag">Substance Abuse</h3><p>Topic</p></li>
+<li><h3 class="tag">Surgery</h3><p>Topic</p></li>
+<li><h3 class="tag">Tobacco</h3><p>Topic</p></li>
+<li><h3 class="tag">Toilet Training</h3><p>Topic</p></li>
+<li><h3 class="tag">Top Ten</h3><p>Topic</p></li>
+<li><h3 class="tag">Transportation Safety</h3><p>Topic</p></li>
+<li><h3 class="tag">Treating Parasites</h3><p>Topic</p></li>
+<li><h3 class="tag">Violence Prevention</h3><p>Topic</p></li>
+<li><h3 class="tag">VIP</h3><p>Topic</p></li>
+<li><h3 class="tag">Vision and Hearing</h3><p>Topic</p></li>
+<li><h3 class="tag">Water Safety</h3><p>Topdic</p></li>
+<li><h3 class="tag">Well-Child</h3><p>Topic</p></li>
+<li><h3 class="tag">Academics</h3><p>Topic</p></li>
+<li><h3 class="tag">Administration/Practice Management</h3><p>Topic</p></li>
+<li><h3 class="tag">Adolescent Health/Medicine</h3><p>Topic</p></li>
+<li><h3 class="tag">Adoption & Foster Care</h3><p>Topic</p></li>
+<li><h3 class="tag">Advocacy</h3><p>Topic</p></li>
+<li><h3 class="tag">Allergy/Immunology</h3><p>Topic</p></li>
+<li><h3 class="tag">Anesthesiology/Pain Medicine</h3><p>Topic</p></li>
+<li><h3 class="tag">Cardiology </h3><p>Topic</p></li>
+<li><h3 class="tag">Child Abuse</h3><p>Topic</p></li>
+<li><h3 class="tag">Community Pediatrics</h3><p>Topic</p></li>
+<li><h3 class="tag">Complementary and Integrative Medicine</h3><p>Topic</p></li>
+<li><h3 class="tag">Critical Care</h3><p>Topic</p></li>
+<li><h3 class="tag">Dentistry/Oral Health</h3><p>Topic</p></li>
+<li><h3 class="tag">Dermatology</h3><p>Topic</p></li>
+<li><h3 class="tag">Developmental/Behavioral Issues </h3><p>Topic</p></li>
+<li><h3 class="tag">Disabilities</h3><p>Topic</p></li>
+<li><h3 class="tag">Ear Nose Throat Disorders</h3><p>Topic</p></li>
+<li><h3 class="tag">Emergency Medicine</h3><p>Topic</p></li>
+<li><h3 class="tag">Endocrinology</h3><p>Topic</p></li>
+<li><h3 class="tag">Ethics/Bioethics</h3><p>Topic</p></li>
+<li><h3 class="tag">Evidence-Based Medicine</h3><p>Topic</p></li>
+<li><h3 class="tag">Fetus/Newborn Infant </h3><p>Topic</p></li>
+<li><h3 class="tag">Gastroenterology</h3><p>Topic</p></li>
+<li><h3 class="tag">Genetics</h3><p>Topic</p></li>
+<li><h3 class="tag">Gynecology</h3><p>Topic</p></li>
+<li><h3 class="tag">Health Information Technology</h3><p>Topic</p></li>
+<li><h3 class="tag">Hematology/Oncology</h3><p>Topic</p></li>
+<li><h3 class="tag">Home Care</h3><p>Topic</p></li>
+<li><h3 class="tag">Hospice/Palliative Medicine</h3><p>Topic</p></li>
+<li><h3 class="tag">Hospital Medicine</h3><p>Topic</p></li>
+<li><h3 class="tag">International Child Health</h3><p>Topic</p></li>
+<li><h3 class="tag">Injury Violence and Poison Prevention</h3><p>Topic</p></li>
+<li><h3 class="tag">Media</h3><p>Topic</p></li>
+<li><h3 class="tag">Nephrology</h3><p>Topic</p></li>
+<li><h3 class="tag">Neurology</h3><p>Topic</p></li>
+<li><h3 class="tag">Ophthalmology</h3><p>Topic</p></li>
+<li><h3 class="tag">Pharmacology</h3><p>Topic</p></li>
+<li><h3 class="tag">Psychiatry</h3><p>Topic</p></li>
+<li><h3 class="tag">Pulmonology</h3><p>Topic</p></li>
+<li><h3 class="tag">Radiology</h3><p>Topic</p></li>
+<li><h3 class="tag">Rheumatology/Musculoskeletal Disorders</h3><p>Topic</p></li>
+<li><h3 class="tag">Sports Medicine/Physical Fitness </h3><p>Topic</p></li>
+<li><h3 class="tag">Urology</h3><p>Topic</p></li>
+</ul>
+</div>
+
+
+<script>
+$(document).ready(function(){
+    $('h1').prepend('<i class="tags icon blue"></i>');
+    $('h2').addClass('ui dividing header');
+    $('a[href^="http://"]').not('a[href*=aapmigrations]').attr('target','_blank');
+    $('.sticky-wrapper').waypoint('sticky', {
+  offset: 80 // Apply "stuck" when element 80px from top
+});
+});
+</script>
+
+
+</div>
+<div class="ui inverted page grid stackable relaxed feature segment footer permafoot">
+    <div class="sixteen wide column">
+      <div class="ui four column stackable grid">
+        <div class="column">
+          <div class="ui header"><a href="../process1/index.html"><i class="exchange icon"></i>Migrations</a></div>
+        </div>
+        <div class="column">
+          <div class="ui header"><a href="../naming/index.html"><i class="grid layout icon"></i>New Standards</a></div>
+        </div>
+        <div class="column">
+          <div class="ui header"><a href="mailto:rwatters@aap.org"><i class="mail outline icon"></i>Contact Editorial</a></div>
+        </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
+<script>
+var options = {
+  valueNames: [ 'tag', 'tagcategory' ]
+};
+
+var userList = new List('tagging', options);
+</script>
+    </body>
+</html>

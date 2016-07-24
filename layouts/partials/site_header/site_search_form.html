@@ -21,4 +21,4 @@
 	<a href="#" id="close-search">Close Search</a>
     <!-- <div class="press-key escape" title="Press Escape to Close the Site Search Overlay">Press <em class="keyboard key">ESC</em> to close.</div> -->
 </form>
-<a href="#" id="toggle-search" {{if .IsHome}}class="home"{{end}}></a>
+<a href="#" id="toggle-search" {{if or .IsHome .IsNode }}class="light-bg"{{end}}></a>

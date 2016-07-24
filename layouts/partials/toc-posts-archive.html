@@ -1,0 +1,23 @@
+<aside class="toc posts-archive" id="toc">
+    <div class="toc-wrapper">
+    <a class="toc-pagetop-link" href="#page-top">
+        <header class="toc-header" id="toc-header">
+            <h4 class="toc-title">Archive</h4>
+        </header>
+    </a>
+        <div class="toc-contents">
+            <nav id="TableOfContents">
+                <ul>
+                    <li>
+                        <ul>
+                        {{ range .Data.Pages.GroupByPublishDate "2006"}}
+                            <li><a href="#{{.Key}}">{{.Key}}</a></li>
+                        {{end}}
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</aside>
+<a href="#" id="toggle-toc" class="posts-archive"><span class="ellipsis">...</span></a>

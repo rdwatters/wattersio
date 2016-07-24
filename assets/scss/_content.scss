@@ -1,7 +1,8 @@
 .container--content {
   max-width: $content-max-width;
-  min-height:100%;
+  min-height: 100%;
 }
+
 .postWrapper {
   position: relative;
   width: 100%;
@@ -19,12 +20,12 @@
 // Blocks
 .section--postsWrapper {
   width: 100%;
-  background: $frontpage-body-bg;
+  background: #ccc;
   padding-top: 0;
   position: relative;
   clear: both;
   z-index: $zIndex-4--posts-wrapper;
-  @include MQ(L) {
+  @include MQ(M) {
     padding-top: 1em;
   }
 }
@@ -47,7 +48,7 @@
 .blockGroup-list {
   list-style: none;
   padding: 0;
-  margin-top: -3*$leading;
+  margin-top: -4rem;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -59,11 +60,9 @@
     font-family: $heading-font-family;
     display: flex;
     background-color: white;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
     width: 100%;
+    @include card;
     &:hover {
-      transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 4px 10px 1px rgba(0, 0, 0, .2);
       .postArticle-image {
         filter: grayscale(0%);
       }
@@ -73,7 +72,7 @@
       line-height: 1.5;
       flex-shrink: 0;
       flex-grow: 2;
-      margin-top: 0.5*$leading;
+      margin-top: .5em;
       font-weight: 300;
       @include MQ(M) {
         font-size: 1em;
@@ -85,8 +84,8 @@
       width: 98%;
       margin-left: 1%;
       .postArticle-image {
-        width:100%;
-        height:auto;
+        width: 100%;
+        height: auto;
         // min-height: 20em;
       }
       .postArticle-title {
@@ -111,7 +110,7 @@
     position: relative;
     color: $base-font-color;
     padding-bottom: 2em;
-    text-decoration:none;
+    text-decoration: none;
   }
   .postArticle {
     display: flex;

@@ -1,17 +1,17 @@
 ---
-layout: post
 title:  "Riding the El in Chicago"
-date:   2016-01-01
+publishdate:   2016-07-21
+date: 2016-07-21
 modified: false
 ori_date:
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
-categories: technology
+categories: technology and development
 tags:  [macbook, gadgets,chicago]
 image: chicago-el
-syntaxHighlighter: no
+removefromsearch:
 ---
 
-Testing testing testing mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing [compunctious](../my-kind-of-town).
+Testing testing testing mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing [compunctious](/posts/my-kind-of-town).
 
 Oman. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ut, accusantium deleniti ipsa, repellat iure neque provident reprehenderit similique cumque veniam enim. Alias aliquid quae sapiente cum, accusantium nesciunt possimus.
 
@@ -27,6 +27,6 @@ Oman. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ut, accus
 
 Cabalistic mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing compunctious.
 
-![Photo of a young girl with a sparkler](/assets/images/girl_with_sparkler.jpg)
+![Photo of a young girl with a sparkler.](/assets/images/girl-sparkler.jpg)
 
 Oman. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ut, accusantium deleniti ipsa, repellat iure neque provident reprehenderit similique cumque ven

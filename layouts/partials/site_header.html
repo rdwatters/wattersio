@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	{{ partial "site_header/metadata.html" . }}
   {{ partial "site_header/metadata_standard.html" . }}
   {{ partial "site_header/metadata_opengraph.html" . }}
   {{ partial "site_header/metadata_schemaorg.html" . }}
@@ -10,9 +9,10 @@
   {{ partial "site_header/metadata_favicons.html" . }}
 	{{ partial "site_header/site_style.html" . }}
 </head>
-<body>
+<body{{if .IsHome}} id="home"{{end}}>
 {{partial "site_header/site_search_form.html" . }}
 {{partial "site_header/site_navigation.html" . }}
 {{partial "site_header/site_logo_homelink.html" . }}
+<a href="" id="page-top"></a>
 <main role="main" class="{{.Title | urlize }}" id="main">
 <div class="all-content-wrapper">

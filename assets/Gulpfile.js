@@ -53,7 +53,7 @@ gulp.task('scripts', function() {
 gulp.task("image-resize", function() {
     return gulp.src("../_images/*.{jpg,png}")
         .pipe(parallel(
-            imageResize({ width: 1200, height: 600 }),
+            imageResize({ width: 1400, height: 700 }),
             os.cpus().length
         ))
         .pipe(gulp.dest("../static/assets/images"))
@@ -61,13 +61,14 @@ gulp.task("image-resize", function() {
             imageResize({ width: 600, height: 300 }),
             os.cpus().length
         ))
-        .pipe(gulp.dest("../static/assets/images/_half"))
+        .pipe(rename(function(path) { path.basename += "-half"; }))
+        .pipe(gulp.dest("../static/assets/images/half"))
         .pipe(parallel(
             imageResize({ width: 300, height: 150 }),
             os.cpus().length
         ))
-        .pipe(rename(function(path) { path.basename += "-thumb"; }))
-        .pipe(gulp.dest("../static/assets/images/_thumbnail"));
+        .pipe(rename(function(path) { path.basename = path.basename.replace("-half","-thumb"); }))
+        .pipe(gulp.dest("../static/assets/images/thumbs"));
 });
 
 gulp.task('watch', function() {

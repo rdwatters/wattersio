@@ -1,12 +1,13 @@
 ---
-title: About
+title: About Me
 subtitle:
 date: 2016-07-20
 modified: false
 tags: [about, ryan watters]
+permalink: /about/
 categories:
 ori_date:
-description: Information about site owner, Ryan Watters.
+description: Information about me, Ryan Watters. I'm flattered that you're interested in reading about my favorite subject to talk about.
 type: singletons
 aliases:
 ---
@@ -34,7 +35,7 @@ All content is licensed under a [Creative Commons Attribution 4.0 International 
 
 ## Site Development
 
-Suffice it to say that I built this site with [performance][] and [simplicity][] in mind. With the exception of [bigfoot.js][] (requires jQuery), I did not use a single CSS/front-end frameworks or a preexisting theme to build this site.
+Suffice it to say that I built this site with [performance][] and [simplicity][] in mind. With the exception of [bigfoot.js][] (jQuery dependency), I did not use a single CSS/front-end framework.
 
 Here is a shortlist of tools I used when developing this site:
 
@@ -46,7 +47,7 @@ Here is a shortlist of tools I used when developing this site:
 * [Wercker][]: automated deployments
 <!-- * [Amazon Web Services CLI][]: local deployments -->
 * [CloudFlare][]: content delivery (CDN), SSL, and reverse proxy
-* [Parse][]: NOSQL backend (article Kudos)
+* [lunr.js][]: Full-text, client-side search
 * [Disqus][]: commenting
 * [Jotform][]: forms solution
 
@@ -70,6 +71,7 @@ All source code is available under [MIT license][]. You are free to shamelessly 
 [Hugo]:http://gohugo.io/
 [Hugo Shortcodes]:http://gohugo.io/extras/shortcodes/
 [JavaScript Functions]:https://github.com/rdwatters/ryanwattersme/tree/master/assets/js/modules
+[lunr.js]:http://lunrjs.com/
 [MIT License]:https://opensource.org/licenses/MIT
 [parse]:https://www.parse.com
 [performance]:https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fryanwatters.io

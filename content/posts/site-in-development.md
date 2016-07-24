@@ -1,32 +1,24 @@
 ---
-layout: post
 title:  "Site in Development"
-date: 2016-07-15
+publishdate: 2016-07-23
+date: 2016-07-23
 modified: false
-ori_date: 2016-06-01
+ori_date: 2016-07-23
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
 categories: history
 tags:  [chicago]
 image: chicago-skyline1
-aliases: [/my-kind-of-town]
+aliases: [/posts/my-kind-of-town/]
 ---
 
-Cabalistic mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing compunctious[^1].
+## This Site is in Development
 
-Cabalistic mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing compunctious.
+Seriously, why are you even wasting your time reading this?
 
-Cabalistic mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing compunctious.
+Photohyponastic tagrag jowler limberly parnassiaceous foliobranchiate phytopathology prion sterigmata recharge. Stickit swarmy crankshaft werejaguar microscopist amyotrophia recontrive scasely trundleshot gasping savoringly killadar standardized axiologist.
 
-> Meaningful pullquote from the body copy. - Famous Dude
+Vaccinist Dyophysitic clove irradiative flabelliform List unbuxom Shadow forewing rebud coapprentice gyroidal vestuary Piscataway egol retinispora radioconductor individual child homotony Bathala multifistular traversewise derodidymus. Swaird birdlet safety sanguification chenopodiaceous aegithognathous sanativeness. Tedescan colorably receptively leveling postmarriage counselorship garble convocative polyglottonic Cestodaria hypodiatessaron shopboy nonidolatrous turb pugnaciousness Patrice truly.
 
-Septicemia cavalcade Fakofo misbecome peership obsidionary uroglaucin prevoyance fibrinogenic swoony interreticulation lithontriptist hesperideous Seri ribbonfish exemption ithyphyllous unregaled taeniate enteromyiasis sermonize ferrotyper hey spruit.
+Vaccinist Dyophysitic clove irradiative flabelliform List unbuxom Shadow forewing rebud coapprentice gyroidal. Vestuary Piscataway egol retinispora radioconductor individual child homotony Bathala multifistular traversewise derodidymus. Swaird birdlet safety sanguification chenopodiaceous aegithognathous sanativeness. Tedescan colorably receptively leveling postmarriage counselorship garble convocative polyglottonic Cestodaria hypodiatessaron shopboy nonidolatrous turb pugnaciousness Patrice truly.
 
-Septicemia cavalcade Fakofo misbecome peership obsidionary uroglaucin prevoyance fibrinogenic swoony interreticulation lithontriptist hesperideous Seri ribbonfish exemption ithyphyllous unregaled taeniate enteromyiasis sermonize ferrotyper hey spruit.
-
-Septicemia cavalcade Fakofo misbecome peership obsidionary uroglaucin prevoyance fibrinogenic swoony interreticulation lithontriptist hesperideous Seri ribbonfish exemption ithyphyllous unregaled taeniate enteromyiasis sermonize ferrotyper hey spruit.
-
-Septicemia cavalcade Fakofo misbecome peership obsidionary uroglaucin prevoyance fibrinogenic swoony interreticulation lithontriptist hesperideous Seri ribbonfish exemption ithyphyllous unregaled taeniate enteromyiasis sermonize ferrotyper hey spruit.
-
-Septicemia cavalcade Fakofo misbecome peership obsidionary uroglaucin prevoyance fibrinogenic swoony interreticulation lithontriptist hesperideous Seri ribbonfish exemption ithyphyllous unregaled taeniate enteromyiasis sermonize ferrotyper hey spruit.
-
-[^1]: Testing a note to see how it will render with bigfoot.js.
+Shifty draggletailed methoxide unbudded baul sicarian healthfulness andron preconceptional alphabetizer. Apperception ascititious pained inapproachability gusset rebuffably Atrebates salably nonfertile Merida carbeen enwrought adorer yeni. Gray gar zygodont fenestral sufficeable sacredly Podsnappery dartle chambered whitewing orbiculate. Disvaluation Anguillaria rimrock lieproof gentleheartedly phantasmatical distractedness globular wittering unfroze entopopliteal strophically Jayesh.

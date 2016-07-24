@@ -1,27 +1,31 @@
-<!-- Open Graph Protocol http://ogp.me/ -->
+<!-- OPEN GRAPH PROTOCOL http://ogp.me/ -->
 <!-- Facebook Instant Articles -->
 <meta property="fb:pages" content="810571539011577" />
 {{ if or .IsHome .IsNode }}
 <meta property="og:type"   content="website" />
-<meta property="fb:app_id" content="{{.Site.Params.FBAppID}}">
+<meta property="fb:app_id" content="{{.Site.Params.Facebook}}">
 {{ end }}
 <!-- Article-namespace metadata for OGP -->
 {{if .IsPage }}
 	<meta property="og:type"   content="article" />
-	<meta property="og:article:published_time" content="{{.PublishDate.Format "2006-01-02T15:04:05Z07:00"}}" />
-	{{ with .Params.updated}}<meta property="og:article:modified_time" content="{{.}}" />{{ end }}
+	<meta property="og:article:published_time" content="{{.Date.Format "2006-01-02T15:04:05Z07:00"}}" />
+		{{ if .Params.modified}}
+			<meta property="og:article:modified_time" content="{{.Params.ori_date}}" />
+		{{ end }}
 	<meta property="og:article:author" content="{{.Site.Params.SiteAuthor}}" />
 	<meta property="og:article:section" content="{{.Section | title}}" />
-	{{ if .Params.tags }}{{ range .Params.tags }}
-	<meta property="og:article:tag" content="{{.}}" />
-	{{ end }}{{ end }}
+		{{ with .Params.tags }}
+			{{ range . }}
+			<meta property="og:article:tag" content="{{.}}" />
+			{{ end }}
+		{{ end }}
 {{ end }}
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
-<meta property="og:image" content="{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.DefaultSocialImage }}">
-<meta property="og:image:secure_url" content="{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.DefaultSocialImage }}"/>
+<meta property="og:image" content="{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.DefaultSocialImage }}.jpg">
+<meta property="og:image:secure_url" content="{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.DefaultSocialImage }}.jpg"/>
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
+<meta property="og:image:height" content="600" />
 <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.SiteDescription }}{{ else if .IsPage }}{{ .Description }}{{ else if .IsNode }}{{ index .Site.Data.sectioninfo .Title }}{{ end }}"/>
 <meta property="og:site_name" content="{{ .Site.Title }}">

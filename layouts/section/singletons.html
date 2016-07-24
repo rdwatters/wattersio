@@ -1,10 +1,18 @@
+{{ $okpages := len (where .Site.Pages ".Params.removefromsearch" "!=" "true") }}
+{{ $totalpages := add $okpages -1}}
 [
-{{$sitePageLength := add (len .Site.Pages) -1}}{{ range $index, $page := .Site.Pages}}{{ if and (gt $index 0) (lt $index $sitePageLength) }},
-		{{ end }}{{ if not $page.Params.removefromsearch }}{"url": "{{ $page.Permalink }}",
+{{ range $index, $page := .Site.Pages}}
+
+		{{ if not $page.Params.removefromsearch }}
+		{"url": "{{ $page.Permalink }}",
 		"title": "{{ $page.Title }}",
 		"subtitle": "{{ $page.Params.subtitle | default "" }}",
 		"tags": [{{ range $tindex, $tag := $page.Params.tags }}{{ if $tindex }}, {{ end }}"{{ $tag }}"{{ end }}],
 		"description": "{{.Description}}",
 		"content": {{$page.Plain | jsonify}}}
-		{{ end }}{{ end }}
+		{{if lt $index $totalpages}},{{end}}
+		{{ end }}
+{{ end }}
 ]
+
+

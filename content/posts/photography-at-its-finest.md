@@ -1,6 +1,6 @@
 ---
-layout: post
 title:  "Photography at its Finest"
+publishdate: 2016-02-01
 date: 2016-02-01
 modified: false
 ori_date:
@@ -8,6 +8,7 @@ description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissi
 categories: art
 tags:  [photography,chicago]
 image: selfie_photographer
+removefromsearch:
 ---
 
 ## First Heading
