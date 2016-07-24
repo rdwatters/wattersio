@@ -2,7 +2,6 @@ document.getElementById('toggle-search').addEventListener('click', toggleSearch,
 document.getElementById('close-search').addEventListener('click', toggleSearch, false);
 
 function toggleSearch(evt) {
-    console.log("registering!");
     evt.preventDefault();
     var searchForm = document.getElementById('site-search');
     var searchInput = document.getElementById('search-input');

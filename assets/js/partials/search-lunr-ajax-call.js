@@ -48,7 +48,7 @@ function displayResults(results) {
         searchResults.innerHTML = '';
         results.forEach(function(result) {
             var item = window.searchData[result.ref];
-            var appendString = '<li class=\"search-result\"><a href=\"' + item.url + '\" onclick=\"return tSL()\"><h5>' + item.title + '</h5>' + '<p>' + item.description + '</p></li>';
+            var appendString = '<li class=\"search-result\"><a href=\"' + item.url + '\"><h5>' + item.title + '</h5>' + '<p>' + item.description + '</p></li>';
             searchResults.innerHTML += appendString;
         })
     } else {

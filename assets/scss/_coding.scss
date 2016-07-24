@@ -6,20 +6,26 @@ pre,
     width:100%;
     min-width:100%;
     position:relative;
+    z-index:999;
+    overflow-y:visible;
 }
 code.hljs {
     display:block;
     width:100%;
     min-width:100%;
+    background-color:$code-block-background-color;
+    padding:.5em;
+    margin-top:0em;
 }
 
 .code-copy {
     display: block;
     width: 100%;
+    z-index:99;
     @include MQ(XL) {
         width: calc(100% + 60px);
         margin-left: -30px;
-        overflow-x: visible;
+        overflow-x: scroll;
     }
     padding-left:15px;
     color:$code-block-base-font-color;
@@ -45,7 +51,6 @@ code.hljs {
     .filepath {
         width:auto;
         float:right;
-        clear:both;
         font-size: 14px;
         text-align: right;
         background-color:#666666;
@@ -65,18 +70,20 @@ button.copy-button {
     display: none;
     @include MQ(M) {
         display: block;
+        z-index:9999;
     }
     transition: all .3s ease-in-out;
-    position: absolute;
-    right:.5em;
-    bottom: .5em;
+    position: relative;
+    left: .5em;
+    top: -1em;
     height: 42px;
     background-color: transparent;
     border: 1px solid $white;
     outline: none;
     border-radius: 3px;
     padding: 2px;
-    padding-bottom:1em;
+    padding-bottom:1.5em;
+    margin-bottom:0em;
     img.clippy {
         width: 24px;
         height: 24px;
@@ -199,7 +206,9 @@ button.copy-button {
 
 .tooltipped {
     position: relative;
-    background-color:$base-font-color;
+    background-color:$code-tooltip-bg-color;
+    padding-right:2em;
+    // margin-right:2em;
 }
 
 .tooltipped:after {
@@ -207,7 +216,7 @@ button.copy-button {
     z-index: 1000000;
     display: none;
     padding: 5px 8px;
-    font: normal normal 14px/1.5 $heading-font-family, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font: normal normal 14px/1.5 $heading-font-family;
     color: $white;
     text-align: center;
     text-transform:uppercase;
@@ -218,8 +227,8 @@ button.copy-button {
     white-space: pre;
     pointer-events: none;
     content: attr(aria-label);
-    // background: rgba(0, 0, 0, 0.8);
-    background-color:$base-font-color;
+    background-color:$code-tooltip-bg-color;
+    border-color:$code-tooltip-bg-color;
     border-radius: 0px;
     -webkit-font-smoothing: subpixel-antialiased
 }
@@ -230,10 +239,10 @@ button.copy-button {
     display: none;
     width: 0;
     height: 0;
-    color: rgba(0, 0, 0, 0.8);
+    color: $code-tooltip-bg-color;
     pointer-events: none;
     content: "";
-    border: 5px solid transparent
+    border: 5px solid transparent;
 }
 
 .tooltipped:hover:before,
@@ -257,7 +266,8 @@ button.copy-button {
 .tooltipped-sw:after {
     top: 100%;
     right: 50%;
-    margin-top: 5px
+    margin-top: 5px;
+    text-align:center;
 }
 
 .tooltipped-s:before,
@@ -267,13 +277,15 @@ button.copy-button {
     right: 50%;
     bottom: -5px;
     margin-right: -5px;
-    border-bottom-color: rgba(0, 0, 0, 0.8)
+    border-bottom-color: $code-tooltip-bg-color;
+    text-align:center;
 }
 
 .tooltipped-se:after {
     right: auto;
     left: 50%;
-    margin-left: -15px
+    margin-left: -15px;
+    text-align:center;
 }
 
 .tooltipped-sw:after {
@@ -295,7 +307,7 @@ button.copy-button {
     right: 50%;
     bottom: auto;
     margin-right: -5px;
-    border-top-color: rgba(0, 0, 0, 0.8)
+    border-top-color: $code-tooltip-bg-color;
 }
 
 .tooltipped-ne:after {
@@ -329,7 +341,7 @@ button.copy-button {
     bottom: 50%;
     left: -5px;
     margin-top: -5px;
-    border-left-color: rgba(0, 0, 0, 0.8)
+    border-left-color: $code-tooltip-bg-color;
 }
 
 .tooltipped-e:after {
@@ -346,7 +358,7 @@ button.copy-button {
     right: -5px;
     bottom: 50%;
     margin-top: -5px;
-    border-right-color: rgba(0, 0, 0, 0.8)
+    border-right-color: $code-tooltip-bg-color;
 }
 
 .tooltipped-multiline:after {

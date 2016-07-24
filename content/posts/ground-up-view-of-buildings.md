@@ -1,5 +1,5 @@
 ---
-title:  "Ground-up View of Buildings"
+title:  "Ground-up View of Buildings with a Much Longer Title"
 publishdate: 2016-05-01
 date: 2016-05-01
 modified: false

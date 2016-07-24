@@ -14,5 +14,5 @@
 {{partial "site_header/site_navigation.html" . }}
 {{partial "site_header/site_logo_homelink.html" . }}
 <a href="" id="page-top"></a>
-<main role="main" class="{{.Title | urlize }}" id="main">
+<main role="main" {{if .IsHome}}class="home-main"{{end}} id="main">
 <div class="all-content-wrapper">

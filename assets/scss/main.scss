@@ -11,6 +11,7 @@
 @import "mqs";
 // Typography, images, and video
 @import "font-face";
+@import "fontello";
 @import "typography";
 @import "images";
 @import "video";
@@ -38,14 +39,26 @@
 @import "bigfoot";
 @import "resume";
 @import "search";
-
 body {
-  position:relative;
+  position: relative;
 }
+
+main.home-main {
+  padding-top:5.5em;
+  background-color: white;
+  @include MQ(M) {
+    padding-top:1em;
+  }
+  > .all-content.wrapper {
+    background-color: #ccc;
+  }
+}
+
+
 a {
   cursor: pointer!important;
   font-weight: 600;
-  color:$brand-primary;
+  color: $brand-primary;
 }
 
 .sitename-sidebar {
@@ -142,7 +155,7 @@ div.all-content-wrapper > article {
   cursor: pointer;
   text-decoration: none;
   box-shadow: 0 -1px 0 $brand inset;
-  font-weight: $link-color;
+  font-weight: normal;
   padding-left: 2px;
   padding-right: 2px;
   margin-left: -2px;
@@ -176,7 +189,7 @@ ul.contents-list {
 a.content-link {
   display: flex;
   flex-direction: column;
-  position:relative;
+  position: relative;
   text-decoration: none;
   border: none;
   outline: none;
@@ -199,15 +212,15 @@ a.content-link {
 }
 
 time.publish-date {
-  font-family:$base-font-family;
-  text-transform:uppercase;
-  color:inherit;
-  font-weight:bold;
+  font-family: $base-font-family;
+  text-transform: uppercase;
+  color: inherit;
+  font-weight: bold;
 }
 
 .list-time {
   position: absolute;
-  display:block;
+  display: block;
   top: 0px;
   left: 0px;
   padding: .25em .75em;
@@ -215,15 +228,16 @@ time.publish-date {
   color: $white;
   font-size: .7em;
   text-transform: uppercase;
-  z-index:99;
+  z-index: 99;
 }
 
 h2.archive-year {
-  border-bottom:1px solid $base-font-color;
-  width:50%;
+  border-bottom: 1px solid $base-font-color;
+  width: 50%;
 }
 
-h2.list-title,h3.list-title-archive {
+h2.list-title,
+h3.list-title-archive {
   font-size: 1.3em;
   margin-top: .5em;
 }
@@ -250,48 +264,49 @@ a.category-tag {
 }
 
 img.creative-commons {
-  display:block;
-  width:40%;
-  max-width:200px;
-  margin-right:auto;
-  margin-left:auto;
+  display: block;
+  width: 40%;
+  max-width: 200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-a[href^="//creativecommons"]{
-  box-shadow:none!important;
+a[href^="//creativecommons"] {
+  box-shadow: none!important;
   &:hover {
-    box-shadow:none!important;
+    box-shadow: none!important;
   }
 }
 
 a.about-page {
-  display:block;
-  width:8em;
+  display: block;
+  width: 8em;
   @include center;
   @include padtb(.5em);
-  @include hoverbutton($white,$nav-bg-color);
-  text-align:center;
-  font-weight:normal;
-  text-transform:uppercase;
-  text-decoration:none;
-  margin-top:.75em;
-  font-size:.8em;
-  border:1px solid white;
+  @include hoverbutton($white, $nav-bg-color);
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: .75em;
+  font-size: .8em;
+  border: 1px solid white;
 }
 
 strong.updated {
-  @include button($white,$button-bg-color, 0px);
+  @include button($white, $button-bg-color, 0px);
   @include buttonpad(.3em);
-  margin-right:.2em;
-  text-align:center;
+  margin-right: .2em;
+  text-align: center;
 }
 
 .all-posts-wrapper {
-  display:block;
-  margin-right:auto;
-  margin-left:auto;
-  width:90%;
-  max-width:1200px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  min-height:4em;
+  width: 90%;
+  max-width: 1200px;
 }
 
 #home {
@@ -299,19 +314,26 @@ strong.updated {
 }
 
 .all-posts {
-  display:block;
-  clear:both;
-  float:right;
-  color:white;
+  display: block;
+  clear: both;
+  float: right;
+  color: white;
   font-family: $base-font-family;
-  text-decoration:none;
-  text-align:right;
+  text-decoration: none;
+  text-align: right;
   &.homepage {
     @include card;
-    color:$base-font-color;
-    margin-bottom:1.5em;
-    padding:.5em;
-    margin-right:.5em;
+    color: $base-font-color;
+    margin-bottom: 1.5em;
+    padding: .5em;
+    margin-right: .5em;
     background-color: #ffffff;
   }
+}
+
+div.page-not-found {
+  width:90%;
+  max-width:$content-max-width;
+  margin-top:5em;
+  @include center;
 }

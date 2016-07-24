@@ -1,6 +1,6 @@
 # Only one archetype (posts) is included in Hugo Starter
 archetypedir = "archetypes"
-baseurl = ""
+baseurl = "http://localhost:1313"
 buildDrafts = false
 buildFuture = false
 canonifyurls = true
@@ -51,7 +51,7 @@ watch = true
   #######END SOCIAL#######
   CopyrightLine = "Ryan Watters"
   SiteDescription = "The official site of Ryan Watters"
-  UseCRP = false
+  UseCRP = true
   # Include jQuery 3.0 from assets/js
   IncludeJQ = true
   # Disqus two conditions (here and in page)

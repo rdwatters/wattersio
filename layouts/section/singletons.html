@@ -1,8 +1,7 @@
-{{ $okpages := len (where .Site.Pages ".Params.removefromsearch" "!=" "true") }}
+{{ $okpages := len (where .Site.Pages ".Params.removefromsearch" "==" nil ) }}
 {{ $totalpages := add $okpages -1}}
 [
 {{ range $index, $page := .Site.Pages}}
-
 		{{ if not $page.Params.removefromsearch }}
 		{"url": "{{ $page.Permalink }}",
 		"title": "{{ $page.Title }}",

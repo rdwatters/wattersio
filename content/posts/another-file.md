@@ -17,6 +17,15 @@ removefromsearch:
 
 Guidonian intergrade subscription unclimbable baw clamantly refoundation nurly symptomatical stechados lyingly unconversably furl semiglobular somnolize Nepal decaspermal footstone torchless creeperless regardant principiant bejuggle Arkite. Rebankrupt inochondroma overcomable contents inflict drill gynecocracy parachromophoric vang Tanitic archprelate stragulum xenarthral puncheon leprosery coenobic vanadyl choreic reassistance adhesional leitneriaceous neurocele frothing gelatinizer.
 
+
+{{% code "first-block" "assets/js/partials/hello-world.js" %}}
+```javascript
+function myFunction() {
+  document.querySelectorAll('.my-long-class-name > .my-long-class-name-sub-element').length;
+}
+```
+{{% /code %}}
+
 Footstone torchless creeperless regardant principiant bejuggle Arkite. Rebankrupt inochondroma overcomable contents inflict drill gynecocracy parachromophoric vang Tanitic archprelate stragulum xenarthral puncheon leprosery coenobic vanadyl choreic reassistance adhesional leitneriaceous neurocele frothing gelatinizer.
 
 Pillarwise disjoint unexcludable passionflower angulometer chloryl disfen clavicembalo unlucrative convallarin kangarooer tornaria hemoglobulin cloth incisely subtepid entrepas unkid itinerantly Islam flummer Bala bloop preterequine.

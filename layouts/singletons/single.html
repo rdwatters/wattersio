@@ -12,6 +12,9 @@
         <div class="hr">
           <hr>
         </div>
+        {{if eq .Title "Resume"}}
+        {{partial "resume-contact.html" . }}
+        {{end}}
       </div>
     </div>
   </section>

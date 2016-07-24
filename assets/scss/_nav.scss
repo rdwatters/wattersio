@@ -55,7 +55,7 @@
   position: fixed;
   z-index: $zIndex-5--sidebar-toggle-wrapper;
   top: 30px;
-  right: 3%;
+  right: 30px;
   width: 44px;
   height: 44px;
   overflow: hidden;
@@ -137,6 +137,7 @@
 .sidebar.open,
 .sidebar-toggle-wrapper.open {
   transform: translateX(-14rem);
+  z-index:9999;
 }
 
 .sidebar-toggle-wrapper.open {

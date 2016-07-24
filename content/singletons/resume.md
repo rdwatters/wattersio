@@ -2,15 +2,16 @@
 title: "Resume"
 subtitle:
 modified: false
+description: If you are looking to reach out for professional reasons, please take a look at my résumé.
 type: singletons
 tags: []
 categories:
-removefromsearch: true
+removefromsearch:
 ---
 
 ## Profile
 
-Experienced web professional with a deep understanding of content strategy, storytelling, web publishing, front-end development, web performance, analytics, and search engine optimization.
+Experienced web professional with a deep understanding of content strategy, content marketing, web publishing, front-end development, web performance, analytics, and search engine optimization.
 
 ## Experience
 
@@ -139,7 +140,9 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 * Board Certification as an Editor in the Life Sciences (ELS); [BELS][]
 * Certified Professional Medical Writer (CPMW); [Graham School, University of Chicago][]
 
-[References and samples available upon request](/contact).
+<a id="references-link" href="mailto:ryan@ryanwatters.io?subject=Ryan Watters resume request&body=I read your resume on ryanwatters.io and would like to request samples and references." title="Email me to request samples or references.">
+    <i class="icon-email"></i>References and samples available upon request.
+</a>
 
 [About page]: /about
 [Algolia]: https://www.algolia.com

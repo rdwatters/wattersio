@@ -1,4 +1,5 @@
 <form action="" id="site-search" class="search-form" role="search">
+<a href="/" title="Go Home" class="site-logo">{{ .Site.Title }}</a>
 <div class="form-container">
 			<div class="form-content">
 		    <input type="search" id="search-input" aria-label="Search the {{ .Site.Title }} website..." class="site-search" autocomplete="off" autofocus="autofocus" spellcheck="false" autocapitalize="none" placeholder="Search..." required>
@@ -21,4 +22,4 @@
 	<a href="#" id="close-search">Close Search</a>
     <!-- <div class="press-key escape" title="Press Escape to Close the Site Search Overlay">Press <em class="keyboard key">ESC</em> to close.</div> -->
 </form>
-<a href="#" id="toggle-search" {{if or .IsHome .IsNode }}class="light-bg"{{end}}></a>
+<a href="#" id="toggle-search" {{if .IsHome }}class="light-bg home-search"{{else if .IsNode}}class="light-bg"{{end}}></a>

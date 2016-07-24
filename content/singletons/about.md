@@ -14,7 +14,7 @@ aliases:
 
 ## Me
 
-My name is Ryan. I am a content strategist, content marketer, front-end developer, editor, writer, web publisher, unabashed nerd, Japanophile, ramen aficionado, and (arguably the worst[^1]) guitarist in Chicago, IL.
+My name is Ryan. I am a content strategist, content marketer, front-end developer, editor, writer, web publisher, unabashed nerd, Japanophile, ramen aficionado, and (arguably the worst[^1]) guitarist in Chicago, IL. If you're interested in reaching out professionally, please see my [résumé][].
 
 A couple items of note, if I may:
 
@@ -35,7 +35,7 @@ All content is licensed under a [Creative Commons Attribution 4.0 International 
 
 ## Site Development
 
-Suffice it to say that I built this site with [performance][] and [simplicity][] in mind. With the exception of [bigfoot.js][] (jQuery dependency), I did not use a single CSS/front-end framework.
+Suffice it to say that I built this site with [performance][] in mind. With the exception of [bigfoot.js][] (jQuery dependency), I did not use a single CSS/front-end framework.
 
 Here is a shortlist of tools I used when developing this site:
 
@@ -75,7 +75,7 @@ All source code is available under [MIT license][]. You are free to shamelessly 
 [MIT License]:https://opensource.org/licenses/MIT
 [parse]:https://www.parse.com
 [performance]:https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fryanwatters.io
-[simplicity]:/colophon/
+[résumé]: /resume/
 [static site generator]:https://www.staticgen.com/
 [tutorials]: /tutorials
 [wercker]:http://wercker.com/

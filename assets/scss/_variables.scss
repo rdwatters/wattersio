@@ -29,7 +29,7 @@ $link-color:            $brand-primary;
 $link-hover-color:      darken($link-color, 15%) !default;
 
 $metabar-top-bg:				#eee !default;
-$search-bg-color: #333333;
+$search-bg-color: $brand-primary;
 
 $hero-gradient:         $gray-dark;
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
@@ -44,6 +44,7 @@ $base-font-weight:200;
 $heading-font-family: $font-two,$georgia;
 $heading-font-weight: 100;
 $code-font-family: 'courierprime','Courier Prime', courier,monospace;
+$code-tooltip-bg-color: $brand-primary;
 $code-block-base-font-color: white;
 $code-block-background-color: $base-font-color;
 
