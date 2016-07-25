@@ -26,7 +26,7 @@ watch = true
 
 [permalinks]
   # The temp folder is created for one-off pages (eg, marketing and design-heavy pages that run outside other site templates). Keep in mind that all .md pages under temp still require title and date in the YAML/front matter
-  pages = "/:title/"
+  singles = "/:title/"
 
 [params]
 	SiteAuthor = "Ryan Watters"
@@ -64,6 +64,8 @@ watch = true
   # Setting this to true will include Swiftype Metadata in <head> and the default single.html <article> in layouts/_default
   Swiftype = false
   UpdatedText = "Updated:"
+  # Determines style of previous and next links in /posts; options are either "sides" or "bottom"
+  PostPrevNextStyle = "bottom"
 
 [blackfriday]
 	plainIDAnchors = true

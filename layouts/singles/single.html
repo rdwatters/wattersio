@@ -2,11 +2,7 @@
 <a href="" id="page-top" class=""></a>
 <article class="postWrapper">
   <section class="section--first u-table">
-    {{ with .Params.image }}
-    <div class="postHero" style="background-image:url('/assets/images/{{ . }}.jpg');">
-    {{ else }}
-    <div class="postHero solid singleton">
-    {{ end }}
+    <div class="postHero solid singles">
       <div class="postMeta-wrapper">
         <h1 class="page-title">{{ if eq .Title "Resume"}}R&eacute;sum&eacute;{{else}}{{ .Title }}{{end}}</h1>
         <div class="hr">

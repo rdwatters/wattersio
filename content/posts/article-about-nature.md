@@ -1,9 +1,9 @@
 ---
 title:  "Article About Nature"
-publishdate: 2016-04-01
-date: 2016-04-01
-modified: true
-ori_date: 2016-03-01
+publishdate: 2016-01-20
+date: 2016-01-20
+modified: false
+ori_date:
 description:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
 categories: history
 author: Raji

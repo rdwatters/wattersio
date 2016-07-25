@@ -1,7 +1,7 @@
 ---
-title:  "Ground-up View of Buildings with a Much Longer Title"
-publishdate: 2016-05-01
-date: 2016-05-01
+title: Ground-up View of Buildings Longer Title
+publishdate: 2016-04-20
+date: 2016-04-20
 modified: false
 ori_date: 2016-04-01
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."

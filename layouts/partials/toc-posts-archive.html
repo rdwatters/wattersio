@@ -10,8 +10,8 @@
                 <ul>
                     <li>
                         <ul>
-                        {{ range .Data.Pages.GroupByPublishDate "2006"}}
-                            <li><a href="#{{.Key}}">{{.Key}}</a></li>
+                        {{ range .Data.Pages.GroupByPublishDate "January 2006"}}
+                            <li><a href="#{{.Key | urlize}}">{{.Key}}</a></li>
                         {{end}}
                         </ul>
                     </li>

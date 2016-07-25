@@ -1,10 +1,10 @@
 ---
 title: Another Post
 subtitle: This is the newest subtitle
-publishdate: 2015-03-01
-date: 2015-03-01
+publishdate: 2015-12-20
+date: 2015-12-20
 modified: true
-ori_date: 2016-01-25
+ori_date: 2015-06-25
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam culpa error accusamus ratione officiis."
 categories: history
 authors: Ryan Watters

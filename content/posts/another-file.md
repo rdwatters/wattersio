@@ -1,8 +1,8 @@
 ---
 title: Another File
 subtitle: Newest File for Testing
-publishdate: 2016-07-20
-date: 2016-07-20
+publishdate: 2016-06-20
+date: 2016-06-20
 modified: false
 ori_date:
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam culpa error accusamus ratione officiis."

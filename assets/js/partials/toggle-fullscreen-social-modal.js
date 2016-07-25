@@ -11,6 +11,7 @@ $(document).ready(function() {
             document.querySelector('.modal-toggle-bubbleShadow').classList.toggle('active');
             document.querySelector('.modal-toggle-close-wrapper').classList.toggle('active');
             document.querySelector('.fullscreenModal').classList.toggle('active');
+            document.querySelector('.share-close').classList.toggle('active');
             if (visibleToc) {
                 visibleToc.classList.remove('fadeIn');
             }
@@ -48,6 +49,6 @@ $(document).scroll(function() {
     var docHeight = $(document).height();
     var winHeight = window.outerHeight;
     var fromBottom = docHeight - winHeight;
-    $('.modal-toggle-group').toggleClass('active', $(document).scrollTop() >= 300);
+    // $('.modal-toggle-group').toggleClass('active', $(document).scrollTop() >= 300);
     $('aside.toc, #toggle-toc').toggleClass('fadeIn', ($(document).scrollTop() >= 300 && $(document).scrollTop() <= fromBottom));
 });

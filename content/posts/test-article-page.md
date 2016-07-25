@@ -1,7 +1,7 @@
 ---
 title:  "Test Article Page"
-publishdate: 2016-03-01
-date: 2016-03-01
+publishdate: 2016-03-20
+date: 2016-03-20
 modified: false
 ori_date:
 description:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."

@@ -4,8 +4,8 @@
         <header>
             <h1 class="list-page-title">All {{ .Title }}</h1>
         </header>
-        {{ range .Data.Pages.GroupByPublishDate "2006"}}
-        <h2 class="archive-year" id="{{.Key}}">{{.Key}}</h2>
+        {{ range .Data.Pages.GroupByPublishDate "January 2006"}}
+        <h2 class="archive-year" id="{{.Key | urlize}}">{{.Key}}</h2>
         <ul class="contents-list">
             {{ range sort .Pages "PublishDate" "desc" }}
             <li>

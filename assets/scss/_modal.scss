@@ -6,7 +6,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%; // temp solution
+  width: 75%; // temp solution
   height: 100%;
   color: $white;
   text-align: center;
@@ -15,14 +15,41 @@
   background: transparent;
   transition-delay: 0.5s;
   transition: opacity 0.3s ease-in;
-  z-index: 9999;
+  z-index: 999;
+}
+
+span.share-close {
+  &:after {
+    display: block;
+    clear:both;
+    width:100%;
+    height:1em;
+    content: 'SHARE';
+    font-size: .7em;
+    margin-top: 4.5em;
+    position: relative;
+    z-index: 99;
+    font-weight: bold;
+    padding-top: 0em;
+    color: $brand;
+    text-align: center;
+    @include MQ(M) {
+      margin-top:3.5em;
+    }
+  }
+  &.active:after {
+    content: 'CLOSE';
+    color: white;
+    z-index: 9999999;
+  }
 }
 
 .fullscreenModal.active {
-  opacity: 1!important;
+  opacity: 1;
   visibility: visible;
   transition-delay: 0.5s;
-  z-index: 9999;
+  z-index: 99999;
+  background-color: $brand;
 }
 
 .fullscreenModal h2 {
@@ -34,17 +61,18 @@
   display: block;
   bottom: 30px;
   right: 3%;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
   transition: all .5s cubic-bezier(0.23, 1, 0.32, 1);
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .modal-toggle-group.active {
   opacity: 1!important;
   visibility: visible;
   &.scaleIn {
-    transform: scale(1);
+    z-index: 9999;
   }
 }
 
@@ -73,8 +101,8 @@
 }
 
 .modal-toggle-wrapper {
-    transition: all 0.3s ease-in-out;
-    transform: rotate(-360deg);
+  transition: all 0.3s ease-in-out;
+  transform: rotate(-360deg);
   &.active {
     opacity: 0;
     transform: rotate(360deg);
@@ -186,10 +214,10 @@
   @include MQ(retinaLandscape) {
     flex-direction: row;
     justify-content: space-between;
-    width:90%;
+    width: 90%;
   }
   @include MQ(sixPlusLandscape) {
-    width:90%;
+    width: 90%;
   }
   list-style: none;
   margin: $leading auto 0;

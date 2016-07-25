@@ -1,7 +1,7 @@
 ---
 title:  "Site in Development"
-publishdate: 2016-07-23
-date: 2016-07-23
+publishdate: 2016-07-20
+date: 2016-07-20
 modified: false
 ori_date: 2016-07-23
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."

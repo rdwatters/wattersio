@@ -5,7 +5,7 @@ curdir=$(pwd)
 TODAY=$(date)
 # Build Hugo.
 hugo --ignoreCache
-cp ${curdir}/public/pages/index.html ${curdir}/static/assets/site-index.json
+cp ${curdir}/public/singles/index.html ${curdir}/static/assets/site-index.json
 rm -rf public
 open -a Google\ Chrome.app http://localhost:1313;
 hugo serve --buildDrafts=true --buildFuture=true

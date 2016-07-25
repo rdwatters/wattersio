@@ -2,18 +2,17 @@
 <a href="" id="page-top" class=""></a>
 <article class="postWrapper">
   <section class="section--first u-table">
-    {{ with .Params.image }}
-    <div class="postHero" style="background-image:url('/assets/images/{{ . }}.jpg');">
+    {{ if .Params.image }}
+    <div class="postHero" style="background-image:url('/assets/images/{{ .Params.image }}.jpg');">
     {{ else }}
     <div class="postHero solid">
     {{ end }}
       <div class="postMeta-wrapper">
-        {{ if ne .Section "singletons" }}
         <ul class="postMeta">
+
           <li class="postMeta-datetime">
             {{partial "publish_date.html" . }}
           </li>
-          {{ end }}
           {{ with .Params.categories }}
           <span class="dot"></span>
           <li>
@@ -21,9 +20,9 @@
             {{ . }}
           </a>
           </li>
+          {{ end }}
         </ul>
-        {{ end }}
-        <h1 class="page-title">{{ .Title }} </h1>
+        <h1 class="page-title{{if gt (len .Title) 20}} long-title{{end}}">{{ .Title }}</h1>
         <div class="hr">
           <hr>
         </div>
@@ -50,8 +49,7 @@
     <hr class="u-clearHr"/>
     <hr/>
   </section>
-  <footer class="postFooter">
+</article>
     {{ partial "prevnext.html" . }}
   </footer>
-</article>
 {{ partial "site_footer.html" . }}

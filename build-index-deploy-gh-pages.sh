@@ -5,8 +5,8 @@ curdir=$(pwd)
 TODAY=$(date)
 # Build Hugo.
 hugo --ignoreCache --baseURL=https://ryanwatters.io
-cp ${curdir}/public/singletons/index.html ${curdir}/public/assets/site-index.json
-rm -rf ${curdir}/public/singletons
+cp ${curdir}/public/singles/index.html ${curdir}/public/assets/site-index.json
+rm -rf ${curdir}/public/singles
 cd $curdir
 
 yes | cp -rf public/* ~/Desktop/GitHub/rdwatters.github.io

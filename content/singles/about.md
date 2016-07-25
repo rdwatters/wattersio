@@ -3,12 +3,12 @@ title: About Me
 subtitle:
 date: 2016-07-20
 modified: false
-tags: [about, ryan watters]
-permalink: /about/
+tags: [about]
 categories:
 ori_date:
 description: Information about me, Ryan Watters. I'm flattered that you're interested in reading about my favorite subject to talk about.
-type: singletons
+removefromsearch:
+permalink: [/whatever/]
 aliases:
 ---
 

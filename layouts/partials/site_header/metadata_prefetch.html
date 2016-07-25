@@ -3,7 +3,7 @@
 <link rel="preconnect" href="{{ .Site.BaseURL }}">
 <link rel="canonical" href="{{ .Permalink }}">
 <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-{{ if .IsPage }}
+{{ if and (.IsPage) (eq .Section "posts") }}
 	{{with .NextInSection }}
 	<link rel="preload" href="/assets/images/{{.Params.image}}.jpg">
 	<link rel="prefetch" href="{{.Permalink}}">

@@ -30,7 +30,9 @@
 @import "responsive-utilities";
 //Codeblocks
 @import "coding";
-// @import 'solarized-dark';
+//Navigation in Single Pages
+@import "postsnavigation-sides";
+@import "postsnavigation-bottom";
 //Hacks
 @import "hacks";
 @import "gray";
@@ -318,9 +320,10 @@ strong.updated {
   clear: both;
   float: right;
   color: white;
-  font-family: $base-font-family;
+  font-family: $heading-font-family;
   text-decoration: none;
   text-align: right;
+  font-weight:normal;
   &.homepage {
     @include card;
     color: $base-font-color;
