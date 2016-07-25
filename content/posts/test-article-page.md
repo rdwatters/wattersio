@@ -9,6 +9,7 @@ categories: history
 tags:  [fall, halloween, pumpkins,chicago]
 image: pumpkins
 removefromsearch:
+removecomments: true
 ---
 
 ## First Heading

@@ -1,55 +1,55 @@
 {{ partial "site_header.html" . }}
 <a href="" id="page-top" class=""></a>
 <article class="postWrapper">
-  <section class="section--first u-table">
-    {{ if .Params.image }}
-    <div class="postHero" style="background-image:url('/assets/images/{{ .Params.image }}.jpg');">
-    {{ else }}
-    <div class="postHero solid">
-    {{ end }}
-      <div class="postMeta-wrapper">
-        <ul class="postMeta">
-
-          <li class="postMeta-datetime">
-            {{partial "publish_date.html" . }}
-          </li>
-          {{ with .Params.categories }}
-          <span class="dot"></span>
-          <li>
-          <a href="/categories/{{ . | urlize}}" class="category-tag">
+    <section class="section--first u-table">
+        {{ if .Params.image }}
+        <div class="postHero" style="background-image:url('/assets/images/{{ .Params.image }}.jpg');">
+            {{ else }}
+            <div class="postHero solid">
+                {{ end }}
+                <div class="postMeta-wrapper">
+                    <ul class="postMeta">
+                        <li class="postMeta-datetime">
+                            {{partial "publish_date.html" . }}
+                        </li>
+                        {{ with .Params.categories }}
+                        <span class="dot"></span>
+                        <li>
+                            <a href="/categories/{{ . | urlize}}" class="category-tag">
             {{ . }}
           </a>
-          </li>
-          {{ end }}
-        </ul>
-        <h1 class="page-title{{if gt (len .Title) 20}} long-title{{end}}">{{ .Title }}</h1>
-        <div class="hr">
-          <hr>
+                        </li>
+                        {{ end }}
+                    </ul>
+                    <h1 class="page-title{{if gt (len .Title) 20}} long-title{{end}}">{{ .Title }}</h1>
+                    <div class="hr">
+                        <hr>
+                    </div>
+                    {{ if .Params.tags}}
+                    <ul class="tags">
+                        {{range .Params.tags}}
+                        <li><a class="tag" href="/tags/{{. | urlize}}">{{.}}</a></li>
+                        {{end}}
+                    </ul>
+                    {{ end }}
+                </div>
+            </div>
+    </section>
+    <section class="section--last">
+        <div class="container container--content">
+            {{ if .Params.modified }}
+            <div class="original-publish-date">[[Originally published
+                <time>{{ .Params.ori_date}}]]</time>
+            </div>
+            {{ end }}
+            <div class="content-body fancy-links">
+                {{ .Content }}
+            </div>
         </div>
-        {{ if .Params.tags}}
-            <ul class="tags">
-            {{range .Params.tags}}
-            <li><a class="tag" href="/tags/{{. | urlize}}">{{.}}</a></li>
-            {{end}}
-            </ul>
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  <section class="section--last">
-    <div class="container container--content">
-    {{ if .Params.modified }}
-    <div class="original-publish-date">[[Originally published <time>{{ .Params.ori_date}}]]</time></div>
-    {{ end }}
-      <div class="content-body fancy-links">
-        {{ .Content }}
-      </div>
-    </div>
-    <hr class="u-clearHr"/>
-    <hr class="u-clearHr"/>
+    </section>
+    {{ partial "disqus_comments.html" . }}
+    <hr class="u-clearHr" />
+    <hr class="u-clearHr" />
     <hr/>
-  </section>
 </article>
-    {{ partial "prevnext.html" . }}
-  </footer>
-{{ partial "site_footer.html" . }}
+{{ partial "prevnext.html" . }} {{ partial "site_footer.html" . }}

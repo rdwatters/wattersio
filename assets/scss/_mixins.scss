@@ -44,10 +44,11 @@
 }
 
 @mixin card {
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   &:hover {
     transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 10px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
 }
 
@@ -57,10 +58,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  } @else if ($horizontal) {
+  }
+  @else if ($horizontal) {
     left: 50%;
     transform: translate(-50%, 0);
-  } @else if ($vertical) {
+  }
+  @else if ($vertical) {
     top: 50%;
     transform: translate(0, -50%);
   }

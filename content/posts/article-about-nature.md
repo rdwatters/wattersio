@@ -10,6 +10,7 @@ author: Raji
 tags:  [camping,chicago]
 image: starry_night
 removefromsearch:
+removecomments: true
 ---
 
 ## First Heading

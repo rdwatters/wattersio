@@ -9,6 +9,7 @@ categories: stuff
 tags:  [blocks,chicago]
 image: tall_blocks
 removefromsearch:
+removecomments: false
 ---
 
 ## First Heading

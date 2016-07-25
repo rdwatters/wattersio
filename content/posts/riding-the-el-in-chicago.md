@@ -9,6 +9,7 @@ categories: technology
 tags:  [macbook, gadgets,chicago]
 image: chicago-el
 removefromsearch:
+removecomments: false
 ---
 
 Testing testing testing mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing [compunctious](/posts/my-kind-of-town).

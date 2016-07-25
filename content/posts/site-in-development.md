@@ -9,6 +9,8 @@ categories: history
 tags:  [chicago]
 image: chicago-skyline1
 aliases: [/posts/my-kind-of-town/]
+removefromsearch:
+removecomments: true
 ---
 
 ## This Site is in Development

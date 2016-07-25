@@ -9,6 +9,7 @@ categories: art
 tags:  [photography,chicago]
 image: selfie_photographer
 removefromsearch:
+removecomments: true
 ---
 
 ## First Heading

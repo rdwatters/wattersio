@@ -56,7 +56,7 @@ watch = true
   IncludeJQ = true
   # Disqus two conditions (here and in page)
   UseDisqus = true
-  disqusShortname = ""
+  disqusShortname = "ryanwattersio"
   SitePublishDate = "2016-01-01"
   SiteTagline = "Content Strategist, Storyteller, Frontend Developer, Unabashed Nerd"
   #Leave off extension for default social image since it's assumed to be "jpg"

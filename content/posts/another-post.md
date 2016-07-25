@@ -11,6 +11,7 @@ authors: Ryan Watters
 tags: [testing,chicago]
 image: chicago_bw
 removefromsearch:
+removecomments: false
 ---
 
 ## Article Heading in Body Copy

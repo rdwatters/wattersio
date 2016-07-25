@@ -8,8 +8,7 @@ categories:
 ori_date:
 description: Information about me, Ryan Watters. I'm flattered that you're interested in reading about my favorite subject to talk about.
 removefromsearch:
-permalink: [/whatever/]
-aliases:
+aliases: [/about/]
 ---
 
 ## Me

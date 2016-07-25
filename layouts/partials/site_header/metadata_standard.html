@@ -4,7 +4,9 @@
 {{if .Params.removefromsearch}}
 <meta name="robots" content="noindex">
 {{ end }}
-
+{{if .IsHome}}
+<meta name="google-site-verification" content="ydH5ZISuG9nWtH86dDAQuq5leJfy7L4ClI0V_R2kcwQ" />
+{{end}}
 <title>{{if not .IsHome }}{{ .Title }} | {{end}}{{ .Site.Title }}</title>
 <!-- Allows removal of iOS chrome when users save on home screen -->
 <meta name="apple-mobile-web-app-capable" content="yes">

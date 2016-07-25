@@ -59,6 +59,7 @@ section.bottom-link-section:hover > .bottom-link-info > h4.bottom-button {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  @include card;
   @include MQ(M) {
     margin-bottom:0px;
   }
@@ -101,7 +102,7 @@ section.bottom-link-section:hover > .bottom-link-info > h4.bottom-button {
       font-weight: normal;
       margin-top: .5em;
       font-size: .8em;
-      font-family: $heading-font-family;
+      font-family:$base-font-family;
     }
   }
 }

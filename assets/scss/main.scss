@@ -41,6 +41,7 @@
 @import "bigfoot";
 @import "resume";
 @import "search";
+@import "disqus-comments";
 body {
   position: relative;
 }
@@ -236,6 +237,8 @@ time.publish-date {
 h2.archive-year {
   border-bottom: 1px solid $base-font-color;
   width: 50%;
+  font-size:1em;
+  text-transform: uppercase;
 }
 
 h2.list-title,
@@ -307,7 +310,7 @@ strong.updated {
   margin-right: auto;
   margin-left: auto;
   min-height:4em;
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
 }
 
@@ -326,10 +329,12 @@ strong.updated {
   font-weight:normal;
   &.homepage {
     @include card;
+    @include center;
+    float:none;
+    text-align:center;
     color: $base-font-color;
-    margin-bottom: 1.5em;
     padding: .5em;
-    margin-right: .5em;
+    width:10em;
     background-color: #ffffff;
   }
 }

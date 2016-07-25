@@ -209,7 +209,7 @@ span.share-close {
   align-items: center;
   @include MQ(M) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   @include MQ(retinaLandscape) {
     flex-direction: row;
