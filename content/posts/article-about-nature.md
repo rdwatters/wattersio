@@ -8,7 +8,7 @@ description:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Digniss
 categories: history
 author: Raji
 tags:  [camping,chicago]
-image: starry_night
+image: starry_night.jpg
 removefromsearch:
 removecomments: true
 ---

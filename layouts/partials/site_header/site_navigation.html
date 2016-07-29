@@ -1,30 +1,31 @@
-<nav role="navigation" class="sidebar sidebar--right">
-  <a href="{{.Site.BaseURL}}" class="textLogo textLogo--white textLogo--sidebar">{{ .Site.Title }}</a>
+<div class="sidebar-toggle-wrapper">
+  <div class="sidebar-toggle"></div>
+</div>
+<nav role="navigation" class="site-navigation">
+  <a href="{{.Site.BaseURL}}" class="site-logo darkbg sidebar-logo">{{ .Site.Title }}</a>
   {{$thisTitle := .Title }}
   {{ if ne "About" $thisTitle }}
-  <a href="/about-me" class="about-page">About</a>
+  <a href="/about-me" role="button" id="about">About</a>
   {{ end }}
-  <ul class="sidebar-recentPosts">
+  <ul class="sidebar-navigation">
     {{ range first 5 (where .Site.Pages "Section" "posts").ByPublishDate.Reverse }}
       {{ if ne .Title $thisTitle }}
       <li>
         <a href="{{ .Permalink }}" class="site-nav sidebar-link">
-        {{ if .Params.image }}
-          <div class="sidebar-recentPosts-image-wrapper">
-            <img src="/assets/images/thumbs/{{ .Params.image }}-thumb.jpg" alt="">
-          </div>
-        {{ end }}
-        <h3 class="side-title">{{ .Title }}</h3>
-        <div class="side-date">{{ if .Params.modified }}<strong class="updated">UPDATED:</strong>{{ end }}<time class="publish-date">{{ .PublishDate.Format "January 2, 2006" }}</time></div>
+          <img src="/assets/images/thumbs/{{ .Params.image }}" alt="">
+          <section>
+            <header>
+            <h2 class="site-navigation-title">{{ .Title }}</h2>
+            {{partial "publish_date.html" . }}
+            </header>
+          </section>
         </a>
       </li>
       {{ end }}
     {{ end }}
   </ul>
   {{if ne .Title "Posts"}}
-  <a href="/posts" class="all-posts">See all posts...</a>
+  <a href="/posts" class="all-posts site-navigation">See all posts...</a>
   {{end}}
 </nav>
-<div class="sidebar-toggle-wrapper">
-  <div class="sidebar-toggle"></div>
-</div>
+

@@ -1,3 +1,3 @@
-{{if not .IsHome}}
-<a href="/" title="Go to the Homepage of {{.Site.Title}}" class="site-logo {{ if .IsNode }}light-bg{{end}}">{{ .Site.Title }}</a>
+{{if not .IsHome }}
+<a href="/" class="site-logo home-link{{if .IsPage}} darkbg{{end}}">Go to the homepage of {{.Site.Title}}</a>
 {{end}}

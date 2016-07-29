@@ -1,19 +1,11 @@
-</div>
-</main>
-{{ partial "social_share" . }}
-{{ partial "toc.html" . }}
-<footer class="section--footer site-footer">
-  <div class="container container--content">
-    <div class="built-with">
-      Built with <span class="heart">&hearts;</span> by <a href="/about-me/">{{.Site.Params.SiteAuthor}}</a>
-    </div>
-    {{ partial "site_footer/site_footer_social.html" .}}
-    <div>
-      © {{ .Site.LastChange.Format "2006"}} {{ .Site.Params.CopyrightLine }}
-    </div>
-  </div>
-</footer>
-
+	  {{ partial "social_share" . }}
+	  {{ partial "pages/toc.html" . }}
+	<footer class="site-footer">
+	  {{ partial "site_footer/site_author_byline.html" . }}
+	  {{ partial "site_footer/site_footer_social.html" . }}
+	  {{ partial "site_footer/site_copyright.html" . }}
+	</footer>
+</div><!-- End .all-content-wrapper -->
   {{ partial "site_footer/site_scripts.html" . }}
   {{ partial "site_footer/google_analytics.html" . }}
 </body>

@@ -7,7 +7,7 @@ ori_date: 2016-04-01
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
 categories: stuff
 tags:  [blocks,chicago]
-image: tall_blocks
+image: tall_blocks.jpg
 removefromsearch:
 removecomments: false
 ---

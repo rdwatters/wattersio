@@ -1,0 +1,58 @@
+{{ if and (eq .Site.Params.PostPrevNextStyle "sides") (ne .Section "singles")}}
+  {{with .PrevInSection }}
+  <nav class="post-nav prev-post">
+      <div class="link-wrapper prev">
+          <a href="{{ .Permalink }}" id="the-prev-link" title="Read the previous article, &quot;{{.Title}}&quot;, published in the {{.Params.categories | title}} category.">
+              <h1 class="post-nav-title">{{.Title}}</h1>
+              {{partial "publish_date.html" . }}
+          </a>
+      </div>
+      <div class="prev-toggle-wrapper">
+          <a href="#" class="link-toggle" id="prev-link-toggle">
+              <div class="link-word">PREV</div>
+          </a>
+      </div>
+  </nav>
+  {{ end }}
+  {{ with .NextInSection }}
+  <nav class="post-nav next-post">
+      <div class="next-toggle-wrapper">
+          <a href="#" class="link-toggle" id="next-link-toggle">
+              <div class="link-word">NEXT</div>
+          </a>
+      </div>
+      <div class="link-wrapper next">
+          <a href="{{ .Permalink }}" id="the-next-link" title="Read the next article, &quot;{{.Title}}&quot;, published in the {{.Params.categories | title}} category.">
+              <h1 class="post-nav-title">{{.Title}}</h1>
+              {{partial "publish_date.html" . }}
+          </a>
+      </div>
+  </nav>
+  {{ end }}
+
+{{ else if and (eq .Site.Params.PostPrevNextStyle "bottom") (ne .Section "singles")}}
+<footer class="post-footer">
+  {{with .PrevInSection }}
+      <a class="post-bottom-link prev" href="{{ .Permalink }}">
+        <section class="bottom-link-section" style="background-image:url({{.Site.BaseURL}}/assets/images/half/{{ .Params.image }});">
+          <div class="bottom-link-info">
+              <h4 class="bottom-button prev-button"><span class="prev-arrow">&larr;</span> PREV</h4>
+              <h1 class="page-title{{if gt (len .Title) 26}} long-title{{end}}">{{.Title}}</h1>
+              {{partial "publish_date.html" . }}
+          </div>
+        </section>
+        </a>
+  {{ end }}
+  {{ with .NextInSection }}
+        <a class="post-bottom-link next" href="{{ .Permalink }}">
+        <section class="bottom-link-section" style="background-image:url({{.Site.BaseURL}}/assets/images/half/{{ .Params.image }});">
+          <div class="bottom-link-info">
+              <h4 class="bottom-button next-button">Next <span class="next-arrow">&rarr;</span></h4>
+              <h1 class="page-title{{if gt (len .Title) 26}} long-title{{end}}">{{.Title}}</h1>
+              {{partial "publish_date.html" . }}
+          </div>
+        </section>
+        </a>
+  {{ end }}
+</footer>
+{{ end }}

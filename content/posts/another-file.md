@@ -1,15 +1,15 @@
 ---
 title: Another File
 subtitle: Newest File for Testing
-publishdate: 2016-06-20
-date: 2016-06-20
+publishdate: 2016-05-21
+date: 2016-05-21
 modified: false
 ori_date:
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam culpa error accusamus ratione officiis."
 categories: history
 authors: Ryan Watters
 tags: [testing,chicago]
-image: chicago_bw
+image: chicago_bw.jpg
 removefromsearch:
 removecomments: true
 ---

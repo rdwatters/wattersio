@@ -1,1 +1,0 @@
-var isMac = navigator.userAgent.indexOf('Mac OS X') != -1 ? true : false;

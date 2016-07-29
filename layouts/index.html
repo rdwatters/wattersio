@@ -1,51 +1,38 @@
 <!-- Note: global_head includes up to and including the opening <body> tag. -->
 {{ partial "site_header.html" . }}
-<section class="section--first section--frontpage">
-  <div class="section-title">
-    <div class="container">
-      <h1 class="textLogo textLogo--frontpage animated">
-        {{ .Site.Title }}
-      </h1>
-      <div class="postMeta-wrapper postMeta-wrapper--frontpage">
-        <div class="postMeta-tagline">{{ .Site.Params.SiteTagline }}</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section--postsWrapper homepage">
-    <div class="blockGroup">
-      <ul class="blockGroup-list">
-        	{{ range first 1 ((where .Site.Pages "Section" "posts").ByPublishDate.Reverse) }}
-          <li class="block">
-            <a class="block-link" href="{{ .Permalink }}">
-              <article class="postArticle">
-                    <img class="postArticle-image grayscale" src="/assets/images/{{ .Params.image }}.jpg">
-                    <span class="postArticle-title">{{ .Title }}</span>
-              </article>
-              <div class="block-postMeta">
-              {{partial "publish_date.html" . }}
-              </div>
-            </a>
-          </li>
-          {{ end }}
-          {{ range after 1 (first 7 (where .Site.Pages "Section" "posts").ByPublishDate.Reverse) }}
-          <li class="block">
-            <a class="block-link" href="{{ .Permalink }}">
-              <article class="postArticle">
-                    <img class="postArticle-image grayscale" src="/assets/images/half/{{ .Params.image }}-half.jpg">
-                    <span class="postArticle-title">{{ .Title }}</span>
-              </article>
-              <div class="block-postMeta">
-              {{partial "publish_date.html" . }}
-              </div>
-            </a>
-          </li>
-          {{ end }}
-      </ul>
-    </div>
-    <div class="all-posts-wrapper">
-      <a href="/posts" class="all-posts homepage">See all posts...</a>
-    </div>
-</section>
-{{ partial "social_share" . }}
-{{ partial "site_footer.html" . }}
+<main role="main" id="home">
+    <header class="home-header">
+        <div class="home-logo site-logo">{{ .Site.Title }}</div>
+        <div class="home-tagline">{{ .Site.Params.SiteTagline }}</div>
+    </header>
+    <ul class="homepage-list">
+        {{ range first 1 ((where .Site.Pages "Section" "posts").ByPublishDate.Reverse) }}
+        <li>
+          <a href="{{ .Permalink }}">
+            <section>
+            <img  class="grayscale" src="/assets/images/{{ .Params.image }}">
+                <header>
+                  <h1>{{ .Title }}</h1>
+                  {{partial "publish_date.html" . }}
+                </header>
+            </section>
+          </a>
+        </li>
+        {{ end }} {{ range after 1 (first 6 (where .Site.Pages "Section" "posts").ByPublishDate.Reverse) }}
+        <li>
+          <a href="{{ .Permalink }}">
+            <section>
+              <img class="grayscale" src="/assets/images/half/{{ .Params.image }}">
+              <header>
+                <h1>{{ .Title }}</h1>
+                {{partial "publish_date.html" . }}
+              </header>
+            </section>
+          </a>
+        </li>
+        {{ end }}
+    </ul>
+    <a href="/posts" role="button" class="all-posts homepage">See all posts...</a>
+
+</main>
+{{ partial "social_share" . }} {{ partial "site_footer.html" . }}

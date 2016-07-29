@@ -1,0 +1,17 @@
+{{if .IsPage }}
+{{if gt .WordCount 400 }}
+<aside class="toc" id="toc">
+    <div class="toc-wrapper">
+    <a class="toc-pagetop-link" href="#page-top">
+        <header class="toc-header" id="toc-header">
+            <h4 class="toc-title">{{.Title | markdownify}}
+        </header>
+    </a>
+        <div class="toc-contents">
+            {{ .TableOfContents }}
+        </div>
+    </div>
+</aside>
+<a href="#" id="toggle-toc"><span class="ellipsis">...</span></a>
+{{end}}
+{{end}}

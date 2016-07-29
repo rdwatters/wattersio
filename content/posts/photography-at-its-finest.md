@@ -7,7 +7,7 @@ ori_date:
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
 categories: art
 tags:  [photography,chicago]
-image: selfie_photographer
+image: selfie_photographer.jpg
 removefromsearch:
 removecomments: true
 ---

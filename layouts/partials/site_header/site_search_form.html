@@ -1,25 +1,28 @@
 <form action="" id="site-search" class="search-form" role="search">
-<a href="/" title="Go Home" class="site-logo">{{ .Site.Title }}</a>
-<div class="form-container">
-			<div class="form-content">
-		    <input type="search" id="search-input" aria-label="Search the {{ .Site.Title }} website..." class="site-search" autocomplete="off" autofocus="autofocus" spellcheck="false" autocapitalize="none" placeholder="Search..." required>
-			</div>
-			<div class="search-results-container">
-				<ul id="search-results">
-					<!-- The following <li> can be uncommented for styling purposes -->
-				    <!-- <li class="search-result">
-				        <a href="#"><h5>Sample Search Result Heading</h5></a>
-				        <p>Here is a simple description area that should be kept relatively short, but just in case, let's make this a little bit longer.</p>
-				   </li>
-				   <li class="search-result">
-				        <a href="#"><h5>Sample Search Result Heading</h5></a>
-				        <p>Here is a simple description area that should be kept relatively short, but just in case, let's make this a little bit longer.</p>
-				   </li> -->
-				</ul>
-			</div>
-			<div class="search-background"></div>
-	</div>
-	<a href="#" id="close-search">Close Search</a>
+	<div class="form-container">
+				<div class="form-content">
+					<a href="/" class="site-logo formbg" id="search-form-homelink">Go to the homepage of {{.Site.Title}}</a>
+					<div class="close-with-escape">Press <span class="keyboard"><span class="escape">ESC</span></span> to close</div>
+					<a href="#" id="close-search">Close Search</a>
+			    <input type="search" id="search-input" aria-label="Search the {{ .Site.Title }} website..." class="site-search" autocomplete="off" autofocus="autofocus" spellcheck="false" autocapitalize="none" placeholder="Search..." required>
+			    <div id="results-length"></div>
+				</div>
+				<div class="search-results-container">
+					<ul id="search-results">
+						<!-- The following <li> can be uncommented for styling purposes -->
+					    <!-- <li class="search-result">
+					        <a href="#"><h5>Sample Search Result Heading</h5></a>
+					        <p>Here is a simple description area that should be kept relatively short, but just in case, let's make this a little bit longer.</p>
+					   </li>
+					   <li class="search-result">
+					        <a href="#"><h5>Sample Search Result Heading</h5></a>
+					        <p>Here is a simple description area that should be kept relatively short, but just in case, let's make this a little bit longer.</p>
+					   </li> -->
+					</ul>
+				</div>
+				<div class="search-background"></div>
+		</div>
+
     <!-- <div class="press-key escape" title="Press Escape to Close the Site Search Overlay">Press <em class="keyboard key">ESC</em> to close.</div> -->
 </form>
-<a href="#" id="toggle-search" {{if .IsHome }}class="light-bg home-search"{{else if .IsNode}}class="light-bg"{{end}}></a>
+<a href="#" id="toggle-search"><div class="lightbg"></div></a>

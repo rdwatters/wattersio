@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: *
-Disallow: /css/
-Disallow: /images/
-Disallow: /js/
-Disallow: /docsample/

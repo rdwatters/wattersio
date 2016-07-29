@@ -1,25 +1,26 @@
 {{ partial "site_header.html" . }}
-<div class="container container--content">
-    <div class="list-page">
+    <main role="main" class="list-page">
+    {{$data := .Data}}
         <header>
-            <h1 class="list-page-title"><a href="/{{.Data.Plural}}" title="See a list of {{.Data.Plural}} on {{.Site.Title}}">{{.Data.Singular}}</a>: {{ .Title }}</h1>
+            <h1 class="list-page-title">{{$data.Singular}} {{ .Title }}</h1>
         </header>
         <ul class="contents-list">
-            {{ range sort .Data.Pages "PublishDate" "desc" }}
-            <li>
-                <a href="{{.Permalink}}" class="content-link">
-                    <div class="list-time">
-                        {{partial "publish_date.html" . }}
+            {{ range sort $data.Pages "PublishDate" "desc" }}
+            <li class="content-list-item">
+                <a href="{{.Permalink}}" class="content-list-link">
+                    <div class="content-list-image grayscale" style="background-image:url(/assets/images/thumbs/{{.Params.image | default "site-logo.jpg"}})">
+                    {{partial "publish_date.html" . }}
                     </div>
-                    <div class="content-list-image grayscale" style="background-image:url(/assets/images/thumbs/{{.Params.image | default "site-logo"}}-thumb.jpg);">
-                    </div>
-                <section class="content-info">
-                        <h2 class="list-title">{{ .Title }}</h2>
-		        				<p class="list-description">{{ .Description }}</p>
-		        </section>
-	        </a></li>
-	    {{ end }}
-	   </ul>
-    </div>
-</div>
+                    <section>
+                        <header>
+                        <h3 class="list">{{ .Title }}</h3>
+                        <p class="list-description">{{ .Description }}</p>
+                        </header>
+                    </section>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </main>
 {{ partial "site_footer.html" . }}
+

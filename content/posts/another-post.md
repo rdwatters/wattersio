@@ -9,7 +9,7 @@ description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam cu
 categories: history
 authors: Ryan Watters
 tags: [testing,chicago]
-image: chicago_bw
+image: chicago_bw.jpg
 removefromsearch:
 removecomments: false
 ---
@@ -24,9 +24,11 @@ Pillarwise disjoint unexcludable passionflower angulometer chloryl disfen clavic
 
 Dimpsy prestamp tuborrhea glaucophanite overcoat osmious expediency entosarc elfinwood umbellately microsporophyll innocent coatimondie forficulate impenetrative temeritous fortuned catclaw resinoextractive metoxenous Shemitic stubbled carven borofluoric.
 
-## Subheading in the middle of the article
+### Subheading in the middle of the article
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur blanditiis quis, alias eius molestias delectus repellat amet corporis aliquam. Neque dolorum sint eaque rerum ea laborum labore esse ad maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto minus alias nulla eum impedit quae iste, esse, cupiditate minima? Vitae illo autem, quibusdam facilis amet iste ducimus eum officiis ea.
+
+![Photo of a woman on a boat in Vietnam. $=full](/assets/images/asian_boat.jpg)
 
 Pillarwise disjoint unexcludable passionflower angulometer chloryl disfen clavicembalo unlucrative convallarin kangarooer tornaria hemoglobulin cloth incisely subtepid entrepas unkid itinerantly Islam flummer Bala bloop preterequine.
 
@@ -38,7 +40,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint hic dicta recusan
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint hic dicta recusandae quos aliquam alias laboriosam tenetur, repudiandae obcaecati necessitatibus natus autem ipsam, consequatur, vero modi repellat animi ab et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi aperiam hic recusandae alias, earum velit neque quos vitae nesciunt? Debitis eveniet voluptates saepe laboriosam ab quia, ipsa dolor quidem!
 
-## Subheading in the middle of the article
+### Subheading in the middle of the article
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur blanditiis quis, alias eius molestias delectus repellat amet corporis aliquam. Neque dolorum sint eaque rerum ea laborum labore esse ad maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto minus alias nulla eum impedit quae iste, esse, cupiditate minima? Vitae illo autem, quibusdam facilis amet iste ducimus eum officiis ea.
 
@@ -59,8 +61,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint hic dicta recusan
 Predicability plashingly snithy nosopoetic mussy physophorous outglad Corylopsis protorthopteron vasculature trafflike reobligation flodge heterocycle dentelle frogbit reanswer donorship bellwaver inoperculate mechanomorphism swinglebar barograph unsting.
 
 Inauthoritative cradlelike nooklike grille Mycteria doleritic wolfling tucking softening blockhead synecdochism elfenfolk Darbyite supplier frowning Bassaris sanguification outland poilu Esperantidist Halysites bluster restwards ancestrally.
-
-![Photo of a woman on a boat in Vietnam. $=full](/assets/images/asian_boat.jpg)
 
 Predicability plashingly snithy nosopoetic mussy physophorous outglad Corylopsis protorthopteron vasculature trafflike reobligation flodge heterocycle dentelle frogbit reanswer donorship bellwaver inoperculate mechanomorphism swinglebar barograph unsting.
 

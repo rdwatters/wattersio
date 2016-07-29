@@ -1,55 +1,35 @@
 {{ partial "site_header.html" . }}
-<a href="" id="page-top" class=""></a>
-<article class="postWrapper">
-    <section class="section--first u-table">
-        {{ if .Params.image }}
-        <div class="postHero" style="background-image:url('/assets/images/{{ .Params.image }}.jpg');">
-            {{ else }}
-            <div class="postHero solid">
-                {{ end }}
-                <div class="postMeta-wrapper">
-                    <ul class="postMeta">
-                        <li class="postMeta-datetime">
-                            {{partial "publish_date.html" . }}
-                        </li>
-                        {{ with .Params.categories }}
-                        <span class="dot"></span>
-                        <li>
-                            <a href="/categories/{{ . | urlize}}" class="category-tag">
-            {{ . }}
-          </a>
-                        </li>
-                        {{ end }}
-                    </ul>
-                    <h1 class="page-title{{if gt (len .Title) 20}} long-title{{end}}">{{ .Title }}</h1>
-                    <div class="hr">
-                        <hr>
-                    </div>
-                    {{ if .Params.tags}}
-                    <ul class="tags">
-                        {{range .Params.tags}}
-                        <li><a class="tag" href="/tags/{{. | urlize}}">{{.}}</a></li>
+<main role="main" class="article">
+    <a href="" id="page-top" class=""></a>
+    <article class="{{.Section}}">
+        <header{{with .Params.image}} style="background-image:url(/assets/images/{{.}})"{{else}} class="single-page"{{end}}>
+            <div class="header-content">
+                {{if eq .Section "posts" }}
+                    {{partial "publish_date" . }}<span class="dot"></span>
+                    {{with .Params.categories}}
+                    <span class="category"><a href="/categories/{{.|urlize}}">{{. |upper}}</a></span>
+                    {{end}}
+                {{end}}
+                <h1>{{.Title}}</h1>
+                <div class="hr-wrapper">
+                    <hr>
+                </div>
+                {{if and (eq .Section "posts") (.Params.tags)}}
+                <div class="article-tags-wrapper">
+                    <ul class="article-tags">
+                        {{range .Params.tags }}
+                        <li><a href="/tags/{{.|urlize}}">{{.|upper}}</a></li>
                         {{end}}
                     </ul>
-                    {{ end }}
                 </div>
+                {{end}}
             </div>
-    </section>
-    <section class="section--last">
-        <div class="container container--content">
-            {{ if .Params.modified }}
-            <div class="original-publish-date">[[Originally published
-                <time>{{ .Params.ori_date}}]]</time>
-            </div>
-            {{ end }}
-            <div class="content-body fancy-links">
-                {{ .Content }}
-            </div>
+        </header>
+        <div class="body-copy">
+        {{.Content}}
         </div>
-    </section>
+    </article>
     {{ partial "disqus_comments.html" . }}
-    <hr class="u-clearHr" />
-    <hr class="u-clearHr" />
-    <hr/>
-</article>
-{{ partial "prevnext.html" . }} {{ partial "site_footer.html" . }}
+    {{ partial "pages/previous_and_next_links.html" . }}
+</main>
+{{ partial "site_footer.html" . }}

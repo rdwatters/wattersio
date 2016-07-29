@@ -5,12 +5,12 @@
 <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ if and (.IsPage) (eq .Section "posts") }}
 	{{with .NextInSection }}
-	<link rel="preload" href="/assets/images/{{.Params.image}}.jpg">
+	<link rel="preload" href="/assets/images/{{.Params.image}}">
 	<link rel="prefetch" href="{{.Permalink}}">
 	<link rel="prerender" href="{{.Permalink}}">
 	{{ end }}
 	{{with .PrevInSection }}
-	<link rel="preload" href="/assets/images/{{.Params.image}}.jpg">
+	<link rel="preload" href="/assets/images/{{.Params.image}}">
 	<link rel="prefetch" href="{{.Permalink}}">
 	<link rel="prerender" href="{{.Permalink}}">
 	{{ end }}

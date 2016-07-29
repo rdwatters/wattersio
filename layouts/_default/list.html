@@ -1,3 +1,24 @@
 {{ partial "site_header.html" . }}
-
+    <main role="main" class="list-page">
+        <header>
+            <h1 class="list-page-title">All {{ .Title }}</h1>
+        </header>
+        <ul class="contents-list">
+            {{ range .Data.Pages "PublishDate" "desc" }}
+            <li>
+                <a href="{{.Permalink}}" class="content-list-item">
+                    {{partial "publish_date.html" . }}
+                   <img src="/assets/images/thumbs/{{.Params.image | default "site-logo.jpg"}}" class="grayscale">
+                    <section>
+                        <header>
+                            <h2>{{ .Title }}</h2>
+                            <p>{{ .Description }}</p>
+                        </header>
+                    </section>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </main>
+{{ partial "toc_archive.html" . }}
 {{ partial "site_footer.html" . }}

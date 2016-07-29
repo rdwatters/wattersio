@@ -9,17 +9,17 @@
     </div>
     <span class="share-close"></span>
   </div>
-  <div class="fullscreenModal u-table">
-    <div class="u-tableCell u-verticalAlignMiddle">
-      <h2 class="h2--shareTitle">Share "{{.Title}}"</h2>
-      <ul class="shareWrapper">
-        <li><a class="shareButton shareButton--twitter" href="https://twitter.com/intent/tweet?text={{ .Title }} {{.Site.Params.SiteAuthor}}&url={{ .Permalink }}" target="_blank"></a></li>
-        <li><a class="shareButton shareButton--facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank"></a></li>
-        <li><a class="shareButton shareButton--linkedin" href="https://www.linkedin.com/shareArticle
-  ?mini=true&url={{ .Permalink }}&title={{ .Title }}"  target="_blank"></a></li>
-        <li><a href="mailto:?subject=Sharing %22{{ .Title }}%22 from {{.Site.Title}}&body=%22{{if not .IsHome }}{{.Description}}{{else}}{{.Site.Params.SiteDescription}}{{end}}%22%0D%0D{{ .Permalink }}" class="shareButton shareButton--email"></a></li>
-      </ul>
-    </div>
+  <div class="social-media-share-wrapper">
+    <section class="social-media-share">
+        <h2 class="social-media-title">Share "{{.Title}}"</h2>
+        <ul class="social-media-share-list">
+          <li><a class="share-button twitter" href="https://twitter.com/intent/tweet?text={{ .Title }} {{.Site.Params.SiteAuthor}}&url={{ .Permalink }}" target="_blank"></a></li>
+          <li><a class="share-button facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank"></a></li>
+          <li><a class="share-button linkedin" href="https://www.linkedin.com/shareArticle
+    ?mini=true&url={{ .Permalink }}&title={{ .Title }}"  target="_blank"></a></li>
+          <li><a href="mailto:?subject=Sharing %22{{ .Title }}%22 from {{.Site.Title}}&body=%22{{if not .IsHome }}{{.Description}}{{else}}{{.Site.Params.SiteDescription}}{{end}}%22%0D%0D{{ .Permalink }}" class="share-button email"></a></li>
+        </ul>
+    </section>
   </div>
 </div>
 {{end}}

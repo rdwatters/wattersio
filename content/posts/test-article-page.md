@@ -7,7 +7,7 @@ ori_date:
 description:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
 categories: history
 tags:  [fall, halloween, pumpkins,chicago]
-image: pumpkins
+image: pumpkins.jpg
 removefromsearch:
 removecomments: true
 ---

@@ -7,7 +7,7 @@ ori_date:
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
 categories: technology
 tags:  [macbook, gadgets,chicago]
-image: chicago-el
+image: chicago-el.jpg
 removefromsearch:
 removecomments: false
 ---
