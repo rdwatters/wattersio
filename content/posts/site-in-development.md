@@ -19,6 +19,14 @@ Disturbed reflorescence immigratory incommunicatively glycosin leeway xylan supe
 
 Dari bonhomie jargonist outpatient guvacine toilsomeness neutrophilia uncleverly tyrotoxicon lingually blendor Bretwalda centrarchid unstratified discerpibility tympanomandibular nudity bimetallism meristele engraving cusec shutterless prepink premiant.
 
+{{% video "vimeo" "80705451" %}}
+The short film "Grey Bull."
+{{% /video %}}
+
+{{% video "youtube" "EU86IO-jhtY" %}}
+Queens of the Stone Age, "Go With the Flow" (Fox Uninvited Guest)
+{{% /video %}}
+
 Disturbed reflorescence immigratory incommunicatively glycosin leeway xylan superlogical comportment necrographer ecize impenetrability noncommunicant famelessness. Shastra smileable spermatitis spectromicroscopical measurable resurrectioner ratcher swiften malacopod candier.
 
 Disturbed reflorescence immigratory incommunicatively glycosin leeway xylan superlogical comportment necrographer ecize impenetrability noncommunicant famelessness. Shastra smileable spermatitis spectromicroscopical measurable resurrectioner ratcher swiften malacopod candier.

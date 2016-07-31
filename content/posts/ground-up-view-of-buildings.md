@@ -14,7 +14,7 @@ removecomments: false
 
 ## First Heading
 
-Cabalistic mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing [compunctious](/testing).
+Cabalistic mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing [compunctious](/posts/another-post).
 
 Oman. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ut, accusantium deleniti ipsa, repellat iure neque provident reprehenderit similique cumque veniam enim. Alias aliquid quae sapiente cum, accusantium nesciunt possimus.
 

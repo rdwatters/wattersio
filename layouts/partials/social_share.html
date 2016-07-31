@@ -1,16 +1,18 @@
 {{if .IsPage }}
 <div class="social-wrapper">
-  <div class="modal-toggle-group animate scaleIn">
+  <div class="modal-toggle-group animate">
     <div class="modal-toggle-bubbleShadow"></div>
     <div class="modal-toggle-bubble"></div>
-    <div class="modal-toggle-wrapper"></div>
+    <div class="modal-toggle-wrapper">
+      {{partial "svg_icons/share.svg" . }}
+    </div>
     <div class="modal-toggle-close-wrapper">
       <div class="modal-toggle-close"></div>
     </div>
     <span class="share-close"></span>
   </div>
   <div class="social-media-share-wrapper">
-    <section class="social-media-share">
+    <section class="social-media-share animated">
         <h2 class="social-media-title">Share "{{.Title}}"</h2>
         <ul class="social-media-share-list">
           <li><a class="share-button twitter" href="https://twitter.com/intent/tweet?text={{ .Title }} {{.Site.Params.SiteAuthor}}&url={{ .Permalink }}" target="_blank"></a></li>

@@ -1,5 +1,5 @@
 ---
-title: "Resume"
+title: "Résume"
 subtitle:
 modified: false
 description: If you are looking to reach out for professional reasons, please take a look at my résumé.
@@ -14,7 +14,7 @@ Experienced web professional with a deep understanding of content strategy, cont
 
 ## Experience
 
-<h3 class="experience-title">Digital Content Manager <span class="work-experience-time">Dec 2015 &ndash; Present</span></h3>
+<h3 class="experience-title">Digital Content Manager <br><span class="work-experience-time">Dec 2015 &ndash; Present</span></h3>
 
 <div class="employer">College of American Pathologists, Digital Strategy Team</div>
 
@@ -33,7 +33,7 @@ Experienced web professional with a deep understanding of content strategy, cont
 * Designed new editorial process and content strategy for CAP's flagship website
 * Sole developer, writer, designer, and editor for the organization's first web-based writer's guide and Digital Strategy Blog (See [Digital Website Sample][])
 
-### Senior Medical Editor <span class="work-experience-time">Jun 2015 &ndash; Dec 2015</span>
+<h3 class="experience-title">Senior Medical Editor <span class="work-experience-time">Jun 2015 &ndash; Dec 2015</span></h3>
 
 <div class="employer">Precision for Value, Editorial &amp; Mixed Services</div>
 
@@ -48,7 +48,7 @@ Experienced web professional with a deep understanding of content strategy, cont
 * Updated more than 70 communication pieces with more than a week to spare within NDA period
 * Spearheaded project with IT and medical writers to develop a new reference management system and wiki-based style guide
 
-### Editor AAP.org <span class="work-experience-time">Feb 2014 &ndash; Jun 2015</span>
+<h3 class="experience-title">Editor, AAP.org <span class="work-experience-time">Feb 2014 &ndash; Jun 2015</span></h3>
 
 <div class="employer">American Academy of Pediatrics, Department of Marketing & Communications</div>
 
@@ -69,7 +69,7 @@ Experienced web professional with a deep understanding of content strategy, cont
 * Unified content calendars for AAP.org and HealthyChildren.org for better content strategy between the properties
 * Developed all front-end code for the [AAP's Literacy Toolkit](https://littoolkit.aap.org), a site introduced by Hillary Clinton during the AAP's National Conference & Exhibition
 
-### Managing Medical Copy Editor <span class="work-experience-time">Nov 2011 &ndash; Feb 2014</span>
+<h3 class="experience-title">Managing Medical Copy Editor <span class="work-experience-time">Nov 2011 &ndash; Feb 2014</span></h3>
 
 <div class="employer">American Academy of Pediatrics, Scholarly Publishing</div>
 
@@ -87,7 +87,7 @@ Experienced web professional with a deep understanding of content strategy, cont
 * Spearheaded a SharePoint team site for the full line of digital subspecialty products, thus reducing post-peer-review lead time from 4 weeks to 48 hours
 * Developed division-wide, wiki-based style guide (addendum to AMA 10) on AAP's intranet
 
-### Contract Medical Copywriter <span class="work-experience-time">Jul 2008 &ndash; Present</span>
+<h3 class="experience-title">Contract Medical Copywriter <span class="work-experience-time">Jul 2008 &ndash; Present</span></h3>
 
 #### Select Contract Work
 
@@ -135,7 +135,7 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 
 ## Education & Certifications
 
-* BA, English Studies, Illinois State University, 2004
+* BA, English Studies; Illinois State University, 2004
 * Board Certification as an Editor in the Life Sciences (ELS); [BELS][]
 * Certified Professional Medical Writer (CPMW); [Graham School, University of Chicago][]
 

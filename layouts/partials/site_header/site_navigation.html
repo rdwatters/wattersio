@@ -12,7 +12,7 @@
       {{ if ne .Title $thisTitle }}
       <li>
         <a href="{{ .Permalink }}" class="site-nav sidebar-link">
-          <img src="/assets/images/thumbs/{{ .Params.image }}" alt="">
+          <img src="/assets/images/thumbs/{{ .Params.image }}" alt="" class="grayscale">
           <section>
             <header>
             <h2 class="site-navigation-title">{{ .Title }}</h2>

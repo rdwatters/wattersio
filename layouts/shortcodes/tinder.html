@@ -1,0 +1,89 @@
+<div class="ios-app">
+		{{$lowername := .Get 0 | lower }}
+<style>
+        /*{background-image: url(/assets/images/headshots/{{$lowername}}.jpg);
+        }*/
+        .conversation-thread.tinder.{{$lowername}} > ul.split li:nth-child(odd):before,
+        .conversation-thread.tinder.{{$lowername}} > ul.left > li:before{background-image: url(/assets/images/headshots/{{$lowername}}.jpg)!important;
+            content:'';
+            background-size: contain;
+        }
+</style>
+        <div class="app-icon tinder">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" id="tinder-icon" style="stroke-width: 0px;">
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                    <path d="M500 5104 c-234 -50 -436 -254 -485 -489 -22 -105 -22 -4005 0 -4110
+                    50 -238 252 -440 490 -490 105 -22 4005 -22 4110 0 238 50 440 252 490 490 22
+                    105 22 4005 0 4110 -50 238 -252 440 -490 490 -102 21 -4015 21 -4115 -1z
+                    m2450 -801 c648 -662 1006 -1310 1111 -2014 38 -261 16 -554 -61 -790 -131
+                    -400 -426 -689 -849 -829 -238 -79 -492 -115 -776 -107 -404 10 -684 113 -973
+                    358 -154 130 -275 324 -329 524 -25 92 -27 115 -27 295 0 165 3 211 22 300 91
+                    422 335 872 726 1334 l101 119 7 -49 c3 -27 12 -89 18 -139 19 -152 75 -287
+                    159 -385 l30 -35 83 43 c201 103 364 264 458 452 83 166 120 343 120 584 0
+                    172 -19 317 -60 469 -17 59 -30 112 -30 118 0 19 91 -64 270 -248z" />
+                </g>
+            </svg>
+        </div>
+    <header class="tinder-header">
+        <div class="phone">
+            {{$bars := .Get 3}}
+            <div class="signal">
+                {{if eq $bars "3"}}
+                <span class="filled"></span>
+                <span class="filled"></span>
+                <span class="filled"></span>
+                <span class="empty"></span>
+                <span class="empty"></span>
+                <span class="carrier">AT&T &nbsp;LTE</span>
+                {{else if eq $bars "4"}}
+                <span class="filled"></span>
+                <span class="filled"></span>
+                <span class="filled"></span>
+                <span class="filled"></span>
+                <span class="empty"></span>
+                <span class="carrier">AT&T &nbsp;LTE</span>
+                {{else if eq $bars "5"}}
+                <span class="filled"></span>
+                <span class="filled"></span>
+                <span class="filled"></span>
+                <span class="filled"></span>
+                <span class="filled"></span>
+                <span class="carrier">AT&T &nbsp;LTE</span>
+                {{end}}
+            </div>
+            <div class="message-time">{{.Get 1}}</div>
+    		<div class="location-and-battery">
+    			<div class="location-arrow"></div>
+    			<div class="bluetooth"></div>
+    			<div class="battery-power {{.Get 4}}"></div>
+    		</div>
+        </div>
+        <div class="match-header">
+            <div>
+                <i class="icon-leftarrow tinder"></i>
+            </div>
+            <div class="match-name-and-image tinder">
+                <img class="datingapp-image tinder" src="/assets/images/headshots/{{$lowername}}.jpg" alt="Fake dating app profile photo." />
+                <span>{{.Get 0}}</span>
+            </div>
+            <div class="icons-right tinder">
+                <span class="filled tinder"></span>
+                <span class="filled tinder"></span>
+                <span class="filled tinder"></span>
+            </div>
+        </div>
+    </header>
+    <div class="conversation-thread tinder {{$lowername}}">
+
+    	<p class="tinder-match-date">YOU MATCHED WITH {{.Get 0 | upper}} ON {{.Get 2|dateFormat "1/2/2006" }}</p>
+     {{.Inner}}
+    </div>
+    <div class="response-box-tinder">
+	    <div class="tinder-icons">
+	    	<div class="gif-icon-tinder">GIF</div>
+		    <div class="your-message-tinder">Type a Message...</div>
+				<div class="send-tinder">Send</div>
+			</div>
+    </div>
+</div>
+<div class="shortcode-description"><p>{{.Get 5}}</p></div>

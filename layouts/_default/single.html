@@ -2,7 +2,7 @@
 <main role="main" class="article">
     <a href="" id="page-top" class=""></a>
     <article class="{{.Section}}">
-        <header{{with .Params.image}} style="background-image:url(/assets/images/{{.}})"{{else}} class="single-page"{{end}}>
+        <header{{with .Params.image}} class="hero" style="background-image:url(/assets/images/{{.}})"{{else}} class="hero single-page"{{end}}>
             <div class="header-content">
                 {{if eq .Section "posts" }}
                     {{partial "publish_date" . }}<span class="dot"></span>

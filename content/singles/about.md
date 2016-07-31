@@ -30,7 +30,7 @@ Where markdown falls short, the syntax is extended via a handful of [JavaScript 
 
 All content is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
-[![Creative Commons Attribution 4.0 License icon. $=creative-commons](/assets/icons/cc-by.svg)](//creativecommons.org/licenses/by/4.0/)
+<a href="//creativecommons.org/licenses/by/4.0/" class="creative-commons"><img src="/assets/icons/cc-by.svg" alt="Creative Commons Attribution 4.0 License icon"></a>
 
 ## Site Development
 

@@ -1,0 +1,10 @@
+<div class="music-player">
+    <div class="play-button-container">
+        <a href="" class="song-button"></a>
+    </div>
+    <audio class="audio-player" id="{{.Get 0|urlize}}" src="{{.Get 2}}" preload="none"></audio>
+    <div class="song-info">
+        <div class="song-artist">{{.Get 0}}</div>
+        <div class="song-title">{{.Get 1}}</div>
+    </div>
+</div>
