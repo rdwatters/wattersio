@@ -1,0 +1,418 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/images/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/images/favicons/manifest.json">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NIPC Content Review</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/cap.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <a href="/resume" id="back-to-resume" style="position:fixed;top:1em;right:1em;font-size:1.2em;color:white;background:black;padding:.5em;font-weight:normal;display:block;z-index:99999999;cursor:pointer;">Back to Ryan's Resume</a>
+    <a href="/#/" class="logo-homelink">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="cap-logo" class="cap-logo" x="0px" y="0px" viewBox="0 0 42 64.14" enable-background="new 0 0 42 64.14" xml:space="preserve">
+            <path d="M16.831,2.592c0-0.806,0.651-1.46,1.461-1.46c0.803,0,1.458,0.654,1.458,1.46c0,0.808-0.654,1.461-1.458,1.461  C17.481,4.053,16.831,3.399,16.831,2.592z" />
+            <path fill="#009ABE" d="M12.16,2.593c0-0.483,0.394-0.874,0.876-0.874c0.487,0,0.876,0.391,0.876,0.874s-0.389,0.875-0.876,0.875  C12.553,3.468,12.16,3.076,12.16,2.593z" />
+            <circle fill="#B22028" cx="28.8" cy="2.592" r="1.461" />
+            <path fill="#009ABE" d="M21.503,2.592c0-1.128,0.916-2.043,2.043-2.043c1.123,0,2.041,0.915,2.041,2.043s-0.918,2.045-2.041,2.045  C22.419,4.637,21.503,3.72,21.503,2.592z" />
+            <path d="M6.32,7.877c0-0.809,0.659-1.463,1.46-1.463c0.805,0,1.461,0.654,1.461,1.463c0,0.804-0.656,1.455-1.461,1.455  C6.979,9.332,6.32,8.681,6.32,7.877z" />
+            <path d="M27.339,7.877c0-0.809,0.654-1.463,1.459-1.463c0.809,0,1.463,0.654,1.463,1.463c0,0.804-0.654,1.455-1.463,1.455  C27.993,9.332,27.339,8.681,27.339,7.877z" />
+            <path d="M33.175,7.877c0-0.48,0.395-0.879,0.875-0.879c0.486,0,0.879,0.398,0.879,0.879c0,0.483-0.393,0.873-0.879,0.873  C33.569,8.75,33.175,8.36,33.175,7.877z" />
+            <path fill="#B22028" d="M22.085,7.877c0-0.781,0.656-1.415,1.461-1.415c0.801,0,1.459,0.634,1.459,1.415  c0,0.779-0.658,1.407-1.459,1.407C22.741,9.284,22.085,8.656,22.085,7.877z" />
+            <path fill="#C4C5C7" d="M16.831,7.877c0-0.809,0.651-1.463,1.461-1.463c0.804,0,1.458,0.654,1.458,1.463  c0,0.804-0.654,1.455-1.458,1.455C17.482,9.332,16.831,8.681,16.831,7.877z" />
+            <path fill="#009ABE" d="M10.993,7.877c0-1.132,0.917-2.047,2.043-2.047c1.132,0,2.044,0.915,2.044,2.047  c0,1.124-0.912,2.042-2.044,2.042C11.91,9.919,10.993,9.001,10.993,7.877z" />
+            <path d="M11.575,28.729c0-0.81,0.654-1.459,1.458-1.459c0.811,0,1.461,0.649,1.461,1.459c0,0.807-0.651,1.461-1.461,1.461  C12.229,30.189,11.575,29.535,11.575,28.729z" />
+            <path d="M27.925,28.729c0-0.485,0.391-0.877,0.871-0.877c0.488,0,0.879,0.392,0.879,0.877c0,0.487-0.391,0.875-0.879,0.875  C28.315,29.604,27.925,29.216,27.925,28.729z" />
+            <path d="M32.591,28.729c0-0.81,0.654-1.459,1.459-1.459s1.461,0.649,1.461,1.459c0,0.807-0.656,1.461-1.461,1.461  S32.591,29.535,32.591,28.729z" />
+            <path fill="#B22028" d="M6.32,28.729c0-0.81,0.659-1.459,1.46-1.459c0.805,0,1.461,0.649,1.461,1.459  c0,0.807-0.656,1.461-1.461,1.461C6.979,30.189,6.32,29.535,6.32,28.729z" />
+            <path fill="#B22028" d="M37.849,28.729c0-0.81,0.648-1.459,1.459-1.459c0.805,0,1.457,0.649,1.457,1.459  c0,0.807-0.652,1.461-1.457,1.461C38.497,30.189,37.849,29.535,37.849,28.729z" />
+            <path fill="#C4C5C7" d="M1.07,28.729c0-0.81,0.649-1.459,1.454-1.459c0.808,0,1.46,0.649,1.46,1.459c0,0.807-0.652,1.461-1.46,1.461  C1.72,30.189,1.07,29.535,1.07,28.729z" />
+            <path fill="#C4C5C7" d="M16.831,28.729c0-0.81,0.651-1.459,1.461-1.459c0.804,0,1.458,0.649,1.458,1.459  c0,0.807-0.654,1.461-1.458,1.461C17.482,30.189,16.831,29.535,16.831,28.729z" />
+            <path fill="#009ABE" d="M22.085,28.729c0-0.81,0.656-1.459,1.461-1.459c0.801,0,1.459,0.649,1.459,1.459  c0,0.807-0.658,1.461-1.459,1.461C22.741,30.189,22.085,29.535,22.085,28.729z" />
+            <path d="M17.415,33.98c0-0.487,0.39-0.877,0.877-0.877c0.481,0,0.874,0.39,0.874,0.877c0,0.488-0.393,0.875-0.874,0.875  C17.805,34.855,17.415,34.469,17.415,33.98z" />
+            <path d="M22.085,33.985c0-0.811,0.656-1.465,1.461-1.465c0.801,0,1.459,0.654,1.459,1.465c0,0.804-0.658,1.453-1.459,1.453  C22.741,35.438,22.085,34.789,22.085,33.985z" />
+            <path fill="#B22028" d="M10.993,33.978c0-1.127,0.916-2.042,2.042-2.042c1.129,0,2.045,0.915,2.045,2.042  c0,1.13-0.917,2.048-2.045,2.048C11.908,36.025,10.993,35.107,10.993,33.978z" />
+            <path fill="#B22028" d="M27.339,33.985c0-0.811,0.654-1.465,1.459-1.465c0.809,0,1.463,0.654,1.463,1.465  c0,0.804-0.654,1.453-1.463,1.453C27.993,35.438,27.339,34.789,27.339,33.985z" />
+            <path fill="#009ABE" d="M32.591,33.985c0-0.811,0.654-1.465,1.459-1.465s1.463,0.654,1.463,1.465c0,0.804-0.658,1.453-1.463,1.453  S32.591,34.789,32.591,33.985z" />
+            <path fill="#009ABE" d="M6.32,33.985c0-0.81,0.659-1.465,1.46-1.465c0.805,0,1.461,0.655,1.461,1.465  c0,0.807-0.656,1.453-1.461,1.453C6.979,35.438,6.32,34.792,6.32,33.985z" />
+            <path d="M6.32,13.048c0-0.809,0.659-1.464,1.46-1.464c0.805,0,1.461,0.655,1.461,1.464c0,0.803-0.656,1.456-1.461,1.456  C6.979,14.504,6.32,13.851,6.32,13.048z" />
+            <path d="M16.831,13.048c0-0.809,0.651-1.464,1.461-1.464c0.804,0,1.458,0.655,1.458,1.464c0,0.803-0.654,1.456-1.458,1.456  C17.482,14.504,16.831,13.851,16.831,13.048z" />
+            <path fill="#B22028" d="M11.575,13.048c0-0.809,0.654-1.464,1.458-1.464c0.811,0,1.461,0.655,1.461,1.464  c0,0.803-0.651,1.456-1.461,1.456C12.229,14.504,11.575,13.851,11.575,13.048z" />
+            <path fill="#C4C5C7" d="M27.339,13.048c0-0.809,0.654-1.464,1.459-1.464c0.809,0,1.463,0.655,1.463,1.464  c0,0.803-0.654,1.456-1.463,1.456C27.993,14.504,27.339,13.851,27.339,13.048z" />
+            <path fill="#C4C5C7" d="M37.847,13.048c0-0.809,0.65-1.464,1.463-1.464c0.801,0,1.455,0.655,1.455,1.464  c0,0.803-0.654,1.456-1.455,1.456C38.497,14.504,37.847,13.851,37.847,13.048z" />
+            <path fill="#009ABE" d="M1.07,13.048c0-0.809,0.649-1.464,1.454-1.464c0.808,0,1.46,0.655,1.46,1.464  c0,0.803-0.652,1.456-1.46,1.456C1.72,14.504,1.07,13.851,1.07,13.048z" />
+            <path fill="#009ABE" d="M22.669,13.048c0-0.49,0.393-0.879,0.877-0.879c0.48,0,0.873,0.389,0.873,0.879  c0,0.479-0.393,0.874-0.873,0.874C23.062,13.922,22.669,13.527,22.669,13.048z" />
+            <path fill="#009ABE" d="M32.591,13.048c0-0.809,0.654-1.464,1.459-1.464s1.463,0.655,1.463,1.464c0,0.803-0.658,1.456-1.463,1.456  S32.591,13.851,32.591,13.048z" />
+            <path d="M1.65,18.236c0-0.488,0.393-0.883,0.879-0.883c0.481,0,0.875,0.395,0.875,0.883c0,0.479-0.394,0.869-0.875,0.869  C2.043,19.105,1.65,18.715,1.65,18.236z" />
+            <path d="M12.16,18.232c0-0.488,0.389-0.879,0.874-0.879c0.484,0,0.878,0.391,0.878,0.879c0,0.478-0.395,0.873-0.878,0.873  C12.549,19.105,12.16,18.71,12.16,18.232z" />
+            <path d="M22.085,18.235c0-0.812,0.656-1.467,1.461-1.467c0.801,0,1.459,0.655,1.459,1.467c0,0.801-0.658,1.455-1.459,1.455  C22.741,19.69,22.085,19.036,22.085,18.235z" />
+            <path d="M32.591,18.235c0-0.812,0.654-1.467,1.459-1.467s1.463,0.655,1.463,1.467c0,0.801-0.658,1.455-1.463,1.455  S32.591,19.036,32.591,18.235z" />
+            <path fill="#B22028" d="M27.339,18.235c0-0.812,0.654-1.467,1.459-1.467c0.809,0,1.463,0.655,1.463,1.467  c0,0.801-0.654,1.455-1.463,1.455C27.993,19.69,27.339,19.036,27.339,18.235z" />
+            <path fill="#C4C5C7" d="M6.32,18.235c0-0.812,0.659-1.467,1.46-1.467c0.805,0,1.461,0.655,1.461,1.467  c0,0.801-0.656,1.455-1.461,1.455C6.979,19.69,6.32,19.036,6.32,18.235z" />
+            <path fill="#009ABE" d="M16.246,18.23c0-1.134,0.917-2.045,2.046-2.045c1.127,0,2.041,0.911,2.041,2.045  c0,1.129-0.914,2.042-2.041,2.042C17.163,20.272,16.246,19.359,16.246,18.23z" />
+            <path fill="#009ABE" d="M37.265,18.23c0-1.132,0.91-2.045,2.043-2.045c1.125,0,2.041,0.913,2.041,2.045  c0,1.121-0.916,2.042-2.041,2.042C38.175,20.272,37.265,19.352,37.265,18.23z" />
+            <path d="M6.32,23.48c0-0.804,0.659-1.458,1.46-1.458c0.805,0,1.461,0.654,1.461,1.458s-0.656,1.461-1.461,1.461  C6.979,24.941,6.32,24.284,6.32,23.48z" />
+            <path d="M16.831,23.48c0-0.804,0.651-1.458,1.461-1.458c0.804,0,1.458,0.654,1.458,1.458s-0.654,1.461-1.458,1.461  C17.482,24.941,16.831,24.284,16.831,23.48z" />
+            <circle fill="#C4C5C7" cx="28.8" cy="23.48" r="1.461" />
+            <path d="M37.847,23.48c0-0.804,0.65-1.458,1.463-1.458c0.801,0,1.455,0.654,1.455,1.458s-0.654,1.461-1.455,1.461  C38.497,24.941,37.847,24.284,37.847,23.48z" />
+            <path fill="#B22028" d="M21.503,23.48c0-1.134,0.912-2.044,2.043-2.044c1.129,0,2.041,0.91,2.041,2.044  c0,1.128-0.912,2.042-2.041,2.042C22.415,25.522,21.503,24.608,21.503,23.48z" />
+            <circle fill="#009ABE" cx="2.527" cy="23.48" r="2.044" />
+            <path fill="#009ABE" d="M11.575,23.48c0-0.804,0.654-1.458,1.458-1.458c0.811,0,1.461,0.654,1.461,1.458s-0.651,1.461-1.461,1.461  C12.229,24.941,11.575,24.284,11.575,23.48z" />
+            <circle fill="#009ABE" cx="34.052" cy="23.48" r="1.461" />
+            <path d="M11.575,39.23c0-0.805,0.654-1.46,1.458-1.46c0.811,0,1.461,0.655,1.461,1.46c0,0.803-0.651,1.459-1.461,1.459  C12.229,40.689,11.575,40.033,11.575,39.23z" />
+            <path d="M22.669,39.23c0-0.482,0.393-0.878,0.877-0.878c0.48,0,0.873,0.396,0.873,0.878s-0.393,0.875-0.873,0.875  C23.062,40.105,22.669,39.713,22.669,39.23z" />
+            <path fill="#009ABE" d="M16.246,39.227c0-1.126,0.915-2.039,2.047-2.039c1.126,0,2.04,0.913,2.04,2.039  c0,1.127-0.914,2.048-2.04,2.048C17.161,41.274,16.246,40.354,16.246,39.227z" />
+            <path fill="#009ABE" d="M27.339,39.23c0-0.805,0.654-1.46,1.459-1.46c0.809,0,1.463,0.655,1.463,1.46  c0,0.803-0.654,1.459-1.463,1.459C27.993,40.689,27.339,40.033,27.339,39.23z" />
+            <g>
+                <path d="M8.039,63.59c1.917,0,3.64-0.688,4.98-1.988c0.104-0.102,0.167-0.266,0.158-0.418c-0.007-0.12-0.059-0.224-0.138-0.285   l-0.619-0.55c-0.185-0.125-0.402-0.104-0.611,0.061c-1.12,0.846-2.108,1.489-3.79,1.489c-3.044,0-5.522-2.547-5.522-5.681   c0-3.147,2.478-5.706,5.522-5.706c1.298,0,2.712,0.556,3.779,1.483c0.26,0.26,0.497,0.249,0.679,0.021l0.543-0.546   c0.093-0.094,0.145-0.214,0.145-0.343c0-0.139-0.059-0.272-0.169-0.381c-1.547-1.317-3.074-1.906-4.956-1.906   c-4.078,0-7.396,3.319-7.396,7.398C0.644,60.294,3.961,63.59,8.039,63.59z" />
+                <path d="M36.558,49.239h-4.459c-0.273,0-0.492,0.221-0.492,0.491v13.365c0,0.271,0.219,0.494,0.492,0.494h0.766   c0.264,0,0.494-0.233,0.494-0.494v-4.635h3.221c2.541,0,4.609-2.086,4.609-4.649C41.188,51.292,39.112,49.239,36.558,49.239z    M39.415,53.77c0,1.644-1.326,2.979-2.957,2.979h-3.1v-5.76h3.1C38.089,50.989,39.415,52.238,39.415,53.77z" />
+                <path d="M22.667,49.319c-0.09-0.186-0.244-0.284-0.441-0.284h-0.199c-0.199,0-0.348,0.096-0.444,0.287L15.445,62.91   c-0.073,0.159-0.066,0.328,0.019,0.464c0.088,0.136,0.241,0.216,0.423,0.216h0.809c0.226,0,0.389-0.154,0.441-0.289l1.445-3.264   h7.026l1.461,3.261c0.059,0.14,0.221,0.292,0.445,0.292h0.807c0.184,0,0.338-0.08,0.426-0.216c0.084-0.136,0.092-0.305,0.018-0.463   L22.667,49.319z M24.968,58.566h-5.726l2.853-6.404h0.021c0.48,1.073,0.957,2.15,1.438,3.227   C24.022,56.448,24.493,57.51,24.968,58.566z" />
+            </g>
+        </svg>
+    </a>
+    <div class="cap-logo">
+    </div>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>NIPC Web Content Planning &ndash; <a href="http://www.cap.org">CAP.org</a></h1>
+                <small>Focus on Life Preserver</small>
+                <ul>
+                    <li>Improving Discoverability</li>
+                    <li>New Editorial Direction</li>
+                    <li>Next Steps for Creating New Content</li>
+                </ul>
+                <p>
+                    <time>May 14, 2016</time>
+                </p>
+                <aside class="notes">
+                    This presentation should only take about 20 minutes because we'll need time to discuss the pre-meeting questions sent to you via email.
+                </aside>
+            </section>
+            <section>
+                <section>
+                    <h1>Improving Discoverability</h1>
+                    <span class="subtitle">Life Preserver Content Analysis</span>
+                    <aside class="notes">
+                        Leading up to the meeting, I peformed a content analysis of the existing NIPC site section and Life Preserver, in particular.
+                    </aside>
+                </section>
+                <section>
+                    <h2>What's the most commonly cited issue with Life Preserver?</h2>
+                    <h3 class="fragment"><em>People can't find it.</em></h3>
+                    <h3 class="fragment">1 Year of Analytics <small>(May 1, 2015 - May 1, 2016)</small></h3>
+                    <ul>
+                        <li class="fragment important">1,211 pageviews (homepage)</li>
+                        <li class="fragment important">858 pageviews (≈ 15 pages)</li>
+                        <li class="fragment important">67% - 100% Bounce rates</li>
+                    </ul>
+                    <aside class="notes">
+                        The most common shortcoming of Life Preserver cited by the NIPC is that the program has a low level of discoverability within the larger cap.org website, and, as a result, the content within LP gets very little traffic. Google analytics show all pages that fall underneath the homepage for Life Preserver received just 858 pageviews between May 1, 2015 and May 1, 2016, which speaks to the infrequent traffic to the resource. That said, the bounce rates, defined by frequency with which a user leaves the entire website from that page, are higher than the site average. So the question becomes: how can people find Life Preserver?
+                    </aside>
+                </section>
+                <section>
+                    <h2>What about search?</h2>
+                    <p>With "life preserver" as a search term on CAP.org:</p>
+                    <ol>
+                        <li class="fragment">Life Preserver Homepage</li>
+                        <li class="fragment">Life Preserver - Identify and Negotiate Conflict</li>
+                        <li class="fragment">Life Preserver - Exiting Your Fellowship</li>
+                    </ol>
+                    <h3 class="fragment positive">Not bad &#9786;</h3>
+                    <aside class="notes">
+                        One obvious answer is through site search. If we were to enter "life preserver" on cap.org's site search today, we get the following results. Not bad at all. This is a good sign: it shows that if end users are familiar with Life Preserver branding, they should be able to leverage cap.org site search to find LP content.
+                    </aside>
+                </section>
+                <section>
+                    <h2><a href="http://www.cap.org">cap.org</a> receives over 4 <em>million</em> pageviews every year. What percentage of cap.org users leverage site search?</h2>
+                    <ul class="quiz">
+                        <li class="fragment">A. 9%</li>
+                        <li class="fragment">B. 17%</li>
+                        <li class="fragment">C. 3%</li>
+                        <li class="fragment">D. 32%</li>
+                    </ul>
+                    <aside class="notes">
+                        To the point of search, it's important to know how many of our user sessions include use of cap.org's search functionality.
+                    </aside>
+                </section>
+                <section>
+                    <h1 class="answer">C. 3%</h1>
+                    <small class="fragment">(Technically it's 2.8%; current as of May 12, 2016)</small>
+                    <aside class="notes">
+                        This isn't a bad thing; in fact, the rate with which our users rely on site search is higher than other large sites have even lower rates of site search usage. (Ref. if necessary: 1. AAP.org search, 2. 30% of end users on cap.org are new to the site.)
+                        But search is <em>still important</em>, but not necessarily site search on cap.org. So our focus should be external search engines; namely, Google.
+                    </aside>
+                </section>
+                <section>
+                    <h2>Sample search term testing with Google</h2>
+                    <ol>
+                        <li>"life preserver pathology"</li>
+                        <li>"transitioning to full-time work in pathology"</li>
+                        <li>"life preserver CAP"</li>
+                    </ol>
+                    <aside class="notes">
+                        So in a completely unscientific, uncontrolled test, what results will an end-user see when searching for "life preserver pathology" of "life preserver CAP" via Google?
+                    </aside>
+                </section>
+                <section>
+                    <h2>"life preserver pathology"</h2>
+                    <ol>
+                        <li class="fragment">New in Practice - Life Preserver</li>
+                        <li class="fragment">New-in-Practice Pathologists Transition to Work</li>
+                        <li class="fragment">New in Practice Committee</li>
+                        <li class="fragment">College of American Pathologists Home (cap.org)</li>
+                    </ol>
+                    <aside class="notes">
+                        First, if we enter "life preserver pathology" into the search input, we'll get the following results...
+                    </aside>
+
+                </section>
+                <section>
+                    <h2>Two false assumptions:</h2>
+                    <ol>
+                        <li class="fragment">Our end users are savvy enough to enter the exact search term for the LP program.</li>
+                        <li class="fragment">Our end users have similar behaviors and interactions as CAP committee members or staff.* </li>
+                    </ol>
+                    <small class="fragment emphasis">* They don't.</small>
+                    <aside class="notes">
+                        While the results of this search are promising, the testing is based on two false assumptions. This is a common mistake to make. When looking at the way our end users try to find content, we need to move away from anecdotal or personal usage.
+                    </aside>
+                </section>
+                <section>
+                    <h2>"transitioning to full-time work in pathology"</h2>
+                    <ol>
+                        <li class="fragment">Speech language pathologist</li>
+                        <li class="fragment">10 Least Stressful Jobs of 2011</li>
+                        <li class="fragment">...</li>
+                    </ol>
+                    <aside class="notes">
+                        For the sake of argument, let's assume our users are less brand specific when searching for content, and instead opt for a topical, conceptual, and semantic approach to search. An example might be "transitioning to full-time work in pathology," which yields...
+                    </aside>
+                </section>
+                <section>
+                    <h2>"life preserver cap"</h2>
+                    <img data-src="images/life-preserver-cap.jpg" alt="" class="fragment" style="max-height:400px;">
+                    <aside class="notes">
+                        Lastly, entering, in quotes, the exact phrase "life preserver CAP," yields the following...
+                    </aside>
+                </section>
+                <section data-background="//i.giphy.com/16xQZhy26JOXS.gif" class="nobg">
+                    <aside class="notes">
+                        You can't have a presentation about the Internet without at least one animated GIF.
+                    </aside>
+                </section>
+                <section>
+                    <h2>So, how do we improve the discoverability of Life Preserver?</h2>
+                    <ol>
+                        <li class="fragment">Improve search engine optimization (SEO)</li>
+                        <li class="fragment">Create engaging, original content</li>
+                        <li class="fragment">Take a <em>web-first</em> approach</li>
+                        <li class="fragment">Keep users <em>on the site</em></li>
+                    </ol>
+                    <aside class="notes">
+                        So now that we know we need to shift our focus to improve discoverability, what incremental improvements can we make to Life Preserver?
+                    </aside>
+                </section>
+                <section>
+                    <h2>SEO Improvement #1: Titling</h2>
+                    <h4 class="fragment">Use language that is human <em>and</em> machine readable. New titling is considered an easy win.</h4>
+                    <ul>
+                        <li class="fragment"><em>Life Preserver</em> <strong>vs</strong> <em>pathology career development</em></li>
+                        <li class="fragment"><em>Learn the Best Questions to Ask a Pathologist</em> <strong>vs</strong> <em>Questions Every New in Practice Pathologst Should Ask Senior Colleagues</em></li>
+                        <li class="fragment">Distinction between <em>Make the Transition from Fellowship to Residency</em> <strong>vs</strong> <em>Adjust to Practice Life</em></li>
+                    </ul>
+                    <aside class="notes">
+                        While search algorithms are incredibly robust, we need to accept that at the end of the day, search crawlers ("spiders") can only parse text, and they are typically not smart enough to discern complex linguistic concepts (eg, metaphors). One easy way to improve SEO is by changing our title. The following are just examples that I'd like you to keep in mind when we move to the third part of this section (ie, changing the title of Life Preserver).
+                    </aside>
+                </section>
+                <section>
+                    <h2>SEO Improvement #2: Establish credibility</h2>
+                    <p class="fragment">Check! Content on CAP.org will already be considered "credible" by external search engines because of the organization's reputation and status as a nonprofit.</p>
+                    <aside class="notes">
+                        Google does not reveal all the benchmarks used to improve relevancy, but there are currently over 200. One well-established piece of SEO currency is developing credibility. Luckily, cap.org already exceeds this benchmark because of our ties to the organization's scholarly publishing branch, links from other reputable sites, our high level of traffic, 501c status, etc.
+                    </aside>
+                </section>
+                <section>
+                    <h2>SEO Improvement #3: Create <em>web-first</em> content</h2>
+                    <p>Nielsen described PDFs as <a href="https://www.nngroup.com/articles/pdf-unfit-for-human-consumption/">"unfit for human consumption"...</a></p>
+                    <p class="fragment">in <strong>2003</strong>.</p>
+                    <aside class="notes">
+                        I cannot emphasize this enough. That said, "web-first" content does not require a high degree of technical proficiency. That said, we want to make sure the preferred, first-class citizen in terms of delivery medium is a webpage - this means fewer PDFs, Word documents, Excel spreadsheets, etc. While our current platform has limitations in this regard, we need to focus on a web- and content-first approach <em>before</em> we consider a potential replatform, rebranding, etc.
+                    </aside>
+                </section>
+                <section>
+                    <img data-src="images/sad-cat.png" alt="" class="nobg" style="max-width:800px;">
+                </section>
+                <section>
+                    <h2>SEO Improvement #4: Keep Users on the Site</h2>
+                    <ul>
+                        <li class="fragment">Create long-form content (≈1200 words or more).
+                            <ul>
+                                <li>Gone are the days of all web content needing to be short.</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Drive users to content <em>within CAP.org</em>.</li>
+                        <li class="fragment">Do <em>not</em> send users to external sites.</li>
+                        <li class="fragment">Avoid lists that emulate a search engine results page (SERP)</li>
+                    </ul>
+                    <aside class="notes">
+                        Lastly, we should keep users on our site. We don't want them to <em>bounce</em> like they usually do...to other sites, to PDFs, to print documents, etc. Now it's just a matter of creating content that keeps them around...
+                    </aside>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>New Editorial Direction</h1>
+                    <span class="subtitle">Fewer Topics, More Long-Form/Engaging Content</span>
+                    <aside class="notes">
+                        This brings me to my next point, which is the new editorial direction for Life Preserver, NIPC content, and the membership section of cap.org (and hopefully the entire cap.org website).
+                    </aside>
+                </section>
+                <section>
+                    <h2>Comparison of Engaging Content on Life Preserver</h2>
+                    <small><a href="http://www.cap.org/web/home/involved/membership/career-and-life-preserver/job-relocation">Sample 1 &rarr;</a></small>
+                    <img data-src="images/not-engaging.png" alt="">
+                    <aside class="notes">
+                        So what is meant by engaging content? I can show you a quick couple examples from the current Life Preserver...
+                    </aside>
+                </section>
+                <section>
+                    <small><a href="http://www.cap.org/web/home/involved/membership/career-and-life-preserver/legal-moral-issues">Sample 2 &rarr;</a></small>
+                    <img data-src="images/engaging.png" alt="">
+                    <aside class="notes">
+                        What is it that makes the second piece of content more engaging than the first? Why would a new-in-practice pathologist be more interested in either piece of content?
+                    </aside>
+                </section>
+                <section>
+                    <h2><strong>BURNING QUESTION: </strong>What can the NIPC offer that our users can't find elsewhere?</h2>
+                    <small>Currently, Life Preserver sends users to</small>
+                    <ul>
+                        <li class="fragment"><a href="http://www.forbes.com/sites/jacquelynsmith/2012/11/16/8-steps-to-a-successful-job-relocation/#4fdd165d2e16">Forbes &rarr;</a></li>
+                        <li class="fragment"><a href="http://www.mymove.com/">Mymove &rarr;</a></li>
+                        <li class="fragment"><a href="http://www.amazon.com/Real-Life-Financial-Planning-Physician/dp/1596222921/ref=sr_1_95?ie=UTF8&qid=1336501737&sr=8-95">Amazon &rarr;</a></li>
+                    </ul>
+                    <aside class="notes">
+                    So this is the burning question? What kind of content can we create that our end users can't already find elsewhere, because the existing LP acts as a vehicle to push our end users to other web properties with high-level expertise in the respective topic...
+                    </aside>
+                </section>
+                <section>
+                    <h2>Long-form content</h2>
+                    <h3 class="fragment">Why?</h3>
+                    <ul>
+                        <li class="fragment">Keep users engaged and <em>on the site</em></li>
+                        <li class="fragment">Our target audience is highly educated
+                            <ul>
+                                <li class="fragment">Accustomed to text-based content</li>
+                                <li class="fragment">Not averse to reading longer articles</li>
+                                <li class="fragment">Our target audience is interested in hearing the stories of <em>fellow physicians</em></li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Added bonus: Google privileges <a href="http://blog.hubspot.com/marketing/googles-in-depth-articles-algorithm-update-content-nj#sm.001dj9xpu14dedzzyug1n56mp3pxv">"in-depth" content</a> (ie, longer articles written by experts), which means <em>better SEO</em></li>
+                    </ul>
+                    <aside class="notes">
+                        So the new editorial direction I'm proposing is to focus on creating <em>long-form content. Long-form content offers innumerable advantages, with the main strength being...</em>
+                    </aside>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Next Steps for Creating New Content</h1>
+                    <span class="subtitle">Editorial Calendar &amp; Writing Assignments</span>
+                </section>
+                <section>
+                    <h2>Group Discussions</h2>
+                    <small>(From pre-meeting assignment)</small>
+                    <ol>
+                        <li class="fragment">Imagine you are creating a blog about your experiences as a new-in-practice pathologist. What would you write about for your first post?</li>
+                        <li class="fragment">With this first post in your mind’s eye, how can you relate the content therein directly to your experiences as a CAP member?</li>
+                        <li class="fragment">Further, how does your story relate to one of the subtopics in Life Preserver's 2 main content categories (ie, <em>Transition to Work</em> and <em>Establishing a Career Base</em>)?</li>
+                    </ol>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>Goal 1: Writing Assignments</h2>
+                    <small>Content will be created and published intermittently between now and December 31, 2016.</small>
+                </section>
+                <section>
+                    <h2>Goal 2: New Titles for Life Preserver</h2>
+
+
+                </section>
+                <section>
+                    <h2>Next steps:</h2>
+                    <ul>
+                        <li class="fragment">I will schedule initial consults with individual writers over the next <strong>two weeks</strong>.</li>
+                        <li class="fragment">After initial consultations, Digital will send out an editorial calendar to the NIPC for the remainder of 2016.</li>
+                        <li class="fragment">We will also send along instructions regarding the tools we will use for editing and collaboration (ie, Google Drive).</li>
+                        <li class="fragment">I will praise you incessantly for all your hard work and for keeping me gainfully employed</li>
+                    </ul>
+                </section>
+                <section data-background="//i.giphy.com/26FxDLmrBkA8wZGlG.gif" class="nobg"></section>
+            </section>
+        </div>
+    </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [{
+            src: 'plugin/markdown/marked.js'
+        }, {
+            src: 'plugin/markdown/markdown.js'
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }]
+    });
+    </script>
+    <script async src="js/target-blank-util.js"></script>
+</body>
+
+</html>
