@@ -1,6 +1,6 @@
 # Only one archetype (posts) is included in Hugo Starter
 archetypedir = "archetypes"
-baseurl = "http://localhost:1313"
+baseurl = ""
 buildDrafts = false
 buildFuture = false
 canonifyurls = true
