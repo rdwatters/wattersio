@@ -15,7 +15,7 @@ removecomments: true
 
 ## This Site is in Development
 
-I am adding this now that I am on the dev branch for Github.
+This is just a test of netlify and it's deep git integration. I am typing this from the "dev" branch for this repository.
 
 Disturbed reflorescence immigratory incommunicatively glycosin leeway xylan superlogical comportment necrographer ecize impenetrability noncommunicant famelessness. Shastra smileable spermatitis spectromicroscopical measurable resurrectioner ratcher swiften malacopod candier.
 
