@@ -1,0 +1,51 @@
+blockquote {
+  position: relative;
+  display: block;
+  padding: 1em 0em .5em 1em;
+  margin-left: .25em;
+  border-left: 1px solid $brand-primary;
+  font-size: 1.2em;
+  > p {
+    line-height: 1.1;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .blockquote-citation {
+    font-size: .75em;
+    display: block;
+    width: 100%;
+    padding-right: 1em;
+    margin-top: .75em;
+    font-style: normal;
+    text-align: right;
+  }
+  @include MQ(M) {
+    margin-left: 0em;
+    font-size: 1.4em;
+  }
+  @include MQ(L) {
+    width: 40%;
+    font-size: 1.5em;
+    padding: 2em .5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    &:nth-of-type(odd) {
+      float: right;
+      margin-right: -25%;
+      margin-left: .5em;
+      @include MQ(XL) {
+        margin-right: -30%;
+      }
+    }
+    &:nth-of-type(even) {
+      float: left;
+      margin-right: .5em;
+      margin-left: -25%;
+      border-left: none;
+      border-right: 1px solid $brand-primary;
+      @include MQ(XL) {
+        margin-left: -30%;
+      }
+    }
+  }
+}

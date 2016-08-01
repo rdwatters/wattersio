@@ -1,0 +1,81 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+html,body {
+  @include fullscreen;
+}
+
+body {
+  color: $base-font-color;
+  background-color: $body-bg-color;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  line-height: $base-line-height;
+  overflow-x:hidden;
+  @include MLQ(font-size,80%,90%,100%);
+}
+
+.all-content-wrapper {
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  z-index:2;
+  position:relative;
+  max-width:100vw;
+  overflow-x:hidden;
+}
+
+main[role="main"] {
+  flex:1;
+  z-index:2;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+/**
+ * Basic styles for links
+ */
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  font-weight:bold;
+  @include on-event {
+    color: $link-color-event;
+    text-decoration: $link-event-text-decoration;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul,
+li {
+  list-style: none;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+time {
+  color:$base-font-color;
+  font-size:.8em;
+  text-transform:$datetime-text-transform;
+  font-weight:normal;
+}

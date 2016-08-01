@@ -1,0 +1,76 @@
+//BUTTON RESET STYLES
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+
+/* Reset `button` and button-style `input` default styles */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button;
+  /* for input */
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+[role="button"] {
+  color: inherit;
+  cursor: default;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  white-space: pre;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+#about {
+  @include darkbutton($width: 50%);
+  @include center;
+  font-size:1em;
+  margin: {
+    bottom: 1em;
+    top: .5em;
+  }
+  @include MQ(M){
+    font-size:.8em;
+  }
+}
+
+.all-posts.homepage {
+  @include lightbutton($width:auto,$usecard:true,$transform:none);
+  @include center;
+  font-weight:normal;
+  font-size:1em;
+  padding:.3em 1.75em;
+  margin-top:1.5em;
+  font-family:$heading-font-family;
+  max-width:6em;
+  margin-bottom:1em;
+}

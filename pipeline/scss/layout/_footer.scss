@@ -1,0 +1,47 @@
+.site-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 10em;
+  background-color: $base-font-color;
+  color: $white;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.site-social-list {
+  display: flex;
+  width: 90%;
+  max-width: 500px;
+  justify-content: space-between;
+  margin: 1em 0em;
+  li {
+    min-width: 25px;
+    min-height: 25px;
+    width:25px;
+    height:25px;
+    a.social-button {
+      display: block;
+      min-width: 25px;
+      min-height: 25px;
+      height: 25px;
+      width: 25px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      &.twitter {
+        background-image: url(/assets/icons/twitter.svg);
+      }
+      &.linkedin {
+        background-image: url(/assets/icons/linkedin.svg);
+      }
+      &.facebook {
+        background-image: url(/assets/icons/facebook.svg);
+      }
+      &.rss {
+        background-image: url(/assets/icons/rss.svg);
+      }
+    }
+  }
+}

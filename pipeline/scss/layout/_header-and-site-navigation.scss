@@ -1,0 +1,167 @@
+//page-top Only needed for smoothscroll
+div#page-top {
+  width:0px;
+  height:0px;
+  top:0px;
+  left:0px;
+}
+
+div.all-content-wrapper {
+  transition: all .3s ease-in-out;
+  &.open {
+    transition: all .3s ease-in-out;
+    transform:translateX(-#{$site-navigation-width});
+    opacity:.4;
+    margin-left:16px;
+    margin-right:-16px;
+  }
+}
+
+//TOGGLE SIDEBAR NAVIGATION
+.sidebar-toggle-wrapper {
+  @include card;
+  transition: transform .3s ease-in-out;
+  position: fixed;
+  z-index: 5;
+  top: 30px;
+  right: 30px;
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 99px;
+  background-color: $white;
+  &.open {
+    transition: transform .3s ease-in-out;
+    transform: translateX(-#{$site-navigation-width});
+    z-index: 9999;
+  }
+}
+
+.sidebar-toggle-wrapper:hover .sidebar-toggle {
+  background-color: #666;
+}
+
+.sidebar.open,
+.sidebar-toggle-wrapper.open {
+  transform: translateX(-#{$site-navigation-width});
+  z-index: 9999;
+}
+
+// Sidebar toggle
+.sidebar-toggle {
+  position: absolute;
+  z-index: 6;
+  top: 48%;
+  left: 50%;
+  margin-left: -10px;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: $site-navigation-bg-color;
+  transition: background 0.3s;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    background: inherit;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    transition: transform 0.5s, background 0s;
+  }
+  &:before {
+    top: -6px;
+    transform: rotate(0);
+  }
+  &:after {
+    bottom: -6px;
+    transform: rotate(0);
+  }
+}
+
+.sidebar-toggle-wrapper.open {
+  position: fixed;
+  background-color: $site-navigation-bg-color;
+}
+
+.sidebar-toggle-wrapper.open .sidebar-toggle {
+  background: transparent;
+  &:before,
+  &:after {
+    background: $white;
+  }
+  &:before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  &:after {
+    bottom: 0;
+    transform: rotate(225deg);
+  }
+}
+
+//SITE NAVIGATION
+nav.site-navigation {
+  transition: all .3s ease-in-out;
+  display: block;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  -webkit-overflow-scrolling: touch !important;
+  overflow-y: scroll;
+  width: $site-navigation-width;
+  padding: 1em;
+  background-color: $site-navigation-bg-color;
+  transform:translateX(#{$site-navigation-width});
+  z-index: 3;
+  &.open {
+    transition: all .3s ease-in-out;
+    transform: translateX(0px);
+    margin-right:-16px;
+  }
+}
+
+ul.sidebar-navigation {
+  @include flexlist($gutter: 15px);
+  padding-right:16px;
+  section {
+    padding: .5em 1em;
+  }
+  li {
+    background-color: $dark-bg-color;
+    border:1px solid white;
+    color:white;
+    time {
+      display:block;
+      color:white;
+      width:100%;
+      text-align:right;
+      font-size:.7em;
+    }
+    &:hover {
+      a > img {
+        filter:grayscale(0%);
+      }
+    }
+  }
+}
+.sidebar-logo {
+  width: 6em;
+  height: 4em;
+}
+
+a.all-posts.site-navigation {
+  @include center;
+  color:$white;
+  max-width:60%;
+  font-weight:normal;
+  font-size:.8em;
+  font-family:$heading-font-family;
+  @include darkbutton($transform:none);
+}

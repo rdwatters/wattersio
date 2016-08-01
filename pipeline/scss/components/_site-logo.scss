@@ -1,0 +1,55 @@
+.site-logo {
+  @include base-transition;
+  @include center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('/assets/icons/site-logo.svg');
+  text-indent: -99em;
+  overflow-x: hidden;
+  &.home-link {
+    display: none;
+    @include MQ(M) {
+      display: block;
+      position: fixed;
+      border-width: 2px;
+      border-style: solid;
+      border-color: black;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      top: 30px;
+      left: 30px;
+      z-index: 5;
+    }
+  }
+  &.formbg {
+    display:none;
+    @include MQ(M) {
+      display:block;
+      position: absolute;
+      background-image: url(/assets/icons/site-logo-white.svg);
+      border-color: $white;
+      display: block;
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      top: 30px;
+      left: 30px;
+      z-index: 5;
+    }
+  }
+  &.darkbg {
+    background-image: url(/assets/icons/site-logo-white.svg);
+    border-color: $white;
+  }
+  &.lightbg {
+    background-image: url(/assets/icons/site-logo.svg);
+    border-color: black;
+    border-width:0px;
+    @include card;
+  }
+}
+

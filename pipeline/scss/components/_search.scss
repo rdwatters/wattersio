@@ -1,0 +1,245 @@
+#toggle-search {
+  transition: transform .3s ease-in-out;
+  position: fixed;
+  z-index: 3;
+  top: 30px;
+  left: 30px;
+  width: 44px;
+  height: 44px;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: $body-bg-color;
+  padding: .5em;
+  text-align: center;
+  @include card;
+  div {
+    width: 95%;
+    height: 95%;
+    background-image: url(/assets/icons/search-white.svg);
+    background-size: contain;
+    background-position: center center;
+    &.lightbg {
+      background-image: url(/assets/icons/search-black.svg);
+    }
+  }
+  @include MQ(M) {
+    left: auto;
+    right: 80px;
+  }
+  &.open {
+    transform:translateX(-#{$site-navigation-width});
+  }
+}
+
+#close-search {
+  position: absolute;
+  display: block;
+  top: 38px;
+  right: 30px;
+  z-index: 999999999;
+  color: white;
+  background-image: url(/assets/icons/close.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  text-indent: -100em;
+  overflow: hidden;
+  @include MQ(M) {
+    right: 90px;
+  }
+}
+
+#results-length {
+  @include centerer;
+  margin-top:4em;
+  display:block;
+  color:white;
+}
+
+form.search-form {
+  transition: all .3s ease-in-out;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  max-width: 100vw!important;
+  z-index: -1;
+  overflow-x: hidden!important;
+  opacity: 0;
+  height: auto;
+  display: block;
+  max-height: auto;
+  overflow: hidden;
+  &.open {
+    transition: all .3s ease-in-out;
+    opacity: 1;
+    z-index: 999;
+    #search-form-homelink {
+      z-index:9999;
+      cursor:pointer;
+    }
+  }
+}
+
+.form-content {
+  min-width: 100%;
+  position: relative;
+  vertical-align: middle;
+  background-color: $search-bg-color;
+  min-height: 220px;
+  margin: 0px;
+}
+
+.form-container {
+  position: relative;
+  z-index: 15;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+  height: 100%;
+  margin-right:-16px;
+  width:100%;
+  width:100vw;
+  max-width:100%;
+  max-width:100vw;
+}
+
+.search-results-container {
+  min-height: 100%;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  z-index: 20;
+}
+
+.search-background {
+  transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  left: 0px;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+ul#search-results {
+  @include center;
+  width: 90%;
+  max-width: $content-max-width;
+  margin-top: 0px;
+  padding: 0px;
+  list-style: none;
+  li.search-result {
+    a {
+      color: $base-font-color;
+      text-decoration: none;
+      font-weight:$base-font-weight;
+    }
+    h5 {
+      text-align: center;
+      color: $brand-primary;
+      font-weight: 500;
+      font-size:1.3em;
+      margin-bottom:0em;
+    }
+    p {
+      text-align: center;
+      font-weight: normal;
+      font-weight:$base-font-weight;
+    }
+    &.none {
+      text-align:center;
+      margin-top:1em;
+      font-weight:bold;
+    }
+  }
+}
+
+
+#search-input {
+  @include centerer;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 2.5em;
+  font-weight: $heading-font-base-weight;
+  height: 100%;
+  line-height: 2.5em;
+  text-align: center;
+  background-color: transparent;
+  font-family:$heading-font-family;
+  color: white;
+  @include MQ(M) {
+    font-size: 3em;
+  }
+  @include MQ(L) {
+    font-size: 4em;
+  }
+}
+
+input::-webkit-input-placeholder {
+  font-weight: $heading-font-base-weight;
+  color: white;
+}
+
+input:-moz-placeholder {
+  font-weight: $heading-font-base-weight;
+  color: white;
+}
+
+input::-moz-placeholder {
+  font-weight: $heading-font-base-weight;
+  color: white;
+}
+
+input:-ms-input-placeholder {
+  font-weight: $heading-font-base-weight;
+  color: white;
+}
+
+span.input-value {
+  font-style: italic;
+  color: $brand-primary;
+  font-weight: bold;
+}
+
+.close-with-escape {
+  display: none;
+  @include MQ(M) {
+    display:block;
+    color:$white;
+    position:absolute;
+    bottom:40px;
+    left:20px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+span.keyboard {
+  display:inline-block;
+  position:relative;
+  border-radius:3px;
+  border:1px solid $white;
+  padding:.5em;
+  min-width:30px;
+  min-height:30px;
+  margin-bottom:-.5em;
+  .escape {
+    font-size:.5em;
+    position:absolute;
+    top:.25em;
+    left:.25em;
+
+  }
+}

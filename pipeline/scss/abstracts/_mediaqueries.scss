@@ -1,0 +1,59 @@
+// Very basic grid system and media queries
+@mixin MQ($canvas) {
+  @if $canvas==S {
+    @media only screen and (min-width: $S) {
+      @content;
+    }
+  }
+  @else if $canvas==SM {
+    @media only screen and (min-width: $SM) {
+      @content;
+    }
+  }
+  @else if $canvas==M {
+    @media only screen and (min-width: $M) {
+      @content;
+    }
+  }
+  @else if $canvas==L {
+    @media only screen and (min-width: $L) {
+      @content;
+    }
+  }
+  @else if $canvas==XL {
+    @media only screen and (min-width: $XL) {
+      @content;
+    }
+  }
+  @else if $canvas==HUGE {
+    @media only screen and (min-width: $HUGE) {
+      @content;
+    }
+  }
+  @else if $canvas==retina {
+    @media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+      @content;
+    }
+  }
+  @else if $canvas==retinaLandscape {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-device-width: 375px), (max-device-width: 736), (orientation: landscape) {
+      @content;
+    }
+  }
+  @else if $canvas==retinaPlusLandscape {
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) and (device-pixel-ration: 3) and (-webkit-min-device-pixel-ratio: 3) {
+      @content;
+    }
+  }
+}
+
+// Helper mixin for above media queries
+@mixin MLQ($rule, $svalue, $mvalue:$svalue, $lvalue:$mvalue) {
+  #{$rule}: $svalue;
+  @include MQ(M) {
+    #{$rule}: $mvalue;
+  }
+  @include MQ(L) {
+    #{$rule}: $lvalue;
+  }
+}

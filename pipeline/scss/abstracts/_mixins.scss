@@ -1,0 +1,258 @@
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+  @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Center element horizontally within parent element; **note:** does not take parameters
+/// @access public
+/// @example scss - Usage
+///   div.keep-in-middle {
+///     @include center;
+///   }
+/// @example css - CSS Output
+///   div.keep-in-middle {
+///     display:block;
+///     margin-right: auto;
+///     margin-left: auto;
+///   }
+///
+@mixin center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/// Will center the element vertically, horizontally, or both (default). Note that element will be centered in relation to nearest `position: relative;` parent element.
+/// @access public
+/// @param {Bool} $horizontal [true]
+///   Center the element horiztonally
+/// @param {Bool} $vertical [true]
+///   Center the element vertically
+/// @example scss - Usage
+///   div.centered {
+///    @include centerer;
+///   }
+///
+/// @example css - CSS Output
+///   div.centered {
+///     position:absolute;
+///     top: 50%;
+///     left: 50%;
+///     transform: translate(-50%, -50%);
+///   }
+@mixin centerer($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+@mixin card ($bgcolor: $body-bg-color) {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  transition: box-shadow .3s cubic-bezier(.25, .8, .25, 1);
+  background-color: $bgcolor;
+  &:hover {
+    transition: box-shadow .2s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, .3), 0 15px 9pt rgba(0, 0, 0, .22);
+  }
+}
+
+@mixin flexlist($minheight: 6em, $gutter: 0px, $bgcolor: white) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-shrink: 0;
+  flex-grow: 1;
+  justify-content: space-between;
+  li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: $minheight;
+    margin-bottom: $gutter;
+    background-color: $bgcolor;
+    a {
+      color: inherit;
+    }
+  }
+}
+
+@mixin flexlistlayout( $layout: onethreetwo, $justify: space-between, $bgcolor: $body-bg-color, $gutter: 0px) {
+  @if $layout=="onethreetwo" {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    li {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      margin-bottom: $gutter;
+      background-color: $bgcolor;
+    }
+    @include MQ(M) {
+      li:first-child {
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+      }
+      li:not(:first-child) {
+        width:calc(50% - #{$gutter}/2);
+        max-width:calc(50% - #{$gutter}/2);
+      }
+    }
+    @include MQ(L) {
+      li:not(:first-child) {
+        width: calc(33.333% - #{$gutter} * .666666);
+        max-width: calc(33.333% - #{$gutter} * .666666);
+      }
+      li:nth-of-type(5),
+      li:nth-of-type(6) {
+        min-width: calc(50% - #{$gutter}/2);
+        width: calc(50% - #{$gutter}/2);
+        max-width: calc(50% - #{$gutter}/2);
+      }
+    }
+  }
+  @else if $layout=="onetwofour" {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    li {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      margin-bottom: $gutter;
+      background-color: $bgcolor;
+    }
+    @include MQ(M) {
+      li:first-child {
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+      }
+      li:not(:first-child) {
+        width:calc(50% - #{$gutter}/2);
+        max-width:calc(50% - #{$gutter}/2);
+      }
+    }
+    @include MQ(L) {
+      li:not(:first-child) {
+        width: calc(33.333% - #{$gutter} * .666666);
+        max-width: calc(33.333% - #{$gutter} * .666666);
+      }
+      li:nth-of-type(5),
+      li:nth-of-type(6) {
+        min-width: calc(50% - #{$gutter}/2);
+        width: calc(50% - #{$gutter}/2);
+        max-width: calc(50% - #{$gutter}/2);
+      }
+    }
+  }
+}
+
+// BUTTON MIXINS
+@mixin darkbutton($width:auto, $bgcolor:$button-dark-color, $transform:uppercase) {
+  transition: all .3s ease-in-out;
+  display: block;
+  border: 1px solid white;
+  padding: .25em .5em;
+  color: white;
+  width: $width;
+  text-transform: $transform;
+  &:hover {
+    color: $button-dark-color;
+    background-color: $white;
+  }
+}
+
+@mixin lightbutton($width:auto, $bgcolor:$button-light-color, $transform:uppercase, $usecard:false) {
+  transition: all .3s ease-in-out;
+  display: block;
+  padding: .25em .5em;
+  color: $base-font-color;
+  width: $width;
+  text-transform: $transform;
+  @if $usecard {
+    @include card;
+  }
+}
+
+@mixin herobg($minheight:10em, $darkbg:false) {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: $minheight;
+  height: $minheight;
+  min-width: 100%;
+  width: 100%;
+  width: 100vw;
+  position: relative;
+  @if $darkbg {
+    &:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      right: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      background-color: rgba(0, 0, 0, .6);
+    }
+  }
+}
+
+@mixin fullscreen() {
+  min-height: 100%;
+  min-height: 100vh;
+  height: 100%;
+  height: 100vh;
+  max-height: 100%;
+  max-height: 100vh;
+  min-width: 100%;
+  min-width: 100vw;
+  width: 100%;
+  width: 100vw;
+  max-width: 100%;
+  max-width: 100vw;
+}
+
+@mixin base-transition($target:all, $time:$base-transition-time, $type:ease-in-out) {
+  transition: $target $time $type;
+}
