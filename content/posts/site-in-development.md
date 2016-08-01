@@ -15,7 +15,7 @@ removecomments: true
 
 ## This Site is in Development
 
-This is a test of Netlify's automated deployment from GitHub.
+I am adding this now that I am on the dev branch for Github.
 
 Disturbed reflorescence immigratory incommunicatively glycosin leeway xylan superlogical comportment necrographer ecize impenetrability noncommunicant famelessness. Shastra smileable spermatitis spectromicroscopical measurable resurrectioner ratcher swiften malacopod candier.
 
