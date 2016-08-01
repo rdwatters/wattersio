@@ -1,0 +1,9 @@
+aside#disqus_thread {
+	@include center;
+	width:90%;
+	max-width:$content-max-width;
+	margin-bottom:1.5em;
+	@include MQ(M){
+		width:100%;
+	}
+}

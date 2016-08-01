@@ -1,0 +1,155 @@
+main.article {
+  @include center;
+  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+  article {
+    @include center;
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 100%;
+    header:not(.single-page) {
+      @include herobg($darkbg: true, $minheight: 24em);
+    }
+    header.single-page {
+      min-height:14em;
+      height:14em;
+      background-color: $single-page-hero-bg-color;
+      color:white;
+      position:relative;
+      display:block;
+    }
+    .header-content {
+      @include centerer;
+      width: 90%;
+      max-width: $content-max-width;
+      position: relative;
+      color: $white;
+      @include MQ(M) {
+        width: 100%;
+      }
+      time {
+        color: $white;
+      }
+      h1 {
+        margin-top: 0em;
+      }
+      .hr-wrapper {
+        width: 100%;
+        margin-top: .5em;
+        clear: both;
+        hr {
+          width: 50%;
+          max-width: 200px;
+          position: relative;
+          float: left;
+        }
+      }
+    }
+    div.article-tags-wrapper {
+      width: 100%;
+      display: block;
+      clear: both;
+    }
+  }
+}
+
+ul.article-tags {
+  display: block;
+  max-width: $content-max-width;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  clear: both;
+  li {
+    display: inline;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: .25em;
+    float: right;
+    a {
+      transition: all .3s ease-in-out;
+      color: #fff;
+      text-decoration: none;
+      padding: .15em .5em;
+      font-size: .8em;
+      border: 2px solid #fff;
+      text-transform: lowercase;
+      &:hover {
+        background-color: $body-bg-color;
+        color: $base-font-color;
+      }
+    }
+  }
+}
+
+.body-copy {
+  > p:nth-of-type(1) {
+    margin-top: 1em;
+  }
+  @include center;
+  width: 90%;
+  max-width: $content-max-width;
+  @include MQ(M) {
+    width: 100%;
+  }
+}
+
+.body-copy {
+  a:not(.creative-commons) {
+    font-size: inherit;
+    color: $brand-primary;
+    transition: box-shadow ease 250ms, color ease 250ms;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 -1px 0 $brand-primary inset;
+    font-weight: normal;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: transparent;
+    &:hover {
+      color: $body-bg-color;
+      box-shadow: 0 -1.5em 0 $brand-primary inset;
+    }
+  }
+}
+
+span.category {
+  font-size: .8em;
+  text-transform: uppercase;
+  font-weight: 400;
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+span.dot:after {
+  content: '';
+  display: inline-block;
+  width: .25em;
+  height: .25em;
+  overflow: hidden;
+  margin-left: 4px;
+  border-radius: 100%;
+  margin-bottom: .25em;
+  background-color: #fff;
+}
+
+.creative-commons {
+  @include center;
+  width:200px;
+}
+
+.body-copy {
+  ul {
+    margin-left:1em;
+    list-style-type: disc;
+    list-style-position: outside;
+    li {
+    list-style-type: disc;
+    }
+  }
+}

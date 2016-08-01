@@ -1,0 +1,14 @@
+main.fourohhour {
+	display:flex;
+	flex-direction:column;
+	min-height:calc(100vh - 200px);
+	height:calc(100vh - 200px);
+	min-height:80vh;
+}
+div.page-not-found {
+  width:90%;
+  max-width:$content-max-width;
+  margin-top:5em;
+  min-height:100%;
+  @include center;
+}

@@ -1,0 +1,47 @@
+//Sass architecture (very) slightly modified from Sass guidelines: http://sass-guidelin.es/
+@charset 'UTF-8';
+// VENDOR
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'grayscale/grayscale';
+
+// 1. Configuration and helpers
+@import 'variables';
+@import 'bigfoot/bigfoot';
+@import 'abstracts/mediaqueries';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/animations';
+// 2. Base styles
+@import 'base/normalize';
+@import 'base/base';
+@import 'base/fonts';
+//Needs $use-font-awesome: true in "_variables.scss"
+@import 'base/fontawesome';
+@import 'base/fontello';
+@import 'base/typography';
+@import 'base/helpers';
+// 3. Layout-related sections
+@import 'layout/header-and-site-navigation';
+@import 'layout/footer';
+@import 'layout/list-pages';
+@import 'layout/article-body';
+@import 'layout/page-not-found';
+// 4. Components
+@import 'components/images';
+@import 'components/buttons';
+@import 'components/search';
+@import 'components/site-logo';
+@import 'components/table-of-contents';
+@import 'components/video';
+@import 'components/comments';
+@import 'components/blockquotes';
+@import 'components/codeblocks';
+@import 'components/prevnextlinks-bottom';
+@import 'components/social-media-sharing';
+// @import 'components/prevnextlinks-sides';
+// 5. Page-specific styles
+@import 'pages/home';
+// 6. Themes
+@import 'themes/default';
+@import 'themes/resume';
