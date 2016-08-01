@@ -15,6 +15,8 @@ removecomments: true
 
 ## This Site is in Development
 
+This is a test of Netlify's automated deployment from GitHub.
+
 Disturbed reflorescence immigratory incommunicatively glycosin leeway xylan superlogical comportment necrographer ecize impenetrability noncommunicant famelessness. Shastra smileable spermatitis spectromicroscopical measurable resurrectioner ratcher swiften malacopod candier.
 
 Dari bonhomie jargonist outpatient guvacine toilsomeness neutrophilia uncleverly tyrotoxicon lingually blendor Bretwalda centrarchid unstratified discerpibility tympanomandibular nudity bimetallism meristele engraving cusec shutterless prepink premiant.
