@@ -1,5 +1,5 @@
 curdir=$(pwd)
 TODAY=$(date)
 # Build Hugo.
-hugo --ignoreCache --baseURL=https://ryanwatters.io
+hugo --ignoreCache
 cp ${curdir}/public/singles/index.html ${curdir}/public/assets/site-index.json
