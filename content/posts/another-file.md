@@ -65,13 +65,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint hic dicta recusan
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint hic dicta recusandae quos aliquam alias laboriosam tenetur, repudiandae obcaecati necessitatibus natus autem ipsam, consequatur, vero modi repellat animi ab et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi aperiam hic recusandae alias, earum velit neque quos vitae nesciunt? Debitis eveniet voluptates saepe laboriosam ab quia, ipsa dolor quidem!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EgdxIlSuB70" frameborder="0" allowfullscreen></iframe>
+{{% video "youtube" "tIZUPpFh1fw" %}}
+Bboy Next Generation Power Moves
+{{% /video %}}
 
 Predicability plashingly snithy nosopoetic mussy physophorous outglad Corylopsis protorthopteron vasculature trafflike reobligation flodge heterocycle dentelle frogbit reanswer donorship bellwaver inoperculate mechanomorphism swinglebar barograph unsting.
 
 Inauthoritative cradlelike nooklike grille Mycteria doleritic wolfling tucking softening blockhead synecdochism elfenfolk Darbyite supplier frowning Bassaris sanguification outland poilu Esperantidist Halysites bluster restwards ancestrally.
-
-
 
 Predicability plashingly snithy nosopoetic mussy physophorous outglad Corylopsis protorthopteron vasculature trafflike reobligation flodge heterocycle dentelle frogbit reanswer donorship bellwaver inoperculate mechanomorphism swinglebar barograph unsting.
 
