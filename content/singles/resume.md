@@ -1,5 +1,5 @@
 ---
-title: "Résume"
+title: "Resume"
 subtitle:
 modified: false
 description: If you are looking to reach out for professional reasons, please take a look at my résumé.
