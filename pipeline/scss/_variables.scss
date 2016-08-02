@@ -22,15 +22,15 @@ $body-bg-color: $white !default;
 $use-font-face-module:true;//required for first $font declaration
 $use-font-two: true;
 $use-font-three: true;
-$font: 'proximanova';
+$font: 'gotham';
 $font-two: 'adelle';
 $font-three: 'courierprime';
-$use-font-awesome: 'true';
+$use-font-awesome: 'false';
 
 //TYPOGRAPHY
 $base-font-size:20px;
 $base-font-weight: 400;
-$base-font-weight-retina: 100;
+$base-font-weight-retina: 300;
 $base-font-family:$font,$helvetica;
 $heading-font-family:$font-two,$georgia;
 $heading-font-base-weight:100;
