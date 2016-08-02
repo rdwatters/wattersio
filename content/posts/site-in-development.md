@@ -1,5 +1,5 @@
 ---
-title:  "Site in Development"
+title:  "Site is Still in Development"
 publishdate: 2016-07-20
 date: 2016-07-20
 modified: true
@@ -13,7 +13,7 @@ removefromsearch:
 removecomments: true
 ---
 
-## This Site is in Development
+## This Site is Still in Development
 
 Testing a [relative link](/posts/test-article-page).
 
