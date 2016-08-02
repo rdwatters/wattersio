@@ -3,6 +3,7 @@
 # Assign pwd to curdir variable
 curdir=$(pwd)
 TODAY=$(date)
+git checkout dev
 # Build Hugo.
 hugo --ignoreCache
 cp ${curdir}/public/singles/index.html ${curdir}/static/assets/site-index.json
