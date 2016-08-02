@@ -58,9 +58,10 @@ section.bottom-link-section:hover > .bottom-link-info > h4.bottom-button {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  @include card;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
   @include MQ(M) {
     margin-bottom:0px;
+    @include card;
   }
   &:before {
     content: '';
