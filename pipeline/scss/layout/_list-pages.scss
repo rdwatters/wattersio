@@ -16,6 +16,7 @@ ul.contents-list {
   width: 100%;
   li.content-list-item {
     margin-bottom: 1em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
     a {
       display: flex;
       flex-direction: column;
@@ -26,7 +27,6 @@ ul.contents-list {
         align-items: stretch;
         min-height: 6em;
       }
-      @include card;
       section {
         padding: .25em .5em;
       }
@@ -34,6 +34,9 @@ ul.contents-list {
         font-size: .8em;
         line-height: 1.2;
       }
+    }
+    @include MQ(M) {
+      @include card;
     }
   }
 }
@@ -63,7 +66,7 @@ ul.contents-list {
     background-color: $base-font-color;
     padding: .25em .5em;
     font-weight: 100;
-    z-index:10;
-    font-size:.7em;
+    z-index: 10;
+    font-size: .7em;
   }
 }

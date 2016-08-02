@@ -10,6 +10,10 @@
   z-index: 99;
 }
 
+span.heart {
+  color:red;
+}
+
 .site-social-list {
   @include center;
   width: 90%;

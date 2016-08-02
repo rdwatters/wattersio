@@ -31,6 +31,7 @@
   @include MQ(M) {
     max-width: 49.75%;
     display: block;
+    min-height:12em;
     &.prev {
       float: left;
     }
@@ -47,6 +48,7 @@ section.bottom-link-section:hover > .bottom-link-info > h4.bottom-button {
 
 .bottom-link-section {
   min-height: 200px;
+  height:200px;
   margin: 0em;
   padding: 0em;
   margin-bottom:15px;
@@ -108,9 +110,9 @@ section.bottom-link-section:hover > .bottom-link-info > h4.bottom-button {
 }
 
 @include MQ(M) {
-
   .bottom-link-section {
     min-height:300px;
+    height:300px;
   }
   .post-bottom-link {
     min-height: 300px;

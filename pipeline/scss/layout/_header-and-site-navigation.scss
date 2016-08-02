@@ -120,6 +120,7 @@ nav.site-navigation {
   background-color: $site-navigation-bg-color;
   transform:translateX(#{$site-navigation-width});
   z-index: 3;
+  padding-bottom:3em;
   &.open {
     transition: all .3s ease-in-out;
     transform: translateX(0px);
@@ -130,6 +131,7 @@ nav.site-navigation {
 ul.sidebar-navigation {
   @include flexlist($gutter: 15px);
   padding-right:16px;
+  margin-bottom:1em;
   section {
     padding: .25em .5em;
   }
