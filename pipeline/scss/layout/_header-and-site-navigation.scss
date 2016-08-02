@@ -131,7 +131,7 @@ ul.sidebar-navigation {
   @include flexlist($gutter: 15px);
   padding-right:16px;
   section {
-    padding: .5em 1em;
+    padding: .25em .5em;
   }
   li {
     background-color: $dark-bg-color;

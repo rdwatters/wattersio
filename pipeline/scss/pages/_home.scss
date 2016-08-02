@@ -18,13 +18,13 @@ header.home-header {
     padding-bottom: 4em;
   }
   .home-logo {
-    height: 8em;
-    width: 12em;
+    height: 5em;
+    width: 10em;
     @include MQ(M) {
-      height: 10em;
-      width: 16em;
+      height: 8em;
+      width: 14em;
     }
-    @include MQ(M) {
+    @include MQ(L) {
       height: 12em;
       width: 18em;
     }
@@ -33,7 +33,7 @@ header.home-header {
     max-width: 90%;
     text-align: center;
     font-size: 1.2em;
-    color:lighten($base-font-color,20%);
+    color: lighten($base-font-color, 20%);
   }
 }
 
@@ -48,7 +48,6 @@ ul.homepage-list {
   }
   @include flexlistlayout($gutter: 10px);
   li {
-    @include card;
     &:hover {
       .grayscale {
         filter: grayscale(0%);
@@ -56,15 +55,15 @@ ul.homepage-list {
     }
     header {
       padding: {
-        top:.25em;
-        bottom:0em;
-        right:.5em;
-        left:.5em;
+        top: .25em;
+        bottom: 0em;
+        right: .5em;
+        left: .5em;
       }
       display:flex;
       flex-direction:column;
-      @include MQ(M){
-        min-height:60px;
+      @include MQ(M) {
+        min-height: 60px;
       }
     }
     h1 {
@@ -73,7 +72,7 @@ ul.homepage-list {
       line-height: 1.4;
       padding-bottom: 0px;
       color: $base-font-color;
-      flex-grow:1;
+      flex-grow: 1;
     }
     time {
       font-size: .8em;
@@ -86,6 +85,9 @@ ul.homepage-list {
       @include MQ(M) {
         font-size: 14px;
       }
+    }
+    @include MQ(M) {
+      @include card;
     }
   }
   li:first-child {

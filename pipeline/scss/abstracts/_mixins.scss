@@ -120,7 +120,7 @@
       background-color: $bgcolor;
     }
     @include MQ(M) {
-      li:first-child {
+      li:first-child,li:last-child {
         min-width: 100%;
         width: 100%;
         max-width: 100%;

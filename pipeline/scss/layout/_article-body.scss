@@ -12,12 +12,12 @@ main.article {
       @include herobg($darkbg: true, $minheight: 24em);
     }
     header.single-page {
-      min-height:14em;
-      height:14em;
+      min-height: 14em;
+      height: 14em;
       background-color: $single-page-hero-bg-color;
-      color:white;
-      position:relative;
-      display:block;
+      color: white;
+      position: relative;
+      display: block;
     }
     .header-content {
       @include centerer;
@@ -140,16 +140,25 @@ span.dot:after {
 
 .creative-commons {
   @include center;
-  width:200px;
+  width: 200px;
 }
 
 .body-copy {
   ul {
-    margin-left:1em;
+    margin-left: 1em;
     list-style-type: disc;
     list-style-position: outside;
     li {
-    list-style-type: disc;
+      list-style-type: disc;
+    }
+  }
+  ol {
+    list-style-type: decimal;
+    list-style-position: outside;
+    margin-left: 1em;
+    padding-left:0px;
+    li {
+      list-style-type: decimal;
     }
   }
 }

@@ -15,7 +15,7 @@ removecomments: true
 
 ## This Site is in Development
 
-Testing a [relative link](test-article-page).
+Testing a [relative link](/posts/test-article-page).
 
 Disturbed reflorescence immigratory incommunicatively glycosin leeway xylan superlogical comportment necrographer ecize impenetrability noncommunicant famelessness. Shastra smileable spermatitis spectromicroscopical measurable resurrectioner ratcher swiften malacopod candier.
 
