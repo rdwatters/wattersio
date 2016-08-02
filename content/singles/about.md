@@ -22,7 +22,7 @@ A couple items of note, if I may:
 
 ## Site Content
 
-I am building this site to share what I've learned over the last 8 years as writer, editor, and web professional. The [Articles][] section focuses on content marketing, content strategy, and web publishing best practices. [Tutorials][] are geared towards front-end developers, particularly those interested in leveraging a [static site generator][] for blazing performance, negligible hosting costs, and flexible markup that addresses the continually changing SEO landscape.
+I am building this site to share what I've learned over the last 8 years as writer, editor, and web professional. All [posts][] will focus on content marketing, content strategy, and web publishing best practices. Tutorials published in posts will be geared towards front-end developers, particularly those interested in leveraging a [static site generator][] for blazing performance, negligible hosting costs, and flexible markup that addresses the continually changing SEO landscape.
 
 All content is written in [GitHub Flavored][] [markdown](https://daringfireball.net/projects/markdown/), version controlled with git, and hosted on [GitHub][]. I make an effort to observe the latest [commonmark spec][] whenever possible. The aim of plain text--based content is to remain CMS independent and technology agnostic so as to be easily ported to any [static site generator][] with built-in support for `.md` files with embedded `yaml` front matter. This allows me to single source content that can be easily distributed across multiple channels.
 
@@ -54,7 +54,6 @@ All source code is available under [MIT license][]. You are free to shamelessly 
 
 [Amazon Simple Storage Service (S3)]:https://aws.amazon.com/s3/
 [Amazon Web Services CLI]: https://aws.amazon.com/cli/
-[Articles]: /articles
 [Babel]: https://babeljs.io/
 [bigfoot.js]: http://www.bigfootjs.com/
 [CloudFlare]: https://www.cloudflare.com
@@ -74,9 +73,9 @@ All source code is available under [MIT license][]. You are free to shamelessly 
 [MIT License]:https://opensource.org/licenses/MIT
 [parse]:https://www.parse.com
 [performance]:https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fryanwatters.io
+[posts]: /posts/
 [résumé]: /resume/
 [static site generator]:https://www.staticgen.com/
-[tutorials]: /tutorials
 [wercker]:http://wercker.com/
 
 [^1]: Seriously. I'm terrible.
