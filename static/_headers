@@ -2,3 +2,5 @@
 /assets/*
   # Headers for that path:
   Cache-Control: max-age=604800
+https://www.google-analytics.com/analytics.js
+	Cache-Control: max-age=604800
