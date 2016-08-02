@@ -1,10 +1,10 @@
-<script>
+<script async>
 (function() {
   var netlifyTest = new RegExp(/netlify/i);
   var localTest = new RegExp(/localhost/i);
   var hostName = window.location.hostname;
   if (netlifyTest.test(hostName) || localTest.test(hostName)) {
-  	console.log("Local dev, so no Google Analytics!");
+  	console.log("Development, so no Google Analytics!");
     return;
   } else {
     (function(i, s, o, g, r, a, m) {
