@@ -59,7 +59,7 @@
 
 form.search-form {
   transition: all .3s ease-in-out;
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0px;
   bottom: 0px;
@@ -152,8 +152,7 @@ ul#search-results {
     }
     p {
       text-align: center;
-      font-weight: normal;
-      font-weight:$base-font-weight;
+      font-weight: $base-font-weight;
     }
     &.none {
       text-align:center;

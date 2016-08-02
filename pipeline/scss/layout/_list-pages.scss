@@ -20,7 +20,7 @@ ul.contents-list {
     a {
       display: flex;
       flex-direction: column;
-      font-weight: normal;
+      font-weight: $base-font-weight;
       color: inherit;
       @include MQ(M) {
         flex-direction: row;

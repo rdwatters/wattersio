@@ -1,5 +1,5 @@
 ---
-title:  "My Site is Still in Development"
+title:  "This Site is In Development"
 publishdate: 2016-07-20
 date: 2016-07-20
 modified: true
@@ -13,11 +13,9 @@ removefromsearch:
 removecomments: true
 ---
 
-## Site in Development
+## In Development
 
-**The first round of live content for the site is scheduled to go live at the end of August 2016.**
-
-Testing a git-based workflow with netlify. Testing a [relative link](/posts/test-article-page).
+Testing a [relative link](/posts/test-article-page).
 
 Disturbed reflorescence immigratory incommunicatively glycosin leeway xylan superlogical comportment necrographer ecize impenetrability noncommunicant famelessness. Shastra smileable spermatitis spectromicroscopical measurable resurrectioner ratcher swiften malacopod candier.
 

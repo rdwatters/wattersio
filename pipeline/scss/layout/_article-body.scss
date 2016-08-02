@@ -103,7 +103,7 @@ ul.article-tags {
     cursor: pointer;
     text-decoration: none;
     box-shadow: 0 -1px 0 $brand-primary inset;
-    font-weight: normal;
+    font-weight: $base-font-weight;
     padding-left: 2px;
     padding-right: 2px;
     margin-left: -2px;
