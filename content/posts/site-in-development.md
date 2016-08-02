@@ -1,5 +1,5 @@
 ---
-title:  "Site in Development"
+title:  "Site is Still in Development"
 publishdate: 2016-07-20
 date: 2016-07-20
 modified: true
@@ -13,7 +13,7 @@ removefromsearch:
 removecomments: true
 ---
 
-## This Site is in Development
+## This Site is Still in Development
 
 This is just a test of netlify and it's deep git integration. I am typing this from the "dev" branch for this repository.
 
