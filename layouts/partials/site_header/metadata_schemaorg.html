@@ -2,18 +2,18 @@
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
-  "@type": "{{if eq .Section "tutorials"}}TechArticle{{else}}BlogPosting{{end}}",
+  "@type": "BlogPosting",
   "articleSection": "{{.Section | title}}",
   "headline": "{{.Title}}",
   "name": "{{.Title}}",
   "url": "{{.Permalink}}",
   "mainEntityOfPage": "{{.Permalink}}",
   "datePublished": {{.PublishDate.Format "2006-01-02"}},
-  "dateModified": {{.Lastmod.Format "2006-01-02"}},
+  "dateModified": {{.Date.Format "2006-01-02"}},
   "wordCount":{{.WordCount}},
   "image":{
   	"@type":"ImageObject",
-  	"url":"{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.DefaultSocialImage }}",
+  	"url":"/assets/images/{{.Params.image | default .Site.Params.DefaultSocialImage }}",
   	"height": 630,
   	"width": 1200
 	},
@@ -30,7 +30,7 @@
   	},
   	"logo":{
   	"@type":"ImageObject",
-  	"url":"{{.Site.BaseURL}}assets/images/ryanwattersio-social.jpg"
+  	"url":"/assets/images/ryanwattersio-social.jpg"
   	}
   }
 }
