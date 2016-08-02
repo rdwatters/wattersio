@@ -13,9 +13,11 @@ removefromsearch:
 removecomments: true
 ---
 
-## This Site is in Development Until August 20th, 2016
+## Site in Development
 
-Testing a [relative link](/posts/test-article-page).
+**The first round of live content for the site is scheduled to go live at the end of August 2016.**
+
+Testing a git-based workflow with netlify. Testing a [relative link](/posts/test-article-page).
 
 Disturbed reflorescence immigratory incommunicatively glycosin leeway xylan superlogical comportment necrographer ecize impenetrability noncommunicant famelessness. Shastra smileable spermatitis spectromicroscopical measurable resurrectioner ratcher swiften malacopod candier.
 
