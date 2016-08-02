@@ -1,6 +1,9 @@
 <script>
 (function() {
-  if (window.location.hostname === "localhost") {
+  var netlifyTest = new RegExp(/netlify/i);
+  var localTest = new RegExp(/localhost/i);
+  var hostName = window.location.hostname;
+  if (netlifyTest.test(hostName) || localTest.test(hostName)) {
   	console.log("Local dev, so no Google Analytics!");
     return;
   } else {
@@ -16,7 +19,7 @@
       m.parentNode.insertBefore(a, m)
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-67203548-1', 'auto');
+    ga('create', '{{.Site.Params.GoogleAnalyticsTrackingId}}', 'auto');
     ga('send', 'pageview');
   }
 })();
