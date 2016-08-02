@@ -51,7 +51,7 @@ watch = true
   #######END SOCIAL#######
   CopyrightLine = "Ryan Watters"
   SiteDescription = "The official site of Ryan Watters"
-  UseCRP = true
+  UseCRP = false
   # Include jQuery 3.0 from assets/js
   IncludeJQ = true
   # Disqus two conditions (here and in page)
