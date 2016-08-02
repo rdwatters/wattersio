@@ -18,6 +18,7 @@ publishdir = "public"
 pygmentsUseClasses = true
 relativeURLs = true
 source = ""
+staticdir = "static"
 title = "ryanwatters.io"
 uglyURLs = false
 verbose = true
