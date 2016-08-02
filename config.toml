@@ -73,7 +73,7 @@ watch = true
 	hrefTargetBlank = true
   angledQuotes = false
   latexDashes = true
-  sourceRelativeLinksEval = true
+  sourceRelativeLinksEval = false
 
 [taxonomies]
   tag = "tags"

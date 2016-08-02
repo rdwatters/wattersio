@@ -1,30 +1,33 @@
-backend:
-  name: netlify-api
-  url: http://localhost:8080
+# backend:
+#   name: netlify-api
+#   url: http://localhost:1313
 
-production:
-  backend:
-    name: github-api
-    repo: rdwatters/ryanwattersio-new # Change this to your repo
-    branch: master
+# production:
+#   backend:
+#     name: github-api
+#     repo: rdwatters/ryanwattersio-new # Change this to your repo
+#     branch: master
 
-media_folder: "content/posts" # Folder where user uploaded files should go
-public_folder: "public"
+# media_folder: "static/assets/images" # Folder where user uploaded files should go
+# public_folder: "public"
 
-collections: # A list of collections the CMS should be able to edit
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Article" # Used in the UI, ie.: "New Post"
-    folder: "content/posts" # The path to the folder where the documents are stored
-    format: markdown
-    sort: # Default is title:asc
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Content", name: "content", widget: "markdown"}
-      - {label: "Categories", name: "categories", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "string"}
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Publish Date", name: "publishdate", widget: "datetime", format: "YYYY-MM-DD"}
-      - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
-      - {label: "Modified", name: "modified", widget: "checkbox"}
-      - {label: "Remove from Search", name: "removefromsearch", widget: "checkbox"}
+# collections: # A list of collections the CMS should be able to edit
+#   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+#     label: "Post" # Used in the UI, ie.: "New Post"
+#     folder: "content/posts" # The path to the folder where the documents are stored
+#     format: markdown
+#     sort: # Default is title:asc
+#     create: true # Allow users to create new documents in this collection
+#     fields: # The fields each document in this collection have
+#       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+#       - {label: "Post Image", name: "image", widget: "image"}
+#       - {label: "Content", name: "content", widget: "markdown"}
+
+#     meta: # Meta data fields. Just like fields, but without any preview element
+#       - {label: "Publish Date", name: "publishdate", widget: "date", format: "YYYY-MM-DD"}
+#       - {label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD"}
+#       - {label: "Original Date", name: "ori_date", widget: "date", format: "YYYY-MM-DD"}
+#       - {label: "Modified", name: "modified", widget: "checkbox"}
+#       - {label: "Categories", name: "categories", widget: "string"}
+#       - {label: "Tags", name: "tags", widget: "string"}
+#       - {label: "Remove from Search", name: "removefromsearch", widget: "checkbox"}
