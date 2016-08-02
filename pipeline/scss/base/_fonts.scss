@@ -20,6 +20,26 @@
     font-weight: 100;
     font-style: italic
   }
+    @font-face {
+    font-family: "#{$font}";
+    src: url("/assets/css/fonts/#{$font}/#{$font}-light-webfont.eot");
+    src: url("/assets/css/fonts/#{$font}/#{$font}-light-webfont.eot?#iefix") format("embedded-opentype"),
+    url("/assets/css/fonts/#{$font}/#{$font}-light-webfont.woff") format("woff"),
+    url("/assets/css/fonts/#{$font}/#{$font}-light-webfont.ttf") format("truetype"),
+    url("/assets/css/fonts/#{$font}/#{$font}-light-webfont.svg") format("svg");
+    font-weight: 200;
+    font-style: normal
+  }
+  @font-face {
+    font-family: "#{$font}";
+    src: url("/assets/css/fonts/#{$font}/#{$font}-light-italic-webfont.eot");
+    src: url("/assets/css/fonts/#{$font}/#{$font}-light-italic-webfont.eot?#iefix") format("embedded-opentype"),
+    url("/assets/css/fonts/#{$font}/#{$font}-light-italic-webfont.woff") format("woff"),
+    url("/assets/css/fonts/#{$font}/#{$font}-light-italic-webfont.ttf") format("truetype"),
+    url("/assets/css/fonts/#{$font}/#{$font}-light-italic-webfont.svg") format("svg");
+    font-weight: 200;
+    font-style: italic
+  }
   @font-face {
     font-family: "#{$font}";
     src: url("/assets/css/fonts/#{$font}/#{$font}-regular-webfont.eot");
