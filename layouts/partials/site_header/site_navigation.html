@@ -2,7 +2,7 @@
   <div class="sidebar-toggle"></div>
 </div>
 <nav role="navigation" class="site-navigation">
-  <a href="{{.Site.BaseURL}}" class="site-logo darkbg sidebar-logo">{{ .Site.Title }}</a>
+  <a href="/" class="site-logo darkbg sidebar-logo">{{ .Site.Title }}</a>
   {{$thisTitle := .Title }}
   {{ if ne "About" $thisTitle }}
   <a href="/about-me" role="button" id="about">About</a>
