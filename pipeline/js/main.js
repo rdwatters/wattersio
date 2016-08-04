@@ -1050,6 +1050,28 @@ document.getElementById('close-search').addEventListener('click', toggleSearch, 
 document.addEventListener('keyup', keystrokeSearchToggle, false);
 document.getElementById('search-input').addEventListener('keyup', setSearchInLocalStorage, false);
 
+<<<<<<< HEAD
+=======
+//keep IE from autofocsing on search input on page load
+
+$(document).ready(function() {
+    $('#search-input').blur();
+});
+
+//test for 404 Page
+
+function pageNotFoundTest() {
+    var fourTest = new RegExp('Page not found', 'i');
+    var docTitle = document.title.toString();
+    var currentUrl = window.location.href;
+    if (fourTest.test(docTitle)) {
+        document.getElementById('search-results').innerHTML = '<li class="search-result notfound"><h5><strong>It looks like ' + currentUrl + ' does not exist. Please try searching for another page.</strong></h5></li>';
+        toggleSearch(null);
+    }
+
+}
+
+>>>>>>> dev
 //toggle search based on keystroke
 function keystrokeSearchToggle(thekey) {
     var boardKey = thekey.keyCode;
