@@ -1052,6 +1052,12 @@ document.getElementById('close-search').addEventListener('click', toggleSearch, 
 document.addEventListener('keyup', keystrokeSearchToggle, false);
 document.getElementById('search-input').addEventListener('keyup', setSearchInLocalStorage, false);
 
+//keep IE from autofocsing on search input on page load
+
+$(document).ready(function() {
+    $('#search-input').blur();
+});
+
 //test for 404 Page
 
 function pageNotFoundTest() {

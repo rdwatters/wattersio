@@ -81,7 +81,16 @@ time {
   text-transform:$datetime-text-transform;
   font-weight:normal;
 }
+//removes annoying X button in right of search inputs for Internet Explorer
 
+input[type=text]::-ms-clear {
+    display: none!important;
+}
+
+input[type=search]::-ms-clear {
+    display: none!important;
+}
+//changes default styles for text selected by end user
 ::selection {
   color:$selected-text-color;
   background-color: $selected-text-bg-color;
