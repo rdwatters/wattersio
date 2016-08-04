@@ -39,6 +39,9 @@ h2 {
     margin-top: 0px;
     font-weight: 100;
     margin-top: 0px;
+    &.long-title {
+      font-size:.8em;
+    }
   }
   &.archive-year {
     font-size: 1.2em;
@@ -56,6 +59,9 @@ h3 {
     text-transform: none;
     margin-top: 0px;
     line-height: 1.2;
+    &.long-title {
+      font-size:1em;
+    }
   }
 }
 

@@ -29,6 +29,8 @@ ul.contents-list {
       }
       section {
         padding: .25em .5em;
+        box-sizing: border-box;
+        max-width: 100%;
       }
       p {
         font-size: .8em;

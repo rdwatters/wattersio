@@ -15,7 +15,7 @@
           <img src="/assets/images/thumbs/{{ .Params.image }}" alt="" class="grayscale">
           <section>
             <header>
-            <h2 class="site-navigation-title">{{ .Title }}</h2>
+            <h2 class="site-navigation-title{{if gt (len .Title) 60}} long-title{{end}}">{{ .Title }}</h2>
             {{partial "publish_date.html" . }}
             </header>
           </section>
