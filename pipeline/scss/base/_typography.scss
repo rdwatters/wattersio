@@ -21,6 +21,15 @@ h6 {
 
 h1 {
   font-size: 2.5em;
+  &.homepage-list {
+    font-size: 1.5em;
+    &.long-title {
+      font-size: 1em;
+    }
+  }
+  &.long-title {
+    font-size: 2em;
+  }
 }
 
 h2 {

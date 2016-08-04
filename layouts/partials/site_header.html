@@ -10,8 +10,20 @@
 {{ partial "site_header/site_style.html" . }}
 </head>
 <body{{if .IsHome}} id="home"{{end}}>
+	{{ "<!--[if lte IE 9]>" | safeHTML }}
+      <div id="ie-only">
+				<div id="ie-only">
+      	<p>You are using an outdated browser. Please use a modern browser to access ryanwatters.io.</p>
+				<img src="/assets/images/crying-cat.jpg" alt="Photo of a cat crying because you are using IE9.">
+			</div>
+			</div>
+  {{ "<![endif]-->" | safeHTML }}
 	<div id="page-top" aria-hidden="true"></div>
 	{{partial "site_header/site_search_form.html" . }}
 	{{partial "site_header/site_navigation.html" . }}
 	{{partial "site_header/site_logo_homelink.html" . }}
 	<div class="all-content-wrapper">
+
+
+
+

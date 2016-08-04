@@ -1,9 +1,9 @@
 ---
-title: Ground-up View of Buildings Longer Title
-publishdate: 2016-04-20
-date: 2016-04-20
+title: "Ground-up View of Buildings Article with a Much Longer Title than the Other Articles"
+publishdate: 2016-08-03
+date: 2016-08-03
 modified: false
-ori_date: 2016-04-01
+ori_date: 2016-08-03
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
 categories: stuff
 tags:  [blocks,chicago]
@@ -15,6 +15,14 @@ removecomments: false
 ## First Heading
 
 Cabalistic mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing [compunctious](/posts/another-post).
+
+{{% aside "Tell me more about this topic" %}}
+Here is some copy that I'm going to reveal or hide based on whether the user clicks the button.
+
+![Image of a cat](/assets/images/book-on-lap.jpg)
+
+Here is some copy *that* I'm going to **reveal** or hide based on whether the user clicks the button.
+{{% /aside %}}
 
 Oman. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ut, accusantium deleniti ipsa, repellat iure neque provident reprehenderit similique cumque veniam enim. Alias aliquid quae sapiente cum, accusantium nesciunt possimus.
 

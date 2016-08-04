@@ -8,6 +8,7 @@
 // 1. Configuration and helpers
 @import 'variables';
 @import 'bigfoot/bigfoot';
+@import 'selectionsharer/selectionsharer';
 @import 'abstracts/mediaqueries';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
@@ -39,6 +40,7 @@
 @import 'components/codeblocks';
 @import 'components/prevnextlinks-bottom';
 @import 'components/social-media-sharing';
+@import 'components/inline-aside';
 // @import 'components/prevnextlinks-sides';
 // 5. Page-specific styles
 @import 'pages/home';

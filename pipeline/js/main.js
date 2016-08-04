@@ -213,6 +213,26 @@ $(function() {
 });
 (function(){!function(a){return a.bigfoot=function(b){var c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C;return e=void 0,k={actionOriginalFN:"hide",activateCallback:function(){},activateOnHover:!1,allowMultipleFN:!1,anchorPattern:/(fn|footnote|note)[:\-_\d]/gi,anchorParentTagname:"sup",breakpoints:{},deleteOnUnhover:!1,footnoteParentClass:"footnote",footnoteTagname:"li",hoverDelay:250,numberResetSelector:void 0,popoverDeleteDelay:300,popoverCreateDelay:100,positionContent:!0,preventPageScroll:!0,scope:!1,useFootnoteOnlyOnce:!0,contentMarkup:'<aside class="bigfoot-footnote is-positioned-bottom" data-footnote-number="{{FOOTNOTENUM}}" data-footnote-identifier="{{FOOTNOTEID}}" alt="Footnote {{FOOTNOTENUM}}"> <div class="bigfoot-footnote__wrapper"> <div class="bigfoot-footnote__content"> {{FOOTNOTECONTENT}} </div></div> <div class="bigfoot-footnote__tooltip"></div> </aside>',buttonMarkup:'<div class=\'bigfoot-footnote__container\'> <button class="bigfoot-footnote__button" id="{{SUP:data-footnote-backlink-ref}}" data-footnote-number="{{FOOTNOTENUM}}" data-footnote-identifier="{{FOOTNOTEID}}" alt="See Footnote {{FOOTNOTENUM}}" rel="footnote" data-bigfoot-footnote="{{FOOTNOTECONTENT}}"> <svg class="bigfoot-footnote__button__circle" viewbox="0 0 6 6" preserveAspectRatio="xMinYMin"><circle r="3" cx="3" cy="3" fill="white"></circle></svg> <svg class="bigfoot-footnote__button__circle" viewbox="0 0 6 6" preserveAspectRatio="xMinYMin"><circle r="3" cx="3" cy="3" fill="white"></circle></svg> <svg class="bigfoot-footnote__button__circle" viewbox="0 0 6 6" preserveAspectRatio="xMinYMin"><circle r="3" cx="3" cy="3" fill="white"></circle></svg> </button></div>'},y=a.extend(k,b),q={},n=function(){var b,c,d,e,f,g,i,j,k,m,n,o,p,q,r,t,u,w,x,z;for(n=y.scope?""+y.scope+' a[href*="#"]':'a[href*="#"]',d=a(n).filter(function(){var b,c;return b=a(this),c=b.attr("rel"),("null"===c||null==c)&&(c=""),(""+b.attr("href")+c).match(y.anchorPattern)&&b.closest("[class*="+y.footnoteParentClass+"]:not(a):not("+y.anchorParentTagname+")").length<1}),t=[],q=[],k=[],h(d,q),a(q).each(function(){var b,c;return c=a(this).data("footnote-ref").replace(/[:.+~*\]\[]/g,"\\$&"),y.useFootnoteOnlyOnce&&(c=""+c+":not(.footnote-processed)"),b=a(c).closest(y.footnoteTagname),b.length>0?(t.push(b.first().addClass("footnote-processed")),k.push(this)):void 0}),c=a("[data-footnote-identifier]:last"),p=c.length<1?0:+c.data("footnote-identifier"),z=[],u=w=0,x=t.length;x>=0?x>w:w>x;u=x>=0?++w:--w)switch(o=s(a(t[u]).html().trim(),a(k[u]).data("footnote-backlink-ref")),o=o.replace(/"/g,"&quot;").replace(/&lt;/g,"&ltsym;").replace(/&gt;/g,"&gtsym;"),p+=1,m="",i=a(k[u]),j=a(t[u]),null!=y.numberResetSelector?(b=i.closest(y.numberResetSelector),b.is(f)?r+=1:r=1,f=b):r=p,0!==o.indexOf("<")&&(o="<p>"+o+"</p>"),m=y.buttonMarkup.replace(/\{\{FOOTNOTENUM\}\}/g,r).replace(/\{\{FOOTNOTEID\}\}/g,p).replace(/\{\{FOOTNOTECONTENT\}\}/g,o),m=v(m,"SUP",i),m=v(m,"FN",j),e=a(m).insertBefore(i),g=j.parent(),y.actionOriginalFN.toLowerCase()){case"hide":i.addClass("footnote-print-only"),j.addClass("footnote-print-only"),z.push(l(g));break;case"delete":i.remove(),j.remove(),z.push(l(g));break;default:z.push(i.addClass("footnote-print-only"))}return z},h=function(b,c){var d,e,f,g;null==c&&(c=[]),d=void 0,e=void 0,f=void 0,g=void 0,b.each(function(){var b,e;return e=a(this),f="#"+e.attr("href").split("#")[1],d=e.closest(y.anchorParentTagname),b=e.find(y.anchorParentTagname),d.length>0?(g=(d.attr("id")||"")+(e.attr("id")||""),c.push(d.attr({"data-footnote-backlink-ref":g,"data-footnote-ref":f}))):b.length>0?(g=(b.attr("id")||"")+(e.attr("id")||""),c.push(e.attr({"data-footnote-backlink-ref":g,"data-footnote-ref":f}))):(g=e.attr("id")||"",c.push(e.attr({"data-footnote-backlink-ref":g,"data-footnote-ref":f})))})},l=function(a){var b;return b=void 0,a.is(":empty")||0===a.children(":not(.footnote-print-only)").length?(b=a.parent(),"delete"===y.actionOriginalFN.toLowerCase()?a.remove():a.addClass("footnote-print-only"),l(b)):a.children(":not(.footnote-print-only)").length===a.children("hr:not(.footnote-print-only)").length?(b=a.parent(),"delete"===y.actionOriginalFN.toLowerCase()?a.remove():(a.children("hr").addClass("footnote-print-only"),a.addClass("footnote-print-only")),l(b)):void 0},s=function(a,b){var c;return b.indexOf(" ")>=0&&(b=b.trim().replace(/\s+/g,"|").replace(/(.*)/g,"($1)")),c=new RegExp("(\\s|&nbsp;)*<\\s*a[^#<]*#"+b+"[^>]*>(.*?)<\\s*/\\s*a>","g"),a.replace(c,"").replace("[]","")},v=function(a,b,c){var d,e,f,g;for(e=new RegExp("\\{\\{"+b+":([^\\}]*)\\}\\}","g"),d=void 0,g=void 0,f=void 0,d=e.exec(a);d;)d[1]&&(g=c.attr(d[1])||"",a=a.replace("{{"+b+":"+d[1]+"}}",g)),d=e.exec(a);return a},f=function(b){var c,d,e;if(y.activateOnHover){if(c=a(b.target).closest(".bigfoot-footnote__button"),d='[data-footnote-identifier="'+c.attr("data-footnote-identifier")+'"]',c.hasClass("is-active"))return;c.addClass("is-hover-instantiated"),y.allowMultipleFN||(e=".bigfoot-footnote:not("+d+")",u(e)),j(".bigfoot-footnote__button"+d).addClass("is-hover-instantiated")}},z=function(b){var c,d,e;e=a(b.target),c=e.closest(".bigfoot-footnote__button"),d=e.closest(".bigfoot-footnote"),c.length>0?(b.preventDefault(),i(c)):d.length<1&&a(".bigfoot-footnote").length>0&&u()},i=function(a){var b;a.blur(),b='data-footnote-identifier="'+a.attr("data-footnote-identifier")+'"',a.hasClass("changing")||(a.hasClass("is-active")?y.allowMultipleFN?u(".bigfoot-footnote["+b+"]"):u():(a.addClass("changing"),setTimeout(function(){return a.removeClass("changing")},y.popoverCreateDelay),j(".bigfoot-footnote__button["+b+"]"),a.addClass("is-click-instantiated"),y.allowMultipleFN||u(".bigfoot-footnote:not(["+b+"])")))},j=function(b){var c,d;return c=void 0,c="string"!=typeof b&&y.allowMultipleFN?b:"string"!=typeof b?b.first():y.allowMultipleFN?a(b).closest(".bigfoot-footnote__button"):a(b+":first").closest(".bigfoot-footnote__button"),d=a(),c.each(function(){var b,e,f,h;f=a(this),h=void 0;try{return h=y.contentMarkup.replace(/\{\{FOOTNOTENUM\}\}/g,f.attr("data-footnote-number")).replace(/\{\{FOOTNOTEID\}\}/g,f.attr("data-footnote-identifier")).replace(/\{\{FOOTNOTECONTENT\}\}/g,f.attr("data-bigfoot-footnote")).replace(/\&gtsym\;/g,"&gt;").replace(/\&ltsym\;/g,"&lt;"),h=v(h,"BUTTON",f)}finally{b=a(h);try{y.activateCallback(b,f)}catch(i){}b.insertAfter(c),q[f.attr("data-footnote-identifier")]="init",b.attr("bigfoot-max-width",g(b.css("max-width"),b)),b.css("max-width",1e4),e=b.find(".bigfoot-footnote__content"),b.attr("data-bigfoot-max-height",g(e.css("max-height"),e)),w(),f.addClass("is-active"),b.find(".bigfoot-footnote__content").bindScrollHandler(),d=d.add(b)}}),setTimeout(function(){return d.addClass("is-active")},y.popoverCreateDelay),d},d=function(){var a,b;return a=document.createElement("div"),a.style.cssText="display:inline-block;padding:0;line-height:1;position:absolute;visibility:hidden;font-size:1em;",a.appendChild(document.createElement("M")),document.body.appendChild(a),b=a.offsetHeight,document.body.removeChild(a),b},g=function(a,b){return"none"===a?a=1e4:a.indexOf("rem")>=0?a=parseFloat(a)*d():a.indexOf("em")>=0?a=parseFloat(a)*parseFloat(b.css("font-size")):a.indexOf("px")>=0?(a=parseFloat(a),60>=a&&(a/=parseFloat(b.parent().css("width")))):a.indexOf("%")>=0&&(a=parseFloat(a)/100),a},a.fn.bindScrollHandler=function(){return y.preventPageScroll?(a(this).on("DOMMouseScroll mousewheel",function(b){var c,d,e,f,g,h,i,j;return d=a(this),i=d.scrollTop(),h=d[0].scrollHeight,f=parseInt(d.css("height")),c=d.closest(".bigfoot-footnote"),d.scrollTop()>0&&d.scrollTop()<10&&c.addClass("is-scrollable"),c.hasClass("is-scrollable")?(e="DOMMouseScroll"===b.type?-40*b.originalEvent.detail:b.originalEvent.wheelDelta,j=e>0,g=function(){return b.stopPropagation(),b.preventDefault(),b.returnValue=!1,!1},!j&&-e>h-f-i?(d.scrollTop(h),c.addClass("is-fully-scrolled"),g()):j&&e>i?(d.scrollTop(0),c.removeClass("is-fully-scrolled"),g()):c.removeClass("is-fully-scrolled")):void 0}),a(this)):a(this)},A=function(b){return y.deleteOnUnhover&&y.activateOnHover?setTimeout(function(){var c;return c=a(b.target).closest(".bigfoot-footnote, .bigfoot-footnote__button"),a(".bigfoot-footnote__button:hover, .bigfoot-footnote:hover").length<1?u():void 0},y.hoverDelay):void 0},m=function(a){return 27===a.keyCode?u():void 0},u=function(b,c){var d,e,f,g;return null==b&&(b=".bigfoot-footnote"),null==c&&(c=y.popoverDeleteDelay),d=a(),g=void 0,e=void 0,f=void 0,a(b).each(function(){return f=a(this),g=f.attr("data-footnote-identifier"),e=a('.bigfoot-footnote__button[data-footnote-identifier="'+g+'"]'),e.hasClass("changing")?void 0:(d=d.add(e),e.removeClass("is-active is-hover-instantiated is-click-instantiated").addClass("changing"),f.removeClass("is-active").addClass("disapearing"),setTimeout(function(){return f.remove(),delete q[g],e.removeClass("changing")},c))}),d},w=function(b){var c;y.positionContent&&(c=b?b.type:"resize",a(".bigfoot-footnote").each(function(){var b,d,e,f,g,h,i,j,k,l,m,n,o,p,s,t;return f=a(this),h=f.attr("data-footnote-identifier"),g='data-footnote-identifier="'+h+'"',d=f.find(".bigfoot-footnote__content"),b=f.siblings(".bigfoot-footnote__button"),s=x(b),j=parseFloat(f.css("margin-top")),k=+f.attr("data-bigfoot-max-height"),t=2*j+f.outerHeight(),l=1e4,o=s.bottomRoom<t&&s.topRoom>s.bottomRoom,i=q[h],o?("top"!==i&&(q[h]="top",f.addClass("is-positioned-top").removeClass("is-positioned-bottom"),f.css("transform-origin",100*s.leftRelative+"% 100%")),l=s.topRoom-j-15):(("bottom"!==i||"init"===i)&&(q[h]="bottom",f.removeClass("is-positioned-top").addClass("is-positioned-bottom"),f.css("transform-origin",100*s.leftRelative+"% 0%")),l=s.bottomRoom-j-15),f.find(".bigfoot-footnote__content").css({"max-height":Math.min(l,k)+"px"}),"resize"===c&&(n=parseFloat(f.attr("bigfoot-max-width")),e=f.find(".bigfoot-footnote__wrapper"),m=n,1>=n&&(p=function(){var b,c;return c=1e4,y.maxWidthRelativeTo&&(b=a(y.maxWidthRelativeTo),b.length>0&&(c=b.outerWidth())),Math.min(window.innerWidth,c)}(),m=p*n),m=Math.min(m,f.find(".bigfoot-footnote__content").outerWidth()+1),e.css("max-width",m+"px"),f.css({left:-s.leftRelative*m+parseFloat(b.css("margin-left"))+b.outerWidth()/2+"px"}),r(f,s.leftRelative)),parseInt(f.outerHeight())<f.find(".bigfoot-footnote__content")[0].scrollHeight?f.addClass("is-scrollable"):void 0}))},r=function(a,b){var c;null==b&&(b=.5),c=a.find(".bigfoot-footnote__tooltip"),c.length>0&&c.css("left",""+100*b+"%")},x=function(a){var b,c,d,e,f,g;return c=parseFloat(a.css("margin-left")),d=parseFloat(a.outerWidth())-c,b=parseFloat(a.outerHeight()),g=C(),f=a.offset().top-g.scrollY+b/2,e=a.offset().left-g.scrollX+d/2,{topRoom:f,bottomRoom:g.height-f,leftRoom:e,rightRoom:g.width-e,leftRelative:e/g.width,topRelative:f/g.height}},C=function(){var b;return b=a(window),{width:window.innerWidth,height:window.innerHeight,scrollX:b.scrollLeft(),scrollY:b.scrollTop()}},c=function(a,b,c,d,f){var g,h,i,j,k,l,m;return null==d&&(d=y.popoverDeleteDelay),null==f&&(f=!0),j=void 0,h=void 0,l=void 0,"string"==typeof a?(l="iphone"===a.toLowerCase()?"<320px":"ipad"===a.toLowerCase()?"<768px":a,h=">"===l.charAt(0)?"min":"<"===l.charAt(0)?"max":null,k=h?"("+h+"-width: "+l.substring(1)+")":l,j=window.matchMedia(k)):j=a,j.media&&"invalid"===j.media?{added:!1,mq:j,listener:null}:(m="min"===h,g="max"===h,b=b||p(f,d,m,function(a){return a.addClass("is-bottom-fixed")}),c=c||p(f,d,g,function(){}),i=function(a){a.matches?b(f,e):c(f,e)},j.addListener(i),i(j),y.breakpoints[a]={added:!0,mq:j,listener:i},y.breakpoints[a])},p=function(a,b,c,d){return function(a,e){var f;return f=void 0,a&&(f=e.close(),e.updateSetting("activateCallback",d)),setTimeout(function(){return e.updateSetting("positionContent",c),a?e.activate(f):void 0},b)}},t=function(a,b){var c,d,e,f;if(e=null,c=void 0,f=!1,"string"==typeof a)f=void 0!==y.breakpoints[a];else for(c in y.breakpoints)y.breakpoints.hasOwnProperty(c)&&y.breakpoints[c].mq===a&&(f=!0);return f&&(d=y.breakpoints[c||a],b?b({matches:!1}):d.listener({matches:!1}),d.mq.removeListener(d.listener),delete y.breakpoints[c||a]),f},B=function(a,b){var c,d;if(c=void 0,"string"==typeof a)c=y[a],y[a]=b;else{c={};for(d in a)a.hasOwnProperty(d)&&(c[d]=y[d],y[d]=a[d])}return c},o=function(a){return y[a]},a(document).ready(function(){return n(),a(document).on("mouseenter",".bigfoot-footnote__button",f),a(document).on("touchend click",z),a(document).on("mouseout",".is-hover-instantiated",A),a(document).on("keyup",m),a(window).on("scroll resize",w),a(document).on("gestureend",function(){return w()})}),e={removePopovers:u,close:u,createPopover:j,activate:j,repositionFeet:w,reposition:w,addBreakpoint:c,removeBreakpoint:t,getSetting:o,updateSetting:B}}}(jQuery)}).call(this);$.bigfoot();
 
+(function() {
+  //assign all blockquote content to an html collection/variable
+  var blockQuotes = document.querySelectorAll('blockquote > p');
+  //create new regex test for ' - ' (with one whitespace on each side so as not to accidentally grab hyphenated words as well)
+  var hyphenTest = new RegExp(/\s\-\s/);
+  //iterate through all html blocks within the blockquotes html collection
+  for (var i = 0; i < blockQuotes.length; i++) {
+    //check for ' - ' in the blockquote's text content
+    if (hyphenTest.test(blockQuotes[i].textContent)) {
+      //if true, split existing inner HTML into two-part array
+      //newQuoteContent === text leading up to hyphen
+      var newQuoteContent = blockQuotes[i].innerHTML.split(' - ')[0];
+      //newAuthorAttr === text after hyphen
+      var newAuthorAttr = blockQuotes[i].innerHTML.split(' - ')[1];
+      //fill blockquote paragraph with new content, but now with a <cite> wrapper around the author callout and the appropriate quotation dash.
+      //2016-06-25: adding selectionShareable to each of the p elements to make them selectable like the rest of <p> on page.
+      blockQuotes[i].parentNode.innerHTML = '<p class=\"selectionShareable\">' + newQuoteContent + '<cite class="blockquote-citation">&#x2015; ' + newAuthorAttr + '</cite>' + '</p>';
+    }
+  }
+})();
 /*! highlight.js v9.2.0 | BSD3 License | git.io/hljslicense */
 /*Custom version including highlighting for JavaScript, HTML, CSS, BASH, JSON, YAML downloaded from https://highlightjs.org/download/
 */
@@ -998,6 +1018,20 @@ $(document).scroll(function() {
     $('aside.toc, #toggle-toc').toggleClass('fadeIn', $(document).scrollTop() >= 300 && $(document).scrollTop() <= fromBottom);
 });
 
+(function() {
+  var $btn = $('.inline-aside-button'),
+      $content = $btn.next('.inline-aside-content');
+
+  $btn.on('click', function() {
+    var isOpen = $content.is(':visible'),
+        slideDir = isOpen ? 'slideUp' : 'slideDown',
+        dur = isOpen ? 200 : 400;
+    $content.velocity(slideDir, {
+      easing: 'easeOutQuart',
+      duration: dur
+    });
+  });
+})();
 document.querySelector('.sidebar-toggle-wrapper').addEventListener('click',navToggle,false);
 document.querySelector('.all-content-wrapper').addEventListener('click',navToggleCheck,false);
 
@@ -1054,39 +1088,376 @@ if (isMobile) {
     document.querySelector('.close-with-escape').classList.add('hidden');
 }
 
-// // window.onload = tweetQuote;
-// (function tweetQuote() {
-//     if (location.pathname == "/") {
-//         return;
-//     } else {
-//         ! function(d, s, id) {
-//             var js, fjs = d.getElementsByTagName(s)[0];
-//             if (!d.getElementById(id)) {
-//                 js = d.createElement(s);
-//                 js.id = id;
-//                 js.src = "//platform.twitter.com/widgets.js";
-//                 fjs.parentNode.insertBefore(js, fjs);
-//             }
-//         }(document, "script", "twitter-wjs");
+/*
+ * share-selection: Medium like popover menu to share on Twitter or by email any text selected on the page
+ *
+ * -- Requires jQuery --
+ * -- AMD compatible  --
+ *
+ * Author: Xavier Damman (@xdamman)
+ * GIT: https://github.com/xdamman/share-selection
+ * MIT License
+ */
 
-//         // Blockquote tweet this button on hover
+(function($) {
 
-//         $('.content-wrapper blockquote').hover(function() {
+  var SelectionSharer = function(options) {
 
-//             var blockQuoteText = $(this).text();
-//             var currentUrl = window.location;
+    var self = this;
 
-//             $(this).append('<div class="tweet-quote"><a href="https://twitter.com/share" data-text="' + blockQuoteText + '"  class="twitter-share-button" data-via="ryandwatters" data-url="' + currentUrl + '" data-size="large" data-count="vertical"></a></div>');
+    options = options || {};
+    if(typeof options == 'string')
+        options = { elements: options };
 
-//             $('.tweet-quote').hide().fadeIn(0);
+    this.sel = null;
+    this.textSelection='';
+    this.htmlSelection='';
 
-//             twttr.widgets.load();
+    this.appId = $('meta[property="fb:app_id"]').attr("content") || $('meta[property="fb:app_id"]').attr("value");
+    this.url2share = $('meta[property="og:url"]').attr("content") || $('meta[property="og:url"]').attr("value") || window.location.href;
 
-//         }, function() {
-//             $('.tweet-quote').remove();
-//         });
-//     }
-// })();
+    this.getSelectionText = function(sel) {
+        var html = "", text = "";
+        sel = sel || window.getSelection();
+        if (sel.rangeCount) {
+            var container = document.createElement("div");
+            for (var i = 0, len = sel.rangeCount; i < len; ++i) {
+                container.appendChild(sel.getRangeAt(i).cloneContents());
+            }
+            text = container.textContent;
+            html = container.innerHTML;
+        }
+        self.textSelection = text;
+        self.htmlSelection = html || text;
+        return text;
+    };
+
+    this.selectionDirection = function(selection) {
+      var sel = selection || window.getSelection();
+      var range = document.createRange();
+      if(!sel.anchorNode) return 0;
+      range.setStart(sel.anchorNode, sel.anchorOffset);
+      range.setEnd(sel.focusNode, sel.focusOffset);
+      var direction = (range.collapsed) ? "backward" : "forward";
+      range.detach();
+      return direction;
+    };
+
+    this.showPopunder = function() {
+      self.popunder = self.popunder || document.getElementById('selectionSharerPopunder');
+
+      var sel = window.getSelection();
+      var selection = self.getSelectionText(sel);
+
+      if(sel.isCollapsed || selection.length < 10 || !selection.match(/ /))
+        return self.hidePopunder();
+
+      if(self.popunder.classList.contains("fixed")) {
+          self.popunder.style.bottom = 0;
+          return self.popunder.style.bottom;
+      }
+
+      var range = sel.getRangeAt(0);
+      var node = range.endContainer.parentNode; // The <p> where the selection ends
+
+      // If the popunder is currently displayed
+      if(self.popunder.classList.contains('show')) {
+        // If the popunder is already at the right place, we do nothing
+        if(Math.ceil(self.popunder.getBoundingClientRect().top) == Math.ceil(node.getBoundingClientRect().bottom))
+          return;
+
+        // Otherwise, we first hide it and the we try again
+        return self.hidePopunder(self.showPopunder);
+      }
+
+      if(node.nextElementSibling) {
+        // We need to push down all the following siblings
+        self.pushSiblings(node);
+      }
+      else {
+        // We need to append a new element to push all the content below
+        if(!self.placeholder) {
+          self.placeholder = document.createElement('div');
+          self.placeholder.className = 'selectionSharerPlaceholder';
+        }
+
+        // If we add a div between two <p> that have a 1em margin, the space between them
+        // will become 2x 1em. So we give the placeholder a negative margin to avoid that
+        var margin = window.getComputedStyle(node).marginBottom;
+        self.placeholder.style.height = margin;
+        self.placeholder.style.marginBottom = (-2 * parseInt(margin,10))+'px';
+        node.parentNode.insertBefore(self.placeholder);
+      }
+
+      // scroll offset
+      var offsetTop = window.pageYOffset + node.getBoundingClientRect().bottom;
+      self.popunder.style.top = Math.ceil(offsetTop)+'px';
+
+      setTimeout(function() {
+        if(self.placeholder) self.placeholder.classList.add('show');
+        self.popunder.classList.add('show');
+      },0);
+
+    };
+
+    this.pushSiblings = function(el) {
+      while(el=el.nextElementSibling) { el.classList.add('selectionSharer'); el.classList.add('moveDown'); }
+    };
+
+    this.hidePopunder = function(cb) {
+      cb = cb || function() {};
+
+      if(self.popunder == "fixed") {
+        self.popunder.style.bottom = '-50px';
+        return cb();
+      }
+
+      self.popunder.classList.remove('show');
+      if(self.placeholder) self.placeholder.classList.remove('show');
+      // We need to push back up all the siblings
+      var els = document.getElementsByClassName('moveDown');
+      while(el=els[0]) {
+          el.classList.remove('moveDown');
+      }
+
+      // CSS3 transition takes 0.6s
+      setTimeout(function() {
+        if(self.placeholder) document.body.insertBefore(self.placeholder);
+        cb();
+      }, 600);
+
+    };
+
+    this.show = function(e) {
+      setTimeout(function() {
+        var sel = window.getSelection();
+        var selection = self.getSelectionText(sel);
+        if(!sel.isCollapsed && selection && selection.length>10 && selection.match(/ /)) {
+          var range = sel.getRangeAt(0);
+          var topOffset = range.getBoundingClientRect().top - 5;
+          var top = topOffset + self.getPosition().y - self.$popover.height();
+          var left = 0;
+          if(e) {
+            left = e.pageX;
+          }
+          else {
+            var obj = sel.anchorNode.parentNode;
+            left += obj.offsetWidth / 2;
+            do {
+              left += obj.offsetLeft;
+            }
+            while(obj = obj.offsetParent);
+          }
+          switch(self.selectionDirection(sel)) {
+            case 'forward':
+              left -= self.$popover.width();
+              break;
+            case 'backward':
+              left += self.$popover.width();
+              break;
+            default:
+              return;
+          }
+          self.$popover.removeClass("anim").css("top", top+10).css("left", left).show();
+          setTimeout(function() {
+            self.$popover.addClass("anim").css("top", top);
+          }, 0);
+        }
+      }, 10);
+    };
+
+    this.hide = function(e) {
+      self.$popover.hide();
+    };
+
+    this.smart_truncate = function(str, n){
+        if (!str || !str.length) return str;
+        var toLong = str.length>n,
+            s_ = toLong ? str.substr(0,n-1) : str;
+        s_ = toLong ? s_.substr(0,s_.lastIndexOf(' ')) : s_;
+        return  toLong ? s_ +'...' : s_;
+    };
+
+    this.getRelatedTwitterAccounts = function() {
+      var usernames = [];
+
+      var creator = $('meta[name="twitter:creator"]').attr("content") || $('meta[name="twitter:creator"]').attr("value");
+      if(creator) usernames.push(creator);
+
+
+      // We scrape the page to find a link to http(s)://twitter.com/username
+      var anchors = document.getElementsByTagName('a');
+      for(var i=0, len=anchors.length;i<len;i++) {
+        if(anchors[i].attributes.href && typeof anchors[i].attributes.href.value == 'string') {
+          var matches = anchors[i].attributes.href.value.match(/^https?:\/\/twitter\.com\/([a-z0-9_]{1,20})/i);
+          if(matches && matches.length > 1 && ['widgets','intent'].indexOf(matches[1])==-1)
+            usernames.push(matches[1]);
+        }
+      }
+
+      if(usernames.length > 0)
+        return usernames.join(',');
+      else
+        return '';
+    };
+
+    this.shareTwitter = function(e) {
+      e.preventDefault();
+
+      var text = "“"+self.smart_truncate(self.textSelection.trim(), 114)+"”";
+      var url = 'http://twitter.com/intent/tweet?text='+encodeURIComponent(text)+'&related='+self.relatedTwitterAccounts+'&url='+encodeURIComponent(window.location.href);
+
+      // We only show the via @twitter:site if we have enough room
+      if(self.viaTwitterAccount && text.length < (120-6-self.viaTwitterAccount.length))
+        url += '&via='+self.viaTwitterAccount;
+
+      var w = 640, h=440;
+      var left = (screen.width/2)-(w/2);
+      var top = (screen.height/2)-(h/2)-100;
+      window.open(url, "share_twitter", 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+      self.hide();
+      return false;
+    };
+
+    this.shareFacebook = function(e) {
+      e.preventDefault();
+      var text = self.htmlSelection.replace(/<p[^>]*>/ig,'\n').replace(/<\/p>|  /ig,'').trim();
+
+      var url = 'https://www.facebook.com/dialog/feed?' +
+                'app_id='+self.appId +
+                '&display=popup'+
+                '&caption='+encodeURIComponent(text)+
+                '&link='+encodeURIComponent(self.url2share)+
+                '&href='+encodeURIComponent(self.url2share)+
+                '&redirect_uri='+encodeURIComponent(self.url2share);
+      var w = 640, h=440;
+      var left = (screen.width/2)-(w/2);
+      var top = (screen.height/2)-(h/2)-100;
+
+      window.open(url, "share_facebook", 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+    };
+
+    // this.shareEmail = function(e) {
+    //   var text = self.textSelection.replace(/<p[^>]*>/ig,'\n').replace(/<\/p>|  /ig,'').trim();
+    //   var email = {};
+    //   email.subject = encodeURIComponent("Quote from "+document.title);
+    //   email.body = encodeURIComponent("“"+text+"”")+"%0D%0A%0D%0AFrom: "+document.title+"%0D%0A"+window.location.href;
+    //   $(this).attr("href","mailto:?subject="+email.subject+"&body="+email.body);
+    //   self.hide();
+    //   return true;
+    // };
+
+    this.render = function() {
+      var popoverHTML =  '<div class="selectionSharer" id="selectionSharerPopover" style="position:absolute;">'
+                       + '  <div id="selectionSharerPopover-inner">'
+                       + '    <ul>'
+                       + '      <li><a class="action tweet" href="" title="Share this selection on Twitter" target="_blank">Tweet</a></li>'
+                       // + '      <li><a class="action facebook" href="" title="Share this selection on Facebook" target="_blank">Facebook</a></li>'
+                       // + '      <li><a class="action email" href="" title="Share this selection by email" target="_blank"><svg width="20" height="20"><path stroke="%23FFF" stroke-width="6" d="m16,25h82v60H16zl37,37q4,3 8,0l37-37M16,85l30-30m22,0 30,30"/></svg></a></li>'
+                       + '    </ul>'
+                       + '  </div>'
+                       + '  <div class="selectionSharerPopover-clip"><span class="selectionSharerPopover-arrow"></span></div>'
+                       + '</div>';
+
+      var popunderHTML = '<div id="selectionSharerPopunder" class="selectionSharer">'
+                       + '  <div id="selectionSharerPopunder-inner">'
+                       + '    <label>Share this selection</label>'
+                       + '    <ul>'
+                       + '      <li><a class="action tweet" href="" title="Share this selection on Twitter" target="_blank">Tweet</a></li>'
+                       + '      <li><a class="action facebook" href="" title="Share this selection on Facebook" target="_blank">Facebook</a></li>'
+                       + '      <li><a class="action email" href="" title="Share this selection by email" target="_blank"><svg width="20" height="20"><path stroke="%23FFF" stroke-width="6" d="m16,25h82v60H16zl37,37q4,3 8,0l37-37M16,85l30-30m22,0 30,30"/></svg></a></li>'
+                       + '    </ul>'
+                       + '  </div>'
+                       + '</div>';
+      self.$popover = $(popoverHTML);
+      self.$popover.find('a.tweet').click(self.shareTwitter);
+      self.$popover.find('a.facebook').click(self.shareFacebook);
+      // self.$popover.find('a.email').click(self.shareEmail);
+
+      $('body').append(self.$popover);
+
+      self.$popunder = $(popunderHTML);
+      self.$popunder.find('a.tweet').click(self.shareTwitter);
+      self.$popunder.find('a.facebook').click(self.shareFacebook);
+      // self.$popunder.find('a.email').click(self.shareEmail);
+      $('body').append(self.$popunder);
+
+      if (self.appId && self.url2share){
+        $(".selectionSharer a.facebook").css('display','inline-block');
+      }
+    };
+
+    this.setElements = function(elements) {
+      if(typeof elements == 'string') elements = $(elements);
+      self.$elements = elements instanceof $ ? elements : $(elements);
+      self.$elements.mouseup(self.show).mousedown(self.hide).addClass("selectionShareable");
+
+      self.$elements.bind('touchstart', function(e) {
+        self.isMobile = true;
+      });
+
+      document.onselectionchange = self.selectionChanged;
+    };
+
+    this.selectionChanged = function(e) {
+      if(!self.isMobile) return;
+
+      if(self.lastSelectionChanged) {
+        clearTimeout(self.lastSelectionChanged);
+      }
+      self.lastSelectionChanged = setTimeout(function() {
+        self.showPopunder(e);
+      }, 300);
+    };
+
+    this.getPosition = function() {
+      var supportPageOffset = window.pageXOffset !== undefined;
+      var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+
+      var x = supportPageOffset ? window.pageXOffset : isCSS1Compat ? document.documentElement.scrollLeft : document.body.scrollLeft;
+      var y = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
+      return {x: x, y: y};
+    };
+
+    this.render();
+
+    if(options.elements) {
+      this.setElements(options.elements);
+    }
+
+  };
+
+  // jQuery plugin
+  // Usage: $( "p" ).selectionSharer();
+  $.fn.selectionSharer = function() {
+    var sharer = new SelectionSharer();
+    sharer.setElements(this);
+    return this;
+  };
+
+  // For AMD / requirejs
+  // Usage: require(["selection-sharer!"]);
+  //     or require(["selection-sharer"], function(selectionSharer) { var sharer = new SelectionSharer('p'); });
+  if(typeof define == 'function') {
+    define(function() {
+      SelectionSharer.load = function (name, req, onLoad, config) {
+        var sharer = new SelectionSharer();
+        sharer.setElements('p');
+        onLoad();
+      };
+      return SelectionSharer;
+    });
+
+  }
+  else {
+    // Registering SelectionSharer as a global
+    // Usage: var sharer = new SelectionSharer('p');
+    window.SelectionSharer = SelectionSharer;
+  }
+
+})(jQuery);
+
+$('.body-copy p').selectionSharer();
 
 /*! VelocityJS.org (1.2.3). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
 /*! VelocityJS.org jQuery Shim (1.0.1). (C) 2014 The jQuery Foundation. MIT @license: en.wikipedia.org/wiki/MIT_License. */

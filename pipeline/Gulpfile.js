@@ -33,7 +33,6 @@ gulp.task('sassdoc', () => {
         .pipe(sassdoc(options));
 });
 
-// .pipe(errorHandler())
 gulp.task('sass', () => {
     return gulp.src(sassFiles)
         .pipe(sourcemaps.init())
@@ -47,8 +46,16 @@ gulp.task('sass', () => {
         .pipe(gulp.dest('../layouts/partials/site_header'));
 });
 
+gulp.task('ie9sass', () => {
+    return gulp.src('scss/ie9.scss')
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(autoprefixer())
+        .pipe(minifycss())
+        .pipe(rename('ie9.css'))
+        .pipe(gulp.dest('../static/assets/css'))
+});
+
 // Concatenate & Minify JS
-// .pipe(plumber())
 gulp.task('scripts', () => {
     return gulp.src(['js/scripts/*js'])
         .pipe(sourcemaps.init())
@@ -92,6 +99,7 @@ gulp.task('dev', ['sass', 'scripts', 'image-resize'], function() {
     gulp.watch(['scss/*.scss', 'scss/**/*scss'], ['sass']);
     gulp.watch("js/scripts/*.js", ['scripts']);
     gulp.watch("../source-images/*.{jpg,png,jpeg}", ['image-resize']);
+    gulp.watch("scss/ie9.scss", ['ie9sass']);
     // watch css and stream to BrowserSync when it changes
 });
 
