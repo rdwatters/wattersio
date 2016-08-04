@@ -76,13 +76,18 @@ span.share-close {
     flex-direction: row;
     justify-content: space-between;
   }
-  @include MQ(sixPlusLandscape) {
-    width: 90%;
+  @include MQ(retinaPortrait) {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @include MQ(retinaLandscape) {
+    flex-direction: row;
+    justify-content: space-between;
   }
   list-style: none;
   margin: 1em auto 0;
   padding: 0;
-  width: 60%;
+  width: 90%;
   li {
     margin-bottom: 2em;
     a.share-button {

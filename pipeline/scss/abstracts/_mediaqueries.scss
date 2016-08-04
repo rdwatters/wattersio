@@ -35,13 +35,13 @@
       @content;
     }
   }
-  @else if $canvas==retinaLandscape {
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-device-width: 375px), (max-device-width: 736), (orientation: landscape) {
+  @else if $canvas==retinaPortrait {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
       @content;
     }
   }
-  @else if $canvas==retinaPlusLandscape {
-    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) and (device-pixel-ration: 3) and (-webkit-min-device-pixel-ratio: 3) {
+  @else if $canvas==retinaLandscape {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
       @content;
     }
   }
