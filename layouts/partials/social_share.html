@@ -22,8 +22,7 @@
                     <a class="share-button facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank"></a>
                 </li>
                 <li>
-                    <a class="share-button linkedin" href="https://www.linkedin.com/shareArticle
-    ?mini=true&url={{ .Permalink }}&title={{ .Title }}" target="_blank"></a>
+                    <a class="share-button linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{- .Permalink -}}&title={{ .Title }}&summary={{.Description}}" target="_blank"></a>
                 </li>
                 <li>
                     <a class="share-button pocket" href="https://getpocket.com/save?url={{ .Permalink }}&title={{ .Title }}" target="_blank"></a>
