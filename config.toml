@@ -32,6 +32,7 @@ watch = true
 [params]
 	SiteAuthor = "Ryan Watters"
   SiteTitle = "ryanwatters.io"
+  #Include Twitter Handle without the "@"
   TwitterHandle = "ryandwatters"
   #######BEGIN SOCIAL#######
   # For each social account, use the full URL that leads to the homepage of your account/profile
@@ -41,11 +42,8 @@ watch = true
   Facebook = "Ryan-Watters-810571539011577/"
   YouTube = "https://youtube.com"
   GooglePlus = "https://plus.google.com/"
-  # For LinkedIn, you'll need to make sure you are using the URL for visitors, rather than the URL once you're signed into your account.
-  LinkedIn = "https://linkedin.com"
-  Instagram = "https://www.instagram.com"
-  Tumblr = "https://www.tumblr.com/"
-  Pinterest = "https://pinterest.com/"
+  # For LinkedIn, you'll need to make sure you are using the URL for visitors, rather than the URL once you're signed into your account. Include everything after "https://www.linkedin.com/in/"
+  LinkedIn = "ryan-watters-els-08010725"
   IncludeRSS = true
   # Add your Google Analytics ID here (ie, UA-XXXXXXXX-X). See layouts/partials/google_analytics.html. Dev environment (ie, localhost) is automatically disabled.
   GoogleAnalyticsTrackingId = "UA-76549364-1"
@@ -62,8 +60,6 @@ watch = true
   SiteTagline = "Content Strategist, Storyteller, Frontend Developer, Unabashed Nerd"
   #Leave off extension for default social image since it's assumed to be "jpg"
   DefaultSocialImage = "site-logo-default-social"
-  # Setting this to true will include Swiftype Metadata in <head> and the default single.html <article> in layouts/_default
-  Swiftype = false
   UpdatedText = "Updated:"
   # Determines style of previous and next links in /posts; options are either "sides" or "bottom"
   PostPrevNextStyle = "bottom"

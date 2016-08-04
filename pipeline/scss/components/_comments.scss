@@ -7,3 +7,9 @@ aside#disqus_thread {
 		width:100%;
 	}
 }
+
+.disqus-noscript-block {
+	@include center;
+	width:90%;
+	max-width:$content-max-width;
+}
