@@ -13,8 +13,8 @@
                     {{partial "publish_date.html" . }}
                     </div>
                     <section>
-                        <header>
-                        <h3 class="list">{{ .Title }}</h3>
+                        <header class="content-list-item-header">
+                        <h3 class="list{{if gt (len .Title) 60}} long-title{{end}}">{{ .Title }}</h3>
                         <p class="list-description">{{ .Description }}</p>
                         </header>
                     </section>
