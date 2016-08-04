@@ -119,10 +119,11 @@ ul.article-tags {
 span.category {
   font-size: .8em;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: $base-font-weight;
   a {
     color: white;
     text-decoration: underline;
+    font-weight: $base-font-weight;
   }
 }
 
@@ -138,6 +139,7 @@ span.dot:after {
   background-color: #fff;
 }
 
+//creative commons logo for the about page
 .creative-commons {
   @include center;
   width: 200px;

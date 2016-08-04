@@ -81,3 +81,8 @@ time {
   text-transform:$datetime-text-transform;
   font-weight:normal;
 }
+
+::selection {
+  color:$selected-text-color;
+  background-color: $selected-text-bg-color;
+}

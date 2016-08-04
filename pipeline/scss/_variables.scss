@@ -29,8 +29,8 @@ $use-font-awesome: 'false';
 
 //TYPOGRAPHY
 $base-font-size:20px;
-$base-font-weight: 200;
-$base-font-weight-retina: 200;
+$base-font-weight: 300;
+$base-font-weight-retina: 300;
 $base-font-family:$font,$helvetica;
 $heading-font-family:$font-two,$georgia;
 $heading-font-base-weight:100;
@@ -83,6 +83,8 @@ $code-block-background-color: $base-font-color;
 //only applies to bottom-style links for prev/next
 $post-footer-links-max-width:1100px;
 $single-page-hero-bg-color:$brand-primary;
+$selected-text-bg-color:$brand-primary;
+$selected-text-color:$white;
 
 //SOCIAL MEDIA COLORS
 $twitter:#00aced;

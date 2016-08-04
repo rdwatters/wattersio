@@ -37,7 +37,7 @@
         <section class="bottom-link-section" style="background-image:url({{.Site.BaseURL}}/assets/images/half/{{ .Params.image }});">
           <div class="bottom-link-info">
               <h4 class="bottom-button prev-button"><span class="prev-arrow">&larr;</span> PREV</h4>
-              <h1 class="page-title{{if gt (len .Title) 26}} long-title{{end}}">{{.Title}}</h1>
+              <h1 class="page-title{{if gt (len .Title) 60}} long-title{{end}}">{{.Title}}</h1>
               {{partial "publish_date.html" . }}
           </div>
         </section>
@@ -48,7 +48,7 @@
         <section class="bottom-link-section" style="background-image:url({{.Site.BaseURL}}/assets/images/half/{{ .Params.image }});">
           <div class="bottom-link-info">
               <h4 class="bottom-button next-button">Next <span class="next-arrow">&rarr;</span></h4>
-              <h1 class="page-title{{if gt (len .Title) 26}} long-title{{end}}">{{.Title}}</h1>
+              <h1 class="page-title{{if gt (len .Title) 60}} long-title{{end}}">{{.Title}}</h1>
               {{partial "publish_date.html" . }}
           </div>
         </section>

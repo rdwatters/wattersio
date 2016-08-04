@@ -1,0 +1,46 @@
+.site-navigation,
+.site-header,
+.site-footer,
+aside,
+section,
+article,
+main,
+main.main,
+footer,
+.post-footer,
+blockquote,
+header,
+ul,
+li,
+small,
+sup,
+em,
+form,
+form.site-search,
+#toggle-search,
+.sidebar-toggle-wrapper,
+.sidebar-toggle,
+svg,
+a.site-logo,
+#toggle-toc,
+.modal-toggle-group,
+.social-wrapper {
+  display: none!important;
+}
+
+#ie-only {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 700px;
+  p {
+  	margin-top:1.5em;
+  	text-align:center;
+  	color:red;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

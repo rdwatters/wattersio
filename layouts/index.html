@@ -12,20 +12,20 @@
             <section>
             <img  class="grayscale" src="/assets/images/{{ .Params.image }}">
                 <header>
-                  <h1>{{ .Title }}</h1>
+                  <h1 class="homepage-list{{if gt (len .Title) 60}} long-title{{end}}">{{ .Title | markdownify }}</h1>
                   {{partial "publish_date.html" . }}
                 </header>
             </section>
           </a>
         </li>
-        {{ end }} {{ range after 1 (first 6 (where .Site.Pages "Section" "posts").ByPublishDate.Reverse) }}
+        {{ end }} {{- range after 1 (first 6 (where .Site.Pages "Section" "posts").ByPublishDate.Reverse) -}}
         <li>
           <a href="{{ .Permalink }}">
             <section>
               <img class="grayscale" src="/assets/images/half/{{ .Params.image }}">
               <header>
-                <h1>{{ .Title }}</h1>
-                {{partial "publish_date.html" . }}
+                <h1 class="homepage-list{{if gt (len .Title) 60}} long-title{{end}}">{{.Title | markdownify }}</h1>
+                {{- partial "publish_date.html" . -}}
               </header>
             </section>
           </a>

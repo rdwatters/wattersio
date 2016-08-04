@@ -10,7 +10,7 @@
                     <span class="category"><a href="/categories/{{.|urlize}}">{{. |upper}}</a></span>
                     {{end}}
                 {{end}}
-                <h1>{{.Title}}</h1>
+                <h1{{if gt (len .Title) 60}} class="long-title"{{end}}>{{.Title | markdownify}}</h1>
                 <div class="hr-wrapper">
                     <hr>
                 </div>

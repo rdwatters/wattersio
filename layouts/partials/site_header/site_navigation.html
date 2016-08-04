@@ -11,7 +11,7 @@
     {{ range first 5 (where .Site.Pages "Section" "posts").ByPublishDate.Reverse }}
       {{ if ne .Title $thisTitle }}
       <li>
-        <a href="{{ .Permalink }}" class="site-nav sidebar-link">
+        <a href="{{.Permalink}}" class="site-nav sidebar-link">
           <img src="/assets/images/thumbs/{{ .Params.image }}" alt="" class="grayscale">
           <section>
             <header>
