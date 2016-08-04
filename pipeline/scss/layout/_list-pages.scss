@@ -31,10 +31,16 @@ ul.contents-list {
         padding: .25em .5em;
         box-sizing: border-box;
         max-width: 100%;
+        header {
+          box-sizing: border-box;
+          max-width: 100%;
+        }
       }
       p {
         font-size: .8em;
         line-height: 1.2;
+        box-sizing: border-box;
+        max-width: 100%;
       }
     }
     @include MQ(M) {
