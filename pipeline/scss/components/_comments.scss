@@ -1,6 +1,7 @@
 div.disqus {
   width: 90%;
   @include center;
+  margin-bottom:1em;
   @include MQ(M) {
   	width:100%;
     max-width: $content-max-width;

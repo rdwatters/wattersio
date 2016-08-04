@@ -28,6 +28,6 @@ Oman. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ut, accus
 
 Cabalistic mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing compunctious.
 
-![Photo of a young girl with a sparkler.](/assets/images/girl-sparkler.jpg)
+![Photo of a young girl with a sparkler. class=shadow](/assets/images/girl-sparkler.jpg)
 
 Oman. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ut, accusantium deleniti ipsa, repellat iure neque provident reprehenderit similique cumque ven
