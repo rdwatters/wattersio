@@ -2,7 +2,10 @@
 <!-- Preconnect API. For browser compatibility, check http://caniuse.com/#feat=link-rel-preconnect -->
 <link rel="preconnect" href="{{ .Site.BaseURL }}">
 <link rel="canonical" href="{{ .Permalink }}">
-<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ if .RSSlink }}
+  <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ end }}
 {{ if and (.IsPage) (eq .Section "posts") }}
 	{{with .NextInSection }}
 	<link rel="preload" href="/assets/images/{{.Params.image}}">

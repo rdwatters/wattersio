@@ -25,14 +25,14 @@ Experienced web professional with a deep understanding of content strategy, cont
 * Manage new GSA upgrade
 * Create content models and CMS strategy for upcoming re-platforming project
 * Ghostwriting and developmental editing for subset of highly engaged members
-* Educational presentations to CAP Leadership on web writing best practices, SEO fundamentals, and analytics (See [Sample Presentation 1][] and [Sample Presentation 2][])
-* Lead professional development workshops for the Digital Strategy and Marketing teams on CMS best practices, front-end development, and SEO (See [Workshop Excerpt][])
+* Educational presentations to CAP Leadership on web writing best practices, SEO fundamentals, and analytics
+* Lead professional development workshops for the Digital Strategy and Marketing teams on CMS best practices, front-end development, and SEO
 
 #### Accomplishments
 
 * Defined the first editorial mission for CAP member content
 * Designed new editorial process and content strategy for CAP's flagship website
-* Sole developer, writer, designer, and editor for the organization's first web-based writer's guide and Digital Strategy Blog (See [Digital Website Sample][])
+* Sole developer, writer, designer, and editor for the organization's first web-based writer's guide and Digital Strategy Blog
 
 <h3 class="experience-title">Senior Medical Editor <span class="work-experience-time">Jun 2015 &ndash; Dec 2015</span></h3>
 
@@ -64,7 +64,7 @@ Experienced web professional with a deep understanding of content strategy, cont
 
 #### Accomplishments
 
-* Introduced new content management strategy, including content calendars, content modeling, metadata schema, and a standalone tutorial site (See [Tutorial Website Sample][])
+* Introduced new content management strategy, including content calendars, content modeling, metadata schema, and a standalone tutorial site
 * STAR Award, Department of Marketing (quarterly employee recognition)
 * Standardized and automated a complex editorial workflow that reduced turnaround for content-related requests from 1 week to less than 24 hours
 * Unified content calendars for AAP.org and HealthyChildren.org for better content strategy between the properties
@@ -104,7 +104,7 @@ Experienced web professional with a deep understanding of content strategy, cont
 * Google Tag Manager
 * Google Search Appliance
 * [Swiftype][], [Algolia][], [lunr.js][]
-* **Schema:** [DCMI][], [MeSH][], [Schema.org][], [Open Graph Protocol][], [Twitter][]
+* Schema: [DCMI][], [MeSH][], [Schema.org][], [Open Graph Protocol][], [Twitter][]
 
 ### Front-end Development
 
@@ -130,7 +130,7 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 
 ### Software & Content Management Systems
 
-* **Content Management Systems:** SharePoint 2010, SharePoint 2013 (including SharePoint Designer), WordPress, [Webhook][], [Ghost][]
+* **Content Management Systems:** SharePoint 2010, SharePoint 2013 (including SharePoint Designer), WordPress, [Webhook][], [Ghost][], [Craft][]
 * **Office and Productivity Software:** Office 2013 (including Visio & Access), Google Drive, iWork Suite, OmniGraffle, OmniPlanner
 * **Collaboration:** Slack, Gitter
 
@@ -147,8 +147,8 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 [About page]: /about
 [Algolia]: https://www.algolia.com
 [BELS]: http://www.bels.org/
+[Craft]: https://craftcms.com/
 [DCMI]: http://dublincore.org/
-[Digital Website Sample]: /docsample
 [Ember.js]: http://emberjs.com/
 [Ghost]: https://ghost.org/
 [GitHub]: https://www.github.com/rdwatters
@@ -159,13 +159,9 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 [Ooyala]: http://www.ooyala.com/
 [Pandoc]: http://pandoc.org/
 [Precision for Value]: http://www.precisionforvalue.com/
-[Sample Presentation 1]: /presentationsample1
-[Sample Presentation 2]: /presentationsample2
 [Schema.org]: http://schema.org/
 [shortlist of tools]: /about#site-development
 [Swiftype]: https://swiftype.com/
-[Tutorial Website Sample]: /migrationsample
 [Twitter]: https://dev.twitter.com/cards/markup
 [Webhook]: http://www.webhook.com/
-[Workshop Excerpt]: /presentationsample3
 [Zapier]: https://zapier.com/

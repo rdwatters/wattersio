@@ -1,15 +1,10 @@
 aside#disqus_thread {
-	@include center;
-	width:90%;
-	max-width:$content-max-width;
-	margin-bottom:1.5em;
-	@include MQ(M){
-		width:100%;
-	}
+  @include center;
+  width: 100%;
 }
 
 .disqus-noscript-block {
-	@include center;
-	width:90%;
-	max-width:$content-max-width;
+  @include center;
+  width: 90%;
+  max-width: $content-max-width;
 }
