@@ -1,8 +1,4 @@
 main.fourohfour {
-  display: flex;
-  min-height:100%;
-  flex-direction: column;
-  flex-shrink: 0;
-  flex-grow:2;
-  align-items: stretch;
+	display:block;
+	min-height:calc(100vh - 200px);
 }

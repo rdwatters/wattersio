@@ -80,7 +80,6 @@ ul.homepage-list {
         top: auto;
         bottom: 1em;
       }
-      font-weight:500;
       color:lighten($base-font-color, 35%);
       @include MQ(M) {
         font-size: 14px;
