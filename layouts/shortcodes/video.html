@@ -1,6 +1,6 @@
-<div class="video-wrapper" data-streaming="{{.Get 0}}" data-videoid="{{.Get 1}}" >
+<div class="video-wrapper" data-streaming="{{.Get 0 | lower}}" data-videoid="{{.Get 1}}" >
 	<i class="icon-video-play-button"></i>
-	{{if eq (.Get 0) "vimeo"}}
+	{{if eq (.Get 0 | lower) "vimeo"}}
 	<div style="background-image:url(//vimeo.com/api/v2/video/{{.Get 1}}.json?callback=showThumb)" alt="Vimeo thumbnail" class="video-thumbnail" data-is-vimeo="true" data-videoid="{{.Get 1}}"></div>
 	{{else}}
 	<div style="background-image:url(//img.youtube.com/vi/{{.Get 1}}/0.jpg)" alt="YouTube Thumbnail" class="video-thumbnail" data-is-vimeo="false"></div>
