@@ -6,6 +6,7 @@ description: If you are looking to reach out for professional reasons, please ta
 tags: [resume,professional,contract]
 categories:
 removefromsearch:
+removecomments: true
 ---
 
 ## Profile

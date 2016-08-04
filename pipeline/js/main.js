@@ -1011,35 +1011,54 @@ function navToggleCheck() {
 		$('.sidebar-toggle-wrapper,.site-navigation,.all-content-wrapper,#toggle-search').removeClass('open');
 	}
 }
+window.onload = pageNotFoundTest;
+
 document.getElementById('toggle-search').addEventListener('click', toggleSearch, false);
 document.getElementById('close-search').addEventListener('click', toggleSearch, false);
 document.addEventListener('keyup', keystrokeSearchToggle, false);
 document.getElementById('search-input').addEventListener('keyup', setSearchInLocalStorage, false);
+
+//test for 404 Page
+
+function pageNotFoundTest() {
+    var fourTest = new RegExp('Page not found', 'i');
+    var docTitle = document.title.toString();
+    var currentUrl = window.location.href;
+    if (fourTest.test(docTitle)) {
+        document.getElementById('search-results').innerHTML = '<li class="search-result notfound"><h5><strong>It looks like ' + currentUrl + ' does not exist. Please try searching for another page.</strong></h5></li>';
+        toggleSearch(null);
+    }
+
+}
 
 //toggle search based on keystroke
 function keystrokeSearchToggle(thekey) {
     var boardKey = thekey.keyCode;
     var searchIsOpen = document.querySelector('.search-form.open') ? true : false;
     if (boardKey == 27 && searchIsOpen) {
-    	document.querySelector('.search-form').classList.remove('open');
+        document.querySelector('.search-form').classList.remove('open');
     }
 }
 
 function toggleSearch(evt) {
-    evt.preventDefault();
-    evt.stopPropagation();
     var searchValue = localStorage.getItem('rw_search_term');
     var searchForm = document.getElementById('site-search');
     var searchInput = document.getElementById('search-input');
-
-    if(searchValue != null){
-    	searchInput.value = searchValue;
-    	lunrSearch();
+    if (evt !== null) {
+        evt.preventDefault();
+        evt.stopPropagation();
+        if (searchValue != null) {
+            searchInput.value = searchValue;
+            lunrSearch();
+        }
+        if (!searchForm.classList.contains('open')) {
+            searchInput.focus();
+        }
+        searchForm.classList.toggle('open');
+    } else {
+        searchInput.focus();
+        searchForm.classList.toggle('open');
     }
-    searchForm.classList.toggle('open');
-    if (!searchForm.classList.contains('open')) {
-        searchInput.value = '';
-    } else { document.getElementById('search-input').focus(); }
     return false;
 }
 

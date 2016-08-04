@@ -11,3 +11,4 @@ echo "Production Deployment: $TODAY" >> deploy.txt
 git add .
 git commit -m "${1:-No commit message added for Netlify Production Deploy}"
 git push
+git checkout dev
