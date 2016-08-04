@@ -1,7 +1,7 @@
 .site-footer {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: table;
+  position: relative;
   min-height: 10em;
   background-color: $base-font-color;
   color: $white;
@@ -10,21 +10,30 @@
   z-index: 99;
 }
 
-span.heart {
-  color:red;
+.site-footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.site-author-byline,
+.site-copyright {
+  @include center;
+  width: 90%;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 .site-social-list {
   @include center;
   width: 90%;
   max-width: 500px;
-  margin: 1em 0em;
+  margin-bottom: 1em;
   li {
-    display:inline-block;
+    display: inline-block;
     min-width: 25px;
     min-height: 25px;
-    width:23%;
-    height:25px;
+    width: 23%;
+    height: 25px;
     a.social-button {
       @include center;
       min-width: 25px;
@@ -48,4 +57,9 @@ span.heart {
       }
     }
   }
+}
+
+//color heart in author byline
+span.heart {
+  color: red;
 }
