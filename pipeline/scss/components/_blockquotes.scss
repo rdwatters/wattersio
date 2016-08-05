@@ -23,7 +23,7 @@ blockquote {
     margin-left: 0em;
     font-size: 1.4em;
   }
-  @include MQ(L) {
+  @include MQ(XL) {
     width: 40%;
     font-size: 1.5em;
     padding: 2em .5em;
