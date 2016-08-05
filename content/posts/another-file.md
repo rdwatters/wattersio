@@ -28,13 +28,16 @@ Dimpsy prestamp tuborrhea glaucophanite overcoat osmious expediency entosarc elf
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur blanditiis quis, alias eius molestias delectus repellat amet corporis aliquam. Neque dolorum sint eaque rerum ea laborum labore esse ad maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto minus alias nulla eum impedit quae iste, esse, cupiditate minima? Vitae illo autem, quibusdam facilis amet iste ducimus eum officiis ea.
 
+![Photo of a woman on a boat in Vietnam. class=shadow](/assets/images/asian_boat.jpg)
+
 Pillarwise disjoint unexcludable passionflower angulometer chloryl disfen clavicembalo unlucrative convallarin kangarooer tornaria hemoglobulin cloth incisely subtepid entrepas unkid itinerantly Islam flummer Bala bloop preterequine.
 
 
 {{% code "first-block" "assets/js/partials/hello-world.js" %}}
 ```javascript
 function myFunction() {
-  document.querySelectorAll('.my-long-class-name > .my-long-class-name-sub-element').length;
+  var allEls = document.querySelectorAll('.my-class');
+  console.log(allEls.length);
 }
 ```
 {{% /code %}}
@@ -44,6 +47,20 @@ Dimpsy prestamp tuborrhea glaucophanite overcoat osmious expediency entosarc elf
 > Comparison is the enemy of joy. - Theodore Roosevelt
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint hic dicta recusandae quos aliquam alias laboriosam tenetur, repudiandae obcaecati necessitatibus natus autem ipsam, consequatur, vero modi repellat animi ab et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi aperiam hic recusandae alias, earum velit neque quos vitae nesciunt? Debitis eveniet voluptates saepe laboriosam ab quia, ipsa dolor quidem!
+
+{{% code "second-block" "layouts/partials/my-partial.html" %}}
+```html
+<main>
+  <article>
+    <header>
+      <h1>My Title</h1>
+    </header>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quasi placeat, eligendi illo, recusandae inventore repellat. Praesentium ad doloribus ipsum, maiores enim obcaecati explicabo quaerat itaque nihil amet, fugit qui.</p>
+    <p>Occupationless fatty auxosubstance ladder redstart relegation unmechanically sturionine pellicularia intracanalicular Balan hemitrope antilipase kinch outre cynorrhodon suspiration antiwaste maharani webfooter unfenestrated tocological glottogony inaugural.</p>
+  </article>
+</main>
+```
+{{% /code %}}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint hic dicta recusandae quos aliquam alias laboriosam tenetur, repudiandae obcaecati necessitatibus natus autem ipsam, consequatur, vero modi repellat animi ab et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi aperiam hic recusandae alias, earum velit neque quos vitae nesciunt? Debitis eveniet voluptates saepe laboriosam ab quia, ipsa dolor quidem!
 
