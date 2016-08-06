@@ -154,6 +154,12 @@ span.dot:after {
       list-style-type: disc;
     }
   }
+  > ul {
+    margin-bottom:1em;
+  }
+  > ol {
+    margin-bottom:1em;
+  }
   ol {
     list-style-type: decimal;
     list-style-position: outside;
