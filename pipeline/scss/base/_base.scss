@@ -21,11 +21,11 @@ body {
   @include MQ(M) {
     font-size: 90%;
   }
-  @include MQ(L) {
-    font-size: 95%;
-  }
+  // @include MQ(L) {
+  //   font-size: 95%;
+  // }
   @include MQ(XL) {
-    font-size: 100%;
+    font-size: 95%;
   }
   @include MQ(HUGE) {
     font-size: 110%;
