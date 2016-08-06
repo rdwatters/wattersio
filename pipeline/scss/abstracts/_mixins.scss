@@ -256,3 +256,35 @@
 @mixin base-transition($target:all, $time:$base-transition-time, $type:ease-in-out) {
   transition: $target $time $type;
 }
+
+//Font mixin
+@mixin fonts($font: null, $path: '/assets/css/fonts', $weights: 100 200 300 400 500 600 700 800 900, $woff2: false) {
+  @each $weight in $weights {
+    @font-face {
+      font-family: "#{$font}";
+      @if $woff2 {
+      src: url('#{$path}/#{$font}/#{$font}-#{$weight}-webfont.woff2') format('woff2'),
+        url('#{$path}/#{$font}/#{$font}-#{$weight}-webfont.woff') format('woff'),
+        url('#{$path}/#{$font}/#{$font}-#{$weight}-webfont.ttf') format('truetype');
+      }@else{
+      src: url('#{$path}/#{$font}/#{$font}-#{$weight}-webfont.woff') format('woff'),
+        url('#{$path}/#{$font}/#{$font}-#{$weight}-webfont.ttf') format('truetype');
+      }
+      font-weight: #{$weight};
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "#{$font}";
+      @if $woff2 {
+      src: url('#{$path}/#{$font}/#{$font}-#{$weight}-italic-webfont.woff2') format('woff2'),
+        url('#{$path}/#{$font}/#{$font}-#{$weight}-italic-webfont.woff') format('woff'),
+        url('#{$path}/#{$font}/#{$font}-#{$weight}-italic-webfont.ttf') format('truetype');
+      }@else{
+      src: url('#{$path}/#{$font}/#{$font}-#{$weight}-italic-webfont.woff') format('woff'),
+        url('#{$path}/#{$font}/#{$font}-#{$weight}-italic-webfont.ttf') format('truetype');
+      }
+      font-weight: #{$weight};
+      font-style: italic;
+    }
+  }
+}
