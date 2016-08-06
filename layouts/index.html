@@ -12,7 +12,11 @@
             <section>
             <img  class="grayscale" src="/assets/images/{{ .Params.image }}">
                 <header>
-                  <h1 class="homepage-list{{if gt (len .Title) 60}} long-title{{end}}">{{ .Title | markdownify }}</h1>
+                  {{if gt (len .Title) 60}}
+                  <h1 class="homepage-list"><span class="long-title">{{.Title | markdownify}}</span></h1>
+                  {{else}}
+                  <h1 class="homepage-list">{{.Title | markdownify}}</h1>
+                  {{end}}
                   {{partial "publish_date.html" . }}
                 </header>
             </section>
@@ -24,7 +28,11 @@
             <section>
               <img class="grayscale" src="/assets/images/half/{{ .Params.image }}">
               <header>
-                <h1 class="homepage-list{{if gt (len .Title) 60}} long-title{{end}}">{{.Title | markdownify }}</h1>
+                {{if gt (len .Title) 60}}
+                <h1 class="homepage-list"><span class="long-title">{{.Title | markdownify}}</span></h1>
+                {{else}}
+                <h1 class="homepage-list">{{.Title | markdownify}}</h1>
+                {{end}}
                 {{- partial "publish_date.html" . -}}
               </header>
             </section>

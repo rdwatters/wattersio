@@ -5,12 +5,21 @@
         <header{{with .Params.image}} class="hero" style="background-image:url(/assets/images/{{.}})"{{else}} class="hero single-page"{{end}}>
             <div class="header-content">
                 {{if eq .Section "posts" }}
-                    {{partial "publish_date" . }}<span class="dot"></span>
+                    <div class="header-meta">
+                    {{partial "publish_date" . }}
                     {{with .Params.categories}}
+                    <span class="dot"></span>
                     <span class="category"><a href="/categories/{{.|urlize}}">{{. |upper}}</a></span>
                     {{end}}
+                    <span class="dot"></span>
+                    <span class="reading-time">{{.ReadingTime}} min read</span>
+                    </div>
                 {{end}}
-                <h1{{if gt (len .Title) 60}} class="long-title"{{end}}>{{.Title | markdownify}}</h1>
+                {{if gt (len .Title) 60}}
+                <h1><span class="long-title">{{.Title | markdownify}}</span></h1>
+                {{else}}
+                <h1>{{.Title | markdownify}}</h1>
+                {{end}}
                 <div class="hr-wrapper">
                     <hr>
                 </div>

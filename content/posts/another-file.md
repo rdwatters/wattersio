@@ -1,10 +1,10 @@
 ---
-title: Another File
+title: Another Testing File
 subtitle: Newest File for Testing
 publishdate: 2016-05-21
 date: 2016-05-21
 modified: false
-ori_date:
+original_date:
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam culpa error accusamus ratione officiis."
 categories: history
 authors: Ryan Watters

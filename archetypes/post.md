@@ -1,10 +1,14 @@
 ---
-title: 
-subtitle: 
-description: 
-author: 
-date: 
-publishDate: 
-tags: []
-comments: false
+title:
+publishdate:
+date:
+modified:
+original_date:
+description:
+authors:
+categories:
+tags:  []
+image:
+removefromsearch:
+removecomments:
 ---

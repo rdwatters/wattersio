@@ -5,7 +5,7 @@ date: 2016-07-20
 modified: false
 tags: [about]
 categories:
-ori_date:
+original_date:
 description: Information about me, Ryan Watters. I'm flattered that you're interested in reading about my favorite subject to talk about.
 removefromsearch:
 aliases: [/about/]
@@ -29,8 +29,6 @@ All content is written in [GitHub Flavored][] [markdown](https://daringfireball.
 Where markdown falls short, the syntax is extended via a handful of [JavaScript functions][] on the client and [Hugo Shortcodes][] at build time.
 
 All content is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
-<a href="//creativecommons.org/licenses/by/4.0/" class="creative-commons"><img src="/assets/icons/cc-by.svg" alt="Creative Commons Attribution 4.0 License icon"></a>
 
 ## Site Development
 

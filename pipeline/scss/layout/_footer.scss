@@ -10,6 +10,17 @@
   z-index: 99;
 }
 
+.site-license {
+  @include center;
+  height:30px;
+  max-height:30px;
+  bottom:20px;
+  right:0px;
+  img {
+    max-height:30px;
+  }
+}
+
 .site-footer-wrapper {
   display: table-cell;
   vertical-align: middle;

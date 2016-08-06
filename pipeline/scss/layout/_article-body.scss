@@ -116,11 +116,13 @@ ul.article-tags {
   }
 }
 
-span.category {
-  font-size: .8em;
-  text-transform: uppercase;
-  font-weight: $base-font-weight;
-  a {
+.header-meta {
+  span,time {
+    display:inline;
+    text-transform:uppercase;
+    font-size:.8em;
+  }
+    a {
     color: white;
     text-decoration: underline;
     font-weight: $base-font-weight;

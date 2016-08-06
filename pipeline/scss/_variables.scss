@@ -43,11 +43,22 @@ $datetime-text-transform:uppercase;
 //TRANSITIONS
 $base-transition-time: .3s;
 
+//CONTENT
+$content-max-width: 32em;
+
+//INDIVIDUAL POSTS
+//only applies to bottom-style links for prev/next
+$post-footer-links-max-width:$content-max-width * 2;
+$single-page-hero-bg-color:$base-font-color;
+$selected-text-bg-color:$brand-primary;
+$selected-text-color:$white;
+
 /************COMPONENTS********/
 
 //TABLE OF CONTENTS
 $toc-border-desktop-plus: 1px solid #d9d9d9;
-$toc-header-background-color: #f2f2f2;
+$toc-header-bg-color: $single-page-hero-bg-color;
+$toc-header-text-color: $white;
 $toc-bg-color: $body-bg-color;
 $toc-toggle-button-border-radius: 4px;
 $toc-toggle-button-color-open: $black;
@@ -58,8 +69,7 @@ $button-text-align:center;
 $button-dark-color:$base-font-color;
 $button-light-color:$white;
 
-//CONTENT
-$content-max-width: 32em;
+
 
 //SEARCH
 $search-bg-color:$link-color;
@@ -79,12 +89,7 @@ $code-tooltip-bg-color: $brand-primary;
 $code-block-base-font-color: white;
 $code-block-background-color: $base-font-color;
 
-//INDIVIDUAL POSTS
-//only applies to bottom-style links for prev/next
-$post-footer-links-max-width:$content-max-width * 2;
-$single-page-hero-bg-color:$brand-primary;
-$selected-text-bg-color:$brand-primary;
-$selected-text-color:$white;
+
 
 //SOCIAL MEDIA COLORS
 $twitter:#00aced;

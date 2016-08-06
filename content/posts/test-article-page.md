@@ -3,7 +3,7 @@ title:  "Test Article Page"
 publishdate: 2016-03-20
 date: 2016-03-20
 modified: false
-ori_date:
+original_date:
 description:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
 categories: history
 tags:  [fall, halloween, pumpkins,chicago]
@@ -24,10 +24,9 @@ Swam because one much where far teasingly hazily much jeez hence some despite si
 
 Acceptably shyly this that inventoried one far lecherous and far while opposite meant mellifluously far far some mammoth due hence input that dalmatian occasionally mowed much and after tenacious wound astride unlike jeepers cringed the cordially capable ouch closed let slack catty.
 
-Slid some suspicious alas customary far less yikes whale and some trod trim flamingo resentful courteously far inside far rebukingly precarious a dutifully frowning toward since the goodness unproductively human because hello oh parrot much exited aptly drank the camel hey.
+Slide some suspicious alas customary far less yikes whale and some trod trim flamingo resentful courteously far inside far rebukingly precarious a dutifully frowning toward since the goodness unproductively human because hello oh parrot much exited aptly drank the camel hey.
 
 After to dynamically but fatal some some the yikes jeepers fit ahead dismounted vivacious and winked thus satisfactory the fabulously crud or pounded hardy jeepers dry moody coarsely dear began when far as manta eerie so and some ouch well dear and.
-
 
 > Without the fear of falling, there is no joy in flight. - Kobo Abe
 
