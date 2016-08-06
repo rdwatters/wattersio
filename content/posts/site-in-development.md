@@ -3,7 +3,7 @@ title:  "This Site is In Development"
 publishdate: 2016-07-20
 date: 2016-07-20
 modified: true
-ori_date: 2016-07-23
+original_date: 2016-07-23
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
 categories: history
 tags:  [chicago]

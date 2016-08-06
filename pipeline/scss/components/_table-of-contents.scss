@@ -28,8 +28,8 @@ aside.toc {
     position: relative;
   }
   h4.toc-title {
-    color: $base-font-color;
-    font-weight: bold;
+    color: $toc-header-text-color;
+    font-weight: $heading-font-base-weight;
     weight: 700;
     margin-bottom: 0px;
     font-size: 1em;
@@ -98,7 +98,7 @@ header.toc-header {
     left: 16px;
     right: 16px;
   }
-  background-color:$toc-header-background-color;
+  background-color:$toc-header-bg-color;
 }
 
 div.toc-contents {

@@ -1,6 +1,6 @@
 # Only one archetype (posts) is included in Hugo Starter
 archetypedir = "archetypes"
-baseurl = ""
+baseurl = "https://ryanwatters.io"
 buildDrafts = false
 buildFuture = false
 canonifyurls = true
@@ -32,20 +32,20 @@ watch = true
 [params]
 	SiteAuthor = "Ryan Watters"
   SiteTitle = "ryanwatters.io"
-  #Include Twitter Handle without the "@"
-  TwitterHandle = "ryandwatters"
+
   #######BEGIN SOCIAL#######
-  # For each social account, use the full URL that leads to the homepage of your account/profile
 	GitHub = "https://github.com/rdwatters"
   Twitter = "https://twitter.com/@ryandwatters"
+  #Include Twitter Handle without the "@"
+  TwitterHandle = "ryandwatters"
   #Include ID for Facebook App
   Facebook = "Ryan-Watters-810571539011577/"
   YouTube = "https://youtube.com"
   GooglePlus = "https://plus.google.com/"
-  # For LinkedIn, you'll need to make sure you are using the URL for visitors, rather than the URL once you're signed into your account. Include everything after "https://www.linkedin.com/in/"
+  # For LinkedIn, use the URL for visitors (ie, when you're not signed in). Include everything after "https://www.linkedin.com/in/"
   LinkedIn = "ryan-watters-els-08010725"
   IncludeRSS = true
-  # Add your Google Analytics ID here (ie, UA-XXXXXXXX-X). See layouts/partials/google_analytics.html. Dev environment (ie, localhost) is automatically disabled.
+  # Add your Google Analytics ID here (ie, UA-XXXXXXXX-X). See layouts/partials/site_footer/google_analytics.html. Dev environment (ie, localhost) and netlify urls are automatically disabled.
   GoogleAnalyticsTrackingId = "UA-76549364-1"
   #######END SOCIAL#######
   CopyrightLine = "Ryan Watters"
@@ -53,13 +53,14 @@ watch = true
   UseCRP = true
   # Include jQuery 3.0 from assets/js
   IncludeJQ = true
-  # Disqus two conditions (here and in page)
+  # Disqus has two conditions (here and in page); setting this to "false" will turn off comments on ALL pages
   UseDisqus = true
   disqusShortname = "ryanwattersio"
   SitePublishDate = "2016-01-01"
   SiteTagline = "Content Strategist, Storyteller, Frontend Developer, Unabashed Nerd"
   #Leave off extension for default social image since it's assumed to be "jpg"
   DefaultSocialImage = "site-logo-default-social"
+  #Word used in Pub Date partial to denote whether a post has been updated
   UpdatedText = "Updated:"
   # Determines style of previous and next links in /posts; options are either "sides" or "bottom"
   PostPrevNextStyle = "bottom"

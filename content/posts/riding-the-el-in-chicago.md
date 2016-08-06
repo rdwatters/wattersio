@@ -3,7 +3,7 @@ title:  "Riding the El in Chicago"
 publishdate:   2016-05-20
 date: 2016-05-20
 modified: false
-ori_date:
+original_date:
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
 categories: technology
 tags:  [macbook, gadgets,chicago]

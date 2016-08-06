@@ -3,7 +3,7 @@ title: "Ground-up View of Buildings Article with a Much Longer Title than the Ot
 publishdate: 2016-08-03
 date: 2016-08-03
 modified: false
-ori_date: 2016-08-03
+original_date: 2016-08-03
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
 categories: stuff
 tags:  [blocks,chicago]
