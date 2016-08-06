@@ -7,9 +7,9 @@ const concat = require('gulp-concat');
 const gutil = require('gulp-util');
 const imagefull = 1200;
 const imagehalf = 600;
+const imagethumb = 300;
 const imagemin = require('gulp-imagemin');
 const imageresize = require('gulp-image-resize');
-const imagethumb = 300;
 const minifycss = require('gulp-minify-css');
 const os = require('os');
 const parallel = require("concurrent-transform");
@@ -95,12 +95,11 @@ gulp.task("image-resize", () => {
         .pipe(gulp.dest("../static/assets/images/thumbs"));
 });
 
-gulp.task('dev', ['sass', 'scripts', 'image-resize'], function() {
+gulp.task('dev', ['sass', 'scripts', 'image-resize'], () => {
     gulp.watch(['scss/*.scss', 'scss/**/*scss'], ['sass']);
     gulp.watch("js/scripts/*.js", ['scripts']);
     gulp.watch("../source-images/*.{jpg,png,jpeg}", ['image-resize']);
     gulp.watch("scss/ie9.scss", ['ie9sass']);
-    // watch css and stream to BrowserSync when it changes
 });
 
 // Default Task

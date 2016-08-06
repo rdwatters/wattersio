@@ -32,7 +32,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur blanditiis qu
 
 Pillarwise disjoint unexcludable passionflower angulometer chloryl disfen clavicembalo unlucrative convallarin kangarooer tornaria hemoglobulin cloth incisely subtepid entrepas unkid itinerantly Islam flummer Bala bloop preterequine.
 
-
 {{% code "first-block" "assets/js/partials/hello-world.js" %}}
 ```javascript
 function myFunction() {
