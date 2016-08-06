@@ -192,6 +192,8 @@
   color: white;
   width: $width;
   text-transform: $transform;
+  border-radius:$button-border-radius;
+  font-family:$button-font-family;
   &:hover {
     color: $button-dark-color;
     background-color: $white;
@@ -205,6 +207,8 @@
   color: $base-font-color;
   width: $width;
   text-transform: $transform;
+  border-radius:$button-border-radius;
+  font-family:$button-font-family;
   @if $usecard {
     @include card;
   }

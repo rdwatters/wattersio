@@ -1,5 +1,5 @@
 ---
-title: "Ground-up View of Buildings Article with a Much Longer Title than the Other Articles"
+title: "Improved Codeblocks with Hugo Shortcodes, Clipboard.js, and Highlight.js"
 publishdate: 2016-08-03
 date: 2016-08-03
 modified: false

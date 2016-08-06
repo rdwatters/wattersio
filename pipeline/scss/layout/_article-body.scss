@@ -73,8 +73,11 @@ ul.article-tags {
       text-decoration: none;
       padding: .15em .5em;
       font-size: .8em;
-      border: 2px solid #fff;
-      text-transform: lowercase;
+      border: 1px solid #fff;
+      border-radius: $button-border-radius;
+      font-family:$heading-font-family;
+      font-weight:$heading-font-base-weight;
+      text-transform: uppercase;
       &:hover {
         background-color: $body-bg-color;
         color: $base-font-color;
@@ -96,7 +99,7 @@ ul.article-tags {
 }
 
 .body-copy {
-  a:not(.creative-commons) {
+  a {
     font-size: inherit;
     color: $brand-primary;
     transition: box-shadow ease 250ms, color ease 250ms;

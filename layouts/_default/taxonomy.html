@@ -15,7 +15,11 @@
                     </div>
                     <section>
                         <header>
-                        <h3 class="list{{if gt (len .Title) 60}} long-title{{end}}">{{ .Title }}</h3>
+                        {{if gt (len .Title) 60}}
+                        <h3 class="list"><span class="long-title">{{.Title | markdownify}}</span></h3>
+                        {{else}}
+                        <h3 class="list">{{.Title | markdownify}}</h3>
+                        {{end}}
                         <p class="list-description">{{ .Description }}</p>
                         </header>
                     </section>
