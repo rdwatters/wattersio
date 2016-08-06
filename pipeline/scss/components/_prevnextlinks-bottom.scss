@@ -3,10 +3,10 @@
   height: auto;
   min-height: 12em;
   max-width: $post-footer-links-max-width;
+  margin-bottom: 2em;
   @include MQ(M) {
     min-height: 16em;
   }
-  margin-bottom:2em;
 }
 
 .post-bottom-link {
@@ -130,7 +130,7 @@ h4.bottom-button {
   width: 10em;
   text-transform: uppercase;
   border: 1px solid white;
-  border-radius: 2px;
+  border-radius: $button-border-radius;
   padding: .25em .5em;
   color: white;
   margin-bottom: .5em;

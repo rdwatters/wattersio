@@ -53,24 +53,31 @@ button::-moz-focus-inner {
 #about {
   @include darkbutton($width: 50%);
   @include center;
-  font-size:1em;
+  color: white;
+  border: 1px solid white;
+  font-size: 1em;
+  font-weight: $button-font-weight;
   margin: {
     bottom: 1em;
     top: .5em;
   }
-  @include MQ(M){
-    font-size:.8em;
+  &:hover {
+    background-color: $white;
+    color: $base-font-color;
+  }
+  @include MQ(M) {
+    font-size: .8em;
   }
 }
 
 .all-posts.homepage {
-  @include lightbutton($width:auto,$usecard:true,$transform:none);
+  @include lightbutton($width: auto, $usecard: true, $transform: none);
   @include center;
-  font-weight:normal;
-  font-size:1em;
-  padding:.3em 1.75em;
-  margin-top:1.5em;
-  font-family:$heading-font-family;
-  max-width:6em;
-  margin-bottom:1em;
+  font-weight: normal;
+  font-size: 1em;
+  padding: .3em 1.75em;
+  margin-top: 1.5em;
+  font-family: $button-font-family;
+  max-width: 6em;
+  margin-bottom: 1em;
 }

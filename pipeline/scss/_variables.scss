@@ -44,11 +44,11 @@ $datetime-text-transform:uppercase;
 $base-transition-time: .3s;
 
 //CONTENT
-$content-max-width: 32em;
+$content-max-width: 30em;
 
 //INDIVIDUAL POSTS
 //only applies to bottom-style links for prev/next
-$post-footer-links-max-width:$content-max-width * 2;
+$post-footer-links-max-width:$HUGE;
 $single-page-hero-bg-color:$base-font-color;
 $selected-text-bg-color:$brand-primary;
 $selected-text-color:$white;
@@ -68,8 +68,9 @@ $toc-as-card-on-l-screen:false;
 $button-text-align:center;
 $button-dark-color:$base-font-color;
 $button-light-color:$white;
-
-
+$button-border-radius: 3px;
+$button-font-family:$heading-font-family;
+$button-font-weight:100;
 
 //SEARCH
 $search-bg-color:$link-color;
