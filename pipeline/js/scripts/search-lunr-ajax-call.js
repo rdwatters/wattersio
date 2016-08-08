@@ -48,7 +48,6 @@ function displayResults(results) {
     var inputVal = document.getElementById('search-input').value;
     var resultsLength = document.getElementById('results-length');
     if (results.length) {
-        // console.log(results.length);
         searchResults.innerHTML = '';
         resultsLength.innerHTML = '';
         results.forEach(function(result) {
