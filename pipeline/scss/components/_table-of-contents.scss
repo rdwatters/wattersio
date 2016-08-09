@@ -36,6 +36,9 @@ aside.toc {
     line-height: 1.2;
     display: table-cell;
     vertical-align: middle;
+    a {
+      color:white;
+    }
   }
   div.toc-subtitle {
     font-family: $heading-font-family;

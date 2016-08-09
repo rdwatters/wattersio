@@ -1,12 +1,17 @@
 //don't run scroll event on mobile devices
+var hero = document.querySelector('.hero');
+var siteLogo = document.querySelector('.site-logo.home-link:not(.form)');
+if (hero && !isMobile) {
+  window.addEventListener('scroll', changeLogo, false);
+}
 
-$(window).scroll(function() {
-		var siteLogo = $('.site-logo.home-link:not(.form)');
-    var scroll = $(window).scrollTop();
-    var heroHeight = ($('header.hero').height() - 35);
-    if (scroll > heroHeight) {
-        siteLogo.addClass('lightbg');
-    }else {
-    	siteLogo.removeClass('lightbg');
-    }
-});
+function changeLogo() {
+  var heroHeight = hero.offsetHeight;
+  var scrollPosition = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollPosition;
+  if (scrollPosition > heroHeight - 40) {
+    siteLogo.classList.add('lightbg');
+  } else {
+    siteLogo.classList.remove('lightbg');
+  }
+
+}
