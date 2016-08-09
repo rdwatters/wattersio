@@ -12,7 +12,7 @@ aside.toc {
   transform: scale(0);
   transform-origin: bottom left;
   background-color: black;
-  z-index:10;
+  z-index: 10;
   a {
     color: $base-font-color;
   }
@@ -37,7 +37,7 @@ aside.toc {
     display: table-cell;
     vertical-align: middle;
     a {
-      color:white;
+      color: white;
     }
   }
   div.toc-subtitle {
@@ -57,8 +57,8 @@ aside.toc {
       margin-left: 0px;
       padding-left: 1em;
       display: block;
-      margin-top:1em;
-      margin-right:.5em;
+      margin-top: 1em;
+      margin-right: .5em;
       li {
         list-style: none;
         margin-left: 0px;
@@ -113,23 +113,23 @@ div.toc-contents {
   aside.toc {
     transition: all .3s ease-in-out;
     position: fixed;
-    top:125px;
-    bottom:auto;
+    top: 125px;
+    bottom: auto;
     visibility: visible;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     transform: none;
-    width:180px;
+    width: 180px;
     opacity: 0;
-    z-index:-1;
+    z-index: -1;
     &.fadeIn {
       transition: all .3s ease-in-out;
       opacity: 1;
-      z-index:99;
+      z-index: 99;
     }
     div.toc-wrapper {
-      position:relative;
-      border:$toc-border-desktop-plus;
+      position: relative;
+      border: $toc-border-desktop-plus;
       background-color: $white;
       @if $toc-as-card-on-l-screen {
         @include card;
@@ -197,7 +197,7 @@ div.toc-contents {
   text-decoration: none;
   font-weight: bold;
   border-radius: $toc-toggle-button-border-radius;
-  border:1px solid $brand-primary;
+  border: 1px solid $brand-primary;
   opacity: 0;
   &.fadeIn {
     transition: all .3s ease-in-out;
@@ -208,7 +208,7 @@ div.toc-contents {
     color: $toc-toggle-button-color-open;
     z-index: 99;
     opacity: 1;
-    border-color:$toc-toggle-button-color-open;
+    border-color: $toc-toggle-button-color-open;
     &:after {
       content: 'X';
       color: $white;
@@ -238,7 +238,7 @@ span.ellipsis {
   vertical-align: middle;
   font-size: 1.8em;
   // color: white;
-  color:$brand-primary;
+  color: $brand-primary;
   @include MQ(L) {
     display: none;
   }

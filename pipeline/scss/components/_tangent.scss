@@ -1,0 +1,43 @@
+aside.tangent {
+  position:relative;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin-bottom: 1em;
+}
+
+button.tangent-button {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $content-max-width;
+  background-color: $base-font-color;
+  text-align: left;
+  color: $white;
+  padding: {
+    top: .25em;
+    bottom: .25em;
+    left: .25em;
+  }
+  margin:0px;
+  @include on-event {
+    outline: none;
+    border: none;
+  }
+}
+
+div.tangent-content {
+  transform-origin:top;
+  transition: transform .2s ease-in-out;
+  width: 100%;
+  margin: 0px;
+  font-size: .8em;
+  padding: .5em .75em;
+  border-left: 1px solid $brand-primary;
+  border-right: 1px solid $brand-primary;
+  border-bottom: 1px solid $brand-primary;
+  display:none;
+  p {
+    line-height: 1.3;
+    margin-bottom: .5em;
+  }
+}
