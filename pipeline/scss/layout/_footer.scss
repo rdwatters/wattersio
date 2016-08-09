@@ -2,7 +2,7 @@
   width: 100%;
   display: table;
   position: relative;
-  min-height: 10em;
+  min-height: 12em;
   background-color: $base-font-color;
   color: $white;
   justify-content: center;
@@ -13,9 +13,11 @@
 .site-license {
   @include center;
   height:30px;
-  max-height:30px;
-  bottom:20px;
+  max-height:20px;
+  margin-bottom:30px;
+  clear:both;
   right:0px;
+  max-width:100px;
   img {
     max-height:30px;
   }

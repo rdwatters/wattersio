@@ -144,10 +144,11 @@ span.dot:after {
   background-color: #fff;
 }
 
-//creative commons logo for the about page
+//creative commons logo for the about page (cf .site-license for site footer, different size)
 .creative-commons {
   @include center;
   width: 200px;
+  max-width:200px;
 }
 
 .body-copy {
