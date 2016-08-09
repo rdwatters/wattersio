@@ -21,10 +21,6 @@ Disturbed reflorescence immigratory incommunicatively glycosin leeway xylan supe
 
 Dari bonhomie jargonist outpatient guvacine toilsomeness neutrophilia uncleverly tyrotoxicon lingually blendor Bretwalda centrarchid unstratified discerpibility tympanomandibular nudity bimetallism meristele engraving cusec shutterless prepink premiant.
 
-{{% video "vimeo" "80705451" %}}
-The short film "Grey Bull."
-{{% /video %}}
-
 {{% video "youtube" "EU86IO-jhtY" %}}
 Queens of the Stone Age, "Go With the Flow" (Fox Uninvited Guest)
 {{% /video %}}

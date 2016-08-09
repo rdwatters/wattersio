@@ -1,4 +1,8 @@
-//es2015 extra string methods *not* transpiled with Babel
+/***********/
+// POLYFILLS FOR ES2015 STRING METHODS, CLASSLIST, AND REMOVE()
+/***********/
+
+//es2015 string methods *not* transpiled with Babel - .startsWith, .includes, .endsWith
 if (!String.prototype.startsWith) {
   String.prototype.startsWith = function(searchString, position) {
     position = position || 0;
@@ -22,7 +26,7 @@ if (!String.prototype.endsWith) {
   };
 }
 //http://purl.eligrey.com/github/classList.js/blob/master/classList.js
-
+//CLASSLIST POLYFILL
 if ("document" in self && !("classList" in document.createElement("_"))) {
     (function(j) {
         "use strict";
@@ -145,3 +149,12 @@ if ("document" in self && !("classList" in document.createElement("_"))) {
         }
     }(self))
 };
+
+//.remove() polyfill
+if (!('remove' in Element.prototype)) {
+    Element.prototype.remove = function() {
+        if (this.parentNode) {
+            this.parentNode.removeChild(this);
+        }
+    };
+}

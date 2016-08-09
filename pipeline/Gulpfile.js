@@ -57,7 +57,7 @@ gulp.task('ie9sass', () => {
 
 // Concatenate & Minify JS
 gulp.task('scripts', () => {
-    return gulp.src(['js/scripts/*js'])
+    return gulp.src(['js/_velocity.js','js/scripts/*js'])
         .pipe(sourcemaps.init())
         .pipe(concat('main.js'))
         .pipe(gulp.dest('js'))
@@ -66,7 +66,6 @@ gulp.task('scripts', () => {
         }))
         .on('error', function(e) {
             console.log('>>> ERROR', e);
-            // emit here
             this.emit('end');
         })
         .pipe(uglify())
