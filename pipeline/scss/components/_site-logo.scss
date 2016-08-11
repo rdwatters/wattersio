@@ -22,6 +22,10 @@
       left: 30px;
       z-index: 5;
     }
+    @include MQ(L){
+      height: $top-button-circles-size * 1.3;
+      width: $top-button-circles-size * 1.3;
+    }
   }
   &.formbg {
     display:none;
@@ -39,6 +43,10 @@
       top: 30px;
       left: 30px;
       z-index: 10;
+    }
+    @include MQ(L){
+      height: $top-button-circles-size * 1.3;
+      width: $top-button-circles-size * 1.3;
     }
   }
   &.darkbg {

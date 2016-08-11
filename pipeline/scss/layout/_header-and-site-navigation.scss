@@ -41,6 +41,10 @@ div.all-content-wrapper {
     transform: translateX(-#{$site-navigation-width});
     z-index: 1;
   }
+  @include MQ(L) {
+    height: $top-button-circles-size * 1.3;
+    width: $top-button-circles-size * 1.3;
+  }
 }
 
 .sidebar-toggle-wrapper:hover .sidebar-toggle {
@@ -169,6 +173,6 @@ a.all-posts.site-navigation {
   font-weight: normal;
   font-size: .7em;
   font-family: $heading-font-family;
-  text-align:center;
+  text-align: center;
   @include darkbutton();
 }
