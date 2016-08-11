@@ -13,6 +13,7 @@
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/animations';
+
 // 2. Base styles
 @import 'base/normalize';
 @import 'base/base';
@@ -22,14 +23,16 @@
 @import 'base/fontello';
 @import 'base/typography';
 @import 'base/helpers';
+
 // 3. Layout-related sections
 @import 'layout/header-and-site-navigation';
 @import 'layout/footer';
 @import 'layout/list-pages';
 @import 'layout/article-body';
 @import 'layout/page-not-found';
+
 // 4. Components
-@import 'components/images';
+@import 'components/images-and-figures';
 @import 'components/buttons';
 @import 'components/search';
 @import 'components/site-logo';
@@ -37,12 +40,14 @@
 @import 'components/video';
 @import 'components/comments';
 @import 'components/blockquotes';
-@import 'components/codeblocks';
+// @import 'components/codeblocks';
+@import 'components/prism';//for prism.js
+@import 'components/clipboardjs-tooltips';
 @import 'components/prevnextlinks-bottom';
 @import 'components/social-media-sharing';
 @import 'components/tangent';
-// @import 'components/inline-aside';
 // @import 'components/prevnextlinks-sides';
+
 // 5. Page-specific styles
 @import 'pages/home';
 @import 'pages/resume';

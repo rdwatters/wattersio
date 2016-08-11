@@ -4,14 +4,17 @@
   z-index: 3;
   top: 30px;
   left: 30px;
-  width: 44px;
-  height: 44px;
+  width: $top-button-circles-size * 1.1;
+  height: $top-button-circles-size * 1.1;
   padding: 6px;
   border-radius: 50%;
   background-color: $body-bg-color;
   padding: .5em;
   text-align: center;
   @include card;
+  &:hover {
+    @include card(3);
+  }
   div {
     width: 95%;
     height: 95%;
@@ -52,9 +55,9 @@
 
 #results-length {
   @include centerer;
-  margin-top:4em;
-  display:block;
-  color:white;
+  margin-top: 4em;
+  display: block;
+  color: white;
 }
 
 form.search-form {
@@ -78,8 +81,8 @@ form.search-form {
     opacity: 1;
     z-index: 999;
     #search-form-homelink {
-      z-index:9999;
-      cursor:pointer;
+      z-index: 9999;
+      cursor: pointer;
     }
   }
 }
@@ -102,11 +105,11 @@ form.search-form {
   margin-top: 0px;
   padding-top: 0px;
   height: 100%;
-  margin-right:-16px;
-  width:100%;
-  width:100vw;
-  max-width:100%;
-  max-width:100vw;
+  margin-right: -16px;
+  width: 100%;
+  width: 100vw;
+  max-width: 100%;
+  max-width: 100vw;
 }
 
 .search-results-container {
@@ -141,26 +144,25 @@ ul#search-results {
     a {
       color: $base-font-color;
       text-decoration: none;
-      font-weight:$base-font-weight;
+      font-weight: $base-font-weight;
     }
     h5 {
       text-align: center;
       color: $brand-primary;
-      font-size:1.3em;
-      margin-bottom:0em;
+      font-size: 1.3em;
+      margin-bottom: 0em;
     }
     p {
       text-align: center;
       font-weight: $base-font-weight;
     }
     &.none {
-      text-align:center;
-      margin-top:1em;
-      font-weight:bold;
+      text-align: center;
+      margin-top: 1em;
+      font-weight: bold;
     }
   }
 }
-
 
 #search-input {
   @include centerer;
@@ -173,7 +175,7 @@ ul#search-results {
   line-height: 2.5em;
   text-align: center;
   background-color: transparent;
-  font-family:$heading-font-family;
+  font-family: $heading-font-family;
   color: white;
   @include MQ(M) {
     font-size: 3em;
@@ -212,11 +214,11 @@ span.input-value {
 .close-with-escape {
   display: none;
   @include MQ(M) {
-    display:block;
-    color:$white;
-    position:absolute;
-    bottom:40px;
-    left:20px;
+    display: block;
+    color: $white;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
   }
 }
 
@@ -225,19 +227,18 @@ span.input-value {
 }
 
 span.keyboard {
-  display:inline-block;
-  position:relative;
-  border-radius:3px;
-  border:1px solid $white;
-  padding:.5em;
-  min-width:30px;
-  min-height:30px;
-  margin-bottom:-.5em;
+  display: inline-block;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid $white;
+  padding: .5em;
+  min-width: 30px;
+  min-height: 30px;
+  margin-bottom: -.5em;
   .escape {
-    font-size:.5em;
-    position:absolute;
-    top:.25em;
-    left:.25em;
-
+    font-size: .5em;
+    position: absolute;
+    top: .25em;
+    left: .25em;
   }
 }

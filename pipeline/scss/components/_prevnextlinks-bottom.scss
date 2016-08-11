@@ -63,6 +63,9 @@ section.bottom-link-section:hover > .bottom-link-info > h4.bottom-button {
   @include MQ(M) {
     margin-bottom: 0px;
     @include card;
+    &:hover {
+      @include card(3);
+    }
   }
   &:before {
     content: '';

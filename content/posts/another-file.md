@@ -14,7 +14,17 @@ removefromsearch:
 removecomments: true
 ---
 
-Random philanthropy word unequivocal Japanese hollandaise sauce. Unclimbable baw clamantly refoundation nurly symptomatical stechados lyingly unconversably furl semiglobular somnolize Nepal decaspermal footstone torchless creeperless regardant principiant bejuggle Arkite. Rebankrupt inochondroma overcomable contents inflict drill gynecocracy parachromophoric vang Tanitic archprelate stragulum xenarthral puncheon leprosery coenobic vanadyl choreic [markdown link][] reassistance adhesional leitneriaceous neurocele frothing gelatinizer.
+Random `philanthropy` word unequivocal Japanese hollandaise sauce. Unclimbable baw clamantly refoundation nurly symptomatical stechados lyingly unconversably furl semiglobular somnolize Nepal decaspermal footstone torchless creeperless regardant principiant bejuggle Arkite.
+
+{{% code "my-code" "hello-world.js"%}}
+```javascript
+function myFunction(){
+  console.log("Hello world!");
+}
+```
+{{% /code %}}
+
+Random `philanthropy` word unequivocal Japanese hollandaise sauce. Unclimbable baw clamantly refoundation nurly symptomatical stechados lyingly unconversably furl semiglobular somnolize Nepal decaspermal footstone torchless creeperless regardant principiant bejuggle Arkite. Rebankrupt inochondroma overcomable contents inflict drill gynecocracy parachromophoric vang Tanitic archprelate stragulum xenarthral puncheon leprosery coenobic vanadyl choreic [markdown link][] reassistance adhesional leitneriaceous neurocele frothing gelatinizer.
 
 Footstone torchless creeperless regardant principiant bejuggle Arkite. Rebankrupt inochondroma overcomable contents inflict drill gynecocracy parachromophoric vang Tanitic archprelate stragulum xenarthral puncheon leprosery coenobic vanadyl choreic reassistance adhesional leitneriaceous neurocele frothing gelatinizer.
 
@@ -42,8 +52,6 @@ function myFunction() {
 {{% /code %}}
 
 Dimpsy prestamp tuborrhea glaucophanite overcoat osmious expediency entosarc elfinwood umbellately microsporophyll innocent coatimondie forficulate impenetrative temeritous fortuned catclaw resinoextractive metoxenous Shemitic stubbled carven borofluoric.
-
-> Comparison is the enemy of joy. - Theodore Roosevelt
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint hic dicta recusandae quos aliquam alias laboriosam tenetur, repudiandae obcaecati necessitatibus natus autem ipsam, consequatur, vero modi repellat animi ab et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi aperiam hic recusandae alias, earum velit neque quos vitae nesciunt? Debitis eveniet voluptates saepe laboriosam ab quia, ipsa dolor quidem!
 

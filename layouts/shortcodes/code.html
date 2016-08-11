@@ -1,12 +1,12 @@
 {{if .IsNamedParams }}
 <div class="code-copy" id="{{.Get "title"}}">
+	{{with .Get "filepath"}}<div class="code-copy-header"><div class="action-buttons"></div><span class="filename">{{.}}</span></div>{{end}}
 	{{.Inner}}
-	{{with .Get "filepath"}}<div class="filepath">{{.}}</div>{{end}}
 </div>
 {{else}}
 <div class="code-copy" id="{{.Get 0|urlize}}">
+	<div class="code-copy-header"><div class="action-buttons"></div><span class="filename">{{.Get 1}}</span></div>
 	{{.Inner}}
-<div class="filepath">{{.Get 1}}</div>
 </div>
 {{ end }}
 

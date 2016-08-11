@@ -1,9 +1,9 @@
 //page-top Only needed for smoothscroll
 div#page-top {
-  width:0px;
-  height:0px;
-  top:0px;
-  left:0px;
+  width: 0px;
+  height: 0px;
+  top: 0px;
+  left: 0px;
 }
 
 div.all-content-wrapper {
@@ -11,22 +11,25 @@ div.all-content-wrapper {
   &.open {
     transition: all .3s ease-in-out;
     transform:translateX(-#{$site-navigation-width});
-    opacity:.4;
-    margin-left:16px;
-    margin-right:-16px;
+    opacity: .4;
+    margin-left: 16px;
+    margin-right: -16px;
   }
 }
 
 //TOGGLE SIDEBAR NAVIGATION
 .sidebar-toggle-wrapper {
   @include card;
+  &:hover {
+    @include card(3);
+  }
   transition: transform .3s ease-in-out;
   position: fixed;
   z-index: 5;
   top: 30px;
   right: 30px;
-  width: 44px;
-  height: 44px;
+  width: $top-button-circles-size * 1.1;
+  height: $top-button-circles-size * 1.1;
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
@@ -36,7 +39,7 @@ div.all-content-wrapper {
   &.open {
     transition: transform .3s ease-in-out;
     transform: translateX(-#{$site-navigation-width});
-    z-index: 9999;
+    z-index: 1;
   }
 }
 
@@ -120,39 +123,40 @@ nav.site-navigation {
   background-color: $site-navigation-bg-color;
   transform:translateX(#{$site-navigation-width});
   z-index: 3;
-  padding-bottom:3em;
+  padding-bottom: 3em;
   &.open {
     transition: all .3s ease-in-out;
     transform: translateX(0px);
-    margin-right:-16px;
+    margin-right: -16px;
   }
 }
 
 ul.sidebar-navigation {
   @include flexlist($gutter: 15px);
-  padding-right:16px;
-  margin-bottom:1em;
+  padding-right: 16px;
+  margin-bottom: 1em;
   section {
     padding: .25em .5em;
   }
   li {
     background-color: $dark-bg-color;
-    border:1px solid white;
-    color:white;
+    border: 1px solid white;
+    color: white;
     time {
-      display:block;
-      color:white;
-      width:100%;
-      text-align:right;
-      font-size:.7em;
+      display: block;
+      color: white;
+      width: 100%;
+      text-align: right;
+      font-size: .7em;
     }
     &:hover {
       a > img {
-        filter:grayscale(0%);
+        filter: grayscale(0%);
       }
     }
   }
 }
+
 .sidebar-logo {
   width: 6em;
   height: 4em;
@@ -160,10 +164,11 @@ ul.sidebar-navigation {
 
 a.all-posts.site-navigation {
   @include center;
-  color:$white;
-  max-width:60%;
-  font-weight:normal;
-  font-size:.8em;
-  font-family:$heading-font-family;
-  @include darkbutton($transform:none);
+  color: $white;
+  max-width: 60%;
+  font-weight: normal;
+  font-size: .8em;
+  font-family: $heading-font-family;
+  text-align:center;
+  @include darkbutton();
 }
