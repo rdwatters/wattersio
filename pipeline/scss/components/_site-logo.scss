@@ -49,6 +49,7 @@
     background-image: url(/assets/icons/site-logo.svg);
     border-color: black;
     border-width:0px;
+    background-color:white;
     @include card;
     &:hover {
       @include card(3);
