@@ -153,6 +153,9 @@ ul.sidebar-navigation {
       text-align: right;
       font-size: .7em;
     }
+    img {
+      background-color: white;
+    }
     &:hover {
       a > img {
         filter: grayscale(0%);

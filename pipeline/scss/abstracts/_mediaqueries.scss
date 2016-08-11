@@ -30,16 +30,17 @@
       @content;
     }
   }
+  //all retina devices, including laptops
   @else if $canvas==retina {
     @media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
       @content;
     }
-  }
+  }//retina iphones in portrait only
   @else if $canvas==retinaPortrait {
     @media only screen and (min-device-width: 375px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
       @content;
     }
-  }
+  }//retina iphones in landscape only
   @else if $canvas==retinaLandscape {
     @media only screen and (min-device-width: 375px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
       @content;
@@ -48,12 +49,15 @@
 }
 
 // Helper mixin for above media queries
-@mixin MLQ($rule, $svalue, $mvalue:$svalue, $lvalue:$mvalue) {
+@mixin MLQ($rule, $svalue, $mvalue:$svalue, $lvalue:$mvalue, $xlvalue:$lvalue) {
   #{$rule}: $svalue;
   @include MQ(M) {
     #{$rule}: $mvalue;
   }
   @include MQ(L) {
     #{$rule}: $lvalue;
+  }
+  @include MQ(XL) {
+    #{$rule}: $xlvalue;
   }
 }

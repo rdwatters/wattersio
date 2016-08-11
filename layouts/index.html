@@ -10,7 +10,7 @@
         <li>
           <a href="{{ .Permalink }}">
             <section>
-            <img  class="grayscale" src="/assets/images/{{ .Params.image }}">
+            {{ partial "list_image_full.html" . }}
                 <header>
                   {{if gt (len .Title) 60}}
                   <h1 class="homepage-list"><span class="long-title">{{.Title | markdownify}}</span></h1>
@@ -26,7 +26,7 @@
         <li>
           <a href="{{ .Permalink }}">
             <section>
-              <img class="grayscale" src="/assets/images/half/{{ .Params.image }}">
+              {{ partial "list_image_half.html" . }}
               <header>
                 {{if gt (len .Title) 60}}
                 <h1 class="homepage-list"><span class="long-title">{{.Title | markdownify}}</span></h1>

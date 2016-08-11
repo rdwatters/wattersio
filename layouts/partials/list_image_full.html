@@ -1,0 +1,5 @@
+{{if .Params.image}}
+	<img  class="grayscale" src="/assets/images/{{ .Params.image }}">
+{{else if .Params.categories}}
+	<img  class="list-icon" src="/assets/icons/{{ .Params.categories }}.svg">
+{{end}}

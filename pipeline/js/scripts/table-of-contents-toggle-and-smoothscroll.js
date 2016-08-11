@@ -1,19 +1,21 @@
 var tocTog = document.getElementById('toggle-toc');
 var allTocLinks = document.querySelectorAll('aside#toc a');
 var tocExists = document.querySelector('aside.toc') ? true : false;
+console.log(allTocLinks.length);
 
 if (allTocLinks.length > 3) {
   tocTog.addEventListener('click', toggleToc, false);
   for (var i = 0; i < allTocLinks.length; i++) {
     allTocLinks[i].addEventListener('click', smoothVelScrolling, false);
   }
-} else if (allTocLinks.length < 3 && tocExists) {
+} else if (allTocLinks.length <= 3 && tocExists) {
   document.querySelector('aside.toc').remove();
   tocTog.remove();
 }
 
 function smoothVelScrolling(evt) {
   var clickedLink = evt.target.href.split('#')[1];
+  console.log(clickedLink);
   var targetLink = document.getElementById(clickedLink);
   Velocity(targetLink, "scroll", { duration: 300, offset: 0 });
 }

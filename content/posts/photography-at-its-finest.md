@@ -5,7 +5,7 @@ date: 2016-02-20
 modified: false
 original_date:
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
-categories: art
+categories: essays
 tags:  [photography,chicago]
 image: selfie_photographer.jpg
 removefromsearch:

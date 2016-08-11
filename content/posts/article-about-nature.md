@@ -5,7 +5,7 @@ date: 2016-01-20
 modified: false
 original_date:
 description:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
-categories: history
+categories: essays
 author: Raji
 tags:  [camping,chicago]
 image: starry_night.jpg

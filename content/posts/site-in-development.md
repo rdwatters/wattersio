@@ -5,7 +5,7 @@ date: 2016-07-20
 modified: true
 original_date: 2016-07-23
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
-categories: history
+categories: content strategy
 tags:  [chicago]
 image: chicago-skyline1.jpg
 aliases: [/posts/my-kind-of-town/]
