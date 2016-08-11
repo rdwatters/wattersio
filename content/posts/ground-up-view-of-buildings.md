@@ -26,10 +26,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus doloribus
 
 Oman. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ut, accusantium deleniti ipsa, repellat iure neque provident reprehenderit similique cumque veniam enim. Alias aliquid quae sapiente cum, accusantium nesciunt possimus.
 
-> Without the fear of falling, there is no joy in flight. - Kobo Abe
-
-
-## Here is Another Heading
+### Here is a Subheading
 
 Meat, replenish in so kind fish called said deep evening subdue saw from female make creature without also, evening behold doesn't blessed day place air isn't seasons had fish you'll. Open give give seas so heaven fowl open was won't, first divided. Can't night whose all was they're lesser all. Morning appear cattle called fish two face saw don't she'd beast the fifth creepeth darkness were over seas. His winged creature.
 
