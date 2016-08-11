@@ -4516,7 +4516,9 @@ function displayResults(results) {
 }
 
 var fullHeight = Math.max(document.documentElement["clientHeight"], document.body["scrollHeight"], document.documentElement["scrollHeight"], document.body["offsetHeight"], document.documentElement["offsetHeight"]);
-if (document.querySelector('aside.toc')) {
+var toc = document.querySelector('aside.toc');
+var tocl = document.querySelectorAll('aside#toc a').length;
+if (toc && tocl > 3) {
   window.onscroll = function() {
     var scrollPosition = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollPosition;
     var fromBottom = fullHeight - 800;

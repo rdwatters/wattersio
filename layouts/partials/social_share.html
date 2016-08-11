@@ -13,7 +13,7 @@
     </div>
     <div class="social-media-share-wrapper">
         <section class="social-media-share animated">
-            <h2 class="social-media-title">Share "{{.Title}}"</h2>
+            <h2 class="social-media-title">{{if gt (len .Title) 60}}<span class="long-title">Share "{{- .Title | markdownify -}}"</span>{{else}}Share {{- .Title | markdownify -}}{{end}}</h2>
             <ul class="social-media-share-list">
                 <li>
                     <a class="share-button twitter" href="https://twitter.com/intent/tweet?text={{ .Title }} {{.Site.Params.SiteAuthor}}&url={{ .Permalink }}" target="_blank"></a>
