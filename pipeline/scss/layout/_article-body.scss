@@ -12,13 +12,13 @@ main.article {
       @include herobg($darkbg: true, $minheight: 24em);
     }
     header.single-page {
-      min-height: 16em;
-      height: 16em;
+      min-height: 17em;
+      height: 17em;
       background-color: $single-page-hero-bg-color;
       color: white;
       position: relative;
       display: block;
-      padding-top:2em;
+      padding-top:1.5em;
       @include MQ(M){
         padding-top:0em;
       }
