@@ -38,7 +38,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   &.site-navigation-title {
     font-size: .9em;
     margin-top: 0px;
@@ -54,9 +54,9 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-transform: uppercase;
-  color: lighten($base-font-color, 20%);
+  color: lighten($base-font-color, 15%);
   &.list {
     text-transform: none;
     margin-top: 0px;
