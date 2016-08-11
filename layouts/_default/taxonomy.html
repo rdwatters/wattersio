@@ -6,9 +6,9 @@
         </header>
         <ul class="contents-list">
             {{ range sort $data.Pages "PublishDate" "desc" }}
-            <li class="content-list-item">
+            <li class="content-list-item grayscale">
                 <a href="{{.Permalink}}" class="content-list-link">
-                    <div class="content-list-image grayscale" style="background-image:url(/assets/images/thumbs/{{.Params.image | default "site-logo.jpg"}})">
+                    <div class="content-list-image" style="background-image:url(/assets/images/thumbs/{{.Params.image | default "site-logo.jpg"}})">
                     {{if ne .Section "singles"}}
                     {{partial "publish_date.html" . }}
                     {{end}}

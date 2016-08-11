@@ -71,13 +71,19 @@ button::-moz-focus-inner {
 }
 
 .all-posts.homepage {
-  @include lightbutton($width: auto, $usecard: true, $transform: none);
+  @include lightbutton($width: auto);
   @include center;
   font-weight: normal;
-  font-size: 1em;
-  padding: .3em 1.75em;
-  margin-top: 1.5em;
+  font-size: .9em;
+  padding: 0.3em 3.5em 0.3em 2.1em;
+  margin-top: 0em;
+  text-align:left;
   font-family: $button-font-family;
   max-width: 6em;
   margin-bottom: 1em;
+  background-color:$body-bg-color;
+  @include card;
+  &:hover {
+    @include card(3);
+  }
 }

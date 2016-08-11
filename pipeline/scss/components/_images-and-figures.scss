@@ -1,0 +1,38 @@
+img,
+figure {
+  width: 100%;
+  height: auto;
+}
+
+.full {
+  width: 100%;
+  @include MQ(M) {
+    width: 100vw;
+    min-width: 100vw;
+    position: relative;
+    left: -50vw;
+    margin-left: #{$content-max-width/2};
+  }
+}
+
+.shadow {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+@include MQ(XL) {
+  .left,
+  .right {
+    width: 60%;
+    position: relative;
+  }
+  p > .left {
+    float: left;
+    margin: 0px .75em .5em -3em;
+    clear: both;
+    @include clearfix;
+  }
+  .right {
+    float: right;
+    margin: 0px -3em .5em .75em;
+  }
+}

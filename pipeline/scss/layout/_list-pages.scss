@@ -52,6 +52,9 @@ ul.contents-list {
     }
     @include MQ(M) {
       @include card;
+      &:hover {
+        @include card(3);
+      }
     }
   }
 }

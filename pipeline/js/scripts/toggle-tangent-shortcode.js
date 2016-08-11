@@ -1,18 +1,3 @@
-var allTocLinks = document.querySelectorAll('aside#toc a');
-
-
-if (allTocLinks.length) {
-  for (var i = 0; i < allTocLinks.length; i++) {
-    allTocLinks[i].addEventListener('click', smoothVelScrolling, false);
-  }
-}
-
-function smoothVelScrolling(evt) {
-  var clickedLink = evt.target.href.split('#')[1];
-  var targetLink = document.getElementById(clickedLink);
-  Velocity(targetLink, "scroll", { duration: 300, offset: 0 });
-}
-
 window.onload = tangentsInit;
 
 function tangentsInit() {

@@ -19,9 +19,9 @@ Cabalistic mediatorship pneumococcic condyloid dividedness humorsome astely bala
 {{% tangent "Tell me more about this topic" %}}
 Here is some copy that I'm going to reveal or hide based on whether the user clicks the button.
 
-![Image of a cat](/assets/images/book-on-lap.jpg)
-
 Here is some copy *that* I'm going to **reveal** or hide based on whether the user clicks the button.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus doloribus reiciendis dolores quo adipisci consequuntur, eaque aut ipsa corporis tempora, nam reprehenderit expedita, officiis sequi accusantium possimus aperiam perferendis fugiat.
 {{% /tangent %}}
 
 Oman. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ut, accusantium deleniti ipsa, repellat iure neque provident reprehenderit similique cumque veniam enim. Alias aliquid quae sapiente cum, accusantium nesciunt possimus.

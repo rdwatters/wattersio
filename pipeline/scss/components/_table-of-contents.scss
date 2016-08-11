@@ -30,15 +30,12 @@ aside.toc {
   h4.toc-title {
     color: $toc-header-text-color;
     font-weight: $heading-font-base-weight;
-    weight: 700;
+    weight: 400;
     margin-bottom: 0px;
     font-size: 1em;
     line-height: 1.2;
     display: table-cell;
     vertical-align: middle;
-    a {
-      color: white;
-    }
   }
   div.toc-subtitle {
     font-family: $heading-font-family;
@@ -53,12 +50,15 @@ aside.toc {
     font-family: $heading-font-family;
     padding: 0px;
     margin: 0px;
+    >ul:first-child {
+      margin-top:.5em;
+    }
     ul {
       margin-left: 0px;
       padding-left: 1em;
       display: block;
-      margin-top: 1em;
       margin-right: .5em;
+      margin-top:.75em;
       li {
         list-style: none;
         margin-left: 0px;
@@ -93,7 +93,6 @@ header.toc-header {
   box-sizing: border-box;
   display: table;
   width: 100%;
-  border-bottom: 1px solid $base-font-color;
   position: relative;
   padding: {
     top: .5em;
@@ -127,13 +126,18 @@ div.toc-contents {
       opacity: 1;
       z-index: 99;
     }
+    h4.toc-title {
+      font-size:.8em;
+      a {
+        color:$toc-header-text-color;
+        font-weight:100;
+      }
+    }
     div.toc-wrapper {
       position: relative;
       border: $toc-border-desktop-plus;
       background-color: $white;
-      @if $toc-as-card-on-l-screen {
-        @include card;
-      }
+      @include card;
     }
     nav#TableOfContents {
       border-radius: 0em;
@@ -173,10 +177,9 @@ div.toc-contents {
 @include MQ(XL) {
   aside.toc {
     position: fixed;
-    min-width: 210px;
-    max-width: 210px;
-    top: 150px;
-    right: 3vw;
+    min-width: 230px;
+    width: 230px;
+    max-width: 230px;
   }
 }
 
