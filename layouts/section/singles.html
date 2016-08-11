@@ -1,6 +1,6 @@
 {{ $okpages := len (where .Site.Pages ".Params.removefromsearch" "==" nil ) }}{{ $totalpages := add $okpages -1}}[{{ range $index, $page := .Site.Pages}}{{ if not $page.Params.removefromsearch }}
 		{"url": "{{ $page.Permalink }}",
-		"title": "{{ $page.Title }}",
+		"title": "{{ $page.Title | markdownify | plainify }}",
 		"subtitle": "{{ $page.Params.subtitle | default "" }}",
 		"tags": [{{ range $tindex, $tag := $page.Params.tags }}{{ if $tindex }}, {{ end }}"{{ $tag }}"{{ end }}],
 		"description": "{{.Description}}",
