@@ -4395,23 +4395,23 @@ function fallbackMessage(action) {
     }
 })();
 
-//don't run scroll event on mobile devices
-var hero = document.querySelector('.hero');
-var siteLogo = document.querySelector('.site-logo.home-link:not(.form)');
-if (hero && !isMobile) {
-  window.addEventListener('scroll', changeLogo, false);
-}
+// //don't run scroll event on mobile devices
+// var hero = document.querySelector('.hero');
+// var siteLogo = document.querySelector('.site-logo.home-link:not(.form)');
+// if (hero && !isMobile) {
+//   window.addEventListener('scroll', changeLogo, false);
+// }
 
-function changeLogo() {
-  var heroHeight = hero.offsetHeight;
-  var scrollPosition = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollPosition;
-  if (scrollPosition > heroHeight - 40) {
-    siteLogo.classList.add('lightbg');
-  } else {
-    siteLogo.classList.remove('lightbg');
-  }
+// function changeLogo() {
+//   var heroHeight = hero.offsetHeight;
+//   var scrollPosition = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollPosition;
+//   if (scrollPosition > heroHeight - 40) {
+//     siteLogo.classList.add('lightbg');
+//   } else {
+//     siteLogo.classList.remove('lightbg');
+//   }
 
-}
+// }
 
 (function() {
 	var allPres = document.querySelectorAll('pre');
@@ -4603,20 +4603,6 @@ function navToggleCheck() {
     }
   }
 }
-<<<<<<< HEAD
-document.getElementById('toggle-search').addEventListener('click', toggleSearch, false);
-document.getElementById('close-search').addEventListener('click', toggleSearch, false);
-document.addEventListener('keyup', keystrokeSearchToggle, false);
-document.getElementById('search-input').addEventListener('keyup', setSearchInLocalStorage, false);
-
-<<<<<<< HEAD
-=======
-//keep IE from autofocsing on search input on page load
-
-$(document).ready(function() {
-  $('#search-input').blur();
-});
-=======
 
 window.onload = pageNotFoundTest;
 window.onload = checkForSearchHash;
@@ -4642,7 +4628,6 @@ document.onkeydown = function(evt) {
     searchInput.blur();
   }
 };
->>>>>>> dev
 
 function checkForSearchHash() {
   if (window.location.hash.startsWith('#search')) {
@@ -4666,45 +4651,6 @@ function pageNotFoundTest() {
     document.getElementById('search-results').innerHTML = '<li class="search-result notfound"><h5><strong>It looks like ' + currentUrl + ' does not exist. Please try searching for another page.</strong></h5></li>';
     toggleSearch(null);
   }
-<<<<<<< HEAD
-
-}
-
->>>>>>> dev
-//toggle search based on keystroke
-function keystrokeSearchToggle(thekey) {
-<<<<<<< HEAD
-    var boardKey = thekey.keyCode;
-    var searchIsOpen = document.querySelector('.search-form.open') ? true : false;
-    if (boardKey == 27 && searchIsOpen) {
-    	document.querySelector('.search-form').classList.remove('open');
-    }
-}
-
-function toggleSearch(evt) {
-    evt.preventDefault();
-    evt.stopPropagation();
-    var searchValue = localStorage.getItem('rw_search_term');
-    var searchForm = document.getElementById('site-search');
-    var searchInput = document.getElementById('search-input');
-
-    if(searchValue != null){
-    	searchInput.value = searchValue;
-    	lunrSearch();
-    }
-    searchForm.classList.toggle('open');
-    if (!searchForm.classList.contains('open')) {
-        searchInput.value = '';
-    } else { document.getElementById('search-input').focus(); }
-    return false;
-=======
-  var boardKey = thekey.keyCode;
-  var searchIsOpen = document.querySelector('.search-form.open') ? true : false;
-  if (boardKey == 27 && searchIsOpen) {
-    document.querySelector('.search-form').classList.remove('open');
-  }
-=======
->>>>>>> dev
 }
 
 function toggleSearch(evt) {
@@ -4724,7 +4670,6 @@ function toggleSearch(evt) {
     lunrSearch();
     searchInput.focus();
   }
->>>>>>> dev
 }
 
 function setSearchInLocalStorage() {

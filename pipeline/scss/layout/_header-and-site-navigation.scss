@@ -114,6 +114,7 @@ div.all-content-wrapper {
 
 //SITE NAVIGATION
 nav.site-navigation {
+  @include hardware-acclerate;
   transition: all .3s ease-in-out;
   display: block;
   position: fixed;

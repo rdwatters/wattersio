@@ -12,10 +12,9 @@
     @include MQ(M) {
       display: block;
       position: fixed;
-      border-width: 2px;
-      border-style: solid;
-      border-color: black;
       border-radius: 50%;
+      background-color: $site-navigation-bg-color;
+      background-image: url(/assets/icons/site-logo-white.svg);
       height: $top-button-circles-size;
       width: $top-button-circles-size;
       top: 30px;
