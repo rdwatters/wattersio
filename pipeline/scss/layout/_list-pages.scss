@@ -68,6 +68,7 @@ ul.contents-list {
   height: 8em;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position:center center;
   @include MQ(M) {
     min-width: 40%;
     width: 40%;

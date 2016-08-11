@@ -1,63 +1,76 @@
 //for clipboard.js tooltip and button
-
 div.code-copy {
-  position:relative;
-  margin-top:1em;
-  margin-bottom:1em;
-  font-size:.8em;
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: .8em;
   &:hover {
     button.copy-button {
-      transition:all .2s ease-in-out;
-      opacity:1;
+      transition: all .2s ease-in-out;
+      opacity: 1;
     }
+  }
+  @include MQ(XL) {
+    width: 120%;
+    margin-left: -10%;
   }
 }
 
 p + .code-copy {
-  margin-top:0em;
+  margin-top: 0em;
 }
 
 button.copy-button {
-  transition:all .2s ease-in-out;
-  opacity:0;
+  transition: all .2s ease-in-out;
+  opacity: 0;
   background-color: #272822;
   box-sizing: border-box;
-  position:absolute;
-  top:2.5em;
-  right:20px;
-  z-index:4;
-  height:42px;
-  width:42px;
-  border:1px solid white;
-  padding-bottom:1.2em;
-  border-radius:3px;
-  &:active,&:focus {
-    outline:none;
-    position:absolute;
+  position: absolute;
+  top: 2.5em;
+  right: 20px;
+  z-index: 4;
+  height: 42px;
+  width: 42px;
+  border: 1px solid white;
+  padding-bottom: 1.2em;
+  border-radius: 3px;
+  &:active,
+  &:focus {
+    outline: none;
+    position: absolute;
   }
   img.clippy {
-    position:absolute;
-    left:11px;
-    top:3px;
-    width:20px;
-    padding:0px;
-    margin:0px;
+    position: absolute;
+    left: 11px;
+    top: 3px;
+    width: 20px;
+    padding: 0px;
+    margin: 0px;
   }
   span.copy-span {
-    position:absolute;
-    bottom:3px;
-    left:8px;
-    width:26px;
-    color:white;
-    font-size:10px;
-    text-align:center;
-    font-family:$code-font-family;
+    position: absolute;
+    bottom: 3px;
+    left: 8px;
+    width: 26px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    font-family: $code-font-family;
+  }
+}
+
+button.copy-button {
+  @include MQ(retinaPortrait) {
+    display: none;
+  }
+  @include MQ(retinaLandscape) {
+    display: none;
   }
 }
 
 div.code-copy {
   position: relative;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   @include border-top-radius(5px);
   @include border-bottom-radius(5px);
@@ -78,7 +91,7 @@ div.code-copy-header {
     font-weight: 100;
     font-size: .8em;
     background-color: transparent;
-    font-family:$systemfonts;
+    font-family: $systemfonts;
   }
 }
 
@@ -92,7 +105,6 @@ div.code-copy-header {
   border-radius: 50%;
   box-shadow: 18px 0 0 Orange, 36px 0 0 LimeGreen;
 }
-
 
 .tooltipped {
   position: relative;

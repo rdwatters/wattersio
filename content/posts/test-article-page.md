@@ -5,7 +5,7 @@ date: 2016-03-20
 modified: false
 original_date:
 description:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
-categories: history
+categories: development
 tags:  [fall, halloween, pumpkins,chicago]
 image: pumpkins.jpg
 removefromsearch:

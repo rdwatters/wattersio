@@ -8,16 +8,20 @@ main.article {
     margin-top: 0px;
     padding-top: 0px;
     width: 100%;
-    header:not(.single-page) {
+    header.hero:not(.single-page) {
       @include herobg($darkbg: true, $minheight: 24em);
     }
     header.single-page {
-      min-height: 14em;
-      height: 14em;
+      min-height: 16em;
+      height: 16em;
       background-color: $single-page-hero-bg-color;
       color: white;
       position: relative;
       display: block;
+      padding-top:2em;
+      @include MQ(M){
+        padding-top:0em;
+      }
     }
     .header-content {
       @include centerer;

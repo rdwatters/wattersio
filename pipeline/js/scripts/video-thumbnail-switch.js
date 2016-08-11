@@ -12,8 +12,8 @@ function vidSwitch(evt) {
   console.log(clickedClass);
   var iframe = document.createElement('iframe');
   //assign theService to the provider added, but set to lower case to control for youtube, YouTube, etc.
-  var theService = vidItem.parentNode.dataset.streaming;
-  var theVideoId = vidItem.parentNode.dataset.videoid;
+  var theService = vidItem.parentNode.dataset.streaming.toLowerCase();
+  var theVideoId = vidItem.parentNode.dataset.videoid.toLowerCase();
   if (theService == "youtube") {
     iframe.setAttribute('src', '//www.youtube.com/embed/' + theVideoId + '?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=1&showinfo=0&rel=0&vq=hd1080');
   } else if (theService == "vimeo") {
@@ -25,15 +25,10 @@ function vidSwitch(evt) {
   iframe.setAttribute('frameborder', '0');
   iframe.setAttribute('class', 'video-iframe');
   if (clickedClass === "video-thumbnail" || clickedClass === "icon-video-play-button") {
-    // vidParent.removeChild(vidItem);
     vidParent.querySelector('.icon-video-play-button').remove();
     vidParent.querySelector('.video-thumbnail').remove();
     vidParent.appendChild(iframe);
   }
-  // else {
-  //   $(this).prev().remove();
-  //   $(this).replaceWith(iframe);
-  // }
 }
 
 // var vimObject = {};

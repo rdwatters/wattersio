@@ -15,15 +15,11 @@
                     <span class="reading-time">{{.ReadingTime}} min read</span>
                     </div>
                 {{end}}
-                {{if gt (len .Title) 60}}
-                <h1><span class="long-title">{{.Title | markdownify}}</span></h1>
-                {{else}}
-                <h1>{{.Title | markdownify}}</h1>
-                {{end}}
+                <h1{{if not .Params.image}} class="no-image"{{end}}>{{if gt (len .Title) 60}}<span class="long-title">{{- .Title | markdownify -}}</span>{{else}}{{- .Title | markdownify -}}{{end}}</h1>
                 <div class="hr-wrapper">
                     <hr>
                 </div>
-                {{if and (eq .Section "posts") (.Params.tags)}}
+                {{- if and (eq .Section "posts") (.Params.tags) -}}
                 <div class="article-tags-wrapper">
                     <ul class="article-tags">
                         {{range .Params.tags }}

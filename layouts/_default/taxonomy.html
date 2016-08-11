@@ -8,7 +8,7 @@
             {{ range sort $data.Pages "PublishDate" "desc" }}
             <li class="content-list-item grayscale">
                 <a href="{{.Permalink}}" class="content-list-link">
-                    <div class="content-list-image" style="background-image:url(/assets/images/thumbs/{{.Params.image | default "site-logo.jpg"}})">
+                    {{partial "list_image_bg.html" . }}
                     {{if ne .Section "singles"}}
                     {{partial "publish_date.html" . }}
                     {{end}}

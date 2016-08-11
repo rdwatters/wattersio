@@ -5,7 +5,7 @@ date: 2016-08-03
 modified: false
 original_date: 2016-08-03
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
-categories: stuff
+categories: development
 tags:  [blocks,chicago]
 image: tall_blocks.jpg
 removefromsearch:
