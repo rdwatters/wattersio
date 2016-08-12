@@ -1,5 +1,5 @@
 ---
-title:  "This Site is In Development"
+title:  "Site in Development"
 publishdate: 2016-07-20
 date: 2016-07-20
 modified: true

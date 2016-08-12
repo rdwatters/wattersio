@@ -1,5 +1,5 @@
 ---
-title: Simple Ways to Leverage `JavaScript` to Keep Your Markdown Free of Full-fledged HTML
+title: JavaScript Markdown Extensions
 subtitle:
 publishdate: 2016-07-09
 date: 2016-07-09
@@ -37,11 +37,7 @@ if (allIFrames.length > 0) {
 
 Random `philanthropy` word unequivocal Japanese hollandaise sauce. Unclimbable baw clamantly refoundation nurly symptomatical stechados lyingly unconversably furl semiglobular somnolize Nepal decaspermal footstone torchless creeperless regardant principiant bejuggle Arkite.
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/257659076&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-
 Random `philanthropy` word unequivocal Japanese hollandaise sauce. Unclimbable baw clamantly refoundation nurly symptomatical stechados lyingly unconversably furl semiglobular somnolize Nepal decaspermal footstone torchless creeperless regardant principiant bejuggle Arkite. Rebankrupt inochondroma overcomable contents inflict drill gynecocracy parachromophoric vang Tanitic archprelate stragulum xenarthral puncheon leprosery coenobic vanadyl choreic [markdown link][] reassistance adhesional leitneriaceous neurocele frothing gelatinizer.
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.448453289039!2d-87.70625044914016!3d41.969180467586725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcdfbb0cf6e09%3A0xf4929b70f9d3664f!2s3005+W+Gunnison+St+%233e%2C+Chicago%2C+IL+60625!5e0!3m2!1sen!2sus!4v1470891818772" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 Footstone torchless creeperless regardant principiant bejuggle Arkite. Rebankrupt inochondroma overcomable contents inflict drill gynecocracy parachromophoric vang Tanitic archprelate stragulum xenarthral puncheon leprosery coenobic vanadyl choreic reassistance adhesional leitneriaceous neurocele frothing gelatinizer.
 
@@ -50,8 +46,6 @@ Footstone torchless creeperless regardant principiant bejuggle Arkite. Rebankrup
 Pillarwise disjoint unexcludable passionflower angulometer chloryl disfen clavicembalo unlucrative convallarin kangarooer tornaria hemoglobulin cloth incisely subtepid entrepas unkid itinerantly Islam flummer Bala bloop preterequine.
 
 Dimpsy prestamp tuborrhea glaucophanite overcoat osmious expediency entosarc elfinwood umbellately microsporophyll innocent coatimondie forficulate impenetrative temeritous fortuned catclaw resinoextractive metoxenous Shemitic stubbled carven borofluoric.
-
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/189279845&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur blanditiis quis, alias eius molestias delectus repellat amet corporis aliquam. Neque dolorum sint eaque rerum ea laborum labore esse ad maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto minus alias nulla eum impedit quae iste, esse, cupiditate minima? Vitae illo autem, quibusdam facilis amet iste ducimus eum officiis ea.
 

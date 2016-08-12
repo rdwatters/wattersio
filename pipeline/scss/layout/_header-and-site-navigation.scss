@@ -137,7 +137,7 @@ nav.site-navigation {
 }
 
 ul.sidebar-navigation {
-  @include flexlist($gutter: 15px);
+  @include flexlist($minheight: 4.5em, $gutter: 15px);
   padding-right: 16px;
   margin-bottom: 1em;
   section {
@@ -147,15 +147,25 @@ ul.sidebar-navigation {
     background-color: $dark-bg-color;
     border: 1px solid white;
     color: white;
+    position:relative;
+    padding-bottom:1.5em;
     time {
+      margin-top:auto;
       display: block;
       color: white;
       width: 100%;
       text-align: right;
       font-size: .7em;
+      position:absolute;
+      bottom:.3em;
+      right:.5em;
     }
     img {
-      background-color: white;
+      display:none;
+      @include MQ(M){
+        display:block;
+        background-color:white;
+      }
     }
     &:hover {
       a > img {
