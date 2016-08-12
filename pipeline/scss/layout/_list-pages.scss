@@ -15,8 +15,10 @@ ul.contents-list {
   @include center;
   width: 100%;
   li.content-list-item {
+    position:relative;
     margin-bottom: 1em;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    padding-top:1.5em;
     a {
       display: flex;
       flex-direction: column;
@@ -51,6 +53,7 @@ ul.contents-list {
       }
     }
     @include MQ(M) {
+      padding-top:0px;
       @include card;
       &:hover {
         @include card(3);
@@ -64,14 +67,21 @@ ul.contents-list {
   width: 100%;
   padding: 0px;
   margin: 0px;
-  min-height: 8em;
-  height: 8em;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position:center center;
+  display:none;
+  // min-height: 8em;
+  // height: 8em;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center center;
   @include MQ(M) {
+    display:block;
     min-width: 40%;
     width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 8em;
+    height: 8em;
   }
 }
 
@@ -81,11 +91,16 @@ ul.contents-list {
     display: block;
     position: absolute;
     top: 0px;
-    left: 0px;
+    right: 0px;
     background-color: $base-font-color;
     padding: .25em .5em;
     font-weight: 100;
     z-index: 10;
     font-size: .7em;
+    @include MQ(M){
+      top:0px;
+      left:0px;
+      right:auto;
+    }
   }
 }
