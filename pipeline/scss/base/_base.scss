@@ -21,9 +21,6 @@ body {
   @include MQ(M) {
     font-size: 90%;
   }
-  // @include MQ(L) {
-  //   font-size: 95%;
-  // }
   @include MQ(XL) {
     font-size: 95%;
   }
@@ -40,6 +37,8 @@ body {
   position: relative;
   max-width: 100vw;
   overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 main {
