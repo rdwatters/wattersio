@@ -39,21 +39,21 @@ Here is a shortlist of tools I used when developing this site:
 * [Gulp][]: compiling, concatenating, uglifying, and optimizing static assets; this includes [Babel][] for ES6 transpilation
 * [GitHub][]: version/source control
 * [Hugo][]: static site generation
-* [Netlify][]: static hosting, continuous deployment, CDN, and development environments
+* [Netlify][]: static hosting, continuous deployment, CDN, SSL, and dev environments
 <!-- * [Amazon Simple Storage Service (S3)][]: hosting (static bucket) -->
 <!-- * [Wercker][]: automated deployments -->
 <!-- * [Amazon Web Services CLI][]: local deployments -->
 <!-- * [CloudFlare][]: content delivery (CDN), SSL, and reverse proxy -->
 * [lunr.js][]: Full-text, client-side search
 * [Disqus][]: commenting
-* [Velocity.js][]: animations and scrolling
+* [velocity.js][]: animations and scrolling
 * [Jotform][]: forms solution
 
 All source code is available under [MIT license][]. You are free to shamelessly steal my design, layout, type treatment, templating, etc. without the burden of guilt hitching a slug trail on your soul. If you do decide to purloin the fruits of my labor, let me just say that you have *excellent* taste.
 
 ## Site Design
 
-For an abridged visual style guide, see this site's [colophon][].
+For an abridged visual style guide, see the [colophon][].
 
 [Amazon Simple Storage Service (S3)]:https://aws.amazon.com/s3/
 [Amazon Web Services CLI]: https://aws.amazon.com/cli/
@@ -79,7 +79,7 @@ For an abridged visual style guide, see this site's [colophon][].
 [posts]: /posts/
 [résumé]: /resume/
 [static site generator]:https://www.staticgen.com/
-[velocity]: http://velocityjs.org/
+[velocity.js]: http://velocityjs.org/
 [wercker]:http://wercker.com/
 
 [^1]: Seriously. I'm terrible.
