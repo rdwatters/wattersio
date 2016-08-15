@@ -1,0 +1,41 @@
+{{ partial "site_header.html" . }}
+<main role="main" class="article">
+    <a href="" id="page-top" class=""></a>
+  <article class="{{.Section}}">
+		<header class="hero single-page">
+			<div class="header-content colophon">
+			<h1 class="title">{{.Title}}</h1>
+			</div>
+		</header>
+		<div class="body-copy colophon">
+		<div class="typeface">
+			<h2>Typeface</h2>
+			<p>The site uses {{ delimit .Params.fonts ", " ", and " }} for body copy, headings, and code blocks, respectively.</p>
+			<ul class="typography">
+				{{$size := .Params.fontinems }}
+				{{range .Params.fonts }}
+				<li class="font" style="margin-bottom:-{{$size}}em;">
+					<div class="font-info">
+						<span class="example" style="font-size:{{$size}}em;font-family:{{replace . " " "" |lower}};">Aa</span>
+						<span class="font-name" style="font-family:{{replace . " " ""|lower}};">{{.|title}}</span>
+						<span class="detail" style="font-family:{{replace . " " ""|lower}};"><em>Displayed at {{$size}} ems</em></span>
+					</div>
+				</li>
+				{{end}}
+			</ul>
+			<h2>Color</h2>
+			<p>The color palette is type-centric, with four colors for body copy, one brand color, and one accent color.</p>
+			<div class="sitecolors">
+				<ul class="colors">
+					{{range .Params.colors}}
+					<li class="color" style="background-color:{{.}};">{{.}}</li>
+					{{end}}
+				</ul>
+
+			</div>
+		</div>
+		</div>
+	</article>
+	{{ partial "disqus_comments.html" . }}
+</main>
+{{ partial "site_footer.html" . }}

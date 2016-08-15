@@ -9,8 +9,9 @@ $HUGE:1600px;
 //COLORS
 $base-font-color:#222222;
 // $brand-primary: darken(red,25%);
-$brand-primary:darken(#4D9ABF,20%);
-$accent-color:darken(red,25%);
+// $brand-primary:darken(#4D9ABF,20%);
+$brand-primary:#014A82;
+$accent-color:#b30000;
 $link-color: $brand-primary;
 $link-color-event: darken($link-color,15%);
 $link-event-text-decoration: none;
@@ -95,6 +96,22 @@ $code-tooltip-bg-color: $brand-primary;
 $code-block-base-font-color: white;
 $code-block-background-color: $base-font-color;
 $code-editor-header-bg-color: #DCDCDC;
+
+//FAKE IOS APP COLORS
+//Fake ios app colors
+$bumble:#F8C537;
+$bumble-her-bg-color:darken($body-bg-color, 20%);
+$bumble-icon-color:lighten($base-font-color, 15%);
+$bumble-header-background-color:darken($body-bg-color, 2%);
+$bumble-timestamp-font-color: darken($bumble-her-bg-color, 15%);
+
+$tinder: rgb(55,179,199);
+$tinder-her-bg-color:lighten($bumble-her-bg-color, 10%);
+$tinder-icon-color:lighten($base-font-color, 15%);
+$tinder-header-background-color:$body-bg-color;
+$tinder-red:#E44C27;
+$tinder-icon: #E44C27;
+$dating-app-icon-size:3em;
 
 
 

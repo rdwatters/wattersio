@@ -40,17 +40,19 @@
 @import 'components/videos-and-iframes';
 @import 'components/comments';
 @import 'components/blockquotes';
-// @import 'components/codeblocks';
-@import 'components/prism';//for prism.js
+@import 'components/codeblocks';
 @import 'components/clipboardjs-tooltips';
 @import 'components/prevnextlinks-bottom';
 @import 'components/social-media-sharing';
 @import 'components/tangent';
+@import 'components/bumble-and-tinder.scss';
+@import 'components/footnotes';
 // @import 'components/prevnextlinks-sides';
 
 // 5. Page-specific styles
 @import 'pages/home';
 @import 'pages/resume';
 @import 'pages/404';
+@import 'pages/colophon';
 // 6. Themes
 @import 'themes/default';

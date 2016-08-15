@@ -14,6 +14,7 @@ languageCode = "en-us"
 layoutDir = "layouts"
 log = false
 metaDataFormat = "yaml"
+preserveTaxonomyNames = false
 publishdir = "public"
 pygmentsUseClasses = true
 relativeURLs = true
