@@ -4,7 +4,7 @@
     <article class="{{.Section}}">
         <header{{with .Params.image}} class="hero" style="background-image:url(/assets/images/{{.}})"{{else}} class="hero single-page"{{end}}>
             <div class="header-content">
-                {{if eq .Section "posts" }}
+                {{if ne .Section "singles" }}
                     <div class="header-meta">
                     {{partial "publish_date" . }}
                     {{with .Params.categories}}
@@ -15,7 +15,7 @@
                     <span class="reading-time">{{.ReadingTime}} min read</span>
                     </div>
                 {{end}}
-                <h1{{if not .Params.image}} class="no-image"{{end}}>{{if gt (len .Title) 60}}<span class="long-title">{{- .Title | markdownify -}}</span>{{else}}{{- .Title | markdownify -}}{{end}}</h1>
+                <h1{{if not .Params.image}} class="no-image"{{end}}>{{if gt (len .Title) 60}}<span class="long-title">{{- .Title | markdownify -}}</span>{{else}}{{- replace (.Title | markdownify) "Resume" "Résumé" -}}{{end}}</h1>
                 <div class="hr-wrapper">
                     <hr>
                 </div>

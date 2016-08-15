@@ -1,0 +1,665 @@
+.ios-app {
+  * {
+    box-sizing: content-box;
+  }
+  *:after,
+  *:before {
+    box-sizing: inherit;
+  }
+  width: 90%;
+  display:flex;
+  flex-direction:column;
+  max-width: 25em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "-apple-system-body",
+  "Helvetica Neue",
+  arial,
+  sans-serif;
+  font-size: .8em;
+  margin-bottom: 1.5em;
+  min-height: 39.75em;
+  box-shadow: 0px 0px 1px 0px rgba(51, 51, 51, 0.75);
+}
+
+h2,
+h3 {
+  + .ios-app {
+    margin-top: 2em;
+  }
+}
+
+header.bumble-header,
+header.tinder-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 0px;
+  height: 3.666em;
+  .match-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 2.8em;
+  }
+  .icon-star,
+  .icon-info,
+  .icon-leftarrow {
+    color: rgb(127, 127, 127);
+  }
+  .icon-info {
+    font-size: 1.4em;
+  }
+  .icon-star {
+    margin-right: -.25em;
+    font-size: 1.4em;
+  }
+  .icon-leftarrow {
+    font-size: 2em;
+    position: relative;
+    margin-bottom: .4em;
+    padding: 0px;
+    margin-left: -.2em;
+    &.tinder {
+      color: $tinder-red;
+      font-size: 2.3em;
+    }
+    &:before {
+      position: relative;
+      display: block;
+      margin-bottom: 1em;
+      margin-top: -1.4em;
+      margin-left: -.03em;
+    }
+    &.bumble:before {
+      margin-top: -1.3em;
+      margin-left: .2em;
+    }
+  }
+  .icons-right {
+    margin-right: .5em;
+    &.tinder {
+      padding-top: .5em;
+      margin-right: .65em;
+    }
+  }
+}
+
+header.bumble-header {
+  background-color: $bumble-header-background-color;
+  border-bottom: 2px solid darken(#f0f0f0, 2%);
+}
+
+header.tinder-header {
+  background-color: $tinder-header-background-color;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+//svgs
+.app-icon {
+  box-sizing: border-box;
+  width: $dating-app-icon-size / 1.001;
+  height: $dating-app-icon-size / 1.001;
+  overflow: hidden;
+  position: absolute;
+  right: -$dating-app-icon-size / 3;
+  top: 3.5em;
+  z-index: 99;
+  background-color: $body-bg-color;
+  box-shadow: 0px 0px 2px 1px rgba(34, 34, 34, 0.4);
+  border-radius: 0.625em;
+  svg {
+    z-index: 99999;
+    width: 103%;
+    height: 103%;
+    fill: white;
+    padding: 0px;
+  }
+  svg#tinder-icon {
+    fill: white;
+    background-color: #E44C27;
+  }
+}
+
+.phone {
+  width: 100%;
+  min-width: 100%;
+  color: black;
+  margin-bottom: -.2em;
+  margin-top: -.2em;
+  padding-bottom: 0px;
+  font-size: .9em;
+}
+
+.message-time {
+  position: absolute;
+  top: 0em;
+  left: 45%;
+  width: auto;
+  font-size: .8em;
+  font-weight: bold;
+}
+
+.location-and-battery {
+  position: absolute;
+  top: .25em;
+  right: 0em;
+  height: .8em;
+  .location-arrow {
+    background-image: url(/assets/images/location-arrow.svg);
+    height: 100%;
+    width: .7em;
+    height: .7em;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 3em;
+    top: .18em;
+  }
+  .bluetooth {
+    background-image: url(/assets/images/bluetooth.svg);
+    height: 90%;
+    width: 1em;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 2em;
+    top: 0em;
+    height: 1em;
+    opacity: .6;
+    font-size: 1em;
+  }
+  .battery-power {
+    position: absolute;
+    right: .25em;
+    top: .15em;
+    width: 1.7em;
+    height: 95%;
+    background-repeat: no-repeat;
+    border: none;
+    &.empty {
+      background-image: url(/assets/images/battery-empty.svg);
+    }
+    &.half {
+      background-image: url(/assets/images/battery-half.svg);
+    }
+    &.full {
+      background-image: url(/assets/images/battery-full.svg);
+    }
+  }
+}
+
+.signal {
+  padding-left: .65em;
+  margin-right: 0;
+  .carrier {
+    padding-left: .15em;
+    font-size: .75em;
+    font-weight: 300;
+  }
+}
+
+.empty,
+.filled {
+  display: inline-block;
+  width: .25em;
+  height: .25em;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 0px;
+  margin: 0px;
+  margin-left: -.2em;
+  margin-bottom: .1em;
+}
+
+.filled {
+  background-color: black;
+  &.tinder {
+    background-color: $tinder-red;
+    border: 1px solid $tinder-red;
+    width: .33em;
+    height: .33em;
+    margin-right: .07em;
+  }
+}
+
+.match-name-and-image {
+  display: flex;
+  align-items: center;
+  height: 2em;
+  max-height: 2.3em;
+  color: lighten(black, 20%);
+  filter: blur(0px);
+  font-size: 1.3em;
+  padding-left: .5em;
+  &.tinder {
+    font-size: 1em;
+    margin-top: .3em;
+  }
+}
+
+img.datingapp-image {
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  margin-right: .5em;
+  margin-bottom: 0px;
+  &.tinder {
+    width: 2.25em;
+    height: 2.25em;
+  }
+}
+
+.conversation-thread {
+  font-size: 1em;
+  margin-bottom: .75em;
+  ul {
+    display: block;
+    list-style: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    li {
+      display: block;
+      width: auto;
+      max-width: 68%;
+      clear: both;
+      text-indent: 0px;
+      list-style: none;
+      margin: 0px;
+      font-size: 1em;
+      padding: .5em .75em;
+      position: relative;
+      margin-bottom: .5em;
+      line-height: 1.2;
+      vertical-align: middle;
+      &:nth-child(even) {
+        color: white;
+        float: right;
+        margin-right: 5%;
+      }
+    }
+  }
+}
+
+.conversation-thread {
+  p {
+    width: 100%;
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: .7em;
+    line-height: 1;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: $bumble-timestamp-font-color;
+    &.tinder-match-date {
+      font-weight: 500;
+      font-size: .6em;
+    }
+  }
+}
+
+.conversation-thread > ul > li:nth-child(odd),
+.conversation-thread > ul.left > li:nth-child(even) {
+  color: black;
+  float: left;
+  clear: both;
+  margin-left: 14%;
+  @include MQ(M) {
+    margin-left: 13%;
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -2.7em;
+    bottom: 0px;
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 50%;
+    background-size: contain;
+    z-index: 5;
+  }
+}
+
+.bumble ul.right,
+.tinder ul.right {
+  margin-right: 5%;
+  > li {
+    color: $white;
+    float: right;
+    clear: both;
+    margin-right: 0px;
+    &:before {
+      background-image: none;
+    }
+    &:nth-child(odd),
+    &:nth-child(even) {
+      color: $white;
+      float: right;
+      clear: both;
+      margin-right: 0px;
+      padding-left: .75em;
+    }
+  }
+}
+
+.bumble ul.left > li,
+.tinder ul.left > li {
+  color: black;
+  float: left;
+}
+
+.bumble {
+  ul {
+    li {
+      border-radius: 1em;
+      z-index: 99;
+      &:after {
+        border-radius: 50% 50% 50% 50%;
+        border-style: solid;
+        border-width: 0 20px;
+        bottom: 0;
+        clip: rect(20px, 35px, 42px, 0px);
+        content: " ";
+        height: 40px;
+        position: absolute;
+        right: -46px;
+        width: 30px;
+        transform: rotateY(42deg);
+        z-index: -1;
+      }
+      &:nth-child(even) {
+        background-color: $bumble;
+        &:after {
+          border-color: $bumble;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  ul.right {
+    > li:nth-child(even),
+    > li:nth-child(odd) {
+      margin-right: 5%;
+      background-color: $bumble;
+      z-index: 1;
+      padding-right: .9em;
+      &:after {
+        border-radius: 50% 50% 50% 50%;
+        border-style: solid;
+        border-width: 0 20px;
+        bottom: 0;
+        clip-path: inset(20px, 35px, 42px, 0px);
+        content: " ";
+        height: 40px;
+        position: absolute;
+        right: -46px;
+        width: 30px;
+        transform: rotateY(42deg);
+        border-color: $bumble;
+        z-index: -1;
+      }
+    }
+    > li:nth-child(odd) {
+      &:after {
+        right: 0px;
+        left: calc(100% - 24px);
+        position: absolute;
+        float: right;
+      }
+      &:before {
+        width: 0px;
+        height: 0px;
+      }
+    }
+  }
+}
+
+.bumble ul > li:nth-child(odd),
+.bumble ul.left > li:nth-child(even) {
+  border-color: $bumble-her-bg-color;
+  background-color: $bumble-her-bg-color;
+  padding-left: 1em;
+  color: black;
+  margin-left: 13%;
+  &:after {
+    left: -46px;
+    border-color: $bumble-her-bg-color;
+    transform: rotateY(140deg);
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -2.7em;
+    bottom: 0px;
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 50%;
+    background-size: contain;
+    z-index: -1;
+  }
+}
+
+.conversation-thread.tinder ul {
+  > li {
+    border-radius: .65em;
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: -.4em;
+      border-top: .5em solid transparent;
+      border-bottom: .5em solid transparent;
+      border-radius: 0% 0% 35% 0%;
+    }
+    &:nth-child(even) {
+      background-color: $tinder;
+      margin-right: 2%;
+      &:after {
+        right: 0px;
+        border-right: .6em solid $tinder;
+      }
+    }
+    &:nth-child(odd) {
+      background-color: $tinder-her-bg-color;
+      &:after {
+        transform: rotateY(180deg);
+        border-right: .6em solid $tinder-her-bg-color;
+        left: 0px;
+      }
+    }
+  }
+  &.right {
+    li:nth-child(even),
+    li:nth-child(odd) {
+      background-color: $tinder;
+      margin-right: 2%;
+      &:after {
+        border: none;
+      }
+      &:before {
+        background-image: none;
+        border-color: $tinder;
+      }
+    }
+    li:last-child {
+      &:after {
+        border-top: .5em solid transparent;
+        border-bottom: .5em solid transparent;
+        border-right: .6em solid $tinder;
+      }
+    }
+  }
+  &.left {
+    li:nth-child(even),
+    li:nth-child(odd) {
+      background-color: $tinder-her-bg-color;
+      left: 0px;
+      margin-left: 13%;
+      &:before {
+        left: -2.7em;
+      }
+      &:after {
+        transform: rotateY(180deg);
+        border-right: 0px;
+        left: 0px;
+      }
+    }
+    li:last-child {
+      &:after {
+        transform: rotateY(180deg);
+        border-right: .6em solid $tinder-her-bg-color;
+        left: 0px;
+      }
+    }
+  }
+}
+
+.response-box-bumble {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-top: auto;
+  background-color: darken($body-bg-color, 3%);
+  height: 5em;
+  width: 100%;
+  border-top: 1px solid darken(#f0f0f0, 5%);
+}
+
+.your-message-bumble {
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+  color: lighten($base-font-color, 45%);
+  border-radius: 6px;
+  background-color: $body-bg-color;
+  border: 1px solid darken(#f0f0f0, 5%);
+  margin-top: .5em;
+  padding-left: .8em;
+  padding-top: .15em;
+  padding-bottom: .15em;
+  font-size: 1em;
+}
+
+.bumble-footer-icons {
+  display: block;
+  width: 95%;
+  padding-left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.type {
+  font-size: 1.6em;
+  color: $bumble;
+  width: auto;
+  float: left;
+  font-weight: 500;
+}
+
+.icon-camera-bumble {
+  font-size: 1.6em;
+  margin-left: .3em;
+  width: .9em;
+  color: rgb(152, 152, 152);
+}
+
+.camera-bumble {
+  position: absolute;
+  left: 2.6em;
+  bottom: .5em;
+  width: 2em;
+  height: 1.6em;
+  background-image: url(/assets/images/camera-bumble.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline;
+}
+
+.gif-icon-bumble {
+  position: absolute;
+  left: 5.6em;
+  bottom: .4em;
+  width: 1.6em;
+  height: 1.7em;
+  background-image: url(/assets/images/gif-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline;
+}
+
+.send-bumble {
+  width: auto;
+  float: right;
+  font-size: 1.1em;
+  padding-top: .35em;
+  color: lighten($base-font-color, 25%);
+  font-weight: 500;
+}
+
+.response-box-tinder {
+  display: flex;
+  height: 2.5em;
+  width: 100%;
+  border-top: 1px solid #cfcfcf;
+  align-self: flex-end;
+  margin-top: auto;
+  justify-content: center;
+}
+
+.tinder-icons {
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  .gif-icon-tinder {
+    margin-left: .8em;
+    margin-right: .5em;
+    font-size: .55em;
+    background-color: $tinder;
+    vertical-align: middle;
+    font-weight: 600;
+    color: white;
+    border-radius: .7em;
+    padding: .1em .55em;
+    height: 2em;
+    line-height: 2em;
+  }
+}
+
+.your-message-tinder {
+  text-align: left;
+  flex-grow: 2;
+  color: lighten($base-font-color, 48%);
+  font-size: 1em;
+  padding-left: .8em;
+}
+
+.send-tinder {
+  margin-left: .5em;
+  margin-right: .9em;
+  color: lighten($base-font-color, 48%);
+  font-size: .95em;
+  font-weight: 500;
+}
+
+.shortcode-description > p {
+  font-family: $heading-font-family;
+  text-align: center;
+  font-size: .8em;
+  margin-top: 0em;
+  margin-bottom: .5em;
+  position: relative;
+  color: lighten($base-font-color, 20%);
+}
+
+.ios-app + .shortcode-description > p {
+  margin-top: -1em;
+}
