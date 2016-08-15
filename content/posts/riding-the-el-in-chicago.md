@@ -14,6 +14,9 @@ removecomments: false
 
 Testing testing testing mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing [compunctious](/posts/my-kind-of-town).
 
+{{< figure src="/assets/images/book-on-lap.jpg" title="Reading a book on my lap." class="left">}}
+
+
 Oman. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ut, accusantium deleniti ipsa, repellat iure neque provident reprehenderit similique cumque veniam enim. Alias aliquid quae sapiente cum, accusantium nesciunt possimus.
 
 ## Heading in Body Copy

@@ -4,6 +4,18 @@ figure {
   height: auto;
 }
 
+figure {
+  @include center;
+  position:relative;
+  h4 {
+    font-family:$base-font-family;
+    font-size:.9em;
+    font-style:italic;
+    text-align:center;
+    margin-top:.25em;
+  }
+}
+
 .full {
   width: 100%;
   @include MQ(M) {
@@ -29,13 +41,13 @@ figure {
     width: 60%;
     position: relative;
   }
-  p > .left {
+  p > .left, figure.left {
     float: left;
     margin: 0px .75em .5em -3em;
     clear: both;
     @include clearfix;
   }
-  .right {
+  p > .right, figure.right {
     float: right;
     margin: 0px -3em .5em .75em;
   }
