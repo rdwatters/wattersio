@@ -47,7 +47,7 @@ Here is a shortlist of tools I used when developing this site:
 * [lunr.js][]: Full-text, client-side search
 * [Disqus][]: commenting
 * [velocity.js][]: animations and scrolling
-* [Jotform][]: forms solution
+<!-- * [Jotform][]: forms solution -->
 
 All source code is available under [MIT license][]. You are free to shamelessly steal my design, layout, type treatment, templating, etc. without the burden of guilt hitching a slug trail on your soul. If you do decide to purloin the fruits of my labor, let me just say that you have *excellent* taste.
 
