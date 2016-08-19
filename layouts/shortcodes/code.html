@@ -1,11 +1,14 @@
 {{if .IsNamedParams }}
 <div class="code-copy" id="{{.Get "title"}}">
+
 	{{with .Get "filepath"}}<div class="code-copy-header"><div class="action-buttons"></div><span class="filename">{{.}}</span></div>{{end}}
+	<button class="copy-button" title="Copy to clipboard" data-clipboard-snippet><img class="clippy" src="/assets/icons/clipboard2.svg" alt="Copy to clipboard"><span class="copy-span">COPY</span></button>
 	{{.Inner}}
 </div>
 {{else}}
 <div class="code-copy" id="{{.Get 0|urlize}}">
 	<div class="code-copy-header"><div class="action-buttons"></div><span class="filename">{{.Get 1}}</span></div>
+	<button class="copy-button" title="Copy to clipboard" data-clipboard-snippet><img class="clippy" src="/assets/icons/clipboard2.svg" alt="Copy to clipboard"><span class="copy-span">COPY</span></button>
 	{{.Inner}}
 </div>
 {{ end }}

@@ -149,7 +149,7 @@ header.tinder-header {
   right: 0em;
   height: .8em;
   .location-arrow {
-    background-image: url(/assets/images/location-arrow.svg);
+    background-image: url(/assets/icons/location-arrow.svg);
     height: 100%;
     width: .7em;
     height: .7em;
@@ -159,7 +159,7 @@ header.tinder-header {
     top: .18em;
   }
   .bluetooth {
-    background-image: url(/assets/images/bluetooth.svg);
+    background-image: url(/assets/icons/bluetooth.svg);
     height: 90%;
     width: 1em;
     background-repeat: no-repeat;
@@ -179,13 +179,13 @@ header.tinder-header {
     background-repeat: no-repeat;
     border: none;
     &.empty {
-      background-image: url(/assets/images/battery-empty.svg);
+      background-image: url(/assets/icons/battery-empty.svg);
     }
     &.half {
-      background-image: url(/assets/images/battery-half.svg);
+      background-image: url(/assets/icons/battery-half.svg);
     }
     &.full {
-      background-image: url(/assets/images/battery-full.svg);
+      background-image: url(/assets/icons/battery-full.svg);
     }
   }
 }
@@ -295,7 +295,7 @@ img.datingapp-image {
     margin-bottom: 1em;
     color: $bumble-timestamp-font-color;
     &.tinder-match-date {
-      font-weight: 500;
+      font-weight: 300;
       font-size: .6em;
     }
   }
@@ -474,49 +474,50 @@ img.datingapp-image {
       }
     }
   }
-  &.right {
-    li:nth-child(even),
-    li:nth-child(odd) {
-      background-color: $tinder;
-      margin-right: 2%;
-      &:after {
-        border: none;
-      }
-      &:before {
-        background-image: none;
-        border-color: $tinder;
-      }
+}
+
+.tinder ul.left {
+  li:nth-child(even),
+  li:nth-child(odd) {
+    background-color: $tinder-her-bg-color;
+    left: 0px;
+    margin-left: 13%;
+    &:before {
+      left: -2.7em;
     }
-    li:last-child {
-      &:after {
-        border-top: .5em solid transparent;
-        border-bottom: .5em solid transparent;
-        border-right: .6em solid $tinder;
-      }
+    &:after {
+      transform: rotateY(180deg);
+      border-right: 0px;
+      left: 0px;
     }
   }
-  &.left {
-    li:nth-child(even),
-    li:nth-child(odd) {
-      background-color: $tinder-her-bg-color;
-      left: 0px;
-      margin-left: 13%;
-      &:before {
-        left: -2.7em;
-      }
-      &:after {
-        transform: rotateY(180deg);
-        border-right: 0px;
-        left: 0px;
-      }
+  > li:last-child:after {
+    transform: rotateY(180deg);
+    border-right: .6em solid $tinder-her-bg-color;
+    left: 0px;
+  }
+}
+
+.tinder ul.right {
+  li:nth-child(even),
+  li:nth-child(odd) {
+    background-color: $tinder;
+    margin-right: 2%;
+    &:after {
+      border: none;
     }
-    li:last-child {
-      &:after {
-        transform: rotateY(180deg);
-        border-right: .6em solid $tinder-her-bg-color;
-        left: 0px;
-      }
+    &:before {
+      background-image: none;
+      border-color: $tinder;
     }
+  }
+  > li:last-child:after {
+    border-top: .5em solid transparent;
+    border-bottom: .5em solid transparent;
+    border-left: .6em solid $tinder;
+    right: 0px;
+    left: auto;
+    transform: rotateY(180deg);
   }
 }
 
@@ -577,7 +578,7 @@ img.datingapp-image {
   bottom: .5em;
   width: 2em;
   height: 1.6em;
-  background-image: url(/assets/images/camera-bumble.svg);
+  background-image: url(/assets/icons/camera-bumble.svg);
   background-repeat: no-repeat;
   background-position: center;
   display: inline;
@@ -589,7 +590,7 @@ img.datingapp-image {
   bottom: .4em;
   width: 1.6em;
   height: 1.7em;
-  background-image: url(/assets/images/gif-icon.svg);
+  background-image: url(/assets/icons/gif-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
   display: inline;

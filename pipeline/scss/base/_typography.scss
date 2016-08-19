@@ -63,11 +63,15 @@ h3 {
   font-size: 1em;
   text-transform: uppercase;
   color: lighten($base-font-color, 15%);
+  font-weight:600;
+  font-family:$base-font-family;
   &.list {
     text-transform: none;
     margin-top: 0px;
     line-height: 1.2;
     font-size:1.3em;
+    font-weight:normal;
+    font-family:$heading-font-family;
   }
 }
 

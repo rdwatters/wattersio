@@ -7,8 +7,6 @@
 
 // 1. Configuration and helpers
 @import 'variables';
-@import 'bigfoot/bigfoot';
-@import 'selectionsharer/selectionsharer';
 @import 'abstracts/mediaqueries';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
@@ -18,11 +16,8 @@
 @import 'base/normalize';
 @import 'base/base';
 @import 'base/fonts';
-//Needs $use-font-awesome: true in "_variables.scss"
-@import 'base/fontawesome';
 @import 'base/fontello';
 @import 'base/typography';
-@import 'base/helpers';
 
 // 3. Layout-related sections
 @import 'layout/header-and-site-navigation';

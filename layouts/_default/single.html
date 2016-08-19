@@ -1,4 +1,5 @@
 {{ partial "site_header.html" . }}
+{{$burl := .Site.BaseURL}}
 <main role="main" class="article">
     <a href="" id="page-top" class=""></a>
     <article class="{{.Section}}">
@@ -19,7 +20,7 @@
                 <div class="hr-wrapper">
                     <hr>
                 </div>
-                {{- if and (eq .Section "posts") (.Params.tags) -}}
+                {{ if and (eq .Section "posts") (.Params.tags) }}
                 <div class="article-tags-wrapper">
                     <ul class="article-tags">
                         {{range .Params.tags }}

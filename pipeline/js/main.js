@@ -4308,10 +4308,10 @@ console.log("%cHey there, fellow developer. Find me on GitHub at https://github.
                             return n ? document.querySelector(n) : void 0 }, e.prototype.defaultText = function t(e) {
                             return s("text", e) }, e.prototype.destroy = function t() { this.listener.destroy(), this.clipboardAction && (this.clipboardAction.destroy(), this.clipboardAction = null) }, e }(u.default);
                 t.exports = d }) }, { "./clipboard-action": 8, "good-listener": 4, "tiny-emitter": 7 }] }, {}, [9])(9) });
-var snippets = document.querySelectorAll('.code-copy');
-[].forEach.call(snippets, function(snippet) {
-    snippet.insertAdjacentHTML('afterbegin', '<button class="copy-button" title="Copy to clipboard" data-clipboard-snippet><img class="clippy" src="/assets/icons/clipboard2.svg" alt="Copy to clipboard"><span class="copy-span">COPY</span></button>');
-});
+// var snippets = document.querySelectorAll('.code-copy');
+// [].forEach.call(snippets, function(snippet) {
+//     snippet.insertAdjacentHTML('afterbegin', '<button class="copy-button" title="Copy to clipboard" data-clipboard-snippet><img class="clippy" src="/assets/icons/clipboard2.svg" alt="Copy to clipboard"><span class="copy-span">COPY</span></button>');
+// });
 var clipboardSnippets = new Clipboard('[data-clipboard-snippet]', {
     target: function(trigger) {
         return trigger.nextElementSibling;
@@ -4535,7 +4535,6 @@ if (toc && tocl > 3) {
 var tocTog = document.getElementById('toggle-toc');
 var allTocLinks = document.querySelectorAll('aside#toc a');
 var tocExists = document.querySelector('aside.toc') ? true : false;
-console.log(allTocLinks.length);
 
 if (allTocLinks.length > 3) {
   tocTog.addEventListener('click', toggleToc, false);
