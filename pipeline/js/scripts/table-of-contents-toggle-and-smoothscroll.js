@@ -1,7 +1,6 @@
 var tocTog = document.getElementById('toggle-toc');
 var allTocLinks = document.querySelectorAll('aside#toc a');
 var tocExists = document.querySelector('aside.toc') ? true : false;
-console.log(allTocLinks.length);
 
 if (allTocLinks.length > 3) {
   tocTog.addEventListener('click', toggleToc, false);

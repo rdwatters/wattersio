@@ -1,8 +1,6 @@
 <div class="ios-app">
 		{{$lowername := .Get 0 | lower }}
 <style>
-        /*{background-image: url(/assets/images/headshots/{{$lowername}}.jpg);
-        }*/
         .conversation-thread.tinder.{{$lowername}} > ul.split li:nth-child(odd):before,
         .conversation-thread.tinder.{{$lowername}} > ul.left > li:before{background-image: url(/assets/images/headshots/{{$lowername}}.jpg)!important;
             content:'';
