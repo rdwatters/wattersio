@@ -6,17 +6,6 @@ div#page-top {
   left: 0px;
 }
 
-div.all-content-wrapper {
-  transition: all .3s ease-in-out;
-  &.open {
-    transition: all .3s ease-in-out;
-    transform:translateX(-#{$site-navigation-width});
-    opacity: .4;
-    margin-left: 16px;
-    margin-right: -16px;
-  }
-}
-
 //TOGGLE SIDEBAR NAVIGATION
 .sidebar-toggle-wrapper {
   @include card;
