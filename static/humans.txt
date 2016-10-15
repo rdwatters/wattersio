@@ -1,0 +1,16 @@
+/* TEAM */
+
+Your title: Ryan Watters
+Site: https://ryanwatters.io, ryan@ryanwatters.io
+Twitter: @ryandwatters
+Location: Chicago, IL
+
+/* THANKS */
+
+Name: https://gohugo.io
+
+/* SITE */
+
+Standards: HTML5, CSS3, JavaScript,
+Components: jQuery, bigfoot.js
+Software: Hugo, git, npm
