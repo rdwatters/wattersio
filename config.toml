@@ -51,7 +51,7 @@ watch = true
   #######END SOCIAL#######
   CopyrightLine = "Ryan Watters"
   SiteDescription = "The official site of Ryan Watters"
-  UseCRP = false
+  UseCRP = true
   # Include jQuery 2.x from assets/js
   IncludeJQ = false
   # Disqus has two conditions (here and in page); setting this to "false" will turn off comments on ALL pages
