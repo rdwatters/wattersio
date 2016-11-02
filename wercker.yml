@@ -1,4 +1,4 @@
-box: wercker/golang
+box: debian
 build:
   # The steps that will be executed on build
   # Steps make up the actions in your pipeline
@@ -16,6 +16,5 @@ deploy:
       packages: git ssh-client
     - leipert/git-push:
        gh_oauth: $GIT_TOKEN
-       repo: rdwatters/hugo-starter
+       repo: rdwatters/ryanwattersio-new
        branch: master
-       basedir: public
