@@ -103,4 +103,5 @@ gulp.task('dev', ['sass', 'scripts', 'image-resize'], () => {
 
 // Default Task
 gulp.task('default', ['dev']);
+gulp.task('images',['image-resize']);
 gulp.task('docs', ['sassdoc']);

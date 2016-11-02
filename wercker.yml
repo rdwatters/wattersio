@@ -1,14 +1,16 @@
-box: golang
+box: node:4-slim
 build:
+  # The steps that will be executed on build
+  # Steps make up the actions in your pipeline
+  # Read more about steps on our dev center:
+  # http://devcenter.wercker.com/docs/steps/index.html
   steps:
-  - arjen/hugo-build:
-    version: "0.15"
-    config: config.toml
-    disable_pygments: true
-  - script:
-    name: echo "Moving json/index.html to /site-index.json"
-    code: |
-      cd public/json/ && cp index.html ../site-index.json
+    - script:
+        code: |
+          cd pipeline
+          apt-get install imagemagick
+          apt-get install graphicsmagick
+          npm install && gulp images
 deploy:
   steps:
     - install-packages:
@@ -16,5 +18,5 @@ deploy:
     - leipert/git-push:
        gh_oauth: $GIT_TOKEN
        repo: rdwatters/hugo-starter
-       branch: gh-pages
+       branch: master
        basedir: public
