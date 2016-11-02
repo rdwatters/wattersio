@@ -7,9 +7,8 @@ build:
   steps:
     - script:
         code: |
+          sudo apt-get install imagemagick
           cd pipeline
-          apt-get install imagemagick
-          apt-get install graphicsmagick
           npm install && gulp images
 deploy:
   steps:
