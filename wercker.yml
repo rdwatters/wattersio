@@ -1,4 +1,4 @@
-box: node:4-slim
+box: wercker/golang
 build:
   # The steps that will be executed on build
   # Steps make up the actions in your pipeline
