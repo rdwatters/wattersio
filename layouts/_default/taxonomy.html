@@ -5,10 +5,14 @@
             <h1 class="list-page-title"><a href="/{{$data.Plural}}">{{$data.Plural}}</a>: {{ .Title }}</h1>
         </header>
         <ul class="contents-list">
-            {{ range sort $data.Pages "PublishDate" "desc" }}
+            {{ range sort .Data.Pages "PublishDate" "desc" }}
             <li class="content-list-item grayscale">
                 <a href="{{.Permalink}}" class="content-list-link">
-                    {{partial "list_image_bg.html" . }}
+                    {{with .Params.image }}
+                    <div class="content-list-image" style="background-image:url(/assets/images/thumbs/{{.}});"></div>
+                    {{else}}
+                    <div class="content-list-image" style="background-image:url(/assets/icons/{{ index .Params.categories 0 }}.svg);"></div>
+                    {{end}}
                     {{if ne .Section "singles"}}
                     {{partial "publish_date.html" . }}
                     {{end}}
@@ -19,7 +23,7 @@
                         {{else}}
                         <h3 class="list">{{.Title | markdownify}}</h3>
                         {{end}}
-                        <p class="list-description">{{ .Params.title_job }}</p>
+                        <p class="list-description">{{ .Description }}</p>
                         </header>
                     </section>
                 </a>

@@ -6,7 +6,7 @@ date: 2015-12-20
 modified: true
 original_date: 2015-06-25
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam culpa error accusamus ratione officiis."
-categories: content strategy
+categories: [content strategy]
 authors: Ryan Watters
 tags: [testing,chicago]
 image: chicago_bw.jpg

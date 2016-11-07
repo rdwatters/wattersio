@@ -6,10 +6,8 @@ modified: 'false'
 original_date: '2016-10-08T02:06:00+00:00'
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
   et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati.
-categories: essays
-tags:
-- photography
-- chicago
+categories: [essays]
+tags: [photography, chicago]
 image: selfie_photographer.jpg
 removefromsearch: ''
 removecomments: true

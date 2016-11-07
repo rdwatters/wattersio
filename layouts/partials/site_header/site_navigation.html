@@ -15,7 +15,8 @@
           {{if .Params.image }}
           <img src="/assets/images/thumbs/{{ .Params.image }}" alt="" class="grayscale">
           {{else if .Params.categories}}
-          <img src="/assets/icons/{{.Params.categories}}.svg" alt="Icon for the {{.Params.categories}} category." class="navigation-icon">
+          {{$firstCat := index (.Params.categories) 0}}
+          <img src="/assets/icons/{{$firstCat}}.svg" alt="Icon for the {{.Params.categories}} category." class="navigation-icon">
           {{end}}
           <section>
             <header>

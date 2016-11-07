@@ -8,9 +8,12 @@
                 {{if ne .Section "singles" }}
                     <div class="header-meta">
                     {{partial "publish_date" . }}
-                    {{with .Params.categories}}
-                    <span class="dot"></span>
-                    <span class="category"><a href="/categories/{{.|urlize}}">{{. |upper}}</a></span>
+                    {{if .Params.categories}}
+                        {{range .Params.categories}}
+                        {{$cat := . | urlize}}
+                        <span class="dot"></span>
+                        <span class="category"><a href="/categories/{{ $cat }}">{{ $cat }}</a></span>
+                        {{end}}
                     {{end}}
                     <span class="dot"></span>
                     <span class="reading-time">{{.ReadingTime}} min read</span>

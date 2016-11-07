@@ -6,8 +6,7 @@ modified: false
 original_date: '2016-08-03T00:00:00+00:00'
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
   et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati.
-categories:
-- development
+categories: [development]
 tags:
 - blocks
 - chicago

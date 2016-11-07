@@ -6,7 +6,7 @@ date: 2016-07-09
 modified: false
 original_date:
 description: "A few simple immediately invoked function expressions (IIFEs) to provide added flexibility to style your markdown without muddying you content with full-fledged HTML."
-categories: development
+categories: [development]
 authors: Ryan Watters
 tags: [testing,chicago]
 image:

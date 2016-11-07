@@ -22,7 +22,7 @@ source = ""
 staticdir = "static"
 title = "ryanwatters.io"
 uglyURLs = false
-verbose = true
+verbose = false
 verboseLog = false
 watch = true
 
