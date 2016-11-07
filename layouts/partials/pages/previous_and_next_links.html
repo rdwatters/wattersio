@@ -1,4 +1,4 @@
-{{ if and (eq .Site.Params.PostPrevNextStyle "sides") (ne .Section "singles")}}
+{{ if and (eq .Site.Params.postprevnextstyle "sides") (ne .Section "singles")}}
   {{with .PrevInSection }}
   <nav class="post-nav prev-post">
       <div class="link-wrapper prev">
@@ -30,7 +30,7 @@
   </nav>
   {{ end }}
 
-{{ else if and (eq .Site.Params.PostPrevNextStyle "bottom") (ne .Section "singles")}}
+{{ else if and (eq .Site.Params.postprevnextstyle "bottom") (ne .Section "singles")}}
 <footer class="post-footer">
   {{with .PrevInSection }}
       <a class="post-bottom-link prev" href="{{ .Permalink }}">

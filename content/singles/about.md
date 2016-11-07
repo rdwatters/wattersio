@@ -5,7 +5,7 @@ date: 2016-07-20
 modified: false
 tags: [about]
 categories: [development]
-image: site-logo.jpg
+image:
 original_date:
 description: Information about me, Ryan Watters. I'm flattered that you're interested in reading about my favorite subject to talk about.
 removefromsearch:

@@ -3,7 +3,7 @@
 <meta property="fb:pages" content="810571539011577" />
 {{ if or .IsHome .IsNode }}
 <meta property="og:type"   content="website" />
-<meta property="fb:app_id" content="{{.Site.Params.Facebook}}">
+<meta property="fb:app_id" content="{{.Site.Params.facebook}}">
 {{ end }}
 <!-- Article-namespace metadata for OGP -->
 {{if .IsPage }}
@@ -12,7 +12,7 @@
 		{{ if .Params.modified}}
 			<meta property="og:article:modified_time" content="{{.Params.original_date}}" />
 		{{ end }}
-	<meta property="og:article:author" content="{{.Site.Params.SiteAuthor}}" />
+	<meta property="og:article:author" content="{{.Site.Params.siteauthor}}" />
 	<meta property="og:article:section" content="{{.Section | title}}" />
 		{{ with .Params.tags }}
 			{{ range . }}
@@ -22,10 +22,10 @@
 {{ end }}
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
-<meta property="og:image" content="{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.DefaultSocialImage }}.jpg">
-<meta property="og:image:secure_url" content="{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.DefaultSocialImage }}.jpg"/>
+<meta property="og:image" content="{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.defaultsocialimage }}.jpg">
+<meta property="og:image:secure_url" content="{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.defaultsocialimage }}"/>
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="600" />
-<meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.SiteDescription }}{{ else if .IsPage }}{{ .Description }}{{ else if .IsNode }}{{ index .Site.Data.sectioninfo .Title }}{{ end }}"/>
+<meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.sitedescription }}{{ else if .IsPage }}{{ .Description }}{{ else if .IsNode }}{{ index .Site.Data.sectioninfo .Title }}{{ end }}"/>
 <meta property="og:site_name" content="{{ .Site.Title }}">

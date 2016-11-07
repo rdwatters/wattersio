@@ -3,7 +3,7 @@
 <main role="main" id="home">
     <header class="home-header">
         <div class="home-logo site-logo">{{ .Site.Title }}</div>
-        <div class="home-tagline">{{ .Site.Params.SiteTagline }}</div>
+        <div class="home-tagline">{{ .Site.Params.sitetagline }}</div>
     </header>
     <ul class="homepage-list">
         {{ range first 1 ((where .Site.Pages "Section" "posts").ByPublishDate.Reverse) }}

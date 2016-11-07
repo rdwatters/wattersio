@@ -13,7 +13,7 @@
 <!-- Set the language for Google Webmaster tools -->
 <link rel="alternate" href="{{.Site.BaseURL}}" hreflang="en-us" />
 {{$sectionTitle := .Title }}
-<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.SiteDescription }}{{ else if .IsPage }}{{ .Description }}{{ else if .IsNode }}{{ index .Site.Data.sectioninfo .Title }}{{ end }}">
+<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.sitedescription }}{{ else if .IsPage }}{{ .Description }}{{ else if .IsNode }}{{ index .Site.Data.sectioninfo .Title }}{{ end }}">
 <!-- Responsive meta tag -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Humans.txt loc -->

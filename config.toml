@@ -49,20 +49,20 @@ watch = true
   # Add your Google Analytics ID here (ie, UA-XXXXXXXX-X). See layouts/partials/site_footer/google_analytics.html. Dev environment (ie, localhost) and netlify urls are automatically disabled.
   GoogleAnalyticsTrackingId = "UA-76549364-1"
   #######END SOCIAL#######
-  CopyrightLine = "Ryan Watters"
-  SiteDescription = "The official site of Ryan Watters"
-  UseCRP = true
+  copyrightline = "Ryan Watters"
+  sitedescription = "The official site of Ryan Watters"
+  usecrp = true
   # Include jQuery 2.x from assets/js
-  IncludeJQ = false
+  includejq = false
   # Disqus has two conditions (here and in page); setting this to "false" will turn off comments on ALL pages
-  UseDisqus = true
-  disqusShortname = "ryanwattersio"
-  SitePublishDate = "2016-01-01"
-  SiteTagline = "Content Strategist, Storyteller, Frontend Developer, Unabashed Nerd"
+  usedisqus = true
+  disqusshortname = "ryanwattersio"
+  sitepublishdate = "2016-01-01"
+  sitetagline = "Content Strategist, Storyteller, Frontend Developer, Unabashed Nerd"
   #Leave off extension for default social image since it's assumed to be "jpg"
-  DefaultSocialImage = "site-logo-default-social"
+  defaultsocialimage = "site-logo-default-social.jpg"
   #Word used in Pub Date partial to denote whether a post has been updated
-  UpdatedText = "Updated:"
+  updatedtext = "Updated:"
   # Determines style of previous and next links in /posts; options are either "sides" or "bottom"
   PostPrevNextStyle = "bottom"
 

@@ -13,20 +13,20 @@
   "wordCount":{{.WordCount}},
   "image":{
   	"@type":"ImageObject",
-  	"url":"/assets/images/{{.Params.image | default .Site.Params.DefaultSocialImage }}",
+  	"url":"/assets/images/{{.Params.image | default .Site.Params.defaultsocialimage }}",
   	"height": 630,
   	"width": 1200
 	},
   "author":{
   	"@type":"person",
-  	"name":"{{.Site.Params.SiteAuthor}}"
+  	"name":"{{.Site.Params.siteauthor}}"
   },
   "publisher":{
   	"@type":"Organization",
-  	"name":"{{.Site.Params.SiteAuthor}}",
+  	"name":"{{.Site.Params.siteauthor}}",
   	"founder":{
   		"@type":"person",
-  		"name":"{{.Site.Params.SiteAuthor}}"
+  		"name":"{{.Site.Params.siteauthor}}"
   	},
   	"logo":{
   	"@type":"ImageObject",
