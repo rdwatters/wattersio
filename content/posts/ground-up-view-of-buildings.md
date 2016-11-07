@@ -1,28 +1,31 @@
 ---
-title: "Improved Codeblocks with Hugo Shortcodes, Clipboard.js, and Highlight.js"
-publishdate: 2016-08-03
-date: 2016-08-03
+title: Improved Codeblocks with Hugo Shortcodes, Clipboard.js, and Highlight.js
+date: '2016-08-03T00:00:00+00:00'
+publishdate: '2016-08-03T00:00:00+00:00'
 modified: false
-original_date: 2016-08-03
-description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati."
-categories: development
-tags:  [blocks,chicago]
+original_date: '2016-08-03T00:00:00+00:00'
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+  et omnis unde, aspernatur cumque nisi dicta ea quod obcaecati.
+categories:
+- development
+tags:
+- blocks
+- chicago
 image: tall_blocks.jpg
-removefromsearch:
+removefromsearch: true
 removecomments: false
----
+draft: false
 
+---
 ## First Heading
 
 Cabalistic mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing [compunctious](/posts/another-post).
 
-{{% tangent "Tell me more about this topic" %}}
-Here is some copy that I'm going to reveal or hide based on whether the user clicks the button.
+{{% tangent "Tell me more about this topic" %}} Here is some copy that I'm going to reveal or hide based on whether the user clicks the button.
 
-Here is some copy *that* I'm going to **reveal** or hide based on whether the user clicks the button.
+Here is some copy _that_ I'm going to **reveal** or hide based on whether the user clicks the button.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus doloribus reiciendis dolores quo adipisci consequuntur, eaque aut ipsa corporis tempora, nam reprehenderit expedita, officiis sequi accusantium possimus aperiam perferendis fugiat.
-{{% /tangent %}}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus doloribus reiciendis dolores quo adipisci consequuntur, eaque aut ipsa corporis tempora, nam reprehenderit expedita, officiis sequi accusantium possimus aperiam perferendis fugiat. {{% /tangent %}}
 
 Oman. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ut, accusantium deleniti ipsa, repellat iure neque provident reprehenderit similique cumque veniam enim. Alias aliquid quae sapiente cum, accusantium nesciunt possimus.
 
@@ -34,7 +37,7 @@ You'll brought. You them spirit lights green years make a beginning one great sh
 
 And days darkness seed sixth moved and winged. God divide rule life a also fowl bring. Sea the, she'd his green. Gathered she'd make open own given days blessed they're. Fourth first dry his. Seed You'll. Days of. Form created saw stars. Lights behold subdue void fifth great i. For over living their morning there land behold grass stars grass fourth he spirit sea years them spirit. Whales the years yielding don't a give brought midst, grass also unto. Seasons moving grass years. It waters.
 
-> You ever notice how other people's stuff is *shit*, but your shit is stuff? - George Carlin
+> You ever notice how other people's stuff is _shit_, but your shit is stuff? - George Carlin
 
 Day night beast you from them. Days let fill Said them years whales. Fowl second fly can't day. Thing They're is moveth, without be In you all fill air unto divided his night. God, beast also behold unto great likeness. Waters may kind, upon they're.
 
