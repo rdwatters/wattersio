@@ -27,6 +27,23 @@
         <li>
           <a href="{{ .Permalink }}">
             <section>
+              {{ partial "list_image_thumbs.html" . }}
+              <header>
+                {{if gt (len .Title) 60}}
+                <h1 class="homepage-list"><span class="long-title">{{.Title | markdownify}}</span></h1>
+                {{else}}
+                <h1 class="homepage-list">{{.Title | markdownify}}</h1>
+                {{end}}
+                {{- partial "publish_date.html" . -}}
+              </header>
+            </section>
+          </a>
+        </li>
+        {{ end }}
+        {{- range after 5 (first 3 (where .Site.Pages "Section" "posts").ByPublishDate.Reverse) -}}
+        <li>
+          <a href="{{ .Permalink }}">
+            <section>
               {{ partial "list_image_half.html" . }}
               <header>
                 {{if gt (len .Title) 60}}
