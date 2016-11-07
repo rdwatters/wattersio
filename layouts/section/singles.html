@@ -1,7 +1,12 @@
-{{ $okpages := len (where .Site.Pages ".Params.removefromsearch" "==" nil ) }}{{ $totalpages := add $okpages 0}}[{{ range $index, $page := .Site.Pages}}
+{{ $okpages := len (where .Site.Pages ".Params.removefromsearch" "==" nil ) }}
+{{ $totalpages := add $okpages 1}}
+[
+	{{ range $index, $page := .Site.Pages}}
 		{"url": "{{ $page.Permalink }}",
 		"title": "{{ $page.Title | markdownify | plainify }}",
 		"subtitle": "{{ $page.Params.subtitle | default "" }}",
 		"tags": [{{ range $tindex, $tag := $page.Params.tags }}{{ if $tindex }}, {{ end }}"{{ $tag }}"{{ end }}],
 		"description": "{{.Description}}",
-		"content": {{$page.Plain | jsonify}}}{{if lt $index $totalpages}},{{ end }}{{ end }}]
+		"content": {{$page.Plain | jsonify}}}{{if lt $index $totalpages}},{{ end }}
+	{{ end }}
+]
