@@ -23,7 +23,7 @@
           </a>
         </li>
         {{ end }}
-        {{- range after 1 (first 6 (where .Site.Pages "Section" "posts").ByPublishDate.Reverse) -}}
+        {{- range after 1 (first 4 (where .Site.Pages "Section" "posts").ByPublishDate.Reverse) -}}
         <li>
           <a href="{{ .Permalink }}">
             <section>
@@ -40,7 +40,7 @@
           </a>
         </li>
         {{ end }}
-        {{- range after 5 (first 3 (where .Site.Pages "Section" "posts").ByPublishDate.Reverse) -}}
+        {{- range after 4 (first 6 (where .Site.Pages "Section" "posts").ByPublishDate.Reverse) -}}
         <li>
           <a href="{{ .Permalink }}">
             <section>
