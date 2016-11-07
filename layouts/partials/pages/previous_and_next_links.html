@@ -22,7 +22,7 @@
           </a>
       </div>
       <div class="link-wrapper next">
-          <a href="{{ .Permalink }}" id="the-next-link" title="Read the next article, &quot;{{.Title}}&quot;, published in the {{.Params.categories | title}} category.">
+          <a href="{{ .Permalink }}" id="the-next-link" title="Read the next article, &quot;{{.Title}}&quot;, published in the {{ (index .Params.categories 0) | title}} category.">
               <h1 class="post-nav-title">{{.Title}}</h1>
               {{partial "publish_date.html" . }}
           </a>
@@ -34,7 +34,7 @@
 <footer class="post-footer">
   {{with .PrevInSection }}
       <a class="post-bottom-link prev" href="{{ .Permalink }}">
-        <section class="bottom-link-section" style="background-image:url(/assets/{{if .Params.image}}images/half/{{ .Params.image }}{{else if .Params.categories}}icons/{{.Params.categories}}.svg{{end}});">
+        <section class="bottom-link-section" style="background-image:url(/assets/{{if .Params.image}}images/half/{{ .Params.image }}{{else if .Params.categories}}icons/{{index .Params.categories 0}}.svg{{end}});">
           <div class="bottom-link-info">
               <h4 class="bottom-button prev-button"><span class="prev-arrow">&larr;</span> PREV</h4>
               {{if gt (len .Title) 60}}
@@ -49,7 +49,7 @@
   {{ end }}
   {{ with .NextInSection }}
         <a class="post-bottom-link next" href="{{ .Permalink }}">
-        <section class="bottom-link-section" style="background-image:url(/assets/{{if .Params.image}}images/half/{{ .Params.image }}{{else if .Params.categories}}icons/{{.Params.categories}}.svg{{end}});">
+        <section class="bottom-link-section" style="background-image:url(/assets/{{if .Params.image}}images/half/{{ .Params.image }}{{else if .Params.categories}}icons/{{index .Params.categories 0}}.svg{{end}});">
           <div class="bottom-link-info">
               <h4 class="bottom-button next-button">Next <span class="next-arrow">&rarr;</span></h4>
               {{if gt (len .Title) 60}}
