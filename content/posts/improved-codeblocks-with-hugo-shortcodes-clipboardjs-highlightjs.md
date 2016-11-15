@@ -14,7 +14,6 @@ image: tall_blocks.jpg
 removefromsearch: true
 removecomments: false
 draft: false
-
 ---
 ## First Heading
 
