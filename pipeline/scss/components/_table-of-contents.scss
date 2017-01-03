@@ -121,6 +121,9 @@ div.toc-contents {
     width: 180px;
     opacity: 0;
     z-index: -1;
+    &.posts-archive {
+      z-index:99;
+    }
     &.fadeIn {
       transition: all .3s ease-in-out;
       opacity: 1;
