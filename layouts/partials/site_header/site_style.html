@@ -4,7 +4,7 @@
 {{ print (partial "site_header/style-embed.html" .) | safeCSS }}
 </style>
 {{ else }}
-<link rel="stylesheet" href="/assets/css/style.min.css">
+<link rel="stylesheet" href="{{.Site.BaseURL}}/assets/css/style.min.css">
 {{ end }}
 {{ "<!--[if lte IE 9]>" | safeHTML }}
       <link rel="stylesheet" type="text/css" href="/assets/css/ie9.css">
