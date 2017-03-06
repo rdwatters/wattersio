@@ -65,7 +65,7 @@ gulp.task("image-resize", () => {
 gulp.task('scripts', function(cb) {
   pump([
       // gulp.src(['js/polyfills.js', 'js/utils.js', 'js/_velocity.min.js','js/_velocity.ui.min.js', 'js/scripts/*.js']),
-      gulp.src(['js/scripts/*.js']),
+      gulp.src(['js/_lunr.js', 'js/scripts/*.js']),
       // sourcemaps.init(),
       babel({
         presets: ['es2015']
