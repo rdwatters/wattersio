@@ -13,7 +13,7 @@
   "wordCount":{{.WordCount}},
   "image":{
   	"@type":"ImageObject",
-  	"url":"/assets/images/{{.Params.image | default .Site.Params.defaultsocialimage }}",
+  	"url":"{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.defaultsocialimage }}",
   	"height": 630,
   	"width": 1200
 	},
@@ -30,7 +30,7 @@
   	},
   	"logo":{
   	"@type":"ImageObject",
-  	"url":"/assets/images/ryanwattersio-social.jpg"
+  	"url":"{{.Site.BaseURL}}/assets/images/ryanwattersio-social.jpg"
   	}
   }
 }

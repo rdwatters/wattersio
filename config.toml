@@ -32,6 +32,7 @@ watch = true
 [params]
 	siteauthor = "Ryan Watters"
   sitetitle = "ryanwatters.io"
+  siteurl = "https://ryanwatters.io"
 
   #######BEGIN SOCIAL#######
 	github = "https://github.com/rdwatters"

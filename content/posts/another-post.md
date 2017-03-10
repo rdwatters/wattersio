@@ -1,10 +1,11 @@
 ---
 title: Another Post
 subtitle: This is the newest subtitle
-publishdate: 2015-12-20
+publishdate: 2017-03-01
 date: 2015-12-20
 modified: true
 original_date: 2015-06-25
+lastmod: 2017-03-01
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam culpa error accusamus ratione officiis."
 categories: [content strategy]
 authors: Ryan Watters
