@@ -1,20 +1,24 @@
 ---
-title: new title
+title: Another New Title
 subtitle: This is the newest subtitle
-publishdate: 2017-03-01
-date: 2015-12-20
+publishdate: '2017-03-01'
+date: '2015-12-20T00:00:00Z'
 modified: true
-original_date: 2015-06-25
-lastmod: 2017-03-01
-description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam culpa error accusamus ratione officiis."
-categories: [content strategy]
+original_date: '2015-06-25'
+lastmod: '2017-03-01'
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam culpa
+  error accusamus ratione officiis.
+categories:
+- content strategy
 authors: Ryan Watters
-tags: [testing,chicago]
+tags:
+- testing
+- chicago
 image: chicago_bw.jpg
-removefromsearch:
+removefromsearch: ''
 removecomments: false
----
 
+---
 ## Article Heading in Body Copy
 
 Guidonian intergrade subscription unclimbable baw clamantly refoundation nurly symptomatical stechados lyingly unconversably furl semiglobular somnolize Nepal decaspermal footstone torchless creeperless regardant principiant bejuggle Arkite. Rebankrupt inochondroma overcomable contents inflict drill gynecocracy parachromophoric vang Tanitic archprelate stragulum xenarthral puncheon leprosery coenobic vanadyl choreic reassistance adhesional leitneriaceous neurocele frothing gelatinizer.
