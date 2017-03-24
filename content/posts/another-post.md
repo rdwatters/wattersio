@@ -1,5 +1,5 @@
 ---
-title: Another Post
+title: new title
 subtitle: This is the newest subtitle
 publishdate: 2017-03-01
 date: 2015-12-20
