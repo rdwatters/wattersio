@@ -1,0 +1,15 @@
+{{ partial "site_header.html" . }}
+    <main role="main" class="list-page">
+    {{$data := .Data}}
+        <header>
+            <h1 class="list-page-title">All {{$data.Plural}}</h1>
+        </header>
+        <ul class="contents-list">
+	    		{{ range $key,$value := .Data.Terms.Alphabetical }}
+	    		<li class="site-tag">
+					<a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ replace $value.Name "-" " " | upper}} | ({{ $value.Count }})</a>
+					</li>
+	    		{{ end }}
+	  		</ul>
+		</main>
+{{ partial "site_footer.html" . }}

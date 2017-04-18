@@ -1,0 +1,44 @@
+{{ partial "site_header.html" . }}
+{{$burl := .Site.BaseURL}}
+<main role="main" class="article">
+    <a href="" id="page-top" class=""></a>
+    <article class="{{.Section}}">
+        <header{{with .Params.image}} class="hero" style="background-image:url(/assets/images/{{.}})"{{else}} class="hero single-page"{{end}}>
+            <div class="header-content">
+                {{if ne .Section "singles" }}
+                    <div class="header-meta">
+                    {{partial "publish_date" . }}
+                    {{if .Params.categories}}
+                        {{range .Params.categories}}
+                        {{$cat := . | urlize}}
+                        <span class="dot"></span>
+                        <span class="category"><a href="/categories/{{ $cat }}">{{ $cat }}</a></span>
+                        {{end}}
+                    {{end}}
+                    <span class="dot"></span>
+                    <span class="reading-time">{{.ReadingTime}} min read</span>
+                    </div>
+                {{end}}
+                <h1{{if not .Params.image}} class="no-image"{{end}}>{{if gt (len .Title) 60}}<span class="long-title">{{- .Title | markdownify -}}</span>{{else}}{{- replace (.Title | markdownify) "Resume" "Résumé" -}}{{end}}</h1>
+                <div class="hr-wrapper">
+                    <hr>
+                </div>
+                {{ if and (eq .Section "posts") (.Params.tags) }}
+                <div class="article-tags-wrapper">
+                    <ul class="article-tags">
+                        {{range .Params.tags }}
+                        <li><a href="/tags/{{.|urlize}}">{{.|upper}}</a></li>
+                        {{end}}
+                    </ul>
+                </div>
+                {{end}}
+            </div>
+        </header>
+        <div class="body-copy">
+        {{.Content}}
+        </div>
+    </article>
+    {{ partial "disqus_comments.html" . }}
+    {{ partial "pages/previous_and_next_links.html" . }}
+</main>
+{{ partial "site_footer.html" . }}

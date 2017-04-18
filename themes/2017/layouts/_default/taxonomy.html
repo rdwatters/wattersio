@@ -1,0 +1,35 @@
+{{ partial "site_header.html" . }}
+    <main role="main" class="list-page">
+    {{$data := .Data}}
+        <header>
+            <h1 class="list-page-title"><a href="/{{$data.Plural}}">{{$data.Plural}}</a>: {{ .Title }}</h1>
+        </header>
+        <ul class="contents-list">
+            {{ range sort .Data.Pages "PublishDate" "desc" }}
+            <li class="content-list-item grayscale">
+                <a href="{{.Permalink}}" class="content-list-link">
+                    {{with .Params.image }}
+                    <div class="content-list-image" style="background-image:url(/assets/images/thumbs/{{.}});"></div>
+                    {{else}}
+                    <div class="content-list-image" style="background-image:url(/assets/icons/{{ index .Params.categories 0 }}.svg);"></div>
+                    {{end}}
+                    {{if ne .Section "singles"}}
+                    {{partial "publish_date.html" . }}
+                    {{end}}
+                    <section>
+                        <header>
+                        {{if gt (len .Title) 60}}
+                        <h3 class="list"><span class="long-title">{{.Title | markdownify}}</span></h3>
+                        {{else}}
+                        <h3 class="list">{{.Title | markdownify}}</h3>
+                        {{end}}
+                        <p class="list-description">{{ .Description }}</p>
+                        </header>
+                    </section>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </main>
+{{ partial "site_footer.html" . }}
+

@@ -20,6 +20,7 @@ pygmentsUseClasses = true
 relativeURLs = true
 source = ""
 staticdir = "static"
+theme = "2016"
 title = "ryanwatters.io"
 uglyURLs = false
 verbose = false

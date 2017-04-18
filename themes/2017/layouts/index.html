@@ -1,0 +1,65 @@
+<!-- Note: global_head includes up to and including the opening <body> tag. -->
+{{ partial "site_header.html" . }}
+<main role="main" id="home">
+    <header class="home-header">
+        <div class="home-logo site-logo">{{ .Site.Title }}</div>
+        <div class="home-tagline">{{ .Site.Params.sitetagline }}</div>
+    </header>
+    <ul class="homepage-list">
+        {{ range first 1 ((where .Site.Pages "Section" "posts").ByPublishDate.Reverse) }}
+        <li>
+          <a href="{{ .Permalink }}">
+            <section>
+            {{ partial "list_image_full.html" . }}
+                <header>
+                  {{if gt (len .Title) 60}}
+                  <h1 class="homepage-list"><span class="long-title">{{.Title | markdownify}}</span></h1>
+                  {{else}}
+                  <h1 class="homepage-list">{{.Title | markdownify}}</h1>
+                  {{end}}
+                  {{partial "publish_date.html" . }}
+                </header>
+            </section>
+          </a>
+        </li>
+        {{ end }}
+        {{- range after 1 (first 4 (where .Site.Pages "Section" "posts").ByPublishDate.Reverse) -}}
+        <li>
+          <a href="{{ .Permalink }}">
+            <section>
+              {{ partial "list_image_thumbs.html" . }}
+              <header>
+                {{if gt (len .Title) 60}}
+                <h1 class="homepage-list"><span class="long-title">{{.Title | markdownify}}</span></h1>
+                {{else}}
+                <h1 class="homepage-list">{{.Title | markdownify}}</h1>
+                {{end}}
+                {{- partial "publish_date.html" . -}}
+              </header>
+            </section>
+          </a>
+        </li>
+        {{ end }}
+        {{- range after 4 (first 6 (where .Site.Pages "Section" "posts").ByPublishDate.Reverse) -}}
+        <li>
+          <a href="{{ .Permalink }}">
+            <section>
+              {{ partial "list_image_half.html" . }}
+              <header>
+                {{if gt (len .Title) 60}}
+                <h1 class="homepage-list"><span class="long-title">{{.Title | markdownify}}</span></h1>
+                {{else}}
+                <h1 class="homepage-list">{{.Title | markdownify}}</h1>
+                {{end}}
+                {{- partial "publish_date.html" . -}}
+              </header>
+            </section>
+          </a>
+        </li>
+        {{ end }}
+    </ul>
+    <a href="/posts" role="button" class="all-posts homepage">See all posts...</a>
+
+</main>
+{{ partial "social_share" . }}
+{{ partial "site_footer.html" . }}
