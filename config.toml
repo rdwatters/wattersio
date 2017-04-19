@@ -1,12 +1,11 @@
 # Only one archetype (posts) is included in Hugo Starter
 archetypedir = "archetypes"
-baseurl = "https://ryanwatters.io"
+baseurl = "https://watters.io.netlify.com"
 buildDrafts = false
 buildFuture = false
 canonifyurls = true
 config = "config.toml"
 contentdir = "content"
-disableLiveReload= false
 disableRSS = false
 disableSitemap = false
 ignoreFiles = []
