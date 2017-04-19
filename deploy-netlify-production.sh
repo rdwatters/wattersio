@@ -3,8 +3,6 @@
 # Assign pwd to curdir variable
 curdir=$(pwd)
 TODAY=$(date)
-git checkout master
-git merge dev
 
 echo "Production Deployment: $TODAY" >> deploy.txt
 # Add changes to git and push to remote origin master

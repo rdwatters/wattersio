@@ -2,7 +2,7 @@
 {{ $totalpages := add $okpages 1}}
 [
 	{{ range $index, $page := .Site.Pages}}
-		{"url": "{{ $page.Permalink }}",
+		{"url": "{{ $page.URL }}",
 		"title": "{{ $page.Title | markdownify | plainify }}",
 		"subtitle": "{{ $page.Params.subtitle | default "" }}",
 		"tags": [{{ range $tindex, $tag := $page.Params.tags }}{{ if $tindex }}, {{ end }}"{{ $tag }}"{{ end }}],

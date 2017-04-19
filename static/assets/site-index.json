@@ -1,7 +1,7 @@
 [
 
     {
-        "url": "https://watters.io/posts/improved-codeblocks-with-hugo-shortcodes-clipboardjs-highlightjs/",
+        "url": "/posts/improved-codeblocks-with-hugo-shortcodes-clipboardjs-highlightjs/",
         "title": "Improved Codeblocks with Hugo Shortcodes, Clipboard.js, and Highlight.js",
         "subtitle": "",
         "tags": ["blocks", "chicago"],
@@ -10,7 +10,7 @@
     },
 
     {
-        "url": "https://watters.io/about-me/",
+        "url": "/about-me/",
         "title": "About Me",
         "subtitle": "",
         "tags": ["about"],
@@ -19,7 +19,7 @@
     },
 
     {
-        "url": "https://watters.io/posts/site-in-development/",
+        "url": "/posts/site-in-development/",
         "title": "Site Still in Dev",
         "subtitle": "",
         "tags": ["chicago"],
@@ -28,7 +28,7 @@
     },
 
     {
-        "url": "https://watters.io/posts/markdown-extensions-in-javascript/",
+        "url": "/posts/markdown-extensions-in-javascript/",
         "title": "JavaScript Markdown Extensions",
         "subtitle": "",
         "tags": ["testing", "chicago"],
@@ -37,7 +37,7 @@
     },
 
     {
-        "url": "https://watters.io/posts/riding-the-el-in-chicago/",
+        "url": "/posts/riding-the-el-in-chicago/",
         "title": "Riding the El in Chicago",
         "subtitle": "",
         "tags": ["macbook", "gadgets", "chicago"],
@@ -46,7 +46,7 @@
     },
 
     {
-        "url": "https://watters.io/posts/test-article-page/",
+        "url": "/posts/test-article-page/",
         "title": "Test Article Page",
         "subtitle": "",
         "tags": ["fall", "halloween", "pumpkins", "chicago"],
@@ -55,7 +55,7 @@
     },
 
     {
-        "url": "https://watters.io/colophon/",
+        "url": "/colophon/",
         "title": "Colophon",
         "subtitle": "",
         "tags": ["colophon", "style"],
@@ -64,7 +64,7 @@
     },
 
     {
-        "url": "https://watters.io/posts/photography-at-its-finest/",
+        "url": "/posts/photography-at-its-finest/",
         "title": "Photography at its Finest",
         "subtitle": "",
         "tags": ["photography", "chicago"],
@@ -73,7 +73,7 @@
     },
 
     {
-        "url": "https://watters.io/posts/another-post/",
+        "url": "/posts/another-post/",
         "title": "Another New Title",
         "subtitle": "This is the newest subtitle",
         "tags": ["testing", "chicago"],
@@ -82,7 +82,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/about/",
+        "url": "/tags/about/",
         "title": "About",
         "subtitle": "",
         "tags": [],
@@ -91,7 +91,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/blocks/",
+        "url": "/tags/blocks/",
         "title": "Blocks",
         "subtitle": "",
         "tags": [],
@@ -100,7 +100,7 @@
     },
 
     {
-        "url": "https://watters.io/categories/",
+        "url": "/categories/",
         "title": "Categories",
         "subtitle": "",
         "tags": [],
@@ -109,7 +109,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/chicago/",
+        "url": "/tags/chicago/",
         "title": "Chicago",
         "subtitle": "",
         "tags": [],
@@ -118,7 +118,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/colophon/",
+        "url": "/tags/colophon/",
         "title": "Colophon",
         "subtitle": "",
         "tags": [],
@@ -127,7 +127,7 @@
     },
 
     {
-        "url": "https://watters.io/categories/content-strategy/",
+        "url": "/categories/content-strategy/",
         "title": "Content Strategy",
         "subtitle": "",
         "tags": [],
@@ -136,7 +136,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/contract/",
+        "url": "/tags/contract/",
         "title": "Contract",
         "subtitle": "",
         "tags": [],
@@ -145,7 +145,7 @@
     },
 
     {
-        "url": "https://watters.io/categories/development/",
+        "url": "/categories/development/",
         "title": "Development",
         "subtitle": "",
         "tags": [],
@@ -154,7 +154,7 @@
     },
 
     {
-        "url": "https://watters.io/categories/essays/",
+        "url": "/categories/essays/",
         "title": "Essays",
         "subtitle": "",
         "tags": [],
@@ -163,7 +163,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/fall/",
+        "url": "/tags/fall/",
         "title": "Fall",
         "subtitle": "",
         "tags": [],
@@ -172,7 +172,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/gadgets/",
+        "url": "/tags/gadgets/",
         "title": "Gadgets",
         "subtitle": "",
         "tags": [],
@@ -181,7 +181,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/halloween/",
+        "url": "/tags/halloween/",
         "title": "Halloween",
         "subtitle": "",
         "tags": [],
@@ -190,7 +190,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/macbook/",
+        "url": "/tags/macbook/",
         "title": "Macbook",
         "subtitle": "",
         "tags": [],
@@ -199,7 +199,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/photography/",
+        "url": "/tags/photography/",
         "title": "Photography",
         "subtitle": "",
         "tags": [],
@@ -208,7 +208,7 @@
     },
 
     {
-        "url": "https://watters.io/posts/",
+        "url": "/posts/",
         "title": "Posts",
         "subtitle": "",
         "tags": [],
@@ -217,7 +217,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/professional/",
+        "url": "/tags/professional/",
         "title": "Professional",
         "subtitle": "",
         "tags": [],
@@ -226,7 +226,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/pumpkins/",
+        "url": "/tags/pumpkins/",
         "title": "Pumpkins",
         "subtitle": "",
         "tags": [],
@@ -235,7 +235,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/resume/",
+        "url": "/tags/resume/",
         "title": "Resume",
         "subtitle": "",
         "tags": [],
@@ -244,7 +244,7 @@
     },
 
     {
-        "url": "https://watters.io/resume/",
+        "url": "/resume/",
         "title": "Resume",
         "subtitle": "",
         "tags": ["resume", "professional", "contract"],
@@ -253,7 +253,7 @@
     },
 
     {
-        "url": "https://watters.io/",
+        "url": "/",
         "title": "Ryan Watters",
         "subtitle": "",
         "tags": [],
@@ -262,7 +262,7 @@
     },
 
     {
-        "url": "https://watters.io/singles/",
+        "url": "/singles/",
         "title": "Singles",
         "subtitle": "",
         "tags": [],
@@ -271,7 +271,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/style/",
+        "url": "/tags/style/",
         "title": "Style",
         "subtitle": "",
         "tags": [],
@@ -280,7 +280,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/",
+        "url": "/tags/",
         "title": "Tags",
         "subtitle": "",
         "tags": [],
@@ -289,7 +289,7 @@
     },
 
     {
-        "url": "https://watters.io/tags/testing/",
+        "url": "/tags/testing/",
         "title": "Testing",
         "subtitle": "",
         "tags": [],
