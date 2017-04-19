@@ -1,6 +1,6 @@
 # Only one archetype (posts) is included in Hugo Starter
 archetypedir = "archetypes"
-baseurl = "https://ryanwatters.io"
+baseurl = "https://watters.io"
 buildDrafts = false
 buildFuture = false
 canonifyurls = true
@@ -20,7 +20,7 @@ pygmentsUseClasses = true
 relativeURLs = true
 source = ""
 staticdir = "static"
-title = "ryanwatters.io"
+title = "Ryan Watters"
 uglyURLs = false
 verbose = false
 verboseLog = false
