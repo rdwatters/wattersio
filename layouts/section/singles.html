@@ -1,7 +1,7 @@
-{{ $okpages := len (where .Site.Pages ".Params.removefromsearch" "==" nil ) }}
-{{ $totalpages := add $okpages 1}}
+{{- $okpages := where .Site.RegularPages ".Params.removefromsearch" "==" nil -}}
+{{- $totalpages := sub (len $okpages) 1 -}}
 [
-	{{ range $index, $page := .Site.Pages}}
+	{{ range $index, $page := $okpages}}
 		{"url": "{{ $page.URL }}",
 		"title": "{{ $page.Title | markdownify | plainify }}",
 		"subtitle": "{{ $page.Params.subtitle | default "" }}",

@@ -6,6 +6,3 @@ TODAY=$(date)
 # Build Hugo.
 hugo
 cp ${curdir}/public/singles/index.html ${curdir}/static/assets/site-index.json
-rm -rf public
-open -a Google\ Chrome.app http://localhost:1313;
-hugo serve
