@@ -48,14 +48,6 @@ Production Deployment: Thu Aug 11 03:04:55 CDT 2016
 Production Deployment: Thu Aug 11 09:00:40 CDT 2016
 Production Deployment: Thu Aug 11 09:22:28 CDT 2016
 Production Deployment: Thu Aug 11 10:24:31 CDT 2016
-<<<<<<< HEAD
-Production Deployment: Thu Aug 11 16:17:08 CDT 2016
-Production Deployment: Fri Aug 12 13:10:10 EDT 2016
-Production Deployment: Fri Aug 12 13:14:25 EDT 2016
-=======
-Production Deployment: Sat Aug 13 14:08:12 EDT 2016
-Production Deployment: Sat Aug 13 14:15:08 EDT 2016
->>>>>>> dev
 Production Deployment: Sat Aug 13 14:17:24 EDT 2016
 Production Deployment: Mon Aug 15 17:07:19 CDT 2016
 Production Deployment: Mon Aug 15 17:25:29 CDT 2016
