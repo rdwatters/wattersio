@@ -16,8 +16,10 @@ tags:
 image: chicago_bw.jpg
 removefromsearch: ''
 removecomments: false
-
 ---
+
+**All content on this site is currently being used for testing and development. For my resúmé, please visit [/resume](/resume).**
+
 ## Article Heading in Body Copy
 
 Guidonian intergrade subscription unclimbable baw clamantly refoundation nurly symptomatical stechados lyingly unconversably furl semiglobular somnolize Nepal decaspermal footstone torchless creeperless regardant principiant bejuggle Arkite. Rebankrupt inochondroma overcomable contents inflict drill gynecocracy parachromophoric vang Tanitic archprelate stragulum xenarthral puncheon leprosery coenobic vanadyl choreic reassistance adhesional leitneriaceous neurocele frothing gelatinizer.

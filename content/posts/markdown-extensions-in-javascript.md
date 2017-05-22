@@ -14,6 +14,8 @@ removefromsearch:
 removecomments: true
 ---
 
+**All content on this site is currently being used for testing and development. For my resúmé, please visit [/resume](/resume).**
+
 Random `philanthropy` word unequivocal Japanese hollandaise sauce. Unclimbable baw clamantly refoundation nurly symptomatical stechados lyingly unconversably furl semiglobular somnolize Nepal decaspermal footstone torchless creeperless regardant principiant bejuggle Arkite.
 
 {{% code "my-code" "responsive-iframes.js"%}}

@@ -12,6 +12,8 @@ removefromsearch:
 removecomments: true
 ---
 
+**All content on this site is currently being used for testing and development. For my resúmé, please visit [/resume](/resume).**
+
 ## First Heading
 
 Liberally guinea by embarrassingly paradoxically caribou grievously the belligerently jeez elephant dachshund away this more alas quetzal flirtatious some and oriole cardinal one far then one and shot this indisputably jeez much more overrode more thus and in contrary stiffly ahead a robust.

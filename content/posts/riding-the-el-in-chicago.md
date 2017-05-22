@@ -12,6 +12,8 @@ removefromsearch:
 removecomments: false
 ---
 
+**All content on this site is currently being used for testing and development. For my resúmé, please visit [/resume](/resume).**
+
 Testing testing testing mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing [compunctious](/posts/my-kind-of-town).
 
 {{< figure src="/assets/images/book-on-lap.jpg" title="Reading a book on my lap." class="left">}}

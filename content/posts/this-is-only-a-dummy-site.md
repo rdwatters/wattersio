@@ -16,7 +16,7 @@ removecomments: false
 draft: false
 ---
 
-All content on this site is currently being used for testing and development. For my resúmé, please visit [/resume](/resume).
+**All content on this site is currently being used for testing and development. For my resúmé, please visit [/resume](/resume).**
 
 ## First Heading
 

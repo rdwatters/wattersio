@@ -14,6 +14,10 @@ removefromsearch:
 removecomments: false
 ---
 
+**All content on this site is currently being used for testing and development. For my resúmé, please visit [/resume](/resume).**
+
+All content on this site is currently being used for testing and development. For my resúmé, please visit [/resume](/resume).
+
 ## First Heading
 
 Cabalistic mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing compunctious.

@@ -17,6 +17,9 @@ removefromsearch: ''
 removecomments: true
 
 ---
+
+**All content on this site is currently being used for testing and development. For my resúmé, please visit [/resume](/resume).**
+
 ## In Development
 
 Testing a [relative link](/posts/test-article-page).
