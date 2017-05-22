@@ -24,16 +24,16 @@ Experienced web professional with a deep understanding of content strategy, cont
 
 * Develop content calendars, new editorial processes, and new enterprise-wide taxonomies and metadata
 * Manage new GSA upgrade
-* Create content models and CMS strategy for upcoming re-platforming project
+* Create content models and CMS strategy for upcoming re-platforming project from Oracle to Craft CMS.
 * Ghostwriting and developmental editing for subset of highly engaged members
 * Educational presentations to CAP Leadership on web writing best practices, SEO fundamentals, and analytics
 * Lead professional development workshops for the Digital Strategy and Marketing teams on CMS best practices, front-end development, and SEO
 
 #### Accomplishments
 
-* Defined the first editorial mission for CAP member content
-* Designed new editorial process and content strategy for CAP's flagship website
-* Sole developer, writer, designer, and editor for the organization's first web-based writer's guide and Digital Strategy Blog
+* Defined the first editorial mission for CAP member content, as well as the first comprehensive content strategy document for cap.org
+* Designed new editorial process and peer review for member-generated content
+* Sole developer, writer, designer, and editor for the organization's first web-based writer's guide and Digital Strategy Blog; currently living at <http://digital.cap.org> (internal network only)
 
 <h3 class="experience-title">Senior Medical Editor <span class="work-experience-time">Jun 2015 &ndash; Dec 2015</span></h3>
 
@@ -131,7 +131,7 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 
 ### Software & Content Management Systems
 
-* **Content Management Systems:** SharePoint 2010, SharePoint 2013 (including SharePoint Designer), WordPress, [Webhook][], [Ghost][], [Craft][]
+* **Content Management Systems:** SharePoint 2010, SharePoint 2013 (including SharePoint Designer), WordPress, [Webhook][], [Ghost][], [Craft][], and most [static site generators][]
 * **Office and Productivity Software:** Office 2013 (including Visio & Access), Google Drive, iWork Suite, OmniGraffle, OmniPlanner
 * **Collaboration:** Slack, Gitter
 
@@ -145,24 +145,24 @@ My love of front-end development is a reflection and outgrowth of my expertise i
     <i class="icon-email"></i>References and samples available upon request.
 </a>
 
-[About page]: /about
-[Algolia]: https://www.algolia.com
-[BELS]: http://www.bels.org/
-[Craft]: https://craftcms.com/
-[DCMI]: http://dublincore.org/
-[Ember.js]: http://emberjs.com/
-[Ghost]: https://ghost.org/
-[GitHub]: https://www.github.com/rdwatters
-[Graham School, University of Chicago]: https://grahamschool.uchicago.edu/
-[lunr.js]: http://lunrjs.com/
-[MeSH]: https://www.nlm.nih.gov/mesh/
-[Open Graph Protocol]: http://ogp.me/
-[Ooyala]: http://www.ooyala.com/
-[Pandoc]: http://pandoc.org/
-[Precision for Value]: http://www.precisionforvalue.com/
-[Schema.org]: http://schema.org/
-[shortlist of tools]: /about#site-development
-[Swiftype]: https://swiftype.com/
-[Twitter]: https://dev.twitter.com/cards/markup
-[Webhook]: http://www.webhook.com/
-[Zapier]: https://zapier.com/
+[About page]: /about "Visit the page to learn a bit more about me."
+[Algolia]: https://www.algolia.com "Visit the site for Algolia, a real-time search service for websites and web applications."
+[BELS]: http://www.bels.org/ "Visit the official website of the Board of Editors in the Life Sciences"
+[Craft]: https://craftcms.com/ "See the website for Craft, a CMS built on the PHP Yii2 Framework"
+[DCMI]: http://dublincore.org/ "Visit the site for the Dublin Core Metadata Initiative"
+[Ghost]: https://ghost.org/ "Visit the site for Ghost, a fast blog-centric content management system"
+[GitHub]: https://www.github.com/rdwatters "Go to the GitHub profile for me, rdwatters, to see more about the projects I'm involved in with the open-source community."
+[Graham School, University of Chicago]: https://grahamschool.uchicago.edu/ "Visit the site for University of Chicago's Graham School of Continuing Liberal and Professional Studies"
+[lunr.js]: http://lunrjs.com/ "Find our more about lunr.js, a fast, client-side full-text search engine written in JavaScript"
+[MeSH]: https://www.nlm.nih.gov/mesh/ "Find out more about MeSH, the NLM's curated medical vocabulary resource."
+[Open Graph Protocol]: http://ogp.me/ "Learn more about the Open Graph Protocol project, which enables any web page to become a rich object in a social graph."
+[Ooyala]: http://www.ooyala.com/ "Visit Ooyala's website to learn more about the video management system used by the American Academy of Pediatrics"
+[Pandoc]: http://pandoc.org/ "Learn more about Pandoc, a command-line application written in Haskel that converts nearly all document formats"
+[Precision for Value]: http://www.precisionforvalue.com/ "Visit the Precision for Value website"
+[Schema.org]: http://schema.org/ "Visit to learn more about Schema.org as a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond."
+[shortlist of tools]: /about#site-development "Go here to see the list of tools I used to build this website"
+[static site generators]: https://staticgen.com "StaticGen shows you a list of the most popular static site generators by GitHub stars"
+[Swiftype]: https://swiftype.com/ "Learn more about Swiftype's enterprise-grade instant search"
+[Twitter]: https://dev.twitter.com/cards/markup "The Twitter developer docs provide information to front-end developers interacting with Twitter's API."
+[Webhook]: http://www.webhook.com/ "Learn more about the Webhook CMS"
+[Zapier]: https://zapier.com/ "Learn more about Zapier, easy automation for busy people"

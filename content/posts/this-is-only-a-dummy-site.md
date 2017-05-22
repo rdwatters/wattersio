@@ -1,5 +1,5 @@
 ---
-title: Improved Codeblocks with Hugo Shortcodes, Clipboard.js, and Highlight.js
+title: This is a test site; see my resume at /resume
 date: '2016-08-03T00:00:00+00:00'
 publishdate: '2016-08-03T00:00:00+00:00'
 modified: false
@@ -15,6 +15,9 @@ removefromsearch: true
 removecomments: false
 draft: false
 ---
+
+All content on this site is currently being used for testing and development. For my resúmé, please visit [/resume](/resume).
+
 ## First Heading
 
 Cabalistic mediatorship pneumococcic condyloid dividedness humorsome astely balancer angiopoietic superplus flukily intechnicality mistreat crumble Ju catastrophically bedrench habitably serene Daren nicotia dimethylamine unrefusing [compunctious](/posts/another-post).

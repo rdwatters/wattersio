@@ -1,19 +1,18 @@
 ---
-title: Another New Title
+title: Here is my new title
 subtitle: This is the newest subtitle
-publishdate: '2017-03-01'
-date: '2015-12-20T00:00:00Z'
+publishdate: '2015-06-01'
+date: '2015-06-01'
 modified: true
-original_date: '2015-06-25'
-lastmod: '2017-03-01'
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam culpa
-  error accusamus ratione officiis.
+original_date: '2015-06-01'
+description: This is a really dumb description that I am just typing for demo purposes.
 categories:
 - content strategy
 authors: Ryan Watters
 tags:
 - testing
 - chicago
+- kristin
 image: chicago_bw.jpg
 removefromsearch: ''
 removecomments: false

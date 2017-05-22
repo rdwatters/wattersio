@@ -23,8 +23,8 @@ $body-bg-color: $white !default;
 $use-font-face-module:true;//required for first $font declaration
 $use-font-two: true;
 $use-font-three: true;
-$font: 'proximanova';
-$font-two: 'adelle';
+$font: 'merriweather';
+$font-two: 'Roboto Slab';
 $font-three: 'courierprime';
 $use-font-awesome: false;
 
@@ -33,7 +33,7 @@ $base-font-size:20px;
 $base-font-weight: 300;
 $base-font-weight-retina: 300;
 $base-font-family:$font,$helvetica;
-$heading-font-family:'adelle',$georgia;
+$heading-font-family:'Roboto Slab',$georgia;
 $heading-font-base-weight:100;
 $base-line-height:1.5;
 $heading-base-line-height:1.2;
