@@ -11,4 +11,5 @@ colors: ["#000000","#333333","#4d4d4d","#9a9a9a","#014A82","#b30000"]
 fontinems: 8
 categories: [development]
 tags: [colophon,style]
+draft: true
 ---

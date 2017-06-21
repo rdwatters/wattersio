@@ -10,6 +10,7 @@ original_date:
 description: Information about me, Ryan Watters. I'm flattered that you're interested in reading about my favorite subject to talk about.
 removefromsearch:
 aliases: [/about/]
+draft: true
 ---
 
 ## Me

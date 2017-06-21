@@ -1,6 +1,10 @@
 h3.experience-title {
+	display:flex;
+	padding:.25em 0em;
+	align-items:center;
 	border-bottom:3px solid $base-font-color;
 	border-top:3px solid $base-font-color;
+	font-size:1.2em;
 }
 
 span.work-experience-time {
@@ -9,4 +13,8 @@ span.work-experience-time {
 	width:100%;
 	text-align:right;
 	font-family:$base-font-family;
+}
+
+.employer {
+	font-size:.9em;
 }

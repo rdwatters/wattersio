@@ -29,8 +29,7 @@ aside.toc {
   }
   h4.toc-title {
     color: $toc-header-text-color;
-    font-weight: $heading-font-base-weight;
-    weight: 400;
+    font-weight: 400;
     margin-bottom: 0px;
     font-size: 1em;
     line-height: 1.2;
@@ -119,7 +118,7 @@ div.toc-contents {
     flex-direction: column;
     transform: none;
     width: 180px;
-    opacity: 0;
+    opacity: 1;
     z-index: -1;
     &.posts-archive {
       z-index:99;
@@ -133,7 +132,7 @@ div.toc-contents {
       font-size:.8em;
       a {
         color:$toc-header-text-color;
-        font-weight:100;
+        font-weight:400;
       }
     }
     div.toc-wrapper {
@@ -188,7 +187,7 @@ div.toc-contents {
 
 #toggle-toc {
   position: fixed;
-  background-color: $body-bg-color;
+  background-color: $toc-bg-color;
   bottom: 30px;
   left: 3%;
   line-height: 1.3em;
@@ -206,7 +205,7 @@ div.toc-contents {
   font-weight: bold;
   border-radius: $toc-toggle-button-border-radius;
   border: 1px solid $brand-primary;
-  opacity: 0;
+  opacity: 1;
   &.fadeIn {
     transition: all .3s ease-in-out;
     opacity: 1;

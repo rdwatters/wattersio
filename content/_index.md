@@ -1,5 +1,5 @@
 ---
-title: Ryan Watters Résumé
+title: Ryan Watters
 subtitle: Content strategist, storyteller, frontend developer, & unabashed nerd
 modified: false
 description: If you are looking to reach out for professional reasons, please take a look at my résumé.
@@ -16,7 +16,7 @@ Experienced web professional with a deep understanding of content strategy, cont
 
 ## Experience
 
-<h3 class="experience-title">Digital Content Manager <br><span class="work-experience-time">Dec 2015 &ndash; Present</span></h3>
+<h3 class="experience-title">Digital&nbsp;Content&nbsp;Manager <br><span class="work-experience-time">Dec 2015 &ndash; Present</span></h3>
 
 <div class="employer">College of American Pathologists, Digital Strategy Team</div>
 
@@ -35,7 +35,7 @@ Experienced web professional with a deep understanding of content strategy, cont
 * Designed new editorial process and peer review for member-generated content
 * Sole developer, writer, designer, and editor for the organization's first web-based writer's guide and Digital Strategy Blog; currently living at <http://digital.cap.org> (internal network only)
 
-<h3 class="experience-title">Senior Medical Editor <span class="work-experience-time">Jun 2015 &ndash; Dec 2015</span></h3>
+<h3 class="experience-title">Senior&nbsp;Medical&nbsp;Editor <span class="work-experience-time">Jun 2015 &ndash; Dec 2015</span></h3>
 
 <div class="employer">Precision for Value, Editorial &amp; Mixed Services</div>
 
@@ -50,7 +50,7 @@ Experienced web professional with a deep understanding of content strategy, cont
 * Updated more than 70 communication pieces with more than a week to spare within NDA period
 * Spearheaded project with IT and medical writers to develop a new reference management system and wiki-based style guide
 
-<h3 class="experience-title">Editor, AAP.org <span class="work-experience-time">Feb 2014 &ndash; Jun 2015</span></h3>
+<h3 class="experience-title">Editor,&nbsp;AAP.org <span class="work-experience-time">Feb 2014 &ndash; Jun 2015</span></h3>
 
 <div class="employer">American Academy of Pediatrics, Department of Marketing & Communications</div>
 
@@ -71,7 +71,7 @@ Experienced web professional with a deep understanding of content strategy, cont
 * Unified content calendars for AAP.org and HealthyChildren.org for better content strategy between the properties
 * Developed all front-end code for the [AAP's Literacy Toolkit](https://littoolkit.aap.org), a site introduced by Hillary Clinton during the AAP's National Conference & Exhibition
 
-<h3 class="experience-title">Managing Medical Copy Editor <span class="work-experience-time">Nov 2011 &ndash; Feb 2014</span></h3>
+<h3 class="experience-title">Managing&nbsp;Medical&nbsp;Copy&nbsp;Editor <span class="work-experience-time">Nov 2011 &ndash; Feb 2014</span></h3>
 
 <div class="employer">American Academy of Pediatrics, Scholarly Publishing</div>
 
@@ -89,7 +89,7 @@ Experienced web professional with a deep understanding of content strategy, cont
 * Spearheaded a SharePoint team site for the full line of digital subspecialty products, thus reducing post-peer-review lead time from 4 weeks to 48 hours
 * Developed division-wide, wiki-based style guide (addendum to AMA 10) on AAP's intranet
 
-<h3 class="experience-title">Contract Medical Copywriter <span class="work-experience-time">Jul 2008 &ndash; Present</span></h3>
+<h3 class="experience-title">Contract&nbsp;Medical&nbsp;Copywriter <span class="work-experience-time">Jul 2008 &ndash; Present</span></h3>
 
 #### Select Contract Work
 
@@ -102,7 +102,8 @@ Experienced web professional with a deep understanding of content strategy, cont
 
 * Entity relationship modeling
 * Content typing and content modeling
-* Taxonomy development
+* Taxonomy development and schema
+  * [DCMI][], [MeSH][], [Schema.org][], [Open Graph Protocol][], [Twitter][]
 * Writing workshops and writers guides
 
 ### Analytics, Data, and Search
@@ -112,21 +113,24 @@ Experienced web professional with a deep understanding of content strategy, cont
 * Google Tag Manager
 * Google Search Appliance
 * [Swiftype][], [Algolia][], [lunr.js][]
-* Schema: [DCMI][], [MeSH][], [Schema.org][], [Open Graph Protocol][], [Twitter][]
 
 ### Front-end Development
 
 My love of front-end development is a reflection and outgrowth of my expertise in HTML5 semantics and its relationship to SEO and web best practices. *I take a web-first approach to all content.*
 
+
+* Hugo
+  * I am currently [one of nine members of the official Hugo team][hugoteam]
 * HTML5 and CSS3
   * Preprocessors (SASS)
   * CSS frameworks (Bootstrap, Semantic UI)
   * Templating languages (Liquid, Golang, Swig, Twig, Handlebars)
 * JavaScript
-  * Build tools (Grunt, Gulp) and transpilers (Babel)
+  * Task runner (Grunt, Gulp) and transpilers (Babel)
+  * Module loaders (Browserify, Webpack)
   * jQuery
   * Node.js and NPM (basic proficiency)
-  * Currently studying [Ember.js][]
+  * Currently studying Angular and Vue.js
 * Static Site Generators
   * Jekyll, Hugo, Hexo
 * BASH, Applescript, and the Unix command line
@@ -134,7 +138,7 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 * Single Sourcing and Automation
   * [Pandoc][]
   * [Zapier][]
-* See the [shortlist of tools][] on this site's [About page] for applied examples
+<!-- * See the [shortlist of tools][] on this site's [About page] for applied examples -->
 
 ### Software & Content Management Systems
 
@@ -148,7 +152,7 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 * Board Certification as an Editor in the Life Sciences (ELS); [BELS][]
 * Certified Professional Medical Writer (CPMW); [Graham School, University of Chicago][]
 
-<a id="references-link" href="mailto:ryan@ryanwatters.io?subject=Ryan Watters resume request&body=I read your resume on ryanwatters.io and would like to request samples and references." title="Email me to request samples or references.">
+<a id="references-link" href="mailto:watters.ryan@gmail.com?subject=Ryan Watters resume request&body=I read your resume on 0watters.io and would like to request samples and references." title="Email me to request samples or references.">
     <i class="icon-email"></i>References and samples available upon request.
 </a>
 
@@ -160,6 +164,7 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 [Ghost]: https://ghost.org/ "Visit the site for Ghost, a fast blog-centric content management system"
 [GitHub]: https://www.github.com/rdwatters "Go to the GitHub profile for me, rdwatters, to see more about the projects I'm involved in with the open-source community."
 [Graham School, University of Chicago]: https://grahamschool.uchicago.edu/ "Visit the site for University of Chicago's Graham School of Continuing Liberal and Professional Studies"
+[hugoteam]: https://github.com/orgs/gohugoio/people
 [lunr.js]: http://lunrjs.com/ "Find our more about lunr.js, a fast, client-side full-text search engine written in JavaScript"
 [MeSH]: https://www.nlm.nih.gov/mesh/ "Find out more about MeSH, the NLM's curated medical vocabulary resource."
 [Open Graph Protocol]: http://ogp.me/ "Learn more about the Open Graph Protocol project, which enables any web page to become a rich object in a social graph."
