@@ -187,7 +187,7 @@ div.toc-contents {
 
 #toggle-toc {
   position: fixed;
-  background-color: $toc-bg-color;
+  background-color: $toc-toggle-button-bg-color;
   bottom: 30px;
   left: 3%;
   line-height: 1.3em;
@@ -245,7 +245,7 @@ span.ellipsis {
   vertical-align: middle;
   font-size: 1.8em;
   // color: white;
-  color: $brand-primary;
+  color: $toc-toggle-button-color-closed;
   @include MQ(L) {
     display: none;
   }
