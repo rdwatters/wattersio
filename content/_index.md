@@ -1,10 +1,10 @@
 ---
-title: "Resume"
-subtitle: Content strategist, storyteller, frontend developer, unabashed nerd
+title: Ryan Watters Résumé
+subtitle: Content strategist, storyteller, frontend developer, & unabashed nerd
 modified: false
 description: If you are looking to reach out for professional reasons, please take a look at my résumé.
 categories: []
-tags: [resume,professional,contract]
+tags: []
 categories: []
 removefromsearch:
 removecomments: true
@@ -97,6 +97,13 @@ Experienced web professional with a deep understanding of content strategy, cont
 * **Agentive Marketing, Belle Mead, NJ:** Developed three educational modules for sales representatives detailing the vascular anatomy of the breast and the anterior abdominal wall for LifeCell (Somerville, NJ)
 
 ## Skills
+
+### Content Strategy
+
+* Entity relationship modeling
+* Content typing and content modeling
+* Taxonomy development
+* Writing workshops and writers guides
 
 ### Analytics, Data, and Search
 

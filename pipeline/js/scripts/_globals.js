@@ -9,7 +9,7 @@ function getMobileOperatingSystem() {
 
     // Windows Phone must come first because its UA also contains "Android"
     if (/windows phone/i.test(userAgent)) {
-        return "Windows Phone";
+        return "WindowsPhone";
     }
 
     if (/android/i.test(userAgent)) {
