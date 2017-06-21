@@ -23,11 +23,11 @@ Experienced web professional with a deep understanding of content strategy, cont
 #### Responsibilities
 
 * Develop content calendars, new editorial processes, and new enterprise-wide taxonomies and metadata
-* Manage new GSA upgrade
-* Create content models and CMS strategy for upcoming re-platforming project from Oracle to Craft CMS.
+* Create content models, entity relationship models, and CMS strategy for upcoming re-platforming from Oracle to Craft CMS.
 * Ghostwriting and developmental editing for subset of highly engaged members
 * Educational presentations to CAP Leadership on web writing best practices, SEO fundamentals, and analytics
 * Lead professional development workshops for the Digital Strategy and Marketing teams on CMS best practices, front-end development, and SEO
+* Manage new GSA upgrade
 
 #### Accomplishments
 
