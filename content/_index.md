@@ -39,7 +39,7 @@ Experienced web professional with a deep understanding of content strategy, cont
 * Defined the first editorial mission for CAP member content, as well as the first comprehensive content strategy document for cap.org
 * Designed new editorial process and peer review for member-generated content
 * Sole developer, writer, designer, and editor for the organization's first web-based writer's guide and Digital Strategy Blog; currently living at digital.cap.org (internal network only). See a [sample of the Digital website](https://dst-temp.netlify.com/).
-* Created new governance, workflow, and content types for the CAP17 Annual website, as well as the upcoming Course Materials site. [See the beta version of the Course Materials site](http://course-materials.netlify.com/).
+* Created new governance, workflow, and content types for the CAP17 Course Materials site. Also acted the sole frontend developer on the project and trained the CAP frontend development team on the use of a git-based workflow.  [See the beta version of the Course Materials site](http://course-materials.netlify.com/).
 
 <h3 class="experience-title">Senior&nbsp;Medical&nbsp;Editor <span class="work-experience-time">Jun 2015 &ndash; Dec 2015</span></h3>
 
@@ -103,7 +103,7 @@ Experienced web professional with a deep understanding of content strategy, cont
 * **Agentive Marketing, Belle Mead, NJ:** Developed three educational modules for sales representatives detailing the vascular anatomy of the breast and the anterior abdominal wall for LifeCell (Somerville, NJ)
 
 <h3 class="experience-title">English&nbsp;Teacher<span class="work-experience-time">Sep 2006 &ndash; Jul 2008</span></h3>
-<div class="employer">GEOS Eikaiwa, Funabashi, Chiba, Japan</div>
+<div class="employer">GEOS Eikaiwa, Funabashi, Chiba Prefecture, Japan</div>
 
 #### Responsibilities
 
