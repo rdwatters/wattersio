@@ -23,17 +23,23 @@ Experienced web professional with a deep understanding of content strategy, cont
 #### Responsibilities
 
 * Develop content calendars, new editorial processes, and new enterprise-wide taxonomies and metadata
-* Create content models, entity&ndash;relationship models, and CMS strategy for upcoming re-platforming from Oracle to Craft CMS.
-* Ghostwriting and developmental editing for subset of highly engaged members
+* Project lead on upcoming re-platforming from Oracles to Craft CMS
+  * Content models and entity&ndash;relationship diagrams
+  * Information architecture development
+  * Writer guidelines to align with the newly developed MSS (Member Service and Support) Strategy
+  * Full site quantitative and qualitative content audits
+  * Governance and migration planning 
 * Educational presentations to CAP Leadership on web writing best practices, SEO fundamentals, and analytics
+* Ghostwriting and developmental editing for subset of highly engaged members
 * Lead professional development workshops for the Digital Strategy and Marketing teams on CMS best practices, front-end development, and SEO
-* Manage new GSA upgrade
+* Manage new GSA upgrade, including synonyms lists
 
 #### Accomplishments
 
 * Defined the first editorial mission for CAP member content, as well as the first comprehensive content strategy document for cap.org
 * Designed new editorial process and peer review for member-generated content
-* Sole developer, writer, designer, and editor for the organization's first web-based writer's guide and Digital Strategy Blog; currently living at <http://digital.cap.org> (internal network only)
+* Sole developer, writer, designer, and editor for the organization's first web-based writer's guide and Digital Strategy Blog; currently living at digital.cap.org (internal network only). See a [sample of the Digital website](https://dst-temp.netlify.com/).
+* Created new governance, workflow, and content types for the CAP17 Annual website, as well as the upcoming Course Materials site. [See the beta version of the Course Materials site](http://course-materials.netlify.com/).
 
 <h3 class="experience-title">Senior&nbsp;Medical&nbsp;Editor <span class="work-experience-time">Jun 2015 &ndash; Dec 2015</span></h3>
 
@@ -95,6 +101,8 @@ Experienced web professional with a deep understanding of content strategy, cont
 
 * **CORPAK MedSystems, Buffalo Grove, IL:** Developed white papers, business case, scientific poster, and a structured abstract for the CORTRAK Electromagnetic Feeding Tube Placement System and CORTRAK 2 EAS
 * **Agentive Marketing, Belle Mead, NJ:** Developed three educational modules for sales representatives detailing the vascular anatomy of the breast and the anterior abdominal wall for LifeCell (Somerville, NJ)
+
+
 
 ## Skills
 
