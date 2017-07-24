@@ -102,6 +102,12 @@ Experienced web professional with a deep understanding of content strategy, cont
 * **CORPAK MedSystems, Buffalo Grove, IL:** Developed white papers, business case, scientific poster, and a structured abstract for the CORTRAK Electromagnetic Feeding Tube Placement System and CORTRAK 2 EAS
 * **Agentive Marketing, Belle Mead, NJ:** Developed three educational modules for sales representatives detailing the vascular anatomy of the breast and the anterior abdominal wall for LifeCell (Somerville, NJ)
 
+<h3 class="experience-title">English&nbsp;Teacher<span class="work-experience-time">Sep 2006 &ndash; Jul 2008</span></h3>
+<div class="employer">GEOS Eikaiwa, Funabashi, Chiba, Japan</div>
+
+#### Responsibilities
+
+* Developed curriculum for approximately 120 students&mdash;ages 4 to 75 years&mdash;for 3 private English conversation schools across Chiba Prefecture 
 
 
 ## Skills
