@@ -29,7 +29,7 @@ Experienced web professional with a deep understanding of content strategy, cont
   * Writer guidelines to align with the newly developed MSS (Member Service and Support) Strategy
   * Full site quantitative and qualitative content audits
   * Governance and migration planning 
-* Educational presentations to CAP Leadership on web writing best practices, SEO fundamentals, and analytics
+* Educational presentations to CAP Leadership on web writing best practices, SEO fundamentals, and analytics; see a [sample presentation](https://phc.netlify.com/#/)
 * Ghostwriting and developmental editing for subset of highly engaged members
 * Lead professional development workshops for the Digital Strategy and Marketing teams on CMS best practices, front-end development, and SEO
 * Manage new GSA upgrade, including synonyms lists
