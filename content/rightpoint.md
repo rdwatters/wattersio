@@ -12,7 +12,7 @@ removecomments: true
 
 Chris,
 
-Thanks so much for taking time out of your busy schedule to speak with me today. I've mapped a small selection of samples to the list of responsibilities from the [job description for the senior content strategist position][jobdescription]. I greatly look forward to further conversation on this position, your team, and Rightpoint as a whole.
+Thanks so much for taking time out of your busy schedule to speak with me today. I've mapped a small selection of samples to the list of responsibilities from the [job description for the senior content strategist position][jobdescription]. I greatly look forward to further conversations on this position, your team, and Rightpoint.
 
 &mdash; Ryan
 
