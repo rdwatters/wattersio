@@ -51,7 +51,11 @@ In 2016, I spent 15 weekends presenting to CAP committees across the country to 
 
 > Developing content management system training materials for content authors; training content authors how to use content management system
 
-As a Managing Medical Copy Editor with the AAP, I was responsible for training more than 100 pediatricians on how to use SharePoint 2010. As the Editor of AAP.org, I was responsible for training three web content assistants in SharePoint 2013. While working for Precision for Value, I worked with our IT to set up an SP2013 instance for better reference management. You can see a sample of the [training documentation][precisionwiki] I developed for my colleagues in Editorial Services. Additionally, I've developed [content management and developer documentation wikis][capwiki] in the CAP's enterprise GitHub account.
+* As a Managing Medical Copy Editor with the AAP, I was responsible for training more than 100 pediatricians on how to use SharePoint 2010. 
+* As the Editor of AAP.org, I was responsible for training three web content assistants in SharePoint 2013. 
+* I built [extensive end user documentation][dstdocs] as part of the internal site I built for the Digital Strategy team.
+* With Precision for Value, I worked with our IT to set up an SP2013 instance for better reference management. You can see a sample of the [training documentation][precisionwiki] I developed for my colleagues in Editorial Services. 
+* Additionally, I've developed [content management and developer documentation wikis][capwiki] in the CAP's enterprise GitHub account.
 
 To demonstrate my passion for technical and training documentation, you can also see the new https://gohugo.io, which I completely reworked from the ground up with [more than 200k changes][hugocontribute] and completely revised site architecture.
 
@@ -64,6 +68,7 @@ To demonstrate my passion for technical and training documentation, you can also
 [capwiki]: /samples/caporg-github-wiki.png
 [contenttypes]: /samples/caporg-content-types.png
 [datadictionary]: /samples/caporg-data-dictionary.png
+[dstdocs]: https://dst-temp.netlify.com/docs/
 [hugocontribute]: https://github.com/gohugoio/hugoDocs/graphs/contributors
 [phcpresentation]: https://phc.netlify.com/
 [precisionwiki]: /samples/wiki-training-sample.pdf
