@@ -24,7 +24,9 @@ My responsibilities as the Editor of AAP.org included consultations with dozens 
 
 > Lead or support information architecture development; define content types to support content management system build; map content to the new site architecture and identify content gaps
 
-See screenshots of the [new sitemap][caporgsitemap], newly developed [content types][contenttypes], and [data dictionary][datadictionary] for the re-platforming of cap.org from Oracle to Craft CMS. To demonstrate my passion for structured content&mdash;perhaps "obsession" is more apropros&mdash;you can also take a look at the [archetypes I developed][archetypes] as part of a complete reworking of a 500+ page redesign of a documentation site for the Hugo open source project.
+* See screenshots of the [new sitemap][caporgsitemap], newly developed [content types][contenttypes], and [data dictionary][datadictionary] for the re-platforming of cap.org from Oracle to Craft CMS. 
+* You can also see the [editorial mission, content strategy statement, and content model][dstdocsedmission] I developed for the Digital Strategy Team's internal website.
+* To demonstrate my passion for structured content&mdash;perhaps "obsession" is more apropros&mdash;you can also take a look at the [archetypes I developed][archetypes] as part of a complete reworking of a 500+ page redesign of a documentation site for the Hugo open source project.
 
 **Note:** I will provide screenshots of entity-relationship diagrams when I return to the office on Wednesday, July 26th.
 
@@ -71,6 +73,7 @@ To demonstrate my passion for technical and training documentation, you can also
 [contenttypes]: /samples/caporg-content-types.png
 [datadictionary]: /samples/caporg-data-dictionary.png
 [dstdocs]: https://dst-temp.netlify.com/docs/
+[dstdocsedmission]: https://dst-temp.netlify.com/docs/#editorial-mission
 [hugocontribute]: https://github.com/gohugoio/hugoDocs/graphs/contributors
 [phcpresentation]: https://phc.netlify.com/
 [precisionwiki]: /samples/wiki-training-sample.pdf
