@@ -49,7 +49,7 @@ As the Editor of AAP.org, I lead the governance cleanup. See also the [editorial
 
 > Participating in client presentations and providing support materials for client presentations; providing insights and strategies for content marketing and SEO by developing relevant information based on users’ needs
 
-In 2016, I spent 15 weekends presenting to CAP committees across the country to encourage our highly engaged members to develop content under a new editorial model. You can see a sample [presentation I gave to our Personalized Health Care committee][phcpresentation] in June 2017. I've also conducted writing workshops for both PREP authors with the AAP and members of the CAP.
+In 2016, I spent 15 weekends presenting to CAP committees across the country to encourage our highly engaged members to develop content under a new editorial model. You can see a [presentation I gave to our Personalized Health Care committee][phcpresentation] in June 2017. I've also conducted writing workshops for both PREP authors with the AAP and members of the CAP.
 
 > Developing content management system training materials for content authors; training content authors how to use content management system
 
