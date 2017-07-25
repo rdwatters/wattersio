@@ -107,7 +107,7 @@ ul.article-tags {
   max-width: $content-max-width * 1.4;
 }
 
-.body-copy {
+.body-copy:not(.rightpoint-body-copy) {
   a {
     font-size: inherit;
     color: $brand-primary;

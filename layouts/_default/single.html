@@ -2,14 +2,14 @@
 {{$burl := .Site.BaseURL}}
 <main role="main" class="article">
     <a href="" id="page-top" class=""></a>
-    <article class="{{.Section}}">
-        <header{{with .Params.image}} class="hero" style="background-image:url(/assets/images/{{.}})"{{else}} class="hero single-page"{{end}}>
+    <article class="{{.Section}} {{.Title | urlize }}">
+        <header class="hero single-page rightpoint-hero">
             <div class="header-content">
-                <h1 class="no-image">{{.Title}}</h1>
+                <h1 class="no-image rightpoint-page-title">{{.Title}}</h1>
                 {{with .Params.subtitle}}<span class="subtitle">{{.}}</span>{{end}}
-                <div class="hr-wrapper">
+<!--                 <div class="hr-wrapper">
                     <hr>
-                </div>
+                </div> -->
                 {{ if and (eq .Section "posts") (.Params.tags) }}
                 <div class="article-tags-wrapper">
                     <ul class="article-tags">
@@ -21,7 +21,8 @@
                 {{end}}
             </div>
         </header>
-        <div class="body-copy">
+        <div class="body-copy rightpoint-body-copy" id="{{.Title | urlize}}">
+        <time></time>
         {{.Content}}
         </div>
     </article>
