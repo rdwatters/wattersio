@@ -14,6 +14,8 @@ Chris,
 
 Thanks so much for taking time out of your busy schedule to speak with me today. I've mapped a small selection of samples to the list of responsibilities from the [job description for the senior content strategist position][jobdescription]. I greatly look forward to further conversation on this position, your team, and Rightpoint as a whole.
 
+&mdash; Ryan
+
 ## Responsibilities
 
 > Leading and/or participating in stakeholder and customer interviews to understand the business needs and users’ wants.
