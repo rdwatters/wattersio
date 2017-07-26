@@ -17,7 +17,7 @@ I've mapped a small selection of samples to the list of responsibilities from th
 
 &mdash; Ryan
 
-P.S. Please regard the visual styling of this page as homage rather than infringement of 6.4 of your Terms of Use. :wink: 
+P.S. Please regard the visual styling of this page as an homage rather than infringement of 6.4 of your Terms of Use. :wink: 
 
 ## Responsibilities
 <a href="https://www.linkedin.com/jobs/view/343546058/" class="see-original" target="_blank" title="See the original job description on LinkedIn.">See Original</a>
