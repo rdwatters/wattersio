@@ -52,65 +52,152 @@
 // 6. Themes
 @import 'themes/default';
 
-#rightpoint,.rightpoint,.rightpoint-hero {
-	font-family:"proximanova","Proxima Nova","Avenir Next","Avenir","helvetica neue",helvetica,arial,sans-serif;
+h1.site-title {
+    font-family: "proximanova", "Proxima Nova", "Avenir Next", "Avenir", "helvetica neue", helvetica, arial, sans-serif;
+}
+
+#rightpoint,
+.rightpoint,
+.rightpoint-hero {
+    font-family: "proximanova", "Proxima Nova", "Avenir Next", "Avenir", "helvetica neue", helvetica, arial, sans-serif;
 }
 
 header.hero.single-page.rightpoint-hero {
-    background-color: #000000;
+    background-color: #ffffff;
+    margin-bottom:0px;
+    min-height:14em;
+}
+
+.rightpoint-logo-full-svg__line {
+    transition: width .2s ease 0s;
+    fill: #ee2123;
+}
+
+.header-svg-logo {
+    display: block;
+    max-width: 100%;
+    &:hover {
+        .rightpoint-logo-full-svg__line {
+            transition: width .2s ease 0s;
+            width: 100%;
+            fill: #ee2123;
+        }
+    }
 }
 
 #rightpoint.body-copy {
-    h2,h3,h4,h5 {
-        font-family:"freighttextpro","Freight Text Pro",georgia;
-        font-weight:bolder;
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "freighttextpro", "Freight Text Pro", georgia;
+        font-weight: 400;
     }
-    h2,h3 {
-        margin-bottom:1em;
-    }
-    a {
-        transition:all .3s ease-in-out;
-        color:inherit;
-        text-decoration:underline;
-        font-weight:inherit;
-        &:hover {
-            transition:all .3s ease-in-out;
-            color:#EE2123;
+    h2 {
+        font-size: 30px;
+        @include MQ(M) {
+            font-size: 40px;
         }
     }
-    p,blockquote,ul,li,ol {
-        font-weight:100;
+    h2,
+    h3 {
+        margin-bottom: 1em;
+    }
+    a {
+        transition: all .3s ease-in-out;
+        color: inherit;
+        text-decoration: underline;
+        font-weight: inherit;
+        &:hover {
+            transition: all .3s ease-in-out;
+            color: #EE2123;
+        }
+    }
+    a.see-original {
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 100;
+        font-weight: 500;
+        text-decoration: none;
+        position: relative;
+        cursor: pointer;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -2px;
+            border-bottom: 1px solid rgba(0, 0, 0, .27);
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width:0;
+            transition: width .3s ease 0s;
+            border-bottom: 1px solid #000;
+        }
+        &:hover {
+            color:inherit;
+            &::after {
+                width:100%;
+            }
+        }
+    }
+    p,
+    blockquote,
+    ul,
+    li,
+    ol {
+        font-weight: 100;
     }
     blockquote {
         font-size: 1em;
         margin: 0px;
         width: 100%;
-        border-left:3px solid #EE2123;
-        padding-left:12px;
-        margin-left:-12px;
-        > p {
+        border-left: 3px solid #EE2123;
+        padding-left: 12px;
+        margin-left: -12px;
+        >p {
             font-size: 1.2em;
             width: 100%;
         }
     }
     @include MQ(L) {
         blockquote {
-            float: none;
-            // margin: 0px;
+            float: none; // margin: 0px;
             width: 100%;
-            > p {
-            	width:100%;
+            >p {
+                width: 100%;
             }
         }
     }
+    h2#responsibilities {
+        margin: 0px;
+        margin-bottom: .25em;
+    }
 }
 
+
+
+
+
 h1.no-image {
-    font-family:"proximanova";
+    font-family: "proximanova";
     &.rightpoint-page-title {
-        width:auto;
-        display:inline-block;
-        text-transform:uppercase;
-        border-bottom:3px solid #EE2123;
+        width: auto;
+        display: inline-block;
+        text-transform: uppercase;
+        border-bottom: 3px solid #EE2123;
     }
+}
+
+.subtitle-job-title {
+    color: #969897;
+    font-weight: 300;
+    margin-bottom:.2em;
 }

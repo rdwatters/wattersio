@@ -1,5 +1,6 @@
 ---
 title: Rightpoint
+subtitle: Senior Content Strategist
 date: 2017-07-25
 publishdate: 2017-07-25
 description: Select samples compiled for Rightpoint in the interest of obtaining the position of Senior Content Strategist.
@@ -10,17 +11,20 @@ removefromsearch:
 removecomments: true
 ---
 
-Chris,
+Chris, Kimberly, Gabe, and Evan,
 
-Thanks so much for taking time out of your busy schedule to speak with me today. I've mapped a small selection of samples to the list of responsibilities from the [job description for the senior content strategist position][jobdescription]. I greatly look forward to further conversations on this position, your team, and Rightpoint.
+I've mapped a small selection of samples to the list of responsibilities from the job description for the senior content strategist position. I'm looking forward to meeting with all of you on Wednesday and continuing the conversation I started with Chris on Monday. 
 
 &mdash; Ryan
 
+P.S. Please regard the visual styling of this page as homage rather than infringement of 6.4 of your Terms of Use. :wink: 
+
 ## Responsibilities
+<a href="https://www.linkedin.com/jobs/view/343546058/" class="see-original" target="_blank" title="See the original job description on LinkedIn.">See Original</a>
 
 > Leading and/or participating in stakeholder and customer interviews to understand the business needs and users’ wants.
 
-My responsibilities as the Editor of AAP.org included consultations with dozens of stakeholders across multiple business units. My current position as Digital Content Manager at the College of American Pathologists includes initial consultations with stakeholders as well, including highly engaged CAP members. You can see an example of the [core modeling worksheet](/samples/core-modeling.pdf) I've used in both positions. 
+My responsibilities as the Editor of AAP.org included consultations with dozens of stakeholders across multiple business units. My current position as Digital Content Manager at the College of American Pathologists includes initial consultations with stakeholders as well, including highly engaged CAP members during semi-annual meetings across the country. You can see an example of the [core modeling worksheet](/samples/core-modeling.pdf) I've used in both positions during strategic kickoffs.
 
 > Lead or support information architecture development; define content types to support content management system build; map content to the new site architecture and identify content gaps
 
@@ -28,7 +32,7 @@ My responsibilities as the Editor of AAP.org included consultations with dozens 
 * You can also see the [editorial mission, content strategy statement, and content model][dstdocsedmission] I developed for the Digital Strategy Team's internal website.
 * To demonstrate my passion for structured content&mdash;perhaps "obsession" is more apropros&mdash;you can also take a look at the [archetypes I developed][archetypes] as part of a complete reworking of a 500+ page redesign of a documentation site for the Hugo open source project.
 
-**Note:** I will provide screenshots of entity-relationship diagrams when I return to the office on Wednesday, July 26th.
+**Note:** I will provide screenshots of entity-relationship diagrams once I return to the office and before our meeting on Wednesday.
 
 
 > Content guidelines to clearly communicate audience, message, voice, tone and content presentation style to support a consistent website experience
@@ -47,7 +51,7 @@ See the [content audit spreadsheet][aaporgaudit] I used as one step of the conte
 
 As the Editor of AAP.org, I lead the governance cleanup. See also the [editorial process map][processmap] I developed as Managing Medical Copy Editor for the PREP line of subspecialty products. 
 
-**Note:** I will provide a sample of the new governance document for cap.org once I return to the office on Wednesday, July 26th. 
+**Note:** I will provide a sample of the new governance document for cap.org once I return to the office and before our meeting on Wednesday. 
 
 > Participating in client presentations and providing support materials for client presentations; providing insights and strategies for content marketing and SEO by developing relevant information based on users’ needs
 
