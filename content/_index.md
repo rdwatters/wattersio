@@ -166,6 +166,9 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 * Board Certification as an Editor in the Life Sciences (ELS); [BELS][]
 * Certified Professional Medical Writer (CPMW); [Graham School, University of Chicago][]
 
+
+**This is only a test of synchronizing using StackEdit.**
+
 <a id="references-link" href="mailto:watters.ryan@gmail.com?subject=Ryan Watters resume request&body=I read your resume on 0watters.io and would like to request samples and references." title="Email me to request samples or references.">
     <i class="icon-email"></i>References and samples available upon request.
 </a>
@@ -193,5 +196,5 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 [Webhook]: http://www.webhook.com/ "Learn more about the Webhook CMS"
 [Zapier]: https://zapier.com/ "Learn more about Zapier, easy automation for busy people"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MTQ1Mjg3XX0=
+eyJoaXN0b3J5IjpbNjc1OTg4NDY0XX0=
 -->
