@@ -119,6 +119,13 @@ Experienced web professional with a deep understanding of content strategy, cont
 * Taxonomy development and schema
   * [DCMI][], [MeSH][], [Schema.org][], [Open Graph Protocol][], [Twitter][]
 * Writing workshops and writers guides
+* Digital Asset Management
+
+### CMS
+
+* Sitecore (2.5 years working for Rightpoint, a Sitecore MVP)
+* Episerver
+* Craft CMS
 
 ### Analytics, Data, and Search
 
@@ -126,12 +133,11 @@ Experienced web professional with a deep understanding of content strategy, cont
 * Google Webmaster Tools (Search Console)
 * Google Tag Manager
 * Google Search Appliance
-* [Swiftype][], [Algolia][], [lunr.js][]
+* [Coveo][], [Swiftype][], [Algolia][], [lunr.js][]
 
 ### Front-end Development
 
-My love of front-end development is a reflection and outgrowth of my expertise in HTML5 semantics and its relationship to SEO and web best practices. *I take a web-first approach to all content.*
-
+My love of frontend development is a reflection and outgrowth of my expertise in HTML5 semantics and its relationship to SEO and web best practices. *I take a web-first approach to all content.*
 
 * Hugo
   * I am currently [one of nine members of the official Hugo team][hugoteam]
@@ -146,12 +152,13 @@ My love of front-end development is a reflection and outgrowth of my expertise i
   * Node.js and NPM (basic proficiency)
   * Currently studying Angular and Vue.js
 * Static Site Generators
-  * Jekyll, Hugo, Hexo
+  * Hugo, Jekyll, Hexo
 * BASH, Applescript, and the Unix command line
 * git and [GitHub][]
 * Single Sourcing and Automation
   * [Pandoc][]
   * [Zapier][]
+
 <!-- * See the [shortlist of tools][] on this site's [About page] for applied examples -->
 
 ### Software & Content Management Systems
@@ -174,6 +181,7 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 [About page]: /about "Visit the page to learn a bit more about me."
 [Algolia]: https://www.algolia.com "Visit the site for Algolia, a real-time search service for websites and web applications."
 [BELS]: http://www.bels.org/ "Visit the official website of the Board of Editors in the Life Sciences"
+[Coveo]: https://www.coveo.com/en
 [Craft]: https://craftcms.com/ "See the website for Craft, a CMS built on the PHP Yii2 Framework"
 [DCMI]: http://dublincore.org/ "Visit the site for the Dublin Core Metadata Initiative"
 [Ghost]: https://ghost.org/ "Visit the site for Ghost, a fast blog-centric content management system"
